@@ -1,0 +1,438 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3712572144158417205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3712572144158417207}
+  - component: {fileID: 3712572144158417204}
+  - component: {fileID: 6847408503071179581}
+  m_Layer: 0
+  m_Name: GameProgress
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3712572144158417207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712572144158417205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3712572144158417204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712572144158417205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e67c147dea85f14e8323df3b7453d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Characters: []
+  AllAvailableCharacters:
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 800
+    prefabIndex: 0
+    prefab: {fileID: 6128914949322520022, guid: 761419a50392a2948a235800f1332eef,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings:
+    - blessingName: Freezing touch
+      rarity: 0
+      className: 
+      spellName: Attack
+      condition: 
+      description: 
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 8954631019492902413, guid: 2621509c8d004804fb5b3b945ff11025,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 6028533896264122198, guid: a93b124e9bb52bd4195f8bdd8e4af85c,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 7896836077047742756, guid: 2a220d20da4d2fc4d97ae7e1b67bd425,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 5788907843867173052, guid: 24265e6139ff231469b91b5ba15d5b2a,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 800
+    prefabIndex: 0
+    prefab: {fileID: 4992332202872890890, guid: ab8ee3479993aa5418242ab06e065ba9,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 1458800734740256195, guid: 2c73ed8c6faf4694b805d30a4e2642f2,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 8813985194088438685, guid: 1f12629668ba99b4692c9c9311df03a0,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 5368946581862913230, guid: b9896f103d3b9d0419359de7612eff93,
+      type: 3}
+  AllEnemyCharacterPrefabs:
+  - {fileID: 6084037148861258150, guid: b9156c8b2d5c0e64ba71e0f8aa7cc8a2, type: 3}
+  - {fileID: 5523159634031766177, guid: 227255fae528f1d43ad5b702b000a815, type: 3}
+  - {fileID: 2183944238913797440, guid: ae80f7dbf5159e24288196e6737833ce, type: 3}
+  - {fileID: 8813985194088438685, guid: 1f12629668ba99b4692c9c9311df03a0, type: 3}
+  - {fileID: 8954631019492902413, guid: 2621509c8d004804fb5b3b945ff11025, type: 3}
+  - {fileID: 6028533896264122198, guid: a93b124e9bb52bd4195f8bdd8e4af85c, type: 3}
+  - {fileID: 5788907843867173052, guid: 24265e6139ff231469b91b5ba15d5b2a, type: 3}
+  - {fileID: 8021659028330577181, guid: b5ccf4a0b85e8c644a272038d932bc5e, type: 3}
+  - {fileID: 4992332202872890890, guid: ab8ee3479993aa5418242ab06e065ba9, type: 3}
+  - {fileID: 1458800734740256195, guid: 2c73ed8c6faf4694b805d30a4e2642f2, type: 3}
+  - {fileID: 2915654561775310947, guid: 50c41966d305a3547a722c18663d4c3e, type: 3}
+  - {fileID: 6128914949322520022, guid: 761419a50392a2948a235800f1332eef, type: 3}
+  - {fileID: 1724218895423408132, guid: e25e9e5ac3a588d4293d397f4a1bdbb1, type: 3}
+  - {fileID: 5155249383193770717, guid: b358be3c16861ca4dbffcad1ffcc73ff, type: 3}
+  - {fileID: 9051992674609326526, guid: 530dc82c6ecb14dc5b2a083c8e3e96ca, type: 3}
+  - {fileID: 330868429183524323, guid: 53bd712f7e86afb499eff2c227130300, type: 3}
+  AllEnemySavedCharacters:
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 800
+    prefabIndex: 0
+    prefab: {fileID: 6084037148861258150, guid: b9156c8b2d5c0e64ba71e0f8aa7cc8a2,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 4560430366766835612, guid: 0a0126cf69837834c9ceb8f45cfc103c,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 332953138002955378, guid: 4e0bef3ace78a0c4097d31c1b2785731, type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 5523159634031766177, guid: 227255fae528f1d43ad5b702b000a815,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 9182066968097274028, guid: 029a69d376a6151419ce9d1ca8b9d3bb,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 1000
+    prefabIndex: 0
+    prefab: {fileID: 2183944238913797440, guid: ae80f7dbf5159e24288196e6737833ce,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 2915654561775310947, guid: 50c41966d305a3547a722c18663d4c3e,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 1724218895423408132, guid: e25e9e5ac3a588d4293d397f4a1bdbb1,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 7402233202836969565, guid: 009d8db1445097048acf33e2363ffe0b,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 5155249383193770717, guid: b358be3c16861ca4dbffcad1ffcc73ff,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 9051992674609326526, guid: 530dc82c6ecb14dc5b2a083c8e3e96ca,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 
+    blessings: []
+    cost: 900
+    prefabIndex: 0
+    prefab: {fileID: 330868429183524323, guid: 53bd712f7e86afb499eff2c227130300, type: 3}
+  CharactersOnLastMission: 
+  newGameData:
+    teamColor: 
+    slotName: 
+    singlePlayer: 0
+    difficultyLevel: 0
+    townGold: 3500
+    day: 0
+    newGame: 1
+    characters: []
+    townHall: 00000
+    rcCharacters: []
+    createNewRCcharacters: 0
+    charactersOnLastMission: 
+    wasLastMissionSuccessful: 0
+    wereCharactersOnAMission: 0
+    selectedMission: 
+    enemies: 
+    allowEnemySelection: 0
+    allowDuplicates: 0
+    selectedEncounter:
+      mapName: 
+      missionCategory: 
+      encounterLevel: 0
+      enemyPool: []
+      allowDuplicates: 0
+      numOfEnemies: 0
+    pastEncounters: []
+    generateNewEncounters: 0
+    generatedEncounters: []
+    gameSettings:
+      attackHelper: 0
+      masterVolume: 1
+      mute: 0
+  canButtonsBeClicked: 1
+  XPToLevelUp: 20030000d007000088130000e7030000
+  isCurrentScenePlayableMap: 0
+  switchPortraits: 0
+  SwitchedCharacters: 
+  currentCharacterIndex: -1
+  maxCharacterCount: 12
+  createNewRCcharacters: 0
+  selectedEnemies: 
+  statistics:
+    playTime: 0
+    battleTime: 0
+    charactersBoughtCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    characterDeathsCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    killCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    charactersSelectedCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  globalStatistics:
+    playTime: 0
+    battleTime: 0
+    charactersBoughtCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    characterDeathsCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    killCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+    charactersSelectedCountByClass: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  townData:
+    teamColor: 
+    slotName: 
+    singlePlayer: 0
+    difficultyLevel: 0
+    townGold: 0
+    day: 0
+    newGame: 0
+    characters: []
+    townHall: 
+    rcCharacters: []
+    createNewRCcharacters: 0
+    charactersOnLastMission: 
+    wasLastMissionSuccessful: 0
+    wereCharactersOnAMission: 0
+    selectedMission: 
+    enemies: 
+    allowEnemySelection: 0
+    allowDuplicates: 0
+    selectedEncounter:
+      mapName: 
+      missionCategory: 
+      encounterLevel: 0
+      enemyPool: []
+      allowDuplicates: 0
+      numOfEnemies: 0
+    pastEncounters: []
+    generateNewEncounters: 0
+    generatedEncounters: []
+    gameSettings:
+      attackHelper: 0
+      masterVolume: 1
+      mute: 0
+--- !u!114 &6847408503071179581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712572144158417205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fca44dc99e759438208d06ad3cea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MapName: 
+  MapPrefabs:
+  - {fileID: 8188965545752804595, guid: b745bcd9ca18348a382073835f8dbef3, type: 3}
+  - {fileID: 1401161897824018671, guid: fc31bd44f9a2e4438977409d83517074, type: 3}
+  - {fileID: 1912015540088700205, guid: 9e061c7c66b584ac999186a69037fc0e, type: 3}
+  - {fileID: 1722708026810974101, guid: a88dedca8e0734af8a91d31c9cf87d8c, type: 3}
+  - {fileID: 5838803986008028568, guid: 39457caf9f9f14920bdeaca4b58f14a2, type: 3}
+  - {fileID: 3599305411788918878, guid: 57a41e98dc50c4317b858f7bc25845bc, type: 3}
+  - {fileID: 4468732640697727605, guid: 4ed9056a0d377fa40bd2154951a87ef9, type: 3}
+  - {fileID: 461944243306745146, guid: 1cb5dfc63efb9ab43bd5a2801581f10f, type: 3}
+  - {fileID: 1370094039199749992, guid: bd380df368ebebe4483218cc473789b5, type: 3}
+  - {fileID: 5813706836119385935, guid: e261d9b8eeca03b4fa48ca7d90a74cff, type: 3}
+  - {fileID: 4177073564369104485, guid: 35171f295737d314299bb55c37f60ecb, type: 3}
+  - {fileID: 2140477715814270949, guid: b6efde265ebb80a47af7ed6c09651de6, type: 3}

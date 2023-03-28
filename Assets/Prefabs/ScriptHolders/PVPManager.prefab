@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8959177133173634276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8959177133173634278}
+  - component: {fileID: 8959177133173634277}
+  m_Layer: 0
+  m_Name: PVPManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8959177133173634278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959177133173634276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8959177133173634277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959177133173634276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac4f86f397354390a3c19e5d7dac6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allAvailableCharacters:
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 8813985194088438685, guid: 1f12629668ba99b4692c9c9311df03a0,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings:
+    - Freezing touch
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 8954631019492902413, guid: 2621509c8d004804fb5b3b945ff11025,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 0011
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 6028533896264122198, guid: a93b124e9bb52bd4195f8bdd8e4af85c,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 5788907843867173052, guid: 24265e6139ff231469b91b5ba15d5b2a,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 8021659028330577181, guid: b5ccf4a0b85e8c644a272038d932bc5e,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 4992332202872890890, guid: ab8ee3479993aa5418242ab06e065ba9,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 1466404997717818900, guid: 7a5d1c97e938c2b4bbbcd1a799868754,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1100
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 7896836077047742756, guid: 2a220d20da4d2fc4d97ae7e1b67bd425,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 1001
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 1458800734740256195, guid: 2c73ed8c6faf4694b805d30a4e2642f2,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 0101
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 6128914949322520022, guid: 761419a50392a2948a235800f1332eef,
+      type: 3}
+  - level: 0
+    xP: 0
+    xPToGain: 0
+    characterName: 
+    dead: 0
+    abilityPointCount: 0
+    unlockedAbilities: 0011
+    blessings: []
+    cost: 0
+    prefabIndex: 0
+    prefab: {fileID: 5368946581862913230, guid: b9896f103d3b9d0419359de7612eff93,
+      type: 3}
+  allAvailableMaps:
+  - {fileID: 5838803986008028568, guid: 39457caf9f9f14920bdeaca4b58f14a2, type: 3}
+  - {fileID: 1401161897824018671, guid: fc31bd44f9a2e4438977409d83517074, type: 3}
+  - {fileID: 1408918338933270988, guid: d9ad3b33cd3e6c043a9c25c3896b5d75, type: 3}
+  - {fileID: 1912015540088700205, guid: 9e061c7c66b584ac999186a69037fc0e, type: 3}
+  - {fileID: 3599305411788918878, guid: 57a41e98dc50c4317b858f7bc25845bc, type: 3}
+  - {fileID: 4468732640697727605, guid: 4ed9056a0d377fa40bd2154951a87ef9, type: 3}
+  - {fileID: 1722708026810974101, guid: a88dedca8e0734af8a91d31c9cf87d8c, type: 3}
+  - {fileID: 7293039904427697140, guid: 4a402a6114be245d192406759be9f76b, type: 3}
+  emptySprite: {fileID: 7275749007581436860, guid: 88a9dc2923d4fa842a8fce4120dbf698,
+    type: 3}
+  helpTables:
+  - {fileID: 1935394496831921, guid: 099031015e154e445aa967e87bf23007, type: 3}
+  - {fileID: 3317450650262144583, guid: 27a88a2926fb3b84e95c886817e847d1, type: 3}
+  - {fileID: 3887501752064194858, guid: a1f0416b6ac453a43b43c640afab4a15, type: 3}
+  - {fileID: 112241193028321176, guid: 26cb4012d87ab304e989c7b88794a8d7, type: 3}
+  - {fileID: 4767777445371730136, guid: e9c7113882050a94ebaacb4a8abddbd8, type: 3}
+  - {fileID: 7760250958667130632, guid: e85e0354dec501f4d871ac21fa709734, type: 3}
+  - {fileID: 2549193026641979502, guid: 511fd090fcdd9d141932894d111b6af6, type: 3}
+  - {fileID: 1588775879205317167, guid: deb54921922bbc846aae8eb2486da0ef, type: 3}
+  - {fileID: 5604746974304460942, guid: c0bee61b6298c904190e9df37aae8080, type: 3}
+  - {fileID: 7362319543699056669, guid: 25eff6b1166392d45b3623d3bef48b9e, type: 3}
+  - {fileID: 7816486265815171136, guid: eaeda1e9245296145bcd647442bed481, type: 3}
+  - {fileID: 4754799687447501411, guid: 40cc347d3d521bf469afbae4924c6b2c, type: 3}
+  - {fileID: 7850136957195200926, guid: 7f6a4f22562b30447805117bd01a172b, type: 3}
+  - {fileID: 2018174065232851777, guid: ed40182638c06c44e86bdf97f4274eb0, type: 3}
+  - {fileID: 3038923052945220379, guid: 51ba4d64088ae5342b22394e438248c5, type: 3}
+  - {fileID: 1467789860316673463, guid: df6ea940ba620d24c88252e0517f24b3, type: 3}
+  - {fileID: 8705620829525446682, guid: 7f32faa1c6d7bd2408c775c5511bb1ad, type: 3}
+  - {fileID: 71609204085074282, guid: 6c694dc134dc6964cb02829554b40f9d, type: 3}
+  - {fileID: 212716072515764403, guid: 9eef00c06fd111746a812394abdb6cc1, type: 3}
+  - {fileID: 472933742851322890, guid: 7fcb17daef227b84e81c1959016640ce, type: 3}
+  - {fileID: 9203875995780410158, guid: 4f8e6408b770050438547b456de103f8, type: 3}
+  - {fileID: 3528294836694171741, guid: ac568bafbc171194a8a8f2065d37575e, type: 3}
+  - {fileID: 4033026677423383401, guid: 76065b5e1bfda05419284413b08472b5, type: 3}
+  - {fileID: 3860306514082606093, guid: 69069ae3d0db3724ca695da851eabafd, type: 3}
+  - {fileID: 1881730569137322901, guid: 02edc9da970cfb04e8811487618f5047, type: 3}
+  - {fileID: 8680511913248837994, guid: eb511c51690b806448aab4b7cf98ee7f, type: 3}
+  - {fileID: 6562455433084210338, guid: e65b9d12949433a4fb31afc188caf792, type: 3}
+  - {fileID: 6807205901520354698, guid: 750c64c38a158d2479028abc22bb3ce5, type: 3}
+  - {fileID: 6047810853392974689, guid: b7d4bfad749e4df4db00c9cede9384ef, type: 3}
+  - {fileID: 967744243507996025, guid: c21949a0fc1914c43a86f7aca3eac37f, type: 3}
+  - {fileID: 6382617937752602352, guid: 9979022293bb43a4baf6e5c265560e6c, type: 3}
+  - {fileID: 6275620175599939487, guid: d037711490b669b4392bddfbd1940636, type: 3}
+  - {fileID: 8783223651975388111, guid: c22558189aeaa264995fcc93e173c9cc, type: 3}
+  - {fileID: 7563698165536768817, guid: 4753eb0c687b8684c9a11a9445f5eb7d, type: 3}
+  - {fileID: 3226519634222008213, guid: 799812fb3364b31439e0c6c3eca81f35, type: 3}
+  - {fileID: 5758030016980518352, guid: 5cdf31e7d7c123b4ca1cb6b7fccd7246, type: 3}
+  - {fileID: 8505577213042411741, guid: ba4a82f652182cf4c81091e71ea3c1db, type: 3}
+  - {fileID: 4447070716671091937, guid: 3107d39b9f4bb1d43916eae68c7fa150, type: 3}
+  - {fileID: 602911090800428964, guid: 191dacd7cd6edf14bba4228af2b9491d, type: 3}
+  - {fileID: 4071195123069809391, guid: 3b0a0f15e3c6a5d43961ba87390fa26b, type: 3}
+  - {fileID: 8184376018401066045, guid: 964fffc895c630c4f880741338511a9e, type: 3}
+  - {fileID: 1944651035810682876, guid: 2ccea2c82e63b444984d554453054029, type: 3}
+  - {fileID: 9047483595535330303, guid: 5b875eece2725b44a845e4daec7e1f0d, type: 3}
+  - {fileID: 981805858327913153, guid: cb2f07d58dff3fa4789e2dbd5f58ab08, type: 3}
+  - {fileID: 3471247832971233177, guid: 8e30d7c518917e845bda23b867dad971, type: 3}
+  - {fileID: 7056180928483861449, guid: 031ddbe73b74c25488619d25138489b8, type: 3}
+  - {fileID: 7608128909562154141, guid: cce993d5ca4958546a9b17647c6ff5a5, type: 3}
+  - {fileID: 3322208539483437596, guid: ec107c0c41c1e0e49902cd2679ce288f, type: 3}
+  - {fileID: 3974136831070992476, guid: 69788141d8e919b42a272cd6bbc737a0, type: 3}
+  - {fileID: 6915603688081424397, guid: c9330fe4da2719c4987a22f7e280f40e, type: 3}
+  - {fileID: 5375578812439039975, guid: 6950ef54582ade240b220e330943872b, type: 3}
+  - {fileID: 7443798275511572143, guid: 4085f7adbc0fed4479cdb5e2dce23bd5, type: 3}
+  - {fileID: 529732081510981881, guid: 0dd305b87d7fd354d97d533f626f45ab, type: 3}
+  - {fileID: 6676105303860261008, guid: 813373de7efc76243a4b8baecdf90e3c, type: 3}
+  - {fileID: 4696906251172197070, guid: 75acddff19a52704098297c5d9a1169b, type: 3}
+  - {fileID: 1750563055944512856, guid: a95626c7ece211f4c9221742f01a24a3, type: 3}

@@ -1,0 +1,201 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class CSTeamPortraitManager : MonoBehaviour
+{
+    public List<PortraitButton> PortraitButtonList;
+    [HideInInspector]public GameObject ActiveButton = null;
+    public Sprite EmptySprite;
+
+    public void AddCharacter(GameObject givenCharacterPrefab)
+    {
+        if (ActiveButton != null && FindByButton(ActiveButton) != null)
+        {
+            FindByButton(ActiveButton).CharacterPrefab = givenCharacterPrefab;
+            ActiveButton.transform.Find("ButtonPortrait").GetComponent<Image>().sprite =
+                givenCharacterPrefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
+        }
+        else if (FindFirstUnoccupied() != null) {
+            var FirstUnoccupiedButton = FindFirstUnoccupied();
+            FirstUnoccupiedButton.CharacterPrefab = givenCharacterPrefab;
+            FirstUnoccupiedButton.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite =
+                givenCharacterPrefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
+        }
+    }
+    public void AddCharacterInCS3(GameObject givenCharacterPrefab, int charIndex)
+    {
+        if (FindFirstUnoccupied() != null)
+        {
+            var FirstUnoccupiedButton = FindFirstUnoccupied();
+            FirstUnoccupiedButton.CharacterPrefab = givenCharacterPrefab;
+            FirstUnoccupiedButton.characterIndex = charIndex;
+            FirstUnoccupiedButton.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite =
+                givenCharacterPrefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
+            FirstUnoccupiedButton.button.GetComponent<LongPressButton>().enabled = true;
+        }
+    }
+    public PortraitButton FindByButton(GameObject button)
+    {
+        foreach(PortraitButton x in PortraitButtonList)
+        {
+            if(x.button == button)
+            {
+                return x;
+            }
+        }
+        return null;
+    }
+    public PortraitButton FindFirstUnoccupied()
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            if (x.CharacterPrefab == null)
+            {
+                return x;
+            }
+        }
+        return null;
+    }
+    public void DisableButtonSelections()
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            x.button.transform.Find("ButtonFrame").GetComponent<Animator>().SetBool("select", false);
+        }
+    }
+    public void SelectButton(GameObject button)
+    {
+        if (button == ActiveButton) {
+            DisableButtonSelections();
+            ActiveButton = null;
+        }
+        else
+        {
+            DisableButtonSelections();
+            button.transform.Find("ButtonFrame").GetComponent<Animator>().SetBool("select", true);
+            ActiveButton = button;
+        }
+    }
+    public void OnHover(GameObject button)
+    {
+        button.transform.Find("ButtonFrame").GetComponent<Animator>().SetBool("hover", true);
+    }
+    public void OffHover(GameObject button)
+    {
+        button.transform.Find("ButtonFrame").GetComponent<Animator>().SetBool("hover", false);
+    }
+    public void ClearPortraits()
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            x.CharacterPrefab = null;
+            x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
+            if (SceneManager.GetActiveScene().name == "CharacterSelect3" && x.characterIndex != -1)
+            {
+                GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(x.characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
+                //EnableCharacters();
+            }
+            x.characterIndex = -1;
+        }
+        DisableButtonSelections();
+        ActiveButton = null;
+    }
+    public void RemoveCharacter()
+    {
+        foreach(PortraitButton x in PortraitButtonList)
+        {
+            if(x.button == ActiveButton)
+            {
+                x.CharacterPrefab = null;
+                x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
+                if(!AlreadySelected(GameObject.Find("GameProgress").GetComponent<GameProgress>().currentCharacterIndex) || GameObject.Find("GameProgress").GetComponent<GameProgress>().currentCharacterIndex == x.characterIndex)
+                {
+                    GameObject.Find("CanvasCamera").transform.Find("Add").GetComponent<Button>().interactable = true;
+                }
+                x.characterIndex = -1;
+            }
+        }
+        GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = false;
+    }
+    public void RemoveCharacter(int charIndex)
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            if (x.characterIndex == charIndex)
+            {
+                Remove(x);
+            }
+        }
+        GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = false;
+    }
+    public void RemoveCharacter(GameObject button)
+    {
+        GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex);
+    }
+    private void Remove(PortraitButton x)
+    {
+        if(x.characterIndex != -1)
+        {
+            x.CharacterPrefab = null;
+            x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
+            x.characterIndex = -1;
+            Reorder();
+            ToggleLongClick();
+            //EnableCharacters();
+        }
+    }
+    private void Reorder()
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            if (x.characterIndex != -1)
+            {
+                GameObject tempPrefab = x.CharacterPrefab;
+                int tempIndex = x.characterIndex;
+                x.CharacterPrefab = null;
+                x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
+                x.characterIndex = -1;
+                AddCharacterInCS3(tempPrefab, tempIndex);
+            }
+        }
+    }
+    private void ToggleLongClick()
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            x.button.GetComponent<LongPressButton>().enabled = x.characterIndex != -1;
+        }
+    }
+    public void DisplayCharacterInfo(GameObject button)
+    {
+        foreach (PortraitButton x in PortraitButtonList)
+        {
+            if (x.button == button && x.characterIndex != -1)
+            {
+                GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(x.characterIndex);
+            }
+        }
+    }
+    public bool AlreadySelected(int charIndex)
+    {
+        bool alreadySelected = false;
+        foreach(PortraitButton button in PortraitButtonList)
+        {
+            if (button.characterIndex == charIndex)
+            {
+                alreadySelected = true;
+            }
+        }
+        return alreadySelected;
+    }
+}
+[System.Serializable]
+public class PortraitButton
+{
+    public GameObject button;
+    [HideInInspector]public GameObject CharacterPrefab = null;
+    public int characterIndex;
+}
