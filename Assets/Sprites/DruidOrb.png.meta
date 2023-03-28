@@ -99,7 +99,7 @@ TextureImporter:
       213: -7772620264966252137
     second: DruidOrb 31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -119,6 +119,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -128,8 +130,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -150,13 +152,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -852,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DruidOrb 14: 9034528865399084307
+      DruidOrb 15: -4052591422022114499
+      DruidOrb 8: -1353778216156895208
+      DruidOrb 1: -1633432736863877587
+      DruidOrb 26: -3705648965047115001
+      DruidOrb 27: -3129047202200085558
+      DruidOrb 5: 3636634170532849287
+      DruidOrb 29: -8969368663619080265
+      DruidOrb 18: 2543752752929930140
+      DruidOrb 30: 6540270627731328240
+      DruidOrb 7: -6578014420869574001
+      DruidOrb 2: -3549003408959995548
+      DruidOrb 3: 4598301394975637535
+      DruidOrb 28: 2950963547217501
+      DruidOrb 19: 8632242129242410882
+      DruidOrb 6: -1676993073210149609
+      DruidOrb 16: -5358988898654904575
+      DruidOrb 10: 6851974193915480022
+      DruidOrb 9: -2654834531661100197
+      DruidOrb 22: 6249680846448729726
+      DruidOrb 11: -3471160919136410934
+      DruidOrb 20: 8461655179205004609
+      DruidOrb 21: -1205466401639264084
+      DruidOrb 0: -2346582760327910264
+      DruidOrb 25: -5275128278083766436
+      DruidOrb 31: -7772620264966252137
+      DruidOrb 24: 4825115299888689294
+      DruidOrb 23: 7238389825395122146
+      DruidOrb 12: -627435141027974194
+      DruidOrb 17: 8527419469175436571
+      DruidOrb 4: -2042977966326565760
+      DruidOrb 13: 7812703181280098253
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

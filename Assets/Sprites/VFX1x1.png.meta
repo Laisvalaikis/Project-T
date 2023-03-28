@@ -414,7 +414,7 @@ TextureImporter:
       213: 2092582467108013320
     second: VFX1x1 136
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -434,6 +434,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -443,8 +445,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -465,13 +467,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -3372,6 +3426,144 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      VFX1x1 114: 5703399774470310400
+      VFX1x1 51: 6429909560538673970
+      VFX1x1 135: -6339597966963907323
+      VFX1x1 90: 5189343049042580768
+      VFX1x1 30: -6093162628606688301
+      VFX1x1 29: 8972296025469633362
+      VFX1x1 118: 2110603345074694778
+      VFX1x1 94: 3277933108043974616
+      VFX1x1 131: 7913976572883343810
+      VFX1x1 17: -2313582183771314230
+      VFX1x1 74: 942603986879987167
+      VFX1x1 60: 6853069989385814153
+      VFX1x1 63: -1802224116093032380
+      VFX1x1 77: 528937930842044220
+      VFX1x1 44: -6532806482285264344
+      VFX1x1 136: 2092582467108013320
+      VFX1x1 27: -7619099277999426329
+      VFX1x1 4: -8783062600600069290
+      VFX1x1 100: -4417829817431570323
+      VFX1x1 18: -2445078274654803175
+      VFX1x1 56: 6390055208353214820
+      VFX1x1 33: 645762027178883965
+      VFX1x1 107: -4144061165008011817
+      VFX1x1 102: 8431867022037578371
+      VFX1x1 64: -3003639312942030931
+      VFX1x1 59: -538615998032604541
+      VFX1x1 82: 1782308250588213418
+      VFX1x1 70: -6154782112286317002
+      VFX1x1 23: 6121126247383636099
+      VFX1x1 43: -3955052333566377965
+      VFX1x1 52: 699744143863183194
+      VFX1x1 83: 329827247890824075
+      VFX1x1 14: 1891812298066265537
+      VFX1x1 10: -6859703146002228960
+      VFX1x1 53: -8702540437108013625
+      VFX1x1 106: -483867011160784791
+      VFX1x1 48: -8302008610480884860
+      VFX1x1 95: 2302728706563916221
+      VFX1x1 101: 4396364543724227925
+      VFX1x1 9: 4170581206659244341
+      VFX1x1 65: 524154455178103667
+      VFX1x1 54: 8273795935723961038
+      VFX1x1 11: -438921169695369378
+      VFX1x1 134: 1177475381345698717
+      VFX1x1 132: -1840874880145883687
+      VFX1x1 123: -5722416383818150651
+      VFX1x1 89: -2628701086692026190
+      VFX1x1 116: -7018385680430465199
+      VFX1x1 119: 6769650126663324796
+      VFX1x1 69: 2393872759184481694
+      VFX1x1 133: -848757985972013148
+      VFX1x1 113: 7350650913196591100
+      VFX1x1 105: 625968163439429477
+      VFX1x1 117: 1671616550717263427
+      VFX1x1 72: -6141210369493577329
+      VFX1x1 122: -8568271408568160756
+      VFX1x1 127: 8900643265109787674
+      VFX1x1 98: -5833970942935225672
+      VFX1x1 16: 7719199476516422218
+      VFX1x1 121: 2883459732584071847
+      VFX1x1 128: -6594819179623693750
+      VFX1x1 88: 75418960532806331
+      VFX1x1 71: 2005808606024198524
+      VFX1x1 45: -2082713824967375407
+      VFX1x1 7: -1166856197025315438
+      VFX1x1 115: -3185137777307139569
+      VFX1x1 62: -2386101289091424894
+      VFX1x1 92: 6058236384469657829
+      VFX1x1 22: -7529949766560606439
+      VFX1x1 41: 843150022538400867
+      VFX1x1 85: 3605323189038301905
+      VFX1x1 40: -7250759473451421560
+      VFX1x1 120: 2164833526625234353
+      VFX1x1 39: 5533749457599479143
+      VFX1x1 108: -6482471869681055990
+      VFX1x1 24: -787279088656566038
+      VFX1x1 32: -7471175498873733420
+      VFX1x1 25: 7667148319169244505
+      VFX1x1 12: 4041228085057688118
+      VFX1x1 15: -7300094908966267756
+      VFX1x1 46: 8831687568079714160
+      VFX1x1 99: -1251986889390554439
+      VFX1x1 91: 2177349031358440270
+      VFX1x1 76: 8480947862196956832
+      VFX1x1 126: -5975468154861225093
+      VFX1x1 20: -3733164296641648841
+      VFX1x1 36: -2409220163232467593
+      VFX1x1 84: -5718200699131019637
+      VFX1x1 73: -8167450553163895932
+      VFX1x1 86: -6122898997066695300
+      VFX1x1 112: 8050895686478459661
+      VFX1x1 26: -6721148948596250395
+      VFX1x1 55: -9100622853573483471
+      VFX1x1 66: -4259839554411441441
+      VFX1x1 5: 2390310427522212532
+      VFX1x1 67: -2384214436445808920
+      VFX1x1 57: -4376005347706427739
+      VFX1x1 103: 6274345749838005233
+      VFX1x1 68: -8296737703612944730
+      VFX1x1 31: -6168027460100087605
+      VFX1x1 111: -7529741325102331165
+      VFX1x1 96: -402245236283669684
+      VFX1x1 34: 4857950576276062059
+      VFX1x1 125: -6832560675948355337
+      VFX1x1 8: -6761371585057450879
+      VFX1x1 58: -5265363760740312702
+      VFX1x1 37: -8765932663981951996
+      VFX1x1 87: -7180512497867642271
+      VFX1x1 1: -9088788318620112443
+      VFX1x1 129: 7116305105945617516
+      VFX1x1 109: -8990442460648531232
+      VFX1x1 47: 6755989032466230065
+      VFX1x1 81: 927718882780174390
+      VFX1x1 28: -8690872200861728059
+      VFX1x1 0: 5789519697332126095
+      VFX1x1 3: -4791441615478050281
+      VFX1x1 6: -5744506025470438876
+      VFX1x1 97: -5978941904656322963
+      VFX1x1 79: -7225703234207128892
+      VFX1x1 93: -7958646860926442574
+      VFX1x1 75: -2263086893960026948
+      VFX1x1 21: -2546431722440564491
+      VFX1x1 42: -2261536861435010421
+      VFX1x1 78: -4760675914809465919
+      VFX1x1 13: 8859833417438596226
+      VFX1x1 35: -5343924478751497936
+      VFX1x1 104: -5929168905000036502
+      VFX1x1 49: -841474706752309947
+      VFX1x1 2: 8211747795801371026
+      VFX1x1 110: -4743594986789393999
+      VFX1x1 61: 2214775348619629210
+      VFX1x1 130: 657600194323517074
+      VFX1x1 124: -7584524636505706125
+      VFX1x1 19: 2114516457134380545
+      VFX1x1 50: -8959971638934428946
+      VFX1x1 80: -7535511014989132322
+      VFX1x1 38: -509417256788382167
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

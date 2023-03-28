@@ -234,7 +234,7 @@ TextureImporter:
       213: -4199632590436415724
     second: Cyan 76
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -254,6 +254,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -263,8 +265,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -285,13 +287,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1890,6 +1944,82 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cyan 47: 6903949057490208558
+      Cyan 44: 100560823212093314
+      Cyan 48: 3486001575450092811
+      Cyan 74: 8041697867958169854
+      Cyan 39: 8379687301608711762
+      Cyan 23: 2267829333152870788
+      Cyan 25: -6236028951097258958
+      Cyan 14: -4609784502639815412
+      Cyan 37: 5276032480348091404
+      Cyan 30: 8063941086191461253
+      Cyan 7: 142656381794598563
+      Cyan 28: 8963968184615314600
+      Cyan 49: -3513269339150477886
+      Cyan 45: 4572565158114834175
+      Cyan 13: 6511511866400633271
+      Cyan 68: 402148705590442790
+      Cyan 36: 5987589219404574400
+      Cyan 31: -2983528547284345085
+      Cyan 70: -6738085040364232557
+      Cyan 61: -4372265671686108535
+      Cyan 32: 8046534487152463599
+      Cyan 19: -3586697385131225652
+      Cyan 33: -1301009114057317146
+      Cyan 3: -4971490599008131612
+      Cyan 50: 3429742089977927637
+      Cyan 12: 1904316759505430001
+      Cyan 1: -2074838731731150256
+      Cyan 10: 6084294934027689443
+      Cyan 41: -7272026949917977819
+      Cyan 2: 2331718327384268159
+      Cyan 53: -4451139311217319813
+      Cyan 73: -1063244784482929782
+      Cyan 16: -5016005712960608663
+      Cyan 59: 2193198055226464141
+      Cyan 55: -947077257943947439
+      Cyan 21: 3183191808963257024
+      Cyan 56: 7217933340851720814
+      Cyan 60: 3884516040417542560
+      Cyan 72: -2355694725812952533
+      Cyan 66: 5985955654147869431
+      Cyan 9: -1228926033787973224
+      Cyan 67: 311951349091930011
+      Cyan 4: 2379037890940114969
+      Cyan 8: 2320602598572069706
+      Cyan 26: -4483931605168252861
+      Cyan 34: 565984285584570238
+      Cyan 43: -4377100350114835104
+      Cyan 22: 1901890176461872443
+      Cyan 27: -7979508439122239919
+      Cyan 63: 7294623119742163426
+      Cyan 46: -7095583475301172356
+      Cyan 69: -4191061614428260960
+      Cyan 71: -5576266089698983764
+      Cyan 18: -1494408447081917648
+      Cyan 15: -6775400336293148946
+      Cyan 11: -6732346196990720464
+      Cyan 0: -4170574582160388732
+      Cyan 57: 4244582044265342613
+      Cyan 54: -7464953980810077476
+      Cyan 62: -6771483427965665415
+      Cyan 20: 7126622458649171207
+      Cyan 38: 711405001484410917
+      Cyan 42: 6248235383711379610
+      Cyan 6: -8021690626933431793
+      Cyan 64: -7796673953945443712
+      Cyan 65: 1126860137817479962
+      Cyan 58: -8179774217421667132
+      Cyan 40: -8251479769426140955
+      Cyan 35: -844791559159664821
+      Cyan 17: 3258125794504331457
+      Cyan 29: -8234169319805608809
+      Cyan 52: 6059139258053938290
+      Cyan 51: -7952423175100517683
+      Cyan 5: -4338501190559086829
+      Cyan 24: 1234088520678223449
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

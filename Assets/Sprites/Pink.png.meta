@@ -144,7 +144,7 @@ TextureImporter:
       213: -1123265554629756101
     second: Pink 46
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -165,6 +165,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -203,9 +204,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1216,6 +1266,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pink 2: -4852820324777422579
+      Pink 1: 8785109919823517087
+      Pink 41: 5722170734794304877
+      Pink 31: -6029797116141503628
+      Pink 37: 789822487573045755
+      Pink 16: -8174394950768861123
+      Pink 40: 2221156668541710903
+      Pink 43: -2974645981690629306
+      Pink 42: 4987843568773547069
+      Pink 21: 6002365625974673549
+      Pink 9: -8584213253247877835
+      Pink 13: -7331893990402909706
+      Pink 10: -8864670543431508970
+      Pink 25: -3552647659480944027
+      Pink 5: 6284575466517342006
+      Pink 29: -4519034989211570368
+      Pink 33: 4580572729480350512
+      Pink 36: 1898080289837101691
+      Pink 11: 8053077340384758666
+      Pink 8: 5447564481414818751
+      Pink 38: 1029709674472371225
+      Pink 18: 5579132724302682635
+      Pink 32: -1818282779988170474
+      Pink 46: -1123265554629756101
+      Pink 45: -8785743286898910746
+      Pink 14: -827174311546354590
+      Pink 20: -6363477421838959294
+      Pink 30: -8330224764024549797
+      Pink 24: 8977733620977035487
+      Pink 34: 6971329511778297367
+      Pink 4: 6819207502914097504
+      Pink 27: 2301009306261303129
+      Pink 7: 6212360862261676503
+      Pink 15: -2669527531944693081
+      Pink 26: 8722196379113113260
+      Pink 39: -6014778321800445791
+      Pink 23: 5199264464695629039
+      Pink 35: -8480492949958643039
+      Pink 19: 8435537059266921796
+      Pink 44: 8932636143185975205
+      Pink 17: 6000648102092293828
+      Pink 6: 55076671963785789
+      Pink 22: 6905729618680334597
+      Pink 28: -8920491209368327891
+      Pink 3: -7679273325490420494
+      Pink 0: -8133992337140100563
+      Pink 12: -8230911788835728430
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

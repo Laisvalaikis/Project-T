@@ -219,7 +219,7 @@ TextureImporter:
       213: 1632450771382205603
     second: WhiteV2 71
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -239,6 +239,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -248,8 +250,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -270,13 +272,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1812,6 +1866,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      WhiteV2 19: 5936014998748765331
+      WhiteV2 22: 8729825215220702665
+      WhiteV2 39: -4952811368077351034
+      WhiteV2 11: 1771272199402173998
+      WhiteV2 7: -2779149099522573713
+      WhiteV2 13: 5982448668130491846
+      WhiteV2 47: -6959308976681635778
+      WhiteV2 8: 708248537363783575
+      WhiteV2 30: 7300356771493372725
+      WhiteV2 10: -6420868947568010059
+      WhiteV2 70: 8002169035145237003
+      WhiteV2 67: -1530960545448013779
+      WhiteV2 38: 8707391862882896800
+      WhiteV2 51: 4703918211111375487
+      WhiteV2 57: -4370183880511755241
+      WhiteV2 3: -4051895132295602547
+      WhiteV2 17: 2550320584254019690
+      WhiteV2 23: 6520833320480893186
+      WhiteV2 40: -5782089413264445505
+      WhiteV2 64: -7700734610978342434
+      WhiteV2 0: 4275804072959266982
+      WhiteV2 9: 4070842750997411403
+      WhiteV2 12: -246960433918108235
+      WhiteV2 21: 2191644863301236141
+      WhiteV2 49: -3955256298181092935
+      WhiteV2 25: -6902836167757797781
+      WhiteV2 58: 2384356467569882553
+      WhiteV2 2: 6209802145999028872
+      WhiteV2 16: -7029102134634171890
+      WhiteV2 26: 5628217025766014986
+      WhiteV2 5: -3615600743799838337
+      WhiteV2 32: 1399128746171217435
+      WhiteV2 36: -8243097207735829896
+      WhiteV2 54: 6683045059407753629
+      WhiteV2 31: -7151563005586097411
+      WhiteV2 52: -6773646111571820972
+      WhiteV2 59: -2640648181644080539
+      WhiteV2 34: 819633872540610105
+      WhiteV2 20: 19539178601532729
+      WhiteV2 66: -4342099847601511186
+      WhiteV2 60: -4302461562880474478
+      WhiteV2 69: 5372229798811904960
+      WhiteV2 50: 35187211368913401
+      WhiteV2 33: 6220174009574798587
+      WhiteV2 48: 9150427022690249368
+      WhiteV2 43: 7032119935605831681
+      WhiteV2 15: -3693818851926034218
+      WhiteV2 44: 1098674280899056694
+      WhiteV2 71: 1632450771382205603
+      WhiteV2 62: 3010281117855646599
+      WhiteV2 61: 2621269870614044486
+      WhiteV2 53: 2004736764881434474
+      WhiteV2 42: 8539213756647753894
+      WhiteV2 24: -6856284294582696759
+      WhiteV2 35: 8738984014385061466
+      WhiteV2 56: 6753394434220045290
+      WhiteV2 28: 2966948826889602226
+      WhiteV2 6: 3037630781059123660
+      WhiteV2 27: 1858593802937926954
+      WhiteV2 29: 7532584176847728072
+      WhiteV2 45: -1765564888271385656
+      WhiteV2 4: -8978098309946575616
+      WhiteV2 55: 6156962232623056636
+      WhiteV2 1: -842062894024849632
+      WhiteV2 14: 5745497680250792194
+      WhiteV2 63: -5193164501883469502
+      WhiteV2 65: 441524240899554
+      WhiteV2 46: 2756308105731358451
+      WhiteV2 68: 7242659965640773042
+      WhiteV2 37: 5951448156850610156
+      WhiteV2 41: 1406694912416536062
+      WhiteV2 18: -2823250695977496698
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

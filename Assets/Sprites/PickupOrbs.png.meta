@@ -87,7 +87,7 @@ TextureImporter:
       213: 8142407504434544680
     second: PickupOrbs 27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,9 +147,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -760,6 +810,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PickupOrbs 11: 7406160935339790878
+      PickupOrbs 20: 4121064311733475093
+      PickupOrbs 26: -6147607871811271836
+      PickupOrbs 27: 8142407504434544680
+      PickupOrbs 23: -229049642363730308
+      PickupOrbs 1: 5236000622150243768
+      PickupOrbs 0: -8454856594114886866
+      PickupOrbs 5: 6722843948532917774
+      PickupOrbs 13: 4011801414339962822
+      PickupOrbs 7: 6081272170226236904
+      PickupOrbs 19: 7330261153550706207
+      PickupOrbs 18: -5944649334004821612
+      PickupOrbs 9: -7470146184170621230
+      PickupOrbs 12: 3383342906938742940
+      PickupOrbs 16: 3017339091096685041
+      PickupOrbs 4: -3527542243558240433
+      PickupOrbs 15: 6036609207822555235
+      PickupOrbs 17: -1284826895776336640
+      PickupOrbs 22: 7060978716946704981
+      PickupOrbs 3: -7558837795547459363
+      PickupOrbs 10: 6262679659111056444
+      PickupOrbs 25: -68833121664373890
+      PickupOrbs 14: -6822932632033328220
+      PickupOrbs 6: 7037449203850643266
+      PickupOrbs 24: 3621331552390361221
+      PickupOrbs 21: -2809375366999403573
+      PickupOrbs 2: 6842765552715157168
+      PickupOrbs 8: 4100818756834978058
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

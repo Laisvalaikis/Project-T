@@ -129,7 +129,7 @@ TextureImporter:
       213: -1298871242420204432
     second: UndeadMindController 41
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -149,6 +149,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,8 +160,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -180,13 +182,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1071,6 +1125,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UndeadMindController 40: -4766127278003843620
+      UndeadMindController 20: 8862905762401515268
+      UndeadMindController 26: 8545484632192357485
+      UndeadMindController 14: 966135187398969576
+      UndeadMindController 29: 6474809796590289825
+      UndeadMindController 36: 1665802589692459055
+      UndeadMindController 2: -4269068859028183711
+      UndeadMindController 11: 7401558909215729171
+      UndeadMindController 30: -5502545612441357612
+      UndeadMindController 4: 5432811326992946636
+      UndeadMindController 17: -5528353933329871461
+      UndeadMindController 35: 6845860655488750788
+      UndeadMindController 18: -8971343732895245289
+      UndeadMindController 1: 4669936118689492735
+      UndeadMindController 32: -8598950132933934873
+      UndeadMindController 15: 5599434776833721845
+      UndeadMindController 34: -5539391153520192211
+      UndeadMindController 5: -3309302683422204285
+      UndeadMindController 28: -9015500369184598548
+      UndeadMindController 25: 6010067805590683922
+      UndeadMindController 13: -2346312152132149986
+      UndeadMindController 6: 9093773653474203774
+      UndeadMindController 19: -5316626203488684075
+      UndeadMindController 0: 5144392223751456779
+      UndeadMindController 24: -99263722519139131
+      UndeadMindController 27: -9028042812494392573
+      UndeadMindController 23: 4323376543258260691
+      UndeadMindController 10: -897941141873206949
+      UndeadMindController 12: -8969919733908490246
+      UndeadMindController 16: -6031907645960902664
+      UndeadMindController 33: 3432739237991892159
+      UndeadMindController 38: -4641535300869722278
+      UndeadMindController 31: -590182502232626591
+      UndeadMindController 37: 722195410693530697
+      UndeadMindController 21: 648837355558421457
+      UndeadMindController 8: 1198244022864138564
+      UndeadMindController 7: -622918742120683062
+      UndeadMindController 9: 7033728324344076940
+      UndeadMindController 39: 121174127892254911
+      UndeadMindController 3: 6699152749462568766
+      UndeadMindController 22: 8724483575601232754
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

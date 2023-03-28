@@ -105,7 +105,7 @@ TextureImporter:
       213: -8544845599237645934
     second: UndeadKnight 33
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -125,6 +125,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,8 +136,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -156,13 +158,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -900,6 +954,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UndeadKnight 12: -5985702538962144770
+      UndeadKnight 21: -9016426647067429385
+      UndeadKnight 8: 3153861394770240764
+      UndeadKnight 25: -7400042029197331834
+      UndeadKnight 30: 732415900668409910
+      UndeadKnight 11: 8949117698876235919
+      UndeadKnight 23: -6204576027868189092
+      UndeadKnight 16: 902571709941085565
+      UndeadKnight 10: -4443971797365467253
+      UndeadKnight 26: -7378908009085089332
+      UndeadKnight 17: 8869054419011757733
+      UndeadKnight 1: 3162248167213499552
+      UndeadKnight 2: 6492914350686978717
+      UndeadKnight 24: 5721970811758692176
+      UndeadKnight 28: 832213812516331453
+      UndeadKnight 18: 8405127959715501780
+      UndeadKnight 32: 4237455367427123511
+      UndeadKnight 7: 2676924279821686237
+      UndeadKnight 19: 4650705907128978655
+      UndeadKnight 0: 7869714874472725392
+      UndeadKnight 33: -8544845599237645934
+      UndeadKnight 5: -3527641697401368669
+      UndeadKnight 4: 6136573310326326928
+      UndeadKnight 15: 7145976417874212536
+      UndeadKnight 6: 5049541278946316644
+      UndeadKnight 29: -5114978779114253533
+      UndeadKnight 20: 2661766452938930165
+      UndeadKnight 27: -7886248350024884086
+      UndeadKnight 31: 6521026629080571633
+      UndeadKnight 22: 574091612558517952
+      UndeadKnight 13: 3967757099464113958
+      UndeadKnight 3: -3538278090326152405
+      UndeadKnight 9: 5449940060500723549
+      UndeadKnight 14: 987706934144182993
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

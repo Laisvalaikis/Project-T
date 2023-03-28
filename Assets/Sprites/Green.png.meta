@@ -147,7 +147,7 @@ TextureImporter:
       213: -6888065964840523032
     second: Green 47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -167,6 +167,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -176,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -198,13 +200,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1194,6 +1248,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Green 8: 4233347085108762878
+      Green 17: 8787151584702
+      Green 35: 7736806225161215768
+      Green 2: 4986904990000600742
+      Green 3: -5089926170962370536
+      Green 13: -5514620476438217475
+      Green 11: 4410954716409272667
+      Green 14: -793591997276420736
+      Green 33: -585787463324533382
+      Green 34: 4738601246060768792
+      Green 41: 439104829986914192
+      Green 39: -3478610871363241546
+      Green 18: -7122287935416376536
+      Green 1: -2730715506386478530
+      Green 12: 3014292466122801373
+      Green 38: -3790149924196847551
+      Green 22: 3560095100625866982
+      Green 20: -7247968987486381953
+      Green 44: 2326884498405585254
+      Green 37: -5871466011883275869
+      Green 15: 4555184320826874632
+      Green 28: -906267238297130739
+      Green 21: 7571750192264074336
+      Green 4: 3369214723019552882
+      Green 7: 4810495761326789574
+      Green 5: -8999736746955514047
+      Green 6: 356274805378739005
+      Green 25: 863368184064009753
+      Green 0: 924877961322032155
+      Green 9: 7272043200334384222
+      Green 27: 7185147079140352067
+      Green 42: -3331437379766694786
+      Green 30: 3049317801506663697
+      Green 19: -9134907628966772740
+      Green 10: 5322590292124954011
+      Green 24: 6719759173668595225
+      Green 40: -5318627399809732476
+      Green 32: 5283903831359497452
+      Green 45: 4011642522344441678
+      Green 23: -2784545450290921440
+      Green 43: 5694953327991825401
+      Green 16: -952445820261883618
+      Green 31: -6934174292622042375
+      Green 36: 4110275475134818030
+      Green 26: -1418444354918462812
+      Green 29: -2443545802127823465
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

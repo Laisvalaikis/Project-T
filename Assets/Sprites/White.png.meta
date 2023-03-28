@@ -144,7 +144,7 @@ TextureImporter:
       213: 1940167307372104488
     second: White 46
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,6 +164,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -173,8 +175,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -195,13 +197,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1212,6 +1266,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      White 2: 5520026926834544685
+      White 13: -2601083635026073352
+      White 39: 8706033418099388470
+      White 37: 3076851060137695396
+      White 30: 4705243889995606440
+      White 22: 26128574904774082
+      White 4: 8420057947836850435
+      White 45: -7841428444288343818
+      White 5: -5192587160623744556
+      White 0: 2879820569709897232
+      White 18: -7534822476514372695
+      White 14: -3594120092146836584
+      White 29: -98384181056419130
+      White 20: -7142411970242094234
+      White 44: -7420349577654561374
+      White 46: 1940167307372104488
+      White 8: 679294507799651482
+      White 27: -6406672273165595311
+      White 25: -1955616346270196368
+      White 38: -3896662578677663766
+      White 6: 3949204763436350732
+      White 9: 2706155622333246936
+      White 26: 1768812166385303686
+      White 31: 5562218779376191523
+      White 34: 2270255584863129364
+      White 42: -2161459391691270784
+      White 41: 845207680460315034
+      White 3: 7524580366318786325
+      White 35: -3157874427979452367
+      White 32: 2380976255084062275
+      White 21: 5298460953916292482
+      White 24: 8883084240632863226
+      White 23: -8153578164284583991
+      White 33: 6350650975784774494
+      White 1: 7054081294943694546
+      White 10: 8601142122532279618
+      White 40: -7041970517538448166
+      White 7: 5359274295206313412
+      White 43: 1087996737431428580
+      White 28: 7362307556734770619
+      White 12: -7167708499588745330
+      White 15: -4473228347116065295
+      White 17: 7724424446028621345
+      White 19: 6837168268760433454
+      White 11: -4498376052358536087
+      White 36: 5319943959627458362
+      White 16: -990484507850301039
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

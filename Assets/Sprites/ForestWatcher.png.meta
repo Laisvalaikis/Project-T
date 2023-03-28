@@ -99,7 +99,7 @@ TextureImporter:
       213: 30350640186359633
     second: ForestWatcher 31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,9 +159,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -856,6 +906,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestWatcher 12: 6053218428732593018
+      ForestWatcher 16: -1701080503926625038
+      ForestWatcher 27: 2972633119669186049
+      ForestWatcher 24: 1806217126387980044
+      ForestWatcher 5: -6437312173037719156
+      ForestWatcher 18: 2790883576569972182
+      ForestWatcher 23: 8636595435679884411
+      ForestWatcher 28: 2149695123454105784
+      ForestWatcher 30: 4153739026836485443
+      ForestWatcher 17: 3373550359832092339
+      ForestWatcher 6: -7220142482262731952
+      ForestWatcher 0: -6213916890978326139
+      ForestWatcher 2: 2674107384027022779
+      ForestWatcher 11: -5789025753922545865
+      ForestWatcher 4: 1050602946663571667
+      ForestWatcher 31: 30350640186359633
+      ForestWatcher 21: 2995740703449716651
+      ForestWatcher 7: -9123455077363173184
+      ForestWatcher 3: -1834166592969494748
+      ForestWatcher 19: 7119989153659661230
+      ForestWatcher 14: 6737948826585076184
+      ForestWatcher 25: -5692011167299021172
+      ForestWatcher 1: 2037319285680603104
+      ForestWatcher 10: 5471057452207445408
+      ForestWatcher 13: 7610941616231620897
+      ForestWatcher 22: 7083143666476889141
+      ForestWatcher 29: -2821467936947570314
+      ForestWatcher 9: 883545082077902222
+      ForestWatcher 15: -2523926238677173562
+      ForestWatcher 8: 1929851514826950653
+      ForestWatcher 20: -7616703770701826486
+      ForestWatcher 26: 7618147565096608959
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

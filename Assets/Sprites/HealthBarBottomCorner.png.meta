@@ -108,7 +108,7 @@ TextureImporter:
       213: -6999788445129394752
     second: HealthBarBottomCorner 34
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,6 +128,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,8 +139,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -159,13 +161,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
@@ -924,6 +978,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HealthBarBottomCorner 34: -6999788445129394752
+      HealthBarBottomCorner 23: 5751193400423769560
+      HealthBarBottomCorner 18: 8609508561612041483
+      HealthBarBottomCorner 3: -3328528865844376093
+      HealthBarBottomCorner 7: 4891316448553020051
+      HealthBarBottomCorner 10: 6545329005814532399
+      HealthBarBottomCorner 9: 7189255595512024960
+      HealthBarBottomCorner 14: 2453650540113287989
+      HealthBarBottomCorner 20: 1152911932833788334
+      HealthBarBottomCorner 2: -8546920325915454919
+      HealthBarBottomCorner 25: 3776540565847571567
+      HealthBarBottomCorner 24: 8085672841408596530
+      HealthBarBottomCorner 13: -4226238438582005355
+      HealthBarBottomCorner 16: 2381297949101917805
+      HealthBarBottomCorner 27: -995535824811219028
+      HealthBarBottomCorner 0: -1288115833185820344
+      HealthBarBottomCorner 31: -2066206629417060979
+      HealthBarBottomCorner 4: 7850236766548762791
+      HealthBarBottomCorner 19: 82112657668981708
+      HealthBarBottomCorner 29: 4385071277194398772
+      HealthBarBottomCorner 33: 7014864355953745196
+      HealthBarBottomCorner 28: 8871199969460841869
+      HealthBarBottomCorner 1: -6202196736334774739
+      HealthBarBottomCorner 5: -8810347538962535935
+      HealthBarBottomCorner 11: -4918222944299869794
+      HealthBarBottomCorner 22: -8439537206803902873
+      HealthBarBottomCorner 26: -833277352024818315
+      HealthBarBottomCorner 30: 1482422550344722678
+      HealthBarBottomCorner 8: -5382492353120159179
+      HealthBarBottomCorner 15: 2165980650108004960
+      HealthBarBottomCorner 21: -5293153969431843051
+      HealthBarBottomCorner 12: 8382707892054224869
+      HealthBarBottomCorner 17: -8178569026721157330
+      HealthBarBottomCorner 6: 4355971427657549099
+      HealthBarBottomCorner 32: -4197449814783765426
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

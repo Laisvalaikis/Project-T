@@ -93,7 +93,7 @@ TextureImporter:
       213: -2404384125509148736
     second: ForestDruid 29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,6 +113,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,8 +124,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,13 +146,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -804,6 +858,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestDruid 12: 7543947428041056070
+      ForestDruid 13: 9183765128878648800
+      ForestDruid 15: -4619809871891118572
+      ForestDruid 4: 4954009178982611077
+      ForestDruid 17: -8815841437185424385
+      ForestDruid 21: 9050741131043311692
+      ForestDruid 6: 7756964982833235485
+      ForestDruid 2: -4790492356031523409
+      ForestDruid 16: -5914408778475066657
+      ForestDruid 28: 1584920682750895814
+      ForestDruid 8: 7784539464966726674
+      ForestDruid 0: -3418197458334759742
+      ForestDruid 25: -8361568616314086994
+      ForestDruid 5: -4118945295937287048
+      ForestDruid 10: -7574051797417141123
+      ForestDruid 22: 7459417893873884971
+      ForestDruid 1: 5555164164151183513
+      ForestDruid 23: 7534638410684521712
+      ForestDruid 20: 8835579248935188481
+      ForestDruid 27: -8195759857716076479
+      ForestDruid 9: 6037177619454807196
+      ForestDruid 11: 8516714278557702379
+      ForestDruid 19: 1041439671218293538
+      ForestDruid 18: 2797870597851396599
+      ForestDruid 14: 4880669955005504336
+      ForestDruid 24: -1917855859125739646
+      ForestDruid 26: -5325931193854332600
+      ForestDruid 29: -2404384125509148736
+      ForestDruid 7: 4108676309089350325
+      ForestDruid 3: -8670432976984981344
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

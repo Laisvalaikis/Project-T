@@ -69,7 +69,7 @@ TextureImporter:
       213: -5125940699952450712
     second: TablePortraits 21
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -128,9 +129,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -616,6 +666,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TablePortraits 8: -2336938632261355874
+      TablePortraits 12: -2651821824365294045
+      TablePortraits 15: 218854580434428391
+      TablePortraits 9: -3983539873522827567
+      TablePortraits 19: 4672966334877237986
+      TablePortraits 7: 4052336615543003372
+      TablePortraits 16: -4252032880994029074
+      TablePortraits 6: 1699126739720152299
+      TablePortraits 21: -5125940699952450712
+      TablePortraits 11: 598610014604914465
+      TablePortraits 18: 5700831132782319231
+      TablePortraits 0: -8149371001780123296
+      TablePortraits 1: -2678113349381393087
+      TablePortraits 20: 7947849650263423474
+      TablePortraits 10: 2900230620100509044
+      TablePortraits 4: -7266305657354422227
+      TablePortraits 5: -8451723300697837608
+      TablePortraits 3: 2520241002396213999
+      TablePortraits 13: -1109921872580190186
+      TablePortraits 14: 9061640590526611639
+      TablePortraits 17: -8913815223202546545
+      TablePortraits 2: 4202156337760801369
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

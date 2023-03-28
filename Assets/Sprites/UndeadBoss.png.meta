@@ -93,7 +93,7 @@ TextureImporter:
       213: 902331338225141055
     second: UndeadBoss 29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,6 +113,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,8 +124,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,13 +146,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -804,6 +858,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UndeadBoss 12: 2086788842383844316
+      UndeadBoss 25: 9063620145561105082
+      UndeadBoss 27: -4213642710212069703
+      UndeadBoss 28: 4186886380876598513
+      UndeadBoss 0: -6272638340241585690
+      UndeadBoss 22: 5589951851086925686
+      UndeadBoss 8: 1706281266720086040
+      UndeadBoss 21: 6594710072324497903
+      UndeadBoss 2: 3431445682238995644
+      UndeadBoss 3: -5148823527950517119
+      UndeadBoss 10: 7373270062184180478
+      UndeadBoss 13: -3949788278890688661
+      UndeadBoss 18: 775069961554329247
+      UndeadBoss 11: -1465024964070645660
+      UndeadBoss 20: 4041329563976918068
+      UndeadBoss 19: 9193256038204666183
+      UndeadBoss 26: 3274116584271573728
+      UndeadBoss 24: 5131757547140657431
+      UndeadBoss 23: -7010575025848672515
+      UndeadBoss 29: 902331338225141055
+      UndeadBoss 4: -1007526179042915864
+      UndeadBoss 7: 5488500385364573366
+      UndeadBoss 17: 5369243222692674685
+      UndeadBoss 15: 4103991785120354248
+      UndeadBoss 5: 4315174153272224964
+      UndeadBoss 1: -422114303419257304
+      UndeadBoss 6: -443057242930151519
+      UndeadBoss 16: 1226925576973929338
+      UndeadBoss 14: -4567616944245729119
+      UndeadBoss 9: -3272663689044327415
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

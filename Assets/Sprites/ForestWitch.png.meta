@@ -99,7 +99,7 @@ TextureImporter:
       213: -172944990476899220
     second: ForestWitch 31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -119,6 +119,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -128,8 +130,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -150,13 +152,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -810,6 +864,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestWitch 19: 1452280530288740916
+      ForestWitch 25: -1838965346334274457
+      ForestWitch 5: 1664958754114820304
+      ForestWitch 11: 717994485885951647
+      ForestWitch 26: 4103272683041275744
+      ForestWitch 6: -8294796355233794574
+      ForestWitch 28: 1580774917944537989
+      ForestWitch 15: 5668469624822344332
+      ForestWitch 22: 5016029007639558539
+      ForestWitch 24: 6249862712480386764
+      ForestWitch 13: 921771865563598142
+      ForestWitch 12: 8760101522353590316
+      ForestWitch 7: -1051062525754072785
+      ForestWitch 29: -1702741776680128472
+      ForestWitch 23: -5684450644485944479
+      ForestWitch 17: 916823963571505919
+      ForestWitch 20: 4725208234217119808
+      ForestWitch 18: 4821458278085874330
+      ForestWitch 10: -7567943941066091514
+      ForestWitch 4: 7775372116150632321
+      ForestWitch 0: -2902643614819860090
+      ForestWitch 16: -1635755381162258042
+      ForestWitch 9: 6596032758766505324
+      ForestWitch 27: 995060996208329995
+      ForestWitch 2: -6398185106290381467
+      ForestWitch 8: -3617410720323091039
+      ForestWitch 21: 2272152945732248455
+      ForestWitch 14: -4913971759177388782
+      ForestWitch 1: -6114460846747384520
+      ForestWitch 3: -7392761958483950276
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

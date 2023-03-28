@@ -129,7 +129,7 @@ TextureImporter:
       213: -8172344882576918109
     second: UndeadSpider 41
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -150,6 +150,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -188,9 +189,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1096,6 +1146,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UndeadSpider 13: -8457274481505060771
+      UndeadSpider 5: 6659838206349770530
+      UndeadSpider 6: -2089543203936925958
+      UndeadSpider 10: 6992774172579614383
+      UndeadSpider 40: 5351949335081970782
+      UndeadSpider 16: -5071628520295526574
+      UndeadSpider 33: 7782355008340496791
+      UndeadSpider 14: 3012910666844109928
+      UndeadSpider 17: 3429727592599950894
+      UndeadSpider 30: 5006178171420196989
+      UndeadSpider 34: -2360320768557892054
+      UndeadSpider 26: -245279898912125336
+      UndeadSpider 29: 8624823038910250421
+      UndeadSpider 36: -3230480636657611051
+      UndeadSpider 12: 2867306430790155198
+      UndeadSpider 35: 1562762434050577461
+      UndeadSpider 0: 3086218221050080943
+      UndeadSpider 1: -3711246292803172266
+      UndeadSpider 15: 3444221462930940365
+      UndeadSpider 4: 3110476713444896232
+      UndeadSpider 21: 6712797761909666656
+      UndeadSpider 24: -304926289710347069
+      UndeadSpider 8: -6715873725667570247
+      UndeadSpider 39: 7767655148258208124
+      UndeadSpider 19: 7349954916774814476
+      UndeadSpider 28: 4359692850352044270
+      UndeadSpider 11: -288079268415848735
+      UndeadSpider 7: -4624858973912351724
+      UndeadSpider 20: -4600028409346957509
+      UndeadSpider 38: -8336430779773156221
+      UndeadSpider 2: -2435156641513794050
+      UndeadSpider 3: -9074782597932205249
+      UndeadSpider 9: 3349343745201793351
+      UndeadSpider 41: -8172344882576918109
+      UndeadSpider 27: -2050245879765223167
+      UndeadSpider 22: 6872711229316868951
+      UndeadSpider 18: -6400842163578500211
+      UndeadSpider 32: -425960358604998805
+      UndeadSpider 37: 8861584383735449609
+      UndeadSpider 31: 998447702074180853
+      UndeadSpider 23: 2886833159484182502
+      UndeadSpider 25: 3196637707555564399
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

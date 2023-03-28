@@ -141,7 +141,7 @@ TextureImporter:
       213: 9177452266315800669
     second: ForestHuntress 45
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -161,6 +161,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -170,8 +172,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -192,13 +194,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1188,6 +1242,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ForestHuntress 25: 5563489909117566528
+      ForestHuntress 12: 2509104418307596395
+      ForestHuntress 24: 1604074993956347643
+      ForestHuntress 41: 2842415838840049937
+      ForestHuntress 1: -2109196016723279008
+      ForestHuntress 3: 4438752670333762278
+      ForestHuntress 10: 5084627432769107695
+      ForestHuntress 18: -212096286581853346
+      ForestHuntress 0: -8068200105209010620
+      ForestHuntress 15: -9052074048947212482
+      ForestHuntress 29: -5539714718191067556
+      ForestHuntress 28: 8430791561761467686
+      ForestHuntress 7: -6912807144807747081
+      ForestHuntress 39: -428462567549800476
+      ForestHuntress 19: 345993654695000684
+      ForestHuntress 9: -92962706565243889
+      ForestHuntress 34: -3644812567249050176
+      ForestHuntress 42: -4243644856950653096
+      ForestHuntress 2: -3743369483204514302
+      ForestHuntress 26: -4920314271012177669
+      ForestHuntress 36: -7287153649349433007
+      ForestHuntress 21: -5865921670561422322
+      ForestHuntress 14: -979368051055355504
+      ForestHuntress 13: 9175399114326080532
+      ForestHuntress 32: 8818701687846623848
+      ForestHuntress 16: -8562445228212817265
+      ForestHuntress 17: -5586760861875764920
+      ForestHuntress 35: -7421872369353235687
+      ForestHuntress 11: 8858536686764696740
+      ForestHuntress 4: 5642266705166207028
+      ForestHuntress 20: -7308580921286158604
+      ForestHuntress 38: -2514082224605492552
+      ForestHuntress 8: -6577971402469499120
+      ForestHuntress 6: 2634198615109523738
+      ForestHuntress 44: -3483609235215747899
+      ForestHuntress 22: 5571785390992389747
+      ForestHuntress 37: -7334721386387052889
+      ForestHuntress 30: 8663049310652590900
+      ForestHuntress 31: -5481282507260552094
+      ForestHuntress 27: -2378946642812801965
+      ForestHuntress 33: -6101062653096155530
+      ForestHuntress 40: -2197561337772458491
+      ForestHuntress 43: 5608589466480316719
+      ForestHuntress 5: -5462832694494275149
+      ForestHuntress 23: 172819711624238492
+      ForestHuntress 45: 9177452266315800669
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

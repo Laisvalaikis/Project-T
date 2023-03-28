@@ -81,7 +81,7 @@ TextureImporter:
       213: -4924370571046502360
     second: UndeadCultist 25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -101,6 +101,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,8 +112,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -132,13 +134,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -708,6 +762,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UndeadCultist 19: -1421046450363637517
+      UndeadCultist 7: -3874130948667922820
+      UndeadCultist 4: -723718289766021880
+      UndeadCultist 2: 3959310498514206920
+      UndeadCultist 15: -5630530103656157911
+      UndeadCultist 3: 3346221706702160007
+      UndeadCultist 18: 1403568874270153767
+      UndeadCultist 11: 3996514801194341687
+      UndeadCultist 5: -6649807881318597155
+      UndeadCultist 6: 119435271395438018
+      UndeadCultist 9: 6897017154806014398
+      UndeadCultist 0: -2316450982840636313
+      UndeadCultist 25: -4924370571046502360
+      UndeadCultist 17: -3155121239936623002
+      UndeadCultist 10: 5230446959018926762
+      UndeadCultist 14: -5023574792113940420
+      UndeadCultist 23: -8010820386283794194
+      UndeadCultist 16: 3779940122962136456
+      UndeadCultist 22: 3512324714536910533
+      UndeadCultist 24: 6347376009477637440
+      UndeadCultist 1: -6594783153326240626
+      UndeadCultist 20: -9095213354509487147
+      UndeadCultist 21: -2870196263180848968
+      UndeadCultist 12: -2317447262893528732
+      UndeadCultist 13: -8931109909733451770
+      UndeadCultist 8: -7748805490183078456
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

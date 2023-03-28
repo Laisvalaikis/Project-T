@@ -81,7 +81,7 @@ TextureImporter:
       213: 4429402380985268593
     second: DebuffIcons 25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -101,6 +101,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,8 +112,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -132,13 +134,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
@@ -708,6 +762,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DebuffIcons 14: -8481588575274878091
+      DebuffIcons 21: 591071759873196520
+      DebuffIcons 15: 2641924092958856150
+      DebuffIcons 3: 8455126762192224550
+      DebuffIcons 16: 9106471994827449803
+      DebuffIcons 10: -3880596864151935706
+      DebuffIcons 7: -6478123755068766871
+      DebuffIcons 13: -8002464427210571207
+      DebuffIcons 23: -5945565519150128510
+      DebuffIcons 25: 4429402380985268593
+      DebuffIcons 6: -5399410114125119647
+      DebuffIcons 11: 6166451142064416702
+      DebuffIcons 1: -6452437985070370837
+      DebuffIcons 4: -7578925327123886702
+      DebuffIcons 19: 510885224176949289
+      DebuffIcons 20: 3893580706374342610
+      DebuffIcons 24: 2807587077481178674
+      DebuffIcons 2: -6492974985809416818
+      DebuffIcons 9: 1306860938158083723
+      DebuffIcons 17: 691190498722782623
+      DebuffIcons 18: -4915089631389750340
+      DebuffIcons 5: 2372059732288232655
+      DebuffIcons 22: -7317493785832518200
+      DebuffIcons 0: 5545242468316104063
+      DebuffIcons 12: -7080647072816408947
+      DebuffIcons 8: -8140326782072265718
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

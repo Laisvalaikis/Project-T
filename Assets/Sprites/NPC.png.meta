@@ -117,7 +117,7 @@ TextureImporter:
       213: -4940246647832525996
     second: NPC 37
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -137,6 +137,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,8 +148,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -168,12 +170,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -995,6 +1050,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      NPC 6: -8324806149694254858
+      NPC 25: 4132154836384528402
+      NPC 4: -3364020862085329866
+      NPC 9: 913023883425098741
+      NPC 36: 2047872759839793403
+      NPC 28: -396965353832599703
+      NPC 19: 3543731797071928160
+      NPC 13: -5174265863574268699
+      NPC 7: 2437799845410419912
+      NPC 34: -7257662360559532362
+      NPC 1: 6489895833235768438
+      NPC 37: -4940246647832525996
+      NPC 10: -5238325002944581189
+      NPC 15: 4559605439901124358
+      NPC 17: 970106721663794399
+      NPC 32: -4895807280240062053
+      NPC 14: 5275311652980509809
+      NPC 33: 1725865687420336848
+      NPC 24: 4861174700842106542
+      NPC 31: 6898602751681663253
+      NPC 3: 3775934513003330592
+      NPC 16: 5946566982427377512
+      NPC 20: 8555220093255412267
+      NPC 2: 3287455883616478869
+      NPC 21: -5657764666235481727
+      NPC 22: 8599084482860619486
+      NPC 18: -5318878529715518810
+      NPC 8: -2081551822886110373
+      NPC 0: -8640053224947264838
+      NPC 23: -1869354617742201155
+      NPC 27: 7935023118222332233
+      NPC 35: 3522385178081891786
+      NPC 12: 5444253521866814601
+      NPC 29: -4791576290286878595
+      NPC 26: 1497641091229358476
+      NPC 5: 3652750773538447970
+      NPC 30: 2247088981227542367
+      NPC 11: 5460100345786888259
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

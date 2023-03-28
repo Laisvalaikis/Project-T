@@ -210,7 +210,7 @@ TextureImporter:
       213: -3852181611127925547
     second: Yellow 68
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -230,6 +230,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -239,8 +241,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -261,13 +263,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1740,6 +1794,76 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Yellow 17: 8825739389122538908
+      Yellow 36: -2670236061466770677
+      Yellow 7: 4250392105401938091
+      Yellow 62: -7943228382311071487
+      Yellow 3: 1868245329952302605
+      Yellow 6: 2642902073101084170
+      Yellow 41: 197976267611660686
+      Yellow 66: -6749274031231675085
+      Yellow 13: -5851508840796951985
+      Yellow 9: 7618738686363205978
+      Yellow 28: -4447983082812376326
+      Yellow 67: -6137984632756825126
+      Yellow 45: 381605118087549773
+      Yellow 56: -8361198364432887315
+      Yellow 48: -7878711181349465230
+      Yellow 64: -526889212590125168
+      Yellow 24: 8300733549849301641
+      Yellow 35: -8648872934666364598
+      Yellow 55: -8975897165726544233
+      Yellow 22: -3200122804481816893
+      Yellow 31: -7584293034711395202
+      Yellow 18: 6771437676060311145
+      Yellow 20: 6741363461600513019
+      Yellow 21: -708094030460876887
+      Yellow 46: -8619490709034131364
+      Yellow 8: 809872552195098149
+      Yellow 44: 6504704422919804907
+      Yellow 19: -8916054900131027594
+      Yellow 57: 5214689106799860876
+      Yellow 43: -1811036530160978450
+      Yellow 40: -109533607045899477
+      Yellow 0: 8120027843680581119
+      Yellow 50: -2145650906996436410
+      Yellow 10: 589068657567362869
+      Yellow 25: -4875127727337670578
+      Yellow 65: 2206287249025417017
+      Yellow 16: -1016931741431826709
+      Yellow 27: -3334809922016302022
+      Yellow 2: -8516483976728059032
+      Yellow 11: 7873281193634502195
+      Yellow 4: 5009817994530914871
+      Yellow 12: -4671506995770890253
+      Yellow 59: 687934505294382038
+      Yellow 39: -1932805151706614376
+      Yellow 30: -8604005195157222740
+      Yellow 34: -4901657007290953205
+      Yellow 37: -6215583590366282914
+      Yellow 33: 1842629561314883267
+      Yellow 42: -4249491174464871161
+      Yellow 32: 5773558337588540003
+      Yellow 5: -8002760437827191163
+      Yellow 63: 5682592825915259134
+      Yellow 38: -2644967002639271930
+      Yellow 52: 4750353195094952021
+      Yellow 53: 6030391460678605302
+      Yellow 54: -7884777872142855908
+      Yellow 14: 3201900162108225174
+      Yellow 47: -6236736098606715522
+      Yellow 60: 8905798418957480163
+      Yellow 61: -3293278968839802442
+      Yellow 68: -3852181611127925547
+      Yellow 1: 8602305847659084114
+      Yellow 23: -7099843970542295343
+      Yellow 15: -6583906173483994223
+      Yellow 29: -3993250970377901496
+      Yellow 26: -2443099259151015231
+      Yellow 49: -3351808004369609858
+      Yellow 58: 2628364905269296175
+      Yellow 51: -4079126875835467970
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

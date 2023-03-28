@@ -66,7 +66,7 @@ TextureImporter:
       213: -6120213987714761122
     second: SelectionUI 20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,9 +126,58 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +642,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SelectionUI 10: -8897128146923524317
+      SelectionUI 12: -7715162165913639490
+      SelectionUI 2: 2349427518527894789
+      SelectionUI 3: -7606742235458635123
+      SelectionUI 1: 1407069277189999051
+      SelectionUI 8: 4870687448464786347
+      SelectionUI 13: 589907616702665868
+      SelectionUI 16: 7272203003498192008
+      SelectionUI 17: -3504533349003113894
+      SelectionUI 4: 5253465326992402217
+      SelectionUI 6: 904058913997331041
+      SelectionUI 5: 992625187518623988
+      SelectionUI 15: -6335344577874024466
+      SelectionUI 11: -5248700524532357674
+      SelectionUI 9: -7706126166804646020
+      SelectionUI 18: -9124220463160805247
+      SelectionUI 14: 7029769349613245173
+      SelectionUI 0: -6385153303747717667
+      SelectionUI 19: -1998390336520626563
+      SelectionUI 20: -6120213987714761122
+      SelectionUI 7: 9066275459948983255
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

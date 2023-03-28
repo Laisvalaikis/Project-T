@@ -168,7 +168,7 @@ TextureImporter:
       213: -6869721492570181015
     second: ActionButtonUI 54
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -188,6 +188,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -197,8 +199,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -219,13 +221,65 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1404,6 +1458,62 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ActionButtonUI 17: -5985996694945948397
+      ActionButtonUI 30: 1064230382522644472
+      ActionButtonUI 31: 5321582045164929636
+      ActionButtonUI 28: -4522871291776170493
+      ActionButtonUI 49: -9139038222646363919
+      ActionButtonUI 12: -6000465129233884172
+      ActionButtonUI 45: 4693665290838367390
+      ActionButtonUI 9: 1157241994225065092
+      ActionButtonUI 3: 2644330493501417572
+      ActionButtonUI 13: -5250772273186044626
+      ActionButtonUI 1: 6304435900879806025
+      ActionButtonUI 16: -1473824630161842880
+      ActionButtonUI 42: -431620073777160903
+      ActionButtonUI 40: -1351622865063306749
+      ActionButtonUI 23: -4035232837558371148
+      ActionButtonUI 34: -4933178696744715701
+      ActionButtonUI 51: 854833402398890380
+      ActionButtonUI 5: -4915970013280050261
+      ActionButtonUI 2: -4156563157675899305
+      ActionButtonUI 4: -7484152466862747830
+      ActionButtonUI 46: -5238817434036491556
+      ActionButtonUI 50: -1700655540090428342
+      ActionButtonUI 29: -2692752572926590722
+      ActionButtonUI 32: -1290873878513007113
+      ActionButtonUI 26: 9094797185816314917
+      ActionButtonUI 10: 755931514907624424
+      ActionButtonUI 21: -5244227264245802611
+      ActionButtonUI 18: 2770929758457341302
+      ActionButtonUI 47: -434715322911314995
+      ActionButtonUI 27: 1007148590063603277
+      ActionButtonUI 35: -438137716354129714
+      ActionButtonUI 38: -4147313178977208927
+      ActionButtonUI 15: -5980061746933909041
+      ActionButtonUI 44: 8361226031749484295
+      ActionButtonUI 25: -660037021321600360
+      ActionButtonUI 37: -7986213798027018427
+      ActionButtonUI 48: 7197646400658196980
+      ActionButtonUI 14: -1071641158705808608
+      ActionButtonUI 24: 2653253005981326686
+      ActionButtonUI 0: 2430144352758825266
+      ActionButtonUI 53: -7589370023057454629
+      ActionButtonUI 22: 285764324283905352
+      ActionButtonUI 6: -8438006451112018496
+      ActionButtonUI 36: -5163203392147625526
+      ActionButtonUI 7: 5139444604892243456
+      ActionButtonUI 54: -6869721492570181015
+      ActionButtonUI 41: 940334845747954456
+      ActionButtonUI 52: 850385056709354357
+      ActionButtonUI 33: 4905056183124483771
+      ActionButtonUI 43: -4900127969809747176
+      ActionButtonUI 8: 6003129548037305118
+      ActionButtonUI 20: -6693138584028711955
+      ActionButtonUI 39: -3297504094695843550
+      ActionButtonUI 19: -2885244205613315195
+      ActionButtonUI 11: -2493236576136924141
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
