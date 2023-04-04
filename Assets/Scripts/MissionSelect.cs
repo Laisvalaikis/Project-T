@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class MissionSelect : MonoBehaviour
 {
-    void Start()
+    public EncounterController encounterController;
+    public SaveData _saveData;
+    public Data _data;
+    void OnEnable()
     {
         var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-        gameProgress.LoadTownData();
-        var townData = gameProgress.townData;
-        townData.generatedEncounters = GameObject.Find("CanvasCamera").transform.Find("EncounterButtons").GetComponent<EncounterController>().Setup(townData.pastEncounters, ref townData.generateNewEncounters, townData.generatedEncounters);
+        _saveData.LoadTownData();
+        var townData = _data.townData;
+        townData.generatedEncounters = encounterController.Setup(townData.pastEncounters, ref townData.generateNewEncounters, townData.generatedEncounters);
         gameProgress.PrepareNewTownDay();
+        _data.townData.selectedEncounter = null; // Reset Encounter
     }
 
 }

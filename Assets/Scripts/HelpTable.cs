@@ -1,11 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HelpTable : MonoBehaviour
 {
+    public Image icon;
+    public TextMeshProUGUI abilityTitle;
+    public TextMeshProUGUI abilityDescription;
+    public TextMeshProUGUI cooldownText;
+    public TextMeshProUGUI rangeText;
+    public TextMeshProUGUI damageText;
+    public TextMeshProUGUI blessingsText;
+    public GameObject damageIcon;
+    public GameObject isAbilitySlow;
+    public GameObject slowAbility;
+    public GameObject fastAbility;
+    
+    
     public void closeHelpTable()
     {
         if(SceneManager.GetActiveScene().name != "PVPAbilitySelect" && SceneManager.GetActiveScene().name != "PVPCharacterSelect")
@@ -28,6 +42,6 @@ public class HelpTable : MonoBehaviour
                 }
             }
         }
-        Destroy(gameObject.transform.parent.gameObject);
+        gameObject.SetActive(false);
     }
 }

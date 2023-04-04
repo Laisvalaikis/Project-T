@@ -1,14 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Classes;
+using TMPro;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
 
 public class EncounterController : MonoBehaviour
 {
     public List<string> encounterCategories;
+    public TextMeshProUGUI missionName;
+    public TextMeshProUGUI level;
+    public TextMeshProUGUI category;
+    public TextMeshProUGUI numOfEnemies;
+    public TextMeshProUGUI missionInfo;
+    public GameObject missionInformationGo;
+    public Button embark;
+    public Data _data;
+
+    private void Start()
+    {
+        ChangeSelectedEncounter(null);
+    }
 
     public List<Encounter> Setup(List<Encounter> pastEncounters, ref bool generateNewEncounters, List<Encounter> alreadyGeneratedEncounters)
     {
@@ -56,8 +72,32 @@ public class EncounterController : MonoBehaviour
             button.SetActive(true);
             button.GetComponent<Button>().onClick.AddListener(() =>
             {
-                GameObject.Find("GameProgress").GetComponent<GameProgress>().ChangeSelectedEncounter(encounter);
+                ChangeSelectedEncounter(encounter);
             });
+            
         }
+    }
+    
+    public void ChangeSelectedEncounter(Encounter encounter)
+    {
+        bool activate = encounter != _data.townData.selectedEncounter & encounter != null;
+        // Debug.Log(townData.selectedEncounter.encounterLevel);
+        _data.townData.selectedEncounter = activate ? encounter : null;
+        _data.townData.selectedMission = activate ? encounter.mapName : "";
+        if (activate)
+        {
+
+            missionName.text = _data.townData.selectedEncounter.mapName;
+            level.text = _data.townData.selectedEncounter.encounterLevel.ToString();
+            category.text = _data.townData.selectedEncounter.missionCategory;
+            numOfEnemies.text = _data.townData.selectedEncounter.numOfEnemies.ToString();
+            missionInfo.text = "information";
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+        missionInformationGo.SetActive(activate);
+        embark.interactable = (activate);
     }
 }

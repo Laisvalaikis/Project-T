@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class MissionEnd : MonoBehaviour
 {
+    public SaveData _saveData;
     void Start()
     {
         var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-        gameProgress.LoadTownData();
+        _saveData.LoadTownData();
         GameObject.Find("CanvasCamera").transform.Find("XPProgressTable").GetComponent<XPProgressManager>().UpdateButtons();
     }
 }

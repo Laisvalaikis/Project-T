@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Classes;
+﻿using System;
+using Assets.Scripts.Classes;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -10,6 +11,9 @@ using Random = UnityEngine.Random;
 
 public class XPProgressManager : MonoBehaviour
 {
+    public TextMeshProUGUI buttonText;
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI goldWonText;
     public int GoldToAdd = 1400;
     private bool XPGrow = true;
     private int counter = 0;
@@ -17,7 +21,8 @@ public class XPProgressManager : MonoBehaviour
     public List<Blessing> BlessingList = new List<Blessing>();
     public List<GeneratedBlessing> GeneratedBlessingList = new List<GeneratedBlessing>();
     public TextAsset blessingsFile;
-
+    public SaveData _saveData;
+    public Data _data;
 
     //BLESSINGS:
     [System.Serializable]
@@ -32,6 +37,7 @@ public class XPProgressManager : MonoBehaviour
             this.character = character;
         }
     }
+
     public void RerollBlessings()
     {
         MakeBlessingList(BlessingList);
@@ -124,9 +130,8 @@ public class XPProgressManager : MonoBehaviour
     {
         List<SavedCharacter> targets = new List<SavedCharacter>();
         //assign characters who were on mission to list  
-        var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-        var gameProgressCharacters = gameProgress.Characters;
-        var onLastMissionCharacterIndexes = gameProgress.CharactersOnLastMission;
+        var gameProgressCharacters = _data.Characters;
+        var onLastMissionCharacterIndexes = _data.CharactersOnLastMission;
         for(int i = 0; i < onLastMissionCharacterIndexes.Count; i++)
         {
             targets.Add(gameProgressCharacters[onLastMissionCharacterIndexes[i]]);
@@ -215,21 +220,21 @@ public class XPProgressManager : MonoBehaviour
             Transform characters = transform.Find("Characters").transform;
             for (int i = 0; i < characters.childCount; i++)
             {
-                characters.GetChild(i).gameObject.GetComponent<RecruitButton>().GrowXP((counter / 100) * 5 + 1);
+                characters.GetChild(i).gameObject.GetComponent<XPCard>().GrowXP((counter / 100) * 5 + 1);
             }
             // ziuri kada ijungt mygtuka
             int k = 0;
-            var onLastMissionCharacterIndexes = GameObject.Find("GameProgress").GetComponent<GameProgress>().CharactersOnLastMission;
+            var onLastMissionCharacterIndexes = _data.CharactersOnLastMission;
             for (int i = 0; i < onLastMissionCharacterIndexes.Count; i++)
             {
-                if (characters.GetChild(i).gameObject.GetComponent<RecruitButton>().character.xPToGain == 0)
+                if (characters.GetChild(i).gameObject.GetComponent<XPCard>().character.xPToGain == 0)
                 {
                     k++;
                 }
             }
             if(k == onLastMissionCharacterIndexes.Count)
             {
-                transform.Find("ContinueButton").transform.Find("Text").GetComponent<Text>().text = "CONTINUE";
+                buttonText.text = "CONTINUE";
                 //transform.Find("ContinueButton").GetComponent<Button>().interactable = true;
                 hasXPGrowthEnded = true;
             }
@@ -238,35 +243,35 @@ public class XPProgressManager : MonoBehaviour
 
     public void UpdateButtons()//reikes pakeist kad rodytu tuos kurie buvo misijoj
     {
-        var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
+
         Transform characters = transform.Find("Characters").transform;
-        var gameProgressCharacters = gameProgress.Characters;
-        var onLastMissionCharacterIndexes = gameProgress.CharactersOnLastMission;
+        var gameProgressCharacters = _data.Characters;
+        var onLastMissionCharacterIndexes = _data.CharactersOnLastMission;
         for (int i = 0; i < characters.childCount; i++)
         {
             if (i < onLastMissionCharacterIndexes.Count)
             {
-                characters.GetChild(i).gameObject.GetComponent<RecruitButton>().character = gameProgressCharacters[onLastMissionCharacterIndexes[i]];
+                characters.GetChild(i).gameObject.GetComponent<XPCard>().character = gameProgressCharacters[onLastMissionCharacterIndexes[i]];
             }
             else
             {
-                characters.GetChild(i).gameObject.GetComponent<RecruitButton>().character = null;
+                characters.GetChild(i).gameObject.GetComponent<XPCard>().character = null;
             }
-            characters.GetChild(i).gameObject.GetComponent<RecruitButton>().UpdateXPButton();
+            characters.GetChild(i).gameObject.GetComponent<XPCard>().UpdateXPButton();
         }
-        if (!gameProgress.townData.wasLastMissionSuccessful)
+        if (!_data.townData.wasLastMissionSuccessful)
         {
-            transform.Find("TitleText").GetComponent<Text>().text = "MISSION FAILED";
+            titleText.text = "MISSION FAILED";
             GoldToAdd = 0;
         }
         else
         {
-            transform.Find("TitleText").GetComponent<Text>().text = "MISSION SUCCESSFUL";
+            titleText.text = "MISSION SUCCESSFUL";
 
         }
-        transform.Find("GoldWon").GetComponent<Text>().text = "+ " + GoldToAdd + "g";
-        gameProgress.townData.townGold += GoldToAdd;
-        gameProgress.townData.day++; //Adds day count
+        goldWonText.text = "+ " + GoldToAdd + "g";
+        _data.townData.townGold += GoldToAdd;
+        _data.townData.day++; //Adds day count
     }
 
     public void ContinueButton()
@@ -300,40 +305,18 @@ public class XPProgressManager : MonoBehaviour
         Transform characters = transform.Find("Characters").transform;
         for (int i = 0; i < characters.childCount; i++)
         {
-            var recruitButton = characters.GetChild(i).gameObject.GetComponent<RecruitButton>();
-            if(recruitButton.character != null)
-                recruitButton.GrowXP(recruitButton.character.xPToGain);
+            var xpCard = characters.GetChild(i).gameObject.GetComponent<XPCard>();
+            if(xpCard.character != null)
+                xpCard.GrowXP(xpCard.character.xPToGain);
         }
         hasXPGrowthEnded = true;
     }
 
     public void ChangeScene(string sceneName)
     {
-        GameObject.Find("GameProgress").GetComponent<GameProgress>().createNewRCcharacters = true;
-        GameObject.Find("GameProgress").GetComponent<GameProgress>().SaveTownData();
+        _data.createNewRCcharacters = true;
+        _saveData.SaveTownData();
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         Time.timeScale = 1;
-    }
-
-    public static int currentMaxLevel()
-    {
-        int MaxLevel = 2;
-        char townHallChar = GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.townHall[2];
-        if (townHallChar == '0')
-        {
-            MaxLevel = 2;
-        }
-        if (townHallChar == '1')
-        {
-            MaxLevel = 3;
-        }
-        if (townHallChar == '2')
-        {
-            MaxLevel = 4;
-        }
-        /* if (townHallChar == '3')
-         {
-         }*/
-        return MaxLevel;
     }
 }

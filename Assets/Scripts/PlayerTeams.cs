@@ -15,7 +15,8 @@ public class PlayerTeams : MonoBehaviour
     public int undoCount = 2;
     public List<GameObject> otherCharacters = new List<GameObject>();
     public bool isGameOver;
-
+    public Data _data;
+    public HelpTableController helpTableController;
     void Start()
     {
         if(GameObject.Find("GameProgress") != null)
@@ -65,16 +66,21 @@ public class PlayerTeams : MonoBehaviour
                 GameObject spawnedCharacter = Instantiate(allCharacterList.teams[teamIndex].characters[i], new Vector3(x.Item1, x.Item2, 0f), Quaternion.identity); //Spawning the prefab into the scene.
                 if(allCharacterList.teams[teamIndex].isTeamAI)
                 {
-                    int points = 2 * (GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.selectedEncounter.encounterLevel - 1);
+                    int points = 2 * (_data.townData.selectedEncounter.encounterLevel - 1);
                     spawnedCharacter.GetComponent<PlayerInformation>().MaxHealth += points;
                     Debug.Log("Player " + spawnedCharacter.name + " received additional " + points + " points.");
                 }
+                
+                spawnedCharacter.GetComponent<PlayerInformation>()._data = _data;
+                spawnedCharacter.GetComponent<AIBehaviour>()._data = _data;
                 spawnedCharacter.GetComponent<PlayerInformation>().CharactersTeam = allCharacterList.teams[teamIndex].teamName; //Assigning the characters their team.
                 allCharacterList.teams[teamIndex].characters[i] = spawnedCharacter; //Turning prefabs into gameObjects on board.
                                                                                     //
                 GameObject cornerUIManager = Instantiate(allCharacterList.teams[teamIndex].characters[i].GetComponent<PlayerInformation>().CornerUIManager, CornerUIManagerContainer); //Spawning cornerUI of each player.
+                ButtonManager buttonManager = cornerUIManager.GetComponent<ButtonManager>();
+                buttonManager.AddDataToActionButtons(helpTableController);
                 allCharacterList.teams[teamIndex].characters[i].GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager; //Turning prefabs into gameObjects in canvas.
-                cornerUIManager.GetComponent<ButtonManager>().CharacterOnBoard = allCharacterList.teams[teamIndex].characters[i];//Assigning character to its UI button manager
+                buttonManager.CharacterOnBoard = allCharacterList.teams[teamIndex].characters[i];//Assigning character to its UI button manager
                 spawnedCharacter.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = cornerUIManager;//Assigning UI button manager character to its character
                 if (allCharacterList.teams[teamIndex].isTeamAI)
                 {

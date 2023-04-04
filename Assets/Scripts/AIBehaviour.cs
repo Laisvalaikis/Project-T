@@ -25,6 +25,7 @@ public class AIBehaviour : MonoBehaviour
     private int AttackRange;
     private List<(int, int)> AttackRangeVectors;
     private float castAfter;
+    public Data _data;
     /*void Update()
     {
         if (Input.GetKeyDown("e"))
@@ -61,7 +62,7 @@ public class AIBehaviour : MonoBehaviour
         if (!GetComponent<PlayerInformation>().Debuffs.Contains("Stun") && !GameObject.Find("GameInformation").GetComponent<GameInformation>().isVictoryScreenEnabled)
         {
             GameObject AttackTarget;
-            if (GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.difficultyLevel == 0)
+            if (_data.townData.difficultyLevel == 0)
             {
                 AttackTarget = ClosestVisibleEnemyCharacter(GetCharactersInGrid(3 + AttackRange));
             }
@@ -656,7 +657,7 @@ public class AIBehaviour : MonoBehaviour
             foreach (SpecialAbility x in FindAllSpecialAbilitiesByCastOrder(castOrder))
             {
                 if (GetComponent<ActionManager>().FindActionByName(x.abilityName).canGridBeEnabled() 
-                    && x.difficultyLevel <= GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.selectedEncounter.encounterLevel)
+                    && x.difficultyLevel <= _data.townData.selectedEncounter.encounterLevel)
                 {
                     StartCoroutine(ExecuteAfterTime(castAfter, () =>
                     {

@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
 
 public class GameInformation : MonoBehaviour
 {
@@ -24,9 +25,15 @@ public class GameInformation : MonoBehaviour
     private bool undoTurnButtonState;
     private bool isBoardDisabledState;
     public bool isFogOfWarEnabled = true;
-
+    public SaveData _saveData;
+    public Data _data;
+    public HelpTableController helpTableController;
     //Other
-    [HideInInspector] public GameObject SelectedCharacter;
+    [HideInInspector] public GameObject SelectedCharacter  {
+        get { return _selectedCharacter; }
+        set { _selectedCharacter = value; }
+    }
+    private GameObject _selectedCharacter;
     [HideInInspector] public GameObject InspectedCharacter;
     [HideInInspector] public UndoAction undoAction;
     [HideInInspector] public List<EnvironmentalHazard> environmentalHazards;
@@ -70,7 +77,7 @@ public class GameInformation : MonoBehaviour
         //{
         //    Application.Quit();
         //}
-        if (Input.GetMouseButtonDown(1) && (SelectedCharacter != null || InspectedCharacter != null) && !GetComponent<HelpTableController>().hasActionButtonBeenEntered)
+        if (Input.GetMouseButtonDown(1) && (SelectedCharacter != null || InspectedCharacter != null) && !helpTableController.hasActionButtonBeenEntered)
         {
             EnableMovementAction();
         }
@@ -95,8 +102,9 @@ public class GameInformation : MonoBehaviour
                 {
                     fadeCountDown -= Time.deltaTime;
                     float alpha = (fadeCountDown1 - fadeCountDown) / fadeCountDown1;
-                    Color original = GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<Text>().color;
-                    GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<Text>().color = new Color(original.r, original.g, original.b, alpha);
+                    Color original = GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<TextMeshProUGUI>().color;
+                    GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<TextMeshProUGUI>().color = new Color(original.r, original.g, original.b, alpha);
+                    Debug.Log("Need to fix this");
                 }
                 GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").gameObject.SetActive(true);
                 if (Input.GetMouseButtonUp(0))
@@ -183,7 +191,7 @@ public class GameInformation : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("UndoTurn").GetComponent<Button>().interactable = true;
         }
         else GameObject.Find("Canvas").transform.Find("UndoTurn").GetComponent<Button>().interactable = false;
-        GameObject.Find("Canvas").transform.Find("UndoTurn").Find("Frame").Find("UndoCount").GetComponent<Text>().text = "["
+        GameObject.Find("Canvas").transform.Find("UndoTurn").Find("Frame").Find("UndoCount").GetComponent<TextMeshProUGUI>().text = "["
             + GetComponent<PlayerTeams>().allCharacterList.teams[activeTeamIndex].undoCount + "]";
         CheckWhetherToHighlightEndTurn();
         if (GameObject.Find("Canvas").transform.Find("EndTurn").GetComponent<EndTurn>().confirmState
@@ -192,6 +200,7 @@ public class GameInformation : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("EndTurn").transform.Find("Text").GetComponent<Text>().text = "END TURN";
             GameObject.Find("Canvas").transform.Find("EndTurn").GetComponent<EndTurn>().confirmState = false;
         }
+        Debug.Log("Reikia sutvarkyti");
     }
     public void UndoMove()
     {
@@ -614,7 +623,7 @@ public class GameInformation : MonoBehaviour
                 respawnEnemiesDuringThisTurn = false;
             }
         }
-        else if(GameObject.Find("GameProgress") != null && GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.singlePlayer)
+        else if(GameObject.Find("GameProgress") != null && _data.townData.singlePlayer)
         {
             GameObject.Find("Canvas").transform.Find("YourTurn").gameObject.SetActive(true);
         }
@@ -643,17 +652,17 @@ public class GameInformation : MonoBehaviour
         if (GetComponent<PlayerTeams>().ChampionTeam != null)
         {
             string team = GetComponent<PlayerTeams>().ChampionTeam;
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<Text>().text = GetComponent<PlayerTeams>().ChampionTeam.ToUpper() + " TEAM WINS";
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionTeam.ToUpper() + " TEAM WINS";
             Color victoryColor = ColorStorage.TeamColor(team);
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<Text>().color = victoryColor;
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().color = victoryColor;
             GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("TeamColor").GetComponent<Image>().color = victoryColor;
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<Text>().color = victoryColor;
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<TextMeshProUGUI>().color = victoryColor;
         }
         else if (GetComponent<PlayerTeams>().ChampionAllegiance != null)
         {
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<Text>().text = GetComponent<PlayerTeams>().ChampionAllegiance + " ALLEGIANCE WINS!";
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionAllegiance + " ALLEGIANCE WINS!";
         }
-        else GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<Text>().text = "Draw";
+        else GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "Draw";
         isBoardDisabled = true;
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(false);
@@ -663,42 +672,43 @@ public class GameInformation : MonoBehaviour
         GameObject.Find("Canvas").transform.Find("VictoryScreen").gameObject.SetActive(true);
         isVictoryScreenEnabled = true;
         activateOnce = true;
+        Debug.Log("Need to fix this");
         //XP
         if (SaveSystem.DoesSaveFileExist() && SaveSystem.LoadTownData().singlePlayer)
         {
-            var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
+
             //VICTORY
             if (GetComponent<PlayerTeams>().ChampionTeam == GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName)
             {
-                for (int i = 0; i < gameProgress.CharactersOnLastMission.Count; i++)
+                for (int i = 0; i < _data.CharactersOnLastMission.Count; i++)
                 {
                     GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().AddKillXP();
-                    gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].xPToGain = 750 + GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().XPToGain;
-                    gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
-                    if (gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].dead)
+                    _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 750 + GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().XPToGain;
+                    _data.Characters[_data.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
+                    if (_data.Characters[_data.CharactersOnLastMission[i]].dead)
                     {
-                        gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].xPToGain = 0;
-                        gameProgress.statistics.characterDeathsCountByClass[Statistics.getClassIndex(gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
-                        gameProgress.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
+                        _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 0;
+                        _data.statistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
+                        _data.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
                     }
                 }
-                gameProgress.townData.wasLastMissionSuccessful = true;
-                gameProgress.townData.pastEncounters.Add(gameProgress.townData.selectedEncounter);
-                gameProgress.townData.generateNewEncounters = true;
+                _data.townData.wasLastMissionSuccessful = true;
+                _data.townData.pastEncounters.Add(_data.townData.selectedEncounter);
+                _data.townData.generateNewEncounters = true;
             }
             //DEFEAT
             else
             {
-                for (int i = 0; i < gameProgress.CharactersOnLastMission.Count; i++)
+                for (int i = 0; i < _data.CharactersOnLastMission.Count; i++)
                 {
-                    gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
-                    gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].xPToGain = 0;
-                    gameProgress.statistics.characterDeathsCountByClass[Statistics.getClassIndex(gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
-                    gameProgress.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(gameProgress.Characters[gameProgress.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
+                    _data.Characters[_data.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
+                    _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 0;
+                    _data.statistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
+                    _data.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
                 }
-                gameProgress.townData.wasLastMissionSuccessful = false;
+                _data.townData.wasLastMissionSuccessful = false;
             }
-            gameProgress.SaveTownData();
+            _saveData.SaveTownData();
         }
 
     }
@@ -707,39 +717,41 @@ public class GameInformation : MonoBehaviour
     {
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(false);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("HelpButton").gameObject.SetActive(false);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("CornerUIManagerContainer").gameObject.SetActive(false);
-        addButtonState = GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("AddButton").gameObject.activeSelf;
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("AddButton").gameObject.SetActive(false);
-        portalButtonState = GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PortalButton").gameObject.activeSelf;
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PortalButton").gameObject.SetActive(false);
+        addButtonState = GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.activeSelf;
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.SetActive(false);
+        portalButtonState = GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PortalButton").gameObject.activeSelf;
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PortalButton").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("EndTurnScreen").gameObject.SetActive(false);
         undoTurnButtonState = GameObject.Find("Canvas").transform.Find("UndoTurn").gameObject.activeSelf;
         GameObject.Find("Canvas").transform.Find("UndoTurn").gameObject.SetActive(false);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PauseButton").gameObject.SetActive(false);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PauseButton").gameObject.SetActive(false);
         isBoardDisabledState = isBoardDisabled;
         isBoardDisabled = true;
-        GameObject.Find("Canvas").transform.Find("PauseMenu").transform.Find("PauseMenu").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("PauseMenu").transform.Find("PauseMenuInGame").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("PauseMenu").transform.Find("ConfirmMenu").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject.SetActive(true);
+        Debug.Log("Reikia perdaryti");
         Time.timeScale = 0;
     }
     public void UnpauseGame()
     {
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(true);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("HelpButton").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("CornerUIManagerContainer").gameObject.SetActive(true);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("AddButton").gameObject.SetActive(addButtonState);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PortalButton").gameObject.SetActive(portalButtonState);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.SetActive(addButtonState);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PortalButton").gameObject.SetActive(portalButtonState);
         GameObject.Find("Canvas").transform.Find("UndoTurn").gameObject.SetActive(undoTurnButtonState);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PauseButton").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PauseButton").gameObject.SetActive(true);
         StartCoroutine(ExecuteAfterTime(0.1f, () =>
         {
             if (!GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject.activeSelf)
                 isBoardDisabled = isBoardDisabledState;
         }));
         GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject.SetActive(false);
+        Debug.Log("Reikia perdaryti");
         Time.timeScale = 1;
     }
     private void CheckWhetherToHighlightEndTurn()

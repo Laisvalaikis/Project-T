@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
+using TMPro;
 
 public class EndTurn : MonoBehaviour
 {
@@ -85,14 +86,16 @@ public class EndTurn : MonoBehaviour
         if (highlightButton)
         {
             GetComponent<Image>().sprite = highlightedSprite;
-            transform.Find("Text").GetComponent<Text>().color = highlightedColor;
+            transform.Find("Text").GetComponent<TextMeshProUGUI>().color = highlightedColor;
             highlighted = true;
+            Debug.Log("Change This");
         }
         else
         {
             GetComponent<Image>().sprite = normalSprite;
-            transform.Find("Text").GetComponent<Text>().color = normalColor;
+            transform.Find("Text").GetComponent<TextMeshProUGUI>().color = normalColor;
             highlighted = false;
+            Debug.Log("Change This");
         }
     }
 
@@ -102,12 +105,14 @@ public class EndTurn : MonoBehaviour
         {
             DisplayEndTurnScreen();
             confirmState = false;
-            transform.Find("Text").GetComponent<Text>().text = "END TURN";
+            transform.Find("Text").GetComponent<TextMeshProUGUI>().text = "END TURN";
+            Debug.Log("Reikia sutvarkyti cia");
         }
         else
         {
             confirmState = true;
-            transform.Find("Text").GetComponent<Text>().text = "CONFIRM";
+            transform.Find("Text").GetComponent<TextMeshProUGUI>().text = "CONFIRM";
+            Debug.Log("Reikia sutvarkyti cia");
         }
     }
 

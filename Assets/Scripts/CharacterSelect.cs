@@ -14,7 +14,8 @@ public class CharacterSelect : MonoBehaviour
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
     public bool allowDuplicates;
-
+    public SaveData saveData;
+    public Data _data;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,20 +24,20 @@ public class CharacterSelect : MonoBehaviour
         selectedEnemies = new List<(SavedCharacter, int)>();
         //defaultEnemies = gameProgress.AllEnemySavedCharacters;
         defaultEnemies = new List<SavedCharacter>();
-        SaveSystem.LoadTownData().selectedEncounter.enemyPool.ForEach(enemyName => defaultEnemies.Add(gameProgress.AllEnemySavedCharacters.Find(x => x.prefab.name == enemyName)));
+        SaveSystem.LoadTownData().selectedEncounter.enemyPool.ForEach(enemyName => defaultEnemies.Add(_data.AllEnemySavedCharacters.Find(x => x.prefab.name == enemyName)));
         SelectDefaultEnemies();
         enemySelection = false;
         //allowDuplicates = false;
         allowDuplicates = SaveSystem.LoadTownData().selectedEncounter.allowDuplicates;
-        gameProgress.LoadTownData();
+        saveData.LoadTownData();
         gameProgress.PrepareNewTownDay();
-        GameObject.Find("CanvasCamera").transform.Find("AutoFill").GetComponent<Button>().interactable = gameProgress.Characters.Count >= 3;
+        GameObject.Find("CanvasCamera").transform.Find("AutoFill").GetComponent<Button>().interactable = _data.Characters.Count >= 3;
         UpdateView();
     }
 
     public void UpdateView()
     {
-        List<SavedCharacter> characterList = enemySelection ? gameProgress.AllEnemySavedCharacters : gameProgress.Characters;
+        List<SavedCharacter> characterList = enemySelection ? _data.AllEnemySavedCharacters : _data.Characters;
         List<(SavedCharacter, int)> selectedCharList = enemySelection ? selectedEnemies : charactersToGoOnMission;
         Transform CharacterButtons = GameObject.Find("CanvasCamera").transform.Find("CharacterButtons");
         foreach (Transform child in CharacterButtons)
@@ -91,13 +92,13 @@ public class CharacterSelect : MonoBehaviour
         selectedEnemies.Clear();
         foreach (SavedCharacter defaultEnemy in defaultEnemies)
         {
-            selectedEnemies.Add((gameProgress.AllEnemySavedCharacters[getEnemyIndex(defaultEnemy)], getEnemyIndex(defaultEnemy)));
+            selectedEnemies.Add((_data.AllEnemySavedCharacters[getEnemyIndex(defaultEnemy)], getEnemyIndex(defaultEnemy)));
         }
     }
 
     private int getEnemyIndex(SavedCharacter enemy)
     {
-        List<SavedCharacter> allEnemies = gameProgress.AllEnemySavedCharacters;
+        List<SavedCharacter> allEnemies = _data.AllEnemySavedCharacters;
         for (int i = 0; i < allEnemies.Count; i++)
         {
             if(allEnemies[i].prefab == enemy.prefab)
@@ -111,9 +112,9 @@ public class CharacterSelect : MonoBehaviour
     public void OnEnemyButtonClick()
     {
         int numOfEnemies = 3;
-        if(gameProgress.townData.selectedEncounter.numOfEnemies > 0)
+        if(_data.townData.selectedEncounter.numOfEnemies > 0)
         {
-            numOfEnemies = gameProgress.townData.selectedEncounter.numOfEnemies;
+            numOfEnemies = _data.townData.selectedEncounter.numOfEnemies;
         }
         //if(gameProgress.GetComponent<MapSetup>().MapPrefabs.Find(x => x.name == gameProgress.townData.selectedMission) != null)
         //{
@@ -134,12 +135,12 @@ public class CharacterSelect : MonoBehaviour
     {
         foreach ((SavedCharacter, int) character in charactersToGoOnMission)
         {
-            gameProgress.Characters.Remove(character.Item1);
-            gameProgress.Characters.Insert(0, character.Item1);
+            _data.Characters.Remove(character.Item1);
+            _data.Characters.Insert(0, character.Item1);
         }
         foreach((SavedCharacter, int) enemy in selectedEnemies)
         {
-            gameProgress.selectedEnemies.Add(enemy.Item2);
+            _data.selectedEnemies.Add(enemy.Item2);
         }
     }
 
@@ -178,8 +179,8 @@ public class CharacterSelect : MonoBehaviour
     public void AddCharacterToTeam(int characterIndex)
     {
         var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
-        charactersToGoOnMission.Add((gameProgress.Characters[characterIndex], characterIndex));
-        teamPortraitManager.AddCharacterInCS3(gameProgress.Characters[characterIndex].prefab, characterIndex);
+        charactersToGoOnMission.Add((_data.Characters[characterIndex], characterIndex));
+        teamPortraitManager.AddCharacterInCS3(_data.Characters[characterIndex].prefab, characterIndex);
         GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
         if(charactersToGoOnMission.Count == 3)
         {
@@ -190,7 +191,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void SelectEnemy(int enemyIndex)
     {
-        selectedEnemies.Add((gameProgress.AllEnemySavedCharacters[enemyIndex], enemyIndex));
+        selectedEnemies.Add((_data.AllEnemySavedCharacters[enemyIndex], enemyIndex));
         GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(enemyIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
     }
 
@@ -248,7 +249,7 @@ public class CharacterSelect : MonoBehaviour
     public void AllNone()
     {
         bool all = !AllSelected();
-        for (int i = 0; i < gameProgress.AllEnemySavedCharacters.Count; i++)
+        for (int i = 0; i < _data.AllEnemySavedCharacters.Count; i++)
         {
             if (all)
             {
@@ -260,7 +261,7 @@ public class CharacterSelect : MonoBehaviour
 
     private bool AllSelected()
     {
-        for(int i = 0; i < gameProgress.AllEnemySavedCharacters.Count; i++)
+        for(int i = 0; i < _data.AllEnemySavedCharacters.Count; i++)
         {
             if(!AlreadySelected(i))
             {
@@ -289,7 +290,7 @@ public class CharacterSelect : MonoBehaviour
         }
         //Canvas
         Transform canvas = GameObject.Find("CanvasCamera").transform;
-        canvas.Find("Enemies").gameObject.SetActive(false);
+        // canvas.Find("Enemies").gameObject.SetActive(false);
         canvas.Find("Clear").gameObject.SetActive(false);
         canvas.Find("AutoFill").gameObject.SetActive(false);
         canvas.Find("CharacterButtons").gameObject.SetActive(false);
@@ -309,7 +310,7 @@ public class CharacterSelect : MonoBehaviour
         }
         //Canvas
         Transform canvas = GameObject.Find("CanvasCamera").transform;
-        canvas.Find("Enemies").gameObject.SetActive(true);
+        // canvas.Find("Enemies").gameObject.SetActive(true);
         canvas.Find("Clear").gameObject.SetActive(true);
         canvas.Find("AutoFill").gameObject.SetActive(true);
         canvas.Find("CharacterButtons").gameObject.SetActive(true);

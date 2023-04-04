@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Assets.Scripts.Classes;
+using TMPro;
 
 public class TownPortrait : MonoBehaviour
 {
     public int characterIndex = 0;
+    public Image characterImage;
+    public TextMeshProUGUI levelText;
+    public GameObject abilityPointCorner;
     [HideInInspector]public bool available = true;
-
+    public Data _data;
     public void OnPortraitClick()
     {
         if (SceneManager.GetActiveScene().name == "CharacterSelect3")
@@ -24,7 +28,7 @@ public class TownPortrait : MonoBehaviour
         else
         {
             var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-            if (gameProgress.switchPortraits)
+            if (_data.switchPortraits)
             {
                 gameProgress.AddCharacterForSwitching(characterIndex);
             }
@@ -37,7 +41,9 @@ public class TownPortrait : MonoBehaviour
                 }
                 else
                 {
-                    gameProgress.DisplayCharacterTable(characterIndex);
+                    GameObject.Find("Canvas").transform.Find("CharacterTable").GetComponent<CharacterTable>().DisplayCharacterTable(characterIndex);
+                    GameObject.Find("Canvas").transform.Find("CharacterTable").GetComponent<CharacterTable>().UpdateTable();
+                    Debug.Log("Pakeisti sita vieta");
                     //atidaryti lentele
                 }
             }
@@ -81,6 +87,9 @@ public class TownPortrait : MonoBehaviour
 
     public void DisplayCharacterInfo()
     {
-        GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(characterIndex);
+        GameObject.Find("Canvas").transform.Find("CharacterTable").GetComponent<CharacterTable>().DisplayCharacterTable(characterIndex);
+        // GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(characterIndex);
+        Debug.Log("Pakeisti sita vieta");
     }
+    
 }

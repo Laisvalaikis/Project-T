@@ -11,6 +11,7 @@ public class SceneSelect : MonoBehaviour
     public InputField slotNameInput;
     private int difficulty;
     private string color;
+    [SerializeField] private Button buttonForCreation;
     //public TownData newGameData;
 
     void Start()
@@ -18,12 +19,7 @@ public class SceneSelect : MonoBehaviour
         for(int i = 0; i < 3; i++)
         {
             Transform slotCard = GameObject.Find("CanvasCamera").transform.Find("NewGameContinue").Find("SlotCards").GetChild(i);
-            slotCard.Find("AddButton").gameObject.SetActive(!SaveSystem.DoesSaveFileExist(i));
-            slotCard.Find("SlotMenu").gameObject.SetActive(SaveSystem.DoesSaveFileExist(i));
-            if(SaveSystem.DoesSaveFileExist(i))
-            {
-                slotCard.Find("SlotMenu").Find("SlotName").GetComponent<Text>().text = SaveSystem.LoadTownData(i).slotName;
-            }
+            
         }
         slotNameInput.onValidateInput += delegate (string input, int charIndex, char addedChar) { return CharacterTable.MyValidate(addedChar); };
         difficulty = -1;
@@ -48,11 +44,19 @@ public class SceneSelect : MonoBehaviour
             slotNameInput.text = "";
         }
         slotNameInput.text = slotNameInput.text.ToUpper();
+        if (slotNameInput.text != "" && difficulty != -1 && color != "")
+        {
+            buttonForCreation.interactable = true;
+        }
+        else
+        {
+            buttonForCreation.interactable = false;
+        }
     }
 
     public void StartNewGame()
     {
-        string slotName = (slotNameInput.text == "") ? slotNameInput.placeholder.GetComponent<Text>().text : slotNameInput.text;
+        string slotName = (slotNameInput.text == "") ? "" : slotNameInput.text;
         SaveSystem.SaveTownData(TownData.NewGameData(color, difficulty, slotName));
         //SaveSystem.SaveTownData(TownData.newGameData);
     }
@@ -113,18 +117,26 @@ public class SceneSelect : MonoBehaviour
     public void SetDifficulty(int difficulty)
     {
         this.difficulty = difficulty;
-        if(color != "")
+        if (slotNameInput.text != "" && difficulty != -1 && color != "")
         {
-            GameObject.Find("CanvasCamera").transform.Find("SlotCreation").Find("Create").GetComponent<Button>().interactable = true;
+            buttonForCreation.interactable = true;
+        }
+        else
+        {
+            buttonForCreation.interactable = false;
         }
     }
 
     public void SetColor(string color)
     {
         this.color = color;
-        if (difficulty != -1)
+        if (slotNameInput.text != "" && difficulty != -1 && color != "")
         {
-            GameObject.Find("CanvasCamera").transform.Find("SlotCreation").Find("Create").GetComponent<Button>().interactable = true;
+            buttonForCreation.interactable = true;
+        }
+        else
+        {
+            buttonForCreation.interactable = false;
         }
     }
 }

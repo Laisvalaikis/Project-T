@@ -30,6 +30,7 @@ public class PlayerInformation : MonoBehaviour
     public Sprite CharacterSplashArt;//For character table
     public Sprite CroppedSplashArt;
     public GameObject CornerUIManager;
+    public Data _data;
     //
     [HideInInspector] public Debuffs Debuffs; // :'( uzsirasyti kazkur visus imanomus debuffus
     [HideInInspector] public bool Blocker = false; //is this character blocking another ally
@@ -278,14 +279,13 @@ public class PlayerInformation : MonoBehaviour
     }
     public void AddKillXP()
     {
-        var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
         if (!isThisObject)
         {
             XPToGain = 0;
             foreach (GameObject x in KillList)
             {
-                gameProgress.statistics.killCountByClass[Statistics.getClassIndex(this.ClassName)]++;
-                gameProgress.globalStatistics.killCountByClass[Statistics.getClassIndex(this.ClassName)]++;
+                _data.statistics.killCountByClass[Statistics.getClassIndex(this.ClassName)]++;
+                _data.globalStatistics.killCountByClass[Statistics.getClassIndex(this.ClassName)]++;
                 XPToGain += 50;
             }
         }

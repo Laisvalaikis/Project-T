@@ -7,22 +7,29 @@ using System.IO;
 
 public class Town : MonoBehaviour
 {
-    void Start()
+    [SerializeField] private GameProgress _gameProgress;
+    [SerializeField] private Recruitment _recruitment;
+    [SerializeField] private SaveData _saveData;
+    public Data _data;
+    void OnEnable()
     {
-        var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-        gameProgress.LoadTownData();
-        GameObject.Find("CanvasCamera").transform.Find("RecruitmentCenterTable").GetComponent<Recruitment>().RecruitmentStart();
-        gameProgress.PrepareNewTownDay();
+        _saveData.LoadTownData();
+        
+    }
+
+    private void Start()
+    {
+        _recruitment.RecruitmentStart();
+        _gameProgress.PrepareNewTownDay();
         ToggleAbilityPointWarning();
     }
 
     public void ToggleAbilityPointWarning()
     {
-        var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
         GameObject.Find("CanvasCamera").transform.Find("AbilityPointWarning").gameObject
-            .SetActive(gameProgress.Characters.Find(x => x.abilityPointCount > 0) != null);
+            .SetActive(_data.Characters.Find(x => x.abilityPointCount > 0) != null);
         GameObject.Find("CanvasCamera").transform.Find("RecruitmentWarning").gameObject
-           .SetActive(gameProgress.Characters.Count < 3);
+           .SetActive(_data.Characters.Count < 3);
     }
 
 }

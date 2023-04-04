@@ -16,6 +16,7 @@ public class AIManager : MonoBehaviour
     private RaycastHit2D raycast;
     public LayerMask blockingLayer;
     public LayerMask groundLayer;
+    public Data _data;
 
     void Awake()
     {
@@ -70,6 +71,8 @@ public class AIManager : MonoBehaviour
                         spawnedEnemy.GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager;
                         cornerUIManager.GetComponent<ButtonManager>().CharacterOnBoard = spawnedEnemy;
                         spawnedEnemy.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = cornerUIManager;
+                        spawnedEnemy.GetComponent<AIBehaviour>()._data = _data;
+                        spawnedEnemy.GetComponent<GameInformation>()._data = _data;
                         //
                         spawnedEnemy.GetComponent<PlayerInformation>().Respawn = true;
                         if (spawnedEnemy.transform.Find("VFX").Find("VFX9x9").GetComponent<Animator>().isActiveAndEnabled)

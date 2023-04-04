@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class SceneChangingButton : MonoBehaviour
 {
+    public TextMeshProUGUI text; 
     public string SceneToLoad;
     public bool TextHighlight = false;
     public bool FrameHighlight = true;
     private Color OriginalTextColor;
+    
+    [SerializeField] private Animator _animator;
     // Start is called before the first frame update
     void Start()
     {
-        OriginalTextColor = transform.Find("Text").GetComponent<Text>().color;
+        OriginalTextColor = text.color;
     }
 
     // Update is called once per frame
@@ -34,7 +38,7 @@ public class SceneChangingButton : MonoBehaviour
     {
         if (TextHighlight)
         {
-            transform.Find("Text").GetComponent<Text>().color = Color.white;
+            text.color = Color.white;
         }
         if(FrameHighlight)
         {
@@ -45,7 +49,7 @@ public class SceneChangingButton : MonoBehaviour
     {
         if (TextHighlight)
         {
-            transform.Find("Text").GetComponent<Text>().color = OriginalTextColor;
+            text.color = OriginalTextColor;
         }
         if(FrameHighlight)
         {

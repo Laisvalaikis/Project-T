@@ -12,9 +12,11 @@ public class ButtonManager : MonoBehaviour
     private List<GameObject> ButtonIconList;
     [HideInInspector] public GameObject CharacterOnBoard;
     private KeyCode[] AbilityChangingButtonSequence = { KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y };
-
+    private List<ActionButton> _actionButtons;
     void Awake()
     {
+        _actionButtons = new List<ActionButton>();
+        Debug.Log("Need To update action buttons");
         ButtonFrameList = new List<GameObject>();
         ButtonIconList = new List<GameObject>();
         for (int i = 0; i < ButtonList.Count; i++)
@@ -22,6 +24,7 @@ public class ButtonManager : MonoBehaviour
             ButtonFrameList.Add(ButtonList[i].transform.Find("ActionButtonFrame").gameObject);
             ButtonIconList.Add(ButtonList[i].transform.Find("ActionButtonImage").gameObject);
             ButtonIconList[i].GetComponent<Image>().color = GetComponent<BottomCornerUI>().ButtonIconColor;
+            _actionButtons.Add(ButtonList[i].GetComponent<ActionButton>());
             var CantAttackIcon = ButtonList[i].transform.Find("CantAttackImage");
             if (CantAttackIcon != null)
             {
@@ -50,6 +53,15 @@ public class ButtonManager : MonoBehaviour
             }
         }
     }
+
+    public void AddDataToActionButtons(HelpTableController helpTableController)
+    {
+        for (int i = 0; i < _actionButtons.Count; i++)
+        {
+            _actionButtons[i]._helpTableController = helpTableController;
+        }
+    }
+
     public void DisableSelection(GameObject selected)
     {
         for (int i = 0; i < ButtonFrameList.Count; i++)

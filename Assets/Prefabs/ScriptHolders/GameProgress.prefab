@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3712572144158417207}
   - component: {fileID: 3712572144158417204}
   - component: {fileID: 6847408503071179581}
+  - component: {fileID: 2141037190933514941}
+  - component: {fileID: 5252738720612935281}
   m_Layer: 0
   m_Name: GameProgress
   m_TagString: Untagged
@@ -28,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,6 +45,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e67c147dea85f14e8323df3b7453d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portraitBarControl: {fileID: 0}
+  _saveData: {fileID: 5252738720612935281}
+  _data: {fileID: 2141037190933514941}
+--- !u!114 &6847408503071179581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712572144158417205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fca44dc99e759438208d06ad3cea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MapName: 
+  MapPrefabs:
+  - {fileID: 8188965545752804595, guid: b745bcd9ca18348a382073835f8dbef3, type: 3}
+  - {fileID: 1401161897824018671, guid: fc31bd44f9a2e4438977409d83517074, type: 3}
+  - {fileID: 1912015540088700205, guid: 9e061c7c66b584ac999186a69037fc0e, type: 3}
+  - {fileID: 1722708026810974101, guid: a88dedca8e0734af8a91d31c9cf87d8c, type: 3}
+  - {fileID: 5838803986008028568, guid: 39457caf9f9f14920bdeaca4b58f14a2, type: 3}
+  - {fileID: 3599305411788918878, guid: 57a41e98dc50c4317b858f7bc25845bc, type: 3}
+  - {fileID: 4468732640697727605, guid: 4ed9056a0d377fa40bd2154951a87ef9, type: 3}
+  - {fileID: 461944243306745146, guid: 1cb5dfc63efb9ab43bd5a2801581f10f, type: 3}
+  - {fileID: 1370094039199749992, guid: bd380df368ebebe4483218cc473789b5, type: 3}
+  - {fileID: 5813706836119385935, guid: e261d9b8eeca03b4fa48ca7d90a74cff, type: 3}
+  - {fileID: 4177073564369104485, guid: 35171f295737d314299bb55c37f60ecb, type: 3}
+  - {fileID: 2140477715814270949, guid: b6efde265ebb80a47af7ed6c09651de6, type: 3}
+--- !u!114 &2141037190933514941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712572144158417205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bce249ca89e464fb55217107f66206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Characters: []
@@ -355,12 +399,13 @@ MonoBehaviour:
       masterVolume: 1
       mute: 0
   canButtonsBeClicked: 1
+  canButtonsBeClickedState: 1
   XPToLevelUp: 20030000d007000088130000e7030000
   isCurrentScenePlayableMap: 0
   switchPortraits: 0
   SwitchedCharacters: 
   currentCharacterIndex: -1
-  maxCharacterCount: 12
+  maxCharacterCount: 0
   createNewRCcharacters: 0
   selectedEnemies: 
   statistics:
@@ -410,7 +455,12 @@ MonoBehaviour:
       attackHelper: 0
       masterVolume: 1
       mute: 0
---- !u!114 &6847408503071179581
+  townPortraits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &5252738720612935281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,20 +469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3712572144158417205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74fca44dc99e759438208d06ad3cea98, type: 3}
+  m_Script: {fileID: 11500000, guid: f9da907d4a4e0744397a6659c47a3995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MapName: 
-  MapPrefabs:
-  - {fileID: 8188965545752804595, guid: b745bcd9ca18348a382073835f8dbef3, type: 3}
-  - {fileID: 1401161897824018671, guid: fc31bd44f9a2e4438977409d83517074, type: 3}
-  - {fileID: 1912015540088700205, guid: 9e061c7c66b584ac999186a69037fc0e, type: 3}
-  - {fileID: 1722708026810974101, guid: a88dedca8e0734af8a91d31c9cf87d8c, type: 3}
-  - {fileID: 5838803986008028568, guid: 39457caf9f9f14920bdeaca4b58f14a2, type: 3}
-  - {fileID: 3599305411788918878, guid: 57a41e98dc50c4317b858f7bc25845bc, type: 3}
-  - {fileID: 4468732640697727605, guid: 4ed9056a0d377fa40bd2154951a87ef9, type: 3}
-  - {fileID: 461944243306745146, guid: 1cb5dfc63efb9ab43bd5a2801581f10f, type: 3}
-  - {fileID: 1370094039199749992, guid: bd380df368ebebe4483218cc473789b5, type: 3}
-  - {fileID: 5813706836119385935, guid: e261d9b8eeca03b4fa48ca7d90a74cff, type: 3}
-  - {fileID: 4177073564369104485, guid: 35171f295737d314299bb55c37f60ecb, type: 3}
-  - {fileID: 2140477715814270949, guid: b6efde265ebb80a47af7ed6c09651de6, type: 3}
+  _data: {fileID: 2141037190933514941}

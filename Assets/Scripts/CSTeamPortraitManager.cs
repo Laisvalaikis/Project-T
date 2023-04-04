@@ -9,7 +9,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     public List<PortraitButton> PortraitButtonList;
     [HideInInspector]public GameObject ActiveButton = null;
     public Sprite EmptySprite;
-
+    public Data _data;
     public void AddCharacter(GameObject givenCharacterPrefab)
     {
         if (ActiveButton != null && FindByButton(ActiveButton) != null)
@@ -111,7 +111,7 @@ public class CSTeamPortraitManager : MonoBehaviour
             {
                 x.CharacterPrefab = null;
                 x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
-                if(!AlreadySelected(GameObject.Find("GameProgress").GetComponent<GameProgress>().currentCharacterIndex) || GameObject.Find("GameProgress").GetComponent<GameProgress>().currentCharacterIndex == x.characterIndex)
+                if(!AlreadySelected(_data.currentCharacterIndex) || _data.currentCharacterIndex == x.characterIndex)
                 {
                     GameObject.Find("CanvasCamera").transform.Find("Add").GetComponent<Button>().interactable = true;
                 }
@@ -175,7 +175,9 @@ public class CSTeamPortraitManager : MonoBehaviour
         {
             if (x.button == button && x.characterIndex != -1)
             {
-                GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(x.characterIndex);
+                // GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(x.characterIndex);
+                GameObject.Find("Canvas").transform.Find("CharacterTable").GetComponent<CharacterTable>().DisplayCharacterTable(x.characterIndex);
+                Debug.Log("Pakeisti sita vieta taip pat");
             }
         }
     }

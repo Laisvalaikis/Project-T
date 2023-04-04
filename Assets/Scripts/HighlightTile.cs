@@ -16,12 +16,12 @@ public class HighlightTile : MonoBehaviour
     private Color AttackHighlightColor;
     private Color MovementHighlightColor;//lol
     //[HideInInspector] public Color HoverHighlightColor;
-    [HideInInspector] public Color NotHoveredColor;
+    public Color NotHoveredColor;
     private Color OtherHighlight;
     private Color InspectionHighlight;
     [HideInInspector] public bool fogOfWar = true;
     [HideInInspector] public bool isHighlighted = false;
-    [HideInInspector] public string activeState;
+    public string activeState;
     [HideInInspector] public bool canAbilityTargetAllies = false;
     [HideInInspector] public bool canAbilityTargetYourself = false;
     public bool isCharacterOnTop = false;//[HideInInspector] 

@@ -16,6 +16,7 @@ public class Recruitment : MonoBehaviour
     private List<string> NamesW = new List<string>();
     public TextAsset NamesMFile;
     public TextAsset NamesWFile;
+    public Data _data;
     public void RecruitmentStart()
     {
         //Debug.Log("Recruitment start");
@@ -23,12 +24,12 @@ public class Recruitment : MonoBehaviour
         //System.IO.File.WriteAllText(Path.Combine(Application.dataPath, "Assets", "Text") + "/NW.log", NamesWFile.text);
         ReadString(NamesM, NamesMFile);
         ReadString(NamesW, NamesWFile);
-        if (GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().townData.day > 1)
+        if (_data.townData.day > 1)
         {
             //Debug.Log("Day is bigger than 1");
             AttractedCharactersCount = 2;
-            char townHallChar = GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().townData.townHall[1];
-            CharacterLevelChar = GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().townData.townHall[4];
+            char townHallChar = _data.townData.townHall[1];
+            CharacterLevelChar = _data.townData.townHall[4];
             if (townHallChar == '1')
             {
                 AttractedCharactersCount = 3;
@@ -65,7 +66,7 @@ public class Recruitment : MonoBehaviour
     }
     private void CreateCharactersInShop()
     {
-        List<SavedCharacter> AllCharactersCopy = new List<SavedCharacter>(GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().AllAvailableCharacters);
+        List<SavedCharacter> AllCharactersCopy = new List<SavedCharacter>(_data.AllAvailableCharacters);
         CharactersInShop.Clear();
         if(NamesW.Count <= 8)
         {
@@ -129,9 +130,9 @@ public class Recruitment : MonoBehaviour
     }
     private void UpdateRerollButton()
     {
-        if (GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().townData.townHall != null)
+        if (_data.townData.townHall != null)
         {
-            char townHallChar = GameObject.Find("GameProgress").gameObject.GetComponent<GameProgress>().townData.townHall[3];
+            char townHallChar = _data.townData.townHall[3];
             transform.Find("Reroll").GetComponent<Button>().interactable = (townHallChar == '1');
         }
     }

@@ -12,9 +12,11 @@ public class UpgradeButton : MonoBehaviour
     public int upgradeCost;
     public string upgradeName;
     public string upgradeDescription;
+    public Data _data;
+    public GameUi gameUi;
     public void UpdateUpgradeButton()
     {
-        string townHall = GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.townHall;
+        string townHall = _data.townData.townHall;
         if (int.Parse(townHall[upgradeIndex].ToString()) + 1 < upgradeValue)//negalimi pirkti nes per auksti
         {
             GetComponent<Button>().interactable = false;
@@ -31,7 +33,7 @@ public class UpgradeButton : MonoBehaviour
     }
     public void BuyUpgrade()
     {
-        string townHall = GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.townHall;
+        string townHall = _data.townData.townHall;
         string newTownHall = "";
         for (int i = 0; i < townHall.Length;i++)
         {
@@ -44,7 +46,7 @@ public class UpgradeButton : MonoBehaviour
                 newTownHall += upgradeValue.ToString();
             }
         }
-        GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.townHall = newTownHall;
+        _data.townData.townHall = newTownHall;
         GameObject.Find("GameProgress").GetComponent<GameProgress>().SpendGold(upgradeCost);
 
     }

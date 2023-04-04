@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +12,17 @@ public class GoldChange : MonoBehaviour
     private Vector3 originalPosition;
     private Color originalColor;
     private Color color;
+    private TextMeshProUGUI _text;
 
     // Start is called before the first frame update
     void OnEnable()
     {
         time = 1f;
         originalPosition = transform.localPosition;
-        originalColor = GetComponent<Text>().color;
+        _text = GetComponent<TextMeshProUGUI>();
+        originalColor = _text.color;
         color = originalColor;
+        
     }
 
     // Update is called once per frame
@@ -30,12 +34,12 @@ public class GoldChange : MonoBehaviour
             transform.position += new Vector3(0f, moveSpeed);
             color.a -= (disappearSpeed * Time.fixedDeltaTime);
         }
-        GetComponent<Text>().color = color;
+        _text.color = color;
         if (time <= 0)
         {
             gameObject.SetActive(false);
             transform.localPosition = originalPosition;
-            GetComponent<Text>().color = originalColor;
+            _text.color = originalColor;
         }
     }
 }

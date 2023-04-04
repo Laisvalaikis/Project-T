@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class TownHall : MonoBehaviour
 {
    [HideInInspector] public GameObject SelectedUpgrade;
+   public Data _data;
     void Start()
     {
         //UpdateButtons();
@@ -28,8 +29,7 @@ public class TownHall : MonoBehaviour
             transform.Find("UpgradeName").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeName;
             transform.Find("UpgradeDescription").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeDescription;
             transform.Find("UpgradeCost").GetComponent<Text>().text = "-" + SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost.ToString() + "g";
-            transform.Find("BuyButton").GetComponent<Button>().interactable =
-                GameObject.Find("GameProgress").GetComponent<GameProgress>().townData.townGold >= SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost;
+            transform.Find("BuyButton").GetComponent<Button>().interactable = _data.townData.townGold >= SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost;
 
         }
         else

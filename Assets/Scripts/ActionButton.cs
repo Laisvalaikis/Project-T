@@ -9,7 +9,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 {
     public string buttonState;
     private GameInformation gameInformation;
-
+    public HelpTableController _helpTableController;
     void Start()
     {
         gameInformation = GameObject.Find("GameInformation").GetComponent<GameInformation>();
@@ -49,20 +49,20 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     {
         if(eventData.button == PointerEventData.InputButton.Right)
         {
-            gameInformation.GetComponent<HelpTableController>().EnableTableForInGameRightClick(buttonState);
+            _helpTableController.EnableTableForInGameRightClick(buttonState);
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        gameInformation.GetComponent<HelpTableController>().hasActionButtonBeenEntered = true;
+        _helpTableController.hasActionButtonBeenEntered = true;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", true);
         gameInformation.isBoardDisabled = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        gameInformation.GetComponent<HelpTableController>().hasActionButtonBeenEntered = false;
+        _helpTableController.hasActionButtonBeenEntered = false;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", false);
         GameObject.Find("GameInformation").gameObject.GetComponent<GameInformation>().isBoardDisabled = gameInformation.helpTableOpen;
     }
