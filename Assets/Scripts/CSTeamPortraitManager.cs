@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class CSTeamPortraitManager : MonoBehaviour
 {
     public List<PortraitButton> PortraitButtonList;
+    public List<Animator> posingCharacters;
     [HideInInspector]public GameObject ActiveButton = null;
     public Sprite EmptySprite;
     public Data _data;
@@ -32,6 +33,8 @@ public class CSTeamPortraitManager : MonoBehaviour
             var FirstUnoccupiedButton = FindFirstUnoccupied();
             FirstUnoccupiedButton.CharacterPrefab = givenCharacterPrefab;
             FirstUnoccupiedButton.characterIndex = charIndex;
+            posingCharacters[FirstUnoccupiedButton.buttonIndex].gameObject.SetActive(true);
+            posingCharacters[FirstUnoccupiedButton.buttonIndex].runtimeAnimatorController = givenCharacterPrefab.transform.Find("CharacterModel").GetComponent<Animator>().runtimeAnimatorController;
             FirstUnoccupiedButton.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite =
                 givenCharacterPrefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
             FirstUnoccupiedButton.button.GetComponent<LongPressButton>().enabled = true;
@@ -140,6 +143,7 @@ public class CSTeamPortraitManager : MonoBehaviour
         if(x.characterIndex != -1)
         {
             x.CharacterPrefab = null;
+            posingCharacters[x.buttonIndex].gameObject.SetActive(false);
             x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
             x.characterIndex = -1;
             Reorder();
@@ -156,6 +160,7 @@ public class CSTeamPortraitManager : MonoBehaviour
                 GameObject tempPrefab = x.CharacterPrefab;
                 int tempIndex = x.characterIndex;
                 x.CharacterPrefab = null;
+                posingCharacters[x.buttonIndex].gameObject.SetActive(false);
                 x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
                 x.characterIndex = -1;
                 AddCharacterInCS3(tempPrefab, tempIndex);
@@ -199,5 +204,6 @@ public class PortraitButton
 {
     public GameObject button;
     [HideInInspector]public GameObject CharacterPrefab = null;
+    public int buttonIndex;
     public int characterIndex;
 }

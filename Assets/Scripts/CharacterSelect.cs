@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 public class CharacterSelect : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class CharacterSelect : MonoBehaviour
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
                 characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
-            CharacterButtons.GetChild(i).Find("Character").Find("LevelText").GetComponent<Text>().text = characterList[i].level.ToString();
+            CharacterButtons.GetChild(i).Find("Character").Find("LevelText").GetComponent<TextMeshProUGUI>().text = characterList[i].level.ToString();
             CharacterButtons.GetChild(i).gameObject.SetActive(true);
             CharacterButtons.GetChild(i).transform.Find("Hover").GetComponent<Animator>().SetBool("select", AlreadySelected(i));
         }
@@ -67,6 +68,7 @@ public class CharacterSelect : MonoBehaviour
         canvasCamera.Find("AllNone").gameObject.SetActive(enemySelection);
         canvasCamera.Find("AllowDuplicates").gameObject.SetActive(enemySelection);
         canvasCamera.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+        Debug.Log("Reikia sutvarkyti");
     }
 
     public void AutoFill()
@@ -279,23 +281,23 @@ public class CharacterSelect : MonoBehaviour
     //Epic poses
     public void DisplaySelectedCharacters()
     {
-        Transform posingCharacters = GameObject.Find("PoseCharacters").transform;
-        for (int i = 0; i < posingCharacters.childCount; i++)
-        {
-            posingCharacters.GetChild(i).gameObject.SetActive(true);
-
-            posingCharacters.GetChild(i).GetComponent<Animator>().runtimeAnimatorController =
-                charactersToGoOnMission[i].Item1.prefab.transform.Find("CharacterModel").GetComponent<Animator>().runtimeAnimatorController;
-            posingCharacters.GetChild(i).GetComponent<Animator>().SetTrigger("playerHit");
-        }
+        // Transform posingCharacters = GameObject.Find("PoseCharacters").transform;
+        // for (int i = 0; i < posingCharacters.childCount; i++)
+        // {
+        //     posingCharacters.GetChild(i).gameObject.SetActive(true);
+        //
+        //     posingCharacters.GetChild(i).GetComponent<Animator>().runtimeAnimatorController =
+        //         charactersToGoOnMission[i].Item1.prefab.transform.Find("CharacterModel").GetComponent<Animator>().runtimeAnimatorController;
+        //     posingCharacters.GetChild(i).GetComponent<Animator>().SetTrigger("playerHit");
+        // }
         //Canvas
         Transform canvas = GameObject.Find("CanvasCamera").transform;
-        // canvas.Find("Enemies").gameObject.SetActive(false);
-        canvas.Find("Clear").gameObject.SetActive(false);
-        canvas.Find("AutoFill").gameObject.SetActive(false);
-        canvas.Find("CharacterButtons").gameObject.SetActive(false);
+        // // canvas.Find("Enemies").gameObject.SetActive(false);
+        // canvas.Find("Clear").gameObject.SetActive(false);
+        // canvas.Find("AutoFill").gameObject.SetActive(false);
+        // canvas.Find("CharacterButtons").gameObject.SetActive(false);
         canvas.Find("TeamPortraitBox").gameObject.SetActive(false);
-        //
+        // //
         canvas.Find("Next").gameObject.SetActive(false);
         canvas.Find("Back").gameObject.SetActive(false);
         canvas.Find("Embark").gameObject.SetActive(true);
@@ -303,19 +305,19 @@ public class CharacterSelect : MonoBehaviour
     }
     public void StopDisplayingSelectedCharacters()
     {
-        Transform posingCharacters = GameObject.Find("PoseCharacters").transform;
-        for (int i = 0; i < posingCharacters.childCount; i++)
-        {
-            posingCharacters.GetChild(i).gameObject.SetActive(false);
-        }
-        //Canvas
+        // Transform posingCharacters = GameObject.Find("PoseCharacters").transform;
+        // for (int i = 0; i < posingCharacters.childCount; i++)
+        // {
+        //     posingCharacters.GetChild(i).gameObject.SetActive(false);
+        // }
+        // //Canvas
         Transform canvas = GameObject.Find("CanvasCamera").transform;
-        // canvas.Find("Enemies").gameObject.SetActive(true);
-        canvas.Find("Clear").gameObject.SetActive(true);
-        canvas.Find("AutoFill").gameObject.SetActive(true);
-        canvas.Find("CharacterButtons").gameObject.SetActive(true);
+        // // canvas.Find("Enemies").gameObject.SetActive(true);
+        // canvas.Find("Clear").gameObject.SetActive(true);
+        // canvas.Find("AutoFill").gameObject.SetActive(true);
+        // canvas.Find("CharacterButtons").gameObject.SetActive(true);
         canvas.Find("TeamPortraitBox").gameObject.SetActive(true);
-        //
+        // //
         canvas.Find("Next").gameObject.SetActive(true);
         canvas.Find("Back").gameObject.SetActive(true);
         canvas.Find("Embark").gameObject.SetActive(false);
