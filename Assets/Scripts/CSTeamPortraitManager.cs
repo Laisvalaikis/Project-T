@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CSTeamPortraitManager : MonoBehaviour
 {
-    public List<PortraitButton> PortraitButtonList;
+    public List<PortraitButtonData> PortraitButtonList;
     public List<Animator> posingCharacters;
     [HideInInspector]public GameObject ActiveButton = null;
     public Sprite EmptySprite;
@@ -40,9 +40,9 @@ public class CSTeamPortraitManager : MonoBehaviour
             FirstUnoccupiedButton.button.GetComponent<LongPressButton>().enabled = true;
         }
     }
-    public PortraitButton FindByButton(GameObject button)
+    public PortraitButtonData FindByButton(GameObject button)
     {
-        foreach(PortraitButton x in PortraitButtonList)
+        foreach(PortraitButtonData x in PortraitButtonList)
         {
             if(x.button == button)
             {
@@ -51,9 +51,9 @@ public class CSTeamPortraitManager : MonoBehaviour
         }
         return null;
     }
-    public PortraitButton FindFirstUnoccupied()
+    public PortraitButtonData FindFirstUnoccupied()
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             if (x.CharacterPrefab == null)
             {
@@ -64,7 +64,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     public void DisableButtonSelections()
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             x.button.transform.Find("ButtonFrame").GetComponent<Animator>().SetBool("select", false);
         }
@@ -92,7 +92,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     public void ClearPortraits()
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             x.CharacterPrefab = null;
             x.button.transform.Find("ButtonPortrait").GetComponent<Image>().sprite = EmptySprite;
@@ -108,7 +108,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     public void RemoveCharacter()
     {
-        foreach(PortraitButton x in PortraitButtonList)
+        foreach(PortraitButtonData x in PortraitButtonList)
         {
             if(x.button == ActiveButton)
             {
@@ -125,7 +125,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     public void RemoveCharacter(int charIndex)
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             if (x.characterIndex == charIndex)
             {
@@ -138,7 +138,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     {
         GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex);
     }
-    private void Remove(PortraitButton x)
+    private void Remove(PortraitButtonData x)
     {
         if(x.characterIndex != -1)
         {
@@ -153,7 +153,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     private void Reorder()
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             if (x.characterIndex != -1)
             {
@@ -169,14 +169,14 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     private void ToggleLongClick()
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             x.button.GetComponent<LongPressButton>().enabled = x.characterIndex != -1;
         }
     }
     public void DisplayCharacterInfo(GameObject button)
     {
-        foreach (PortraitButton x in PortraitButtonList)
+        foreach (PortraitButtonData x in PortraitButtonList)
         {
             if (x.button == button && x.characterIndex != -1)
             {
@@ -189,7 +189,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     public bool AlreadySelected(int charIndex)
     {
         bool alreadySelected = false;
-        foreach(PortraitButton button in PortraitButtonList)
+        foreach(PortraitButtonData button in PortraitButtonList)
         {
             if (button.characterIndex == charIndex)
             {
@@ -198,12 +198,4 @@ public class CSTeamPortraitManager : MonoBehaviour
         }
         return alreadySelected;
     }
-}
-[System.Serializable]
-public class PortraitButton
-{
-    public GameObject button;
-    [HideInInspector]public GameObject CharacterPrefab = null;
-    public int buttonIndex;
-    public int characterIndex;
 }

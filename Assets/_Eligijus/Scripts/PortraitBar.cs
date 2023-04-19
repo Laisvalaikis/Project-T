@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class PortraitBar : MonoBehaviour
 {
-    public List<TownPortrait> townPortraits;
-
+    public List<CharacterPortrait> townPortraits;
+    
+    public List<Animator> buttonOnHover;
+    
     public Button up;
 
     public Button down;
@@ -112,16 +114,19 @@ public class PortraitBar : MonoBehaviour
         int index = characterIndex-_scrollCharacterSelectIndex;
         Debug.Log(characterIndex);
         Debug.Log(index);
-        TownPortrait townPortrait = townPortraits[index];
+        CharacterPortrait characterPortrait = townPortraits[index];
+        Animator animator = buttonOnHover[index];
         townPortraits.RemoveAt(index);
+        buttonOnHover.RemoveAt(index);
         for (int i = index, count = characterIndex; i < townPortraits.Count; i++, count++)
         {
             townPortraits[i].characterIndex = count;
         }
         int siblingIndex = townPortraits[townPortraits.Count - 1].transform.GetSiblingIndex();
-        townPortrait.transform.SetSiblingIndex(siblingIndex);
-        townPortrait.gameObject.SetActive(false);
-        townPortraits.Add(townPortrait);
+        characterPortrait.transform.SetSiblingIndex(siblingIndex);
+        characterPortrait.gameObject.SetActive(false);
+        townPortraits.Add(characterPortrait);
+        buttonOnHover.Add(animator);
         if ( townPortraits.Count >= _currentCharacters.Count)
         {
             Scroll(-1);

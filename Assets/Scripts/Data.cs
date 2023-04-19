@@ -27,7 +27,6 @@ public class Data : MonoBehaviour
     [HideInInspector] public Statistics globalStatistics;
     /*[HideInInspector]*/
     public TownData townData;
-    public List<TownPortrait> townPortraits;
     // Start is called before the first frame update
     void Start()
     {

@@ -47,7 +47,7 @@ public class CharacterSelect : MonoBehaviour
         }
         for (int i = 0; i < characterList.Count; i++)
         {
-            CharacterButtons.GetChild(i).GetComponent<TownPortrait>().characterIndex = i;
+            CharacterButtons.GetChild(i).GetComponent<CharacterPortrait>().characterIndex = i;
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
                 characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
@@ -218,7 +218,7 @@ public class CharacterSelect : MonoBehaviour
             if (characterButton.gameObject.activeSelf)
             {
                 characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white;
-                characterButton.GetComponent<TownPortrait>().available = true;
+                characterButton.GetComponent<CharacterPortrait>().available = true;
             }
         }
     }
@@ -227,10 +227,10 @@ public class CharacterSelect : MonoBehaviour
     {
         foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
         {
-            if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<TownPortrait>().characterIndex))
+            if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<CharacterPortrait>().characterIndex))
             {
                 characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.grey;
-                characterButton.GetComponent<TownPortrait>().available = false;
+                characterButton.GetComponent<CharacterPortrait>().available = false;
             }
         }
     }

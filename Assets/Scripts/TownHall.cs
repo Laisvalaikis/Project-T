@@ -28,8 +28,9 @@ public class TownHall : MonoBehaviour
             //
             transform.Find("UpgradeName").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeName;
             transform.Find("UpgradeDescription").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeDescription;
-            transform.Find("UpgradeCost").GetComponent<Text>().text = "-" + SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost.ToString() + "g";
+            transform.Find("UpgradeCost").GetComponent<TextMeshProUGUI>().text = "-" + SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost.ToString() + "g";
             transform.Find("BuyButton").GetComponent<Button>().interactable = _data.townData.townGold >= SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost;
+            Debug.Log("Reikia perdaryti");
 
         }
         else

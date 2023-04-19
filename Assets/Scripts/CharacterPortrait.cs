@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,15 +7,22 @@ using UnityEngine.UI;
 using Assets.Scripts.Classes;
 using TMPro;
 
-public class TownPortrait : MonoBehaviour
+public class CharacterPortrait : PortraitButton
 {
     public int characterIndex = 0;
     public Image characterImage;
     public TextMeshProUGUI levelText;
     public GameObject abilityPointCorner;
-    [HideInInspector]public bool available = true;
-    public Data _data;
-    public void OnPortraitClick()
+    [SerializeField] private PortraitBar _portraitBar;
+    
+    private Data _data;
+
+    private void Start()
+    {
+        _data = _portraitBar._data;
+    }
+
+    public override void OnPortraitClick()
     {
         if (SceneManager.GetActiveScene().name == "CharacterSelect3")
         {
@@ -47,41 +55,6 @@ public class TownPortrait : MonoBehaviour
                     //atidaryti lentele
                 }
             }
-        }
-    }
-    public void OnHover()
-    {
-        if(available)
-        {
-            transform.Find("Hover").GetComponent<Animator>().SetBool("hover", true);
-        }
-    }
-    public void OffHover()
-    {
-        transform.Find("Hover").GetComponent<Animator>().SetBool("hover", false);
-    }
-
-    public void Select()
-    {
-        transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
-    }
-
-    public void Deselect()
-    {
-        transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
-    }
-
-    public void ShowHideBlessings()
-    {
-        if(transform.parent.Find("BlessingsTable").gameObject.activeSelf)
-        {
-            Deselect();
-            transform.parent.Find("BlessingsTable").gameObject.SetActive(false);
-        }
-        else
-        {
-            Select();
-            transform.parent.Find("BlessingsTable").gameObject.SetActive(true);
         }
     }
 

@@ -341,7 +341,7 @@ public class GameProgress : MonoBehaviour
             {
                 CharacterButtons.GetChild(i % 6).localPosition = new Vector3(0, CharacterButtons.GetChild(i % 6).localPosition.y, 0);
             }
-            CharacterButtons.GetChild(i % 6).GetComponent<TownPortrait>().characterIndex = i;
+            CharacterButtons.GetChild(i % 6).GetComponent<CharacterPortrait>().characterIndex = i;
             CharacterButtons.GetChild(i % 6).Find("Character").Find("Portrait").gameObject.SetActive(true);
             CharacterButtons.GetChild(i % 6).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
                 _data.Characters[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
@@ -351,7 +351,7 @@ public class GameProgress : MonoBehaviour
             //CharacterButtons.GetChild(i % 6).Find("AbilityPointText").gameObject.SetActive(Characters[i].abilityPointCount > 0);
 
             CharacterButtons.GetChild(i % 6).gameObject.SetActive(true);
-            if (CharacterButtons.GetChild(i % 6).GetComponent<TownPortrait>().characterIndex == _data.currentCharacterIndex)
+            if (CharacterButtons.GetChild(i % 6).GetComponent<CharacterPortrait>().characterIndex == _data.currentCharacterIndex)
             {
                 CharacterButtons.GetChild(i % 6).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
             }

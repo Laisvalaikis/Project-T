@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public string buttonState;
+    private bool _isSelected = false;
     private GameInformation gameInformation;
     public HelpTableController _helpTableController;
     void Start()
@@ -19,7 +20,8 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     {
         var buttonManager = transform.parent.parent.GetComponent<ButtonManager>();
         transform.GetChild(0).GetComponent<Animator>().SetBool("select", true);
-
+        _isSelected = true;
+        _helpTableController.helpTable.closeHelpTable();
         GameObject character;
         if (gameInformation.SelectedCharacter != null)
         {
@@ -57,6 +59,9 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     {
         _helpTableController.hasActionButtonBeenEntered = true;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", true);
+        _helpTableController.EnableTableForInGameRightClick(buttonState);
+        
+
         gameInformation.isBoardDisabled = true;
     }
 
@@ -65,5 +70,8 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         _helpTableController.hasActionButtonBeenEntered = false;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", false);
         GameObject.Find("GameInformation").gameObject.GetComponent<GameInformation>().isBoardDisabled = gameInformation.helpTableOpen;
+        _helpTableController.helpTable.closeHelpTable();
+        
+        
     }
 }

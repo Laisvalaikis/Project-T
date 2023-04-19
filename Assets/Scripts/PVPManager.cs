@@ -351,7 +351,7 @@ public class PVPManager : MonoBehaviour
             {
                 characterButtons.GetChild(i).Find("Portrait").GetComponent<Image>().sprite = allAvailableCharacters[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
                 characterButtons.GetChild(i).Find("Portrait").GetComponent<Image>().color = (TeamFull() && !IsSelected(i)) ? Color.grey : Color.white;
-                characterButtons.GetChild(i).GetComponent<TownPortrait>().available = !(TeamFull() && !IsSelected(i));
+                characterButtons.GetChild(i).GetComponent<CharacterPortrait>().available = !(TeamFull() && !IsSelected(i));
                 characterButtons.GetChild(i).gameObject.SetActive(true);
                 characterButtons.GetChild(i).Find("Hover").GetComponent<Animator>().SetBool("select", IsSelected(i));
             }

@@ -16,6 +16,7 @@ public class CharacterTable : MonoBehaviour
     [SerializeField] private TextMeshProUGUI xpProgress;
     [SerializeField] private TextMeshProUGUI abilityPointCount;
     [SerializeField] private TextMeshProUGUI blessingList;
+    [SerializeField] private PortraitBar portraitButtons;
     [HideInInspector] public int characterIndex;
     [HideInInspector] public string originalName;
     public TMP_InputField nameInput;
@@ -86,6 +87,7 @@ public class CharacterTable : MonoBehaviour
         _data.townData.townGold += cost / 2;
         gameUI.EnableGoldChange("+" + cost / 2 + "g");
         gameProgress.RemoveCharacter(characterIndex);
+        UpdateTable();
     }
     
     // Updates Table when enabled
@@ -132,30 +134,29 @@ public class CharacterTable : MonoBehaviour
 
     private void RemoveHighlightsFromPortraitBar()
     {
-        var characterButtons = GameObject.Find("CanvasCamera").transform.Find("PortraitBar").transform.Find("CharacterButtons");
-        for (int i = 0; i < characterButtons.childCount; i++)
+        for (int i = 0; i < portraitButtons.buttonOnHover.Count; i++)
         {
-            if (characterButtons.GetChild(i).gameObject.activeInHierarchy)
+            if (portraitButtons.townPortraits[i].gameObject.activeInHierarchy)
             {
-                characterButtons.GetChild(i).Find("Hover").GetComponent<Animator>().SetBool("select", false);
+                portraitButtons.buttonOnHover[i].SetBool("select", false);
             }
         }
     }
 
     private void HighlightCurrentCharacterInPortraitBar()
     {
-        var characterButtons = GameObject.Find("CanvasCamera").transform.Find("PortraitBar").transform.Find("CharacterButtons");
-        for (int i = 0; i < characterButtons.childCount; i++)
+
+        for (int i = 0; i < portraitButtons.buttonOnHover.Count; i++)
         {
-            if (characterButtons.GetChild(i).gameObject.activeInHierarchy)
+            if (portraitButtons.townPortraits[i].gameObject.activeInHierarchy)
             {
-                if (characterButtons.GetChild(i).GetComponent<TownPortrait>().characterIndex == characterIndex)
+                if (portraitButtons.townPortraits[i].characterIndex == characterIndex)
                 {
-                    characterButtons.GetChild(i).Find("Hover").GetComponent<Animator>().SetBool("select", true);
+                    portraitButtons.buttonOnHover[i].SetBool("select", true);
                 }
                 else
                 {
-                    characterButtons.GetChild(i).Find("Hover").GetComponent<Animator>().SetBool("select", false);
+                    portraitButtons.buttonOnHover[i].SetBool("select", false);
                 }
             }
         }
