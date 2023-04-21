@@ -29,7 +29,7 @@ public class PlayerInformation : MonoBehaviour
     public Sprite CharacterPortraitSprite;
     public Sprite CharacterSplashArt;//For character table
     public Sprite CroppedSplashArt;
-    public GameObject CornerUIManager;
+    public CharacterUiData characterUiData;
     public Data _data;
     //
     [HideInInspector] public Debuffs Debuffs; // :'( uzsirasyti kazkur visus imanomus debuffus

@@ -17,6 +17,7 @@ public class PlayerTeams : MonoBehaviour
     public bool isGameOver;
     public Data _data;
     public HelpTableController helpTableController;
+    public ButtonManager characterUiButtonManager;
     void Start()
     {
         if(GameObject.Find("GameProgress") != null)
@@ -75,17 +76,21 @@ public class PlayerTeams : MonoBehaviour
                 spawnedCharacter.GetComponent<AIBehaviour>()._data = _data;
                 spawnedCharacter.GetComponent<PlayerInformation>().CharactersTeam = allCharacterList.teams[teamIndex].teamName; //Assigning the characters their team.
                 allCharacterList.teams[teamIndex].characters[i] = spawnedCharacter; //Turning prefabs into gameObjects on board.
-                                                                                    //
-                GameObject cornerUIManager = Instantiate(allCharacterList.teams[teamIndex].characters[i].GetComponent<PlayerInformation>().CornerUIManager, CornerUIManagerContainer); //Spawning cornerUI of each player.
-                ButtonManager buttonManager = cornerUIManager.GetComponent<ButtonManager>();
-                buttonManager.AddDataToActionButtons(helpTableController);
-                allCharacterList.teams[teamIndex].characters[i].GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager; //Turning prefabs into gameObjects in canvas.
-                buttonManager.CharacterOnBoard = allCharacterList.teams[teamIndex].characters[i];//Assigning character to its UI button manager
-                spawnedCharacter.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = cornerUIManager;//Assigning UI button manager character to its character
+                if (!characterUiButtonManager.gameObject.activeInHierarchy)
+                {
+                    characterUiButtonManager.gameObject.SetActive(true);
+                }
+                characterUiButtonManager.AddDataToActionButtons(helpTableController);
+                characterUiButtonManager.CharacterOnBoard = allCharacterList.teams[teamIndex].characters[i];//Assigning character to its UI button manager
+                characterUiButtonManager.GetComponent<BottomCornerUI>().characterUiData = spawnedCharacter.GetComponent<PlayerInformation>().characterUiData;
+                characterUiButtonManager.GetComponent<BottomCornerUI>().UpdateData();
+                spawnedCharacter.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = characterUiButtonManager.gameObject;//Assigning UI button manager character to its character
                 if (allCharacterList.teams[teamIndex].isTeamAI)
                 {
                     spawnedCharacter.GetComponent<PlayerInformation>().Respawn = true;
                 }
+                
+                Debug.Log("Cia kazkas daroma su ui corner");
             }
             i++;
         }
@@ -102,10 +107,11 @@ public class PlayerTeams : MonoBehaviour
         {
             otherCharacters.Add(character);
         }
-        GameObject cornerUIManager = Instantiate(character.GetComponent<PlayerInformation>().CornerUIManager, CornerUIManagerContainer); //Spawning cornerUI of each player.
-        character.GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager; //Turning prefabs into gameObjects in canvas.
-        cornerUIManager.GetComponent<ButtonManager>().CharacterOnBoard = character;//Assigning character to its UI button manager
-        character.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = cornerUIManager;//Assigning UI button manager character to its character
+        // GameObject cornerUIManager = Instantiate(character.GetComponent<PlayerInformation>().CornerUIManager, CornerUIManagerContainer); //Spawning cornerUI of each player.
+        // character.GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager; //Turning prefabs into gameObjects in canvas.
+        characterUiButtonManager.CharacterOnBoard = character;//Assigning character to its UI button manager
+        character.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = characterUiButtonManager.gameObject;//Assigning UI button manager character to its character
+        Debug.Log("Cia kazkas daroma su Ui corner manager");
         AddCharacterToCurrentTeam(character);
     }
     public void AddCharacterToCurrentTeam(GameObject character)

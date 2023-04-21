@@ -14,6 +14,7 @@ public class GameProgress : MonoBehaviour
     public PortraitBar portraitBarControl;
     public GameUi gameUi;
     public SaveData _saveData;
+    public ButtonManager cornerButtonManager;
     public Data _data;
     void Awake()
     {
@@ -227,76 +228,6 @@ public class GameProgress : MonoBehaviour
             _data.maxCharacterCount = 6;
         }
     }
-
-    // public void UpdateCharacterBar(int direction = 0)//up - 1, down - -1, none - 0
-    // {
-    //     Transform PortraitBarButtons = GameObject.Find("CanvasCamera").transform.Find("PortraitBar").Find("CharacterButtons");
-    //     // Perdaryti
-    //     if (direction == 0)
-    //     {
-    //         if (PortraitBarButtons.GetChild(0).GetComponent<TownPortrait>().characterIndex == 6)
-    //         {
-    //             direction = -1;
-    //         }
-    //         else direction = 1;
-    //     }
-    //     for (int i = 0; i < 6; i++)
-    //     {
-    //         // townPortraits[i].gameObject.SetActive(false);
-    //         // townPortraits[i].GetComponent<Image>().sprite = null;
-    //         PortraitBarButtons.GetChild(i).gameObject.SetActive(false);
-    //         PortraitBarButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(false);
-    //         PortraitBarButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite = null;
-    //     }
-    //     int start = 0;
-    //     int finish = 6;
-    //     if (direction == -1)
-    //     {
-    //         GameObject.Find("CanvasCamera").transform.Find("Down").GetComponent<Button>().interactable = false;
-    //         GameObject.Find("CanvasCamera").transform.Find("Up").GetComponent<Button>().interactable = true;
-    //         start = 6;
-    //         finish = _data.Characters.Count;
-    //         if (_data.Characters.Count != 6 && _data.Characters.Count != 12)
-    //         {
-    //             PortraitBarButtons.localPosition = new Vector3(-125, -340 + (_data.Characters.Count % 6 - 1) * 68, 0);
-    //         }
-    //         else
-    //         {
-    //             PortraitBarButtons.localPosition = new Vector3(-125, -340 + (6 - 1) * 68, 0);
-    //         }
-    //     }
-    //     else if (direction == 1)
-    //     {
-    //         GameObject.Find("CanvasCamera").transform.Find("Down").GetComponent<Button>().interactable = _data.Characters.Count > 6;
-    //         GameObject.Find("CanvasCamera").transform.Find("Up").GetComponent<Button>().interactable = false;
-    //         if (_data.Characters.Count < 6)
-    //         {
-    //             finish = _data.Characters.Count;
-    //         }
-    //         else finish = 6;
-    //         if (_data.Characters.Count != 6)
-    //         {
-    //             PortraitBarButtons.localPosition = new Vector3(-125, -340 + (finish - 1) * 68, 0);
-    //         }
-    //         else
-    //         {
-    //             PortraitBarButtons.localPosition = new Vector3(-125, -340 + (6 - 1) * 68, 0);
-    //         }
-    //     }
-    //
-    //     for (int i = start; i < finish; i++)
-    //     {
-    //         PortraitBarButtons.GetChild(i % 6).gameObject.SetActive(true);
-    //         PortraitBarButtons.GetChild(i % 6).GetComponent<TownPortrait>().characterIndex = i;
-    //         PortraitBarButtons.GetChild(i % 6).Find("Character").Find("Portrait").gameObject.SetActive(true);
-    //         PortraitBarButtons.GetChild(i % 6).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
-    //             _data.Characters[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
-    //         PortraitBarButtons.GetChild(i % 6).Find("Character").Find("LevelText").GetComponent<Text>().text = _data.Characters[i].level.ToString();
-    //         PortraitBarButtons.GetChild(i % 6).Find("AbilityPointCorner").gameObject.SetActive(_data.Characters[i].abilityPointCount > 0);
-    //     }
-    //     GetComponent<Town>()?.ToggleAbilityPointWarning();
-    // }
-    
     
     //sita vps istrint turbut reiks
     public void UpdateCharacterButtons(int direction)//up - 1, down - -1, none - 0
@@ -357,23 +288,6 @@ public class GameProgress : MonoBehaviour
             }
         }
     }
-    /*
-    public void UpdateCharacterButtons()
-    {
-        Transform CharacterButtons = GameObject.Find("CanvasCamera").transform.Find("CharacterButtons");
-        for(int i = 0; i < Characters.Count; i++)
-        {
-            CharacterButtons.GetChild(i).GetComponent<TownPortrait>().characterIndex = i;
-            CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
-            CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
-                Characters[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
-            CharacterButtons.GetChild(i).Find("Character").Find("LevelText").GetComponent<Text>().text = Characters[i].level.ToString();
-            CharacterButtons.GetChild(i).gameObject.SetActive(true);
-        }
-    }
-    */
-    
-    
     
     //RECRUITMENT
     public void BuyCharacter(SavedCharacter character)
@@ -439,121 +353,7 @@ public class GameProgress : MonoBehaviour
             FakeUpdate();
         }
     }
-
-    // //SAVESYSTEM
-    // public void SaveTownData()
-    // {
-    //     //sita ifa visa turbut irgi istrint reiks karocia
-    //     //if (SceneManager.GetActiveScene().name == "CharacterSelect")
-    //     //{
-    //     //    List<SavedCharacter> charactersToGoOnMission = new List<SavedCharacter>();
-    //     //    charactersToGoOnMission.Clear();
-    //     //    for (int i = 0; i < 3; i++)
-    //     //    {
-    //     //        int index = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().PortraitButtonList[i].characterIndex;
-    //     //        charactersToGoOnMission.Add(Characters[index]);
-    //     //    }
-    //     //    for (int i = 2; i >= 0; i--)
-    //     //    {
-    //     //        Characters.Remove(charactersToGoOnMission[i]);
-    //     //        Characters.Insert(0, charactersToGoOnMission[i]);
-    //     //    }
-    //     //}
-    //     selectedEnemies = new List<int>();
-    //     bool allowEnemySelection = false;
-    //     bool allowDuplicates = false;
-    //     if (SceneManager.GetActiveScene().name == "CharacterSelect3")
-    //     {
-    //         GetComponent<CharacterSelect>().SaveData();
-    //         allowEnemySelection = true;
-    //         allowDuplicates = GetComponent<CharacterSelect>().allowDuplicates;
-    //     }
-    //     List<SavedCharacter> RCcharacters = new List<SavedCharacter>();
-    //     if (SceneManager.GetActiveScene().name == "Town")
-    //     {
-    //         RCcharacters = GameObject.Find("CanvasCamera").transform.Find("RecruitmentCenterTable").GetComponent<Recruitment>().CharactersInShop;
-    //     }
-    //     else if (SaveSystem.DoesSaveFileExist() && !createNewRCcharacters)
-    //     {
-    //         townData.rcCharacters.ForEach(savableCharacter => RCcharacters.Add(new SavedCharacter(savableCharacter, AllAvailableCharacters[savableCharacter.prefabIndex].prefab)));
-    //         //TownData loadedData = SaveSystem.LoadTownData();
-    //         //for (int i = 0; i < townData.rcCharacters.Count; i++)
-    //         //{
-    //         //    SavedCharacter newCharacter = AllAvailableCharacters[loadedData.RCcharacters[i]];
-    //         //    newCharacter.characterName = loadedData.RCcharacterNames[i];
-    //         //    newCharacter.level = loadedData.RCcharacterLevels[i];
-    //         //    newCharacter.XP = 0;
-    //         //    newCharacter.abilityPointCount = newCharacter.level;
-    //         //    newCharacter.unlockedAbilities = "0000";
-    //         //    RCcharacters.Add(newCharacter);
-    //         //}
-    //     }
-    //     if (createNewRCcharacters)
-    //     {
-    //         RCcharacters = null;
-    //     }
-    //     TownData data = new TownData(townData.difficultyLevel, townData.townGold, townData.day, Characters, CharactersOnLastMission,
-    //         townData.wasLastMissionSuccessful, false, townData.singlePlayer, townData.selectedMission, townData.townHall, RCcharacters,
-    //         selectedEnemies, allowEnemySelection, allowDuplicates, SaveSystem.LoadTownData().teamColor,
-    //         townData.slotName, townData.selectedEncounter, townData.pastEncounters, townData.generateNewEncounters, townData.generatedEncounters, townData.gameSettings);
-    //     SaveSystem.SaveTownData(data);
-    //     SaveSystem.SaveStatistics(statistics);
-    //     SaveSystem.SaveStatistics(globalStatistics, true);
-    // }
-    // public void LoadTownData()
-    // {
-    //     townData = SaveSystem.LoadTownData();
-    //
-    //     //difficultyLevel = townData.difficultyLevel;
-    //     //townGold = townData.townGold;
-    //     //day = townData.day;
-    //     Characters.Clear();
-    //     CharactersOnLastMission.Clear();
-    //     //for (int i = 0; i < townData.characters.Length; i++)
-    //     //{
-    //     //    GameObject charPrefab = AllAvailableCharacters[townData.characters[i]].prefab;
-    //     //    SavedCharacter newCharacter = new SavedCharacter(charPrefab, townData.characterLevels[i], townData.characterXP[i], townData.characterXPToGain[i],
-    //     //        townData.isCharacterDead[i], townData.characterNames[i], townData.abilityPointCounts[i], townData.unlockedAbilities[i], townData.characterBlessingStrings[i]);
-    //     //    Characters.Add(newCharacter);
-    //     //}
-    //     townData.characters.ForEach(savableCharacter => Characters.Add(new SavedCharacter(savableCharacter, AllAvailableCharacters[savableCharacter.prefabIndex].prefab)));
-    //     //if (townData.wereCharactersOnAMission)
-    //     //{
-    //     //    for (int i = 0; i < townData.charactersOnLastMission.Length; i++)
-    //     //    {
-    //     //        CharactersOnLastMission.Add(townData.charactersOnLastMission[i]);
-    //     //    }
-    //     //    wasLastMissionSuccessful = townData.wasLastMissionSuccessful;
-    //     //}
-    //     CharactersOnLastMission = new List<int>(townData.charactersOnLastMission);
-    //     //singlePlayer = townData.singlePlayer;
-    //     //townHall = townData.townHall;
-    //     //RC
-    //     if (SceneManager.GetActiveScene().name == "Town" && !townData.createNewRCcharacters && !townData.newGame)
-    //     {
-    //         //Debug.Log("Loading RC data");
-    //         List<SavedCharacter> RCcharacters = new List<SavedCharacter>();
-    //         //for (int i = 0; i < townData.RCcharacters.Length; i++)
-    //         //{
-    //         //    SavedCharacter newCharacter = AllAvailableCharacters[townData.RCcharacters[i]];
-    //         //    newCharacter.characterName = townData.RCcharacterNames[i];
-    //         //    newCharacter.level = townData.RCcharacterLevels[i];
-    //         //    newCharacter.XP = 0;
-    //         //    newCharacter.abilityPointCount = newCharacter.level;
-    //         //    newCharacter.unlockedAbilities = "0000";
-    //         //    RCcharacters.Add(newCharacter);
-    //         //}
-    //         townData.rcCharacters.ForEach(savableCharacter => RCcharacters.Add(new SavedCharacter(savableCharacter, AllAvailableCharacters[savableCharacter.prefabIndex].prefab)));
-    //         GameObject.Find("CanvasCamera").transform.Find("RecruitmentCenterTable").GetComponent<Recruitment>().CharactersInShop = RCcharacters;
-    //     }
-    //     else if (SceneManager.GetActiveScene().name == "Town" && (townData.createNewRCcharacters || townData.newGame))
-    //     {
-    //         GameObject.Find("CanvasCamera").transform.Find("RecruitmentCenterTable").GetComponent<Recruitment>().CharactersInShop = null;
-    //     }
-    //     globalStatistics = SaveSystem.LoadStatistics(true);
-    //     statistics = SaveSystem.LoadStatistics();
-    //     //selectedMission = townData.selectedMission;
-    // }
+    
     public void StartNewGame()
     {
         SaveSystem.SaveTownData(_data.newGameData);
@@ -592,22 +392,7 @@ public class GameProgress : MonoBehaviour
         GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject.SetActive(false);
         Time.timeScale = 1;
     }
-    
-    // public void DisableHelpTables()
-    // {
-    //     for (int i = 0; i < GameObject.Find("Canvas").transform.Find("HelpTables").transform.childCount; i++)
-    //     {
-    //         Destroy(GameObject.Find("Canvas").transform.Find("HelpTables").transform.GetChild(i).gameObject);
-    //     }
-    //     for (int i = 0; i < GameObject.Find("Canvas").transform.Find("CharacterTable").Find("Abilities").transform.childCount; i++)
-    //     {
-    //         if (GameObject.Find("Canvas").transform.Find("CharacterTable").transform.Find("Abilities").transform.GetChild(i).gameObject.activeSelf
-    //             && GameObject.Find("Canvas").transform.Find("CharacterTable").transform.Find("Abilities").transform.GetChild(i).transform.Find("ActionButtonFrame").GetComponent<Animator>().isActiveAndEnabled)
-    //         {
-    //             GameObject.Find("Canvas").transform.Find("CharacterTable").transform.Find("Abilities").transform.GetChild(i).transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("select", false);
-    //         }
-    //     }
-    // }
+
     public void DisplayCharacterInfo(int index)
     {
         _data.currentCharacterIndex = index;
@@ -661,30 +446,7 @@ public class GameProgress : MonoBehaviour
     {
         DisplayCharacterInfo(_data.currentCharacterIndex);
     }
-    //public void AddCharacter()
-    //{
-    //    GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().AddCharacterInSP(Characters[currentCharacterIndex].prefab, currentCharacterIndex);
-    //}
-    //public void AutoFill()//sita irgi vps bus galima istrint jei nenaudosim to seno character select
-    //{
-    //    GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().ClearPortraits();
-    //    if (SceneManager.GetActiveScene().name == "CharacterSelect3")
-    //    {
-    //        /*
-    //        for (int i = 0; i < 3; i++)
-    //        {
-    //            GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().AddCharacterInCS3(Characters[i].prefab, i);
-    //            GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(i).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
-    //        }
-    //        */
-    //    }
-    //    else
-    //    {
-    //        GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().AddCharacterInSP(Characters[0].prefab, 0);
-    //        GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().AddCharacterInSP(Characters[1].prefab, 1);
-    //        GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>().AddCharacterInSP(Characters[2].prefab, 2);
-    //    }
-    //}
+   
     public void ToggleRemoveButton(bool enable)
     {
         if (SceneManager.GetActiveScene().name == "CharacterSelect")
@@ -733,7 +495,7 @@ public class GameProgress : MonoBehaviour
                 {
                     var characterInfo = GameObject.Find("GameInformation").GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>();
                     characterInfo.savedCharacter = _data.Characters[i];
-                    characterInfo.CornerUIManager.GetComponent<ButtonManager>().GenerateAbilities();//SavedCharacter implementation
+                    cornerButtonManager.GenerateAbilities();//SavedCharacter implementation
                 }
             }
             //Enemies
@@ -756,7 +518,9 @@ public class GameProgress : MonoBehaviour
                         character.GetComponent<PlayerInformation>().BlessingsAndCurses.Add(new Blessing(blessing.blessingName, 0, "", "", "", ""));
                     }
                 }
-                character.GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().GenerateAbilitiesForEnemy(abilitiesToEnable);
+                // cornerButtonManager.GenerateAbilitiesForEnemy(abilitiesToEnable);
+                Debug.LogError("Disabled Enemies Ability Generation");
+                Debug.Log("Cia kazkas daroma su corener ui manager");
             }
         }
         print("saved characters set");

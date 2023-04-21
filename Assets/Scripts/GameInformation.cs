@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using System.Runtime.CompilerServices;
 using TMPro;
 
 public class GameInformation : MonoBehaviour
@@ -28,6 +29,7 @@ public class GameInformation : MonoBehaviour
     public SaveData _saveData;
     public Data _data;
     public HelpTableController helpTableController;
+    public ButtonManager cornerButtonManager;
     //Other
     [HideInInspector] public GameObject SelectedCharacter  {
         get { return _selectedCharacter; }
@@ -54,6 +56,26 @@ public class GameInformation : MonoBehaviour
     //Ints
     [HideInInspector] public int activeTeamIndex = 0;
     private int activateAfter2Frames = 0;
+
+    private static GameInformation insance;
+    
+    void Start()
+    {
+        insance = this;
+        ActiveTeam = GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName; //The team who goes first.
+        AddButton = GameObject.Find("Canvas").transform.Find("AddButton")?.gameObject;
+        //ChangeVisionTiles();
+        activateAfter2Frames = 1;
+        //kviesti is playerTeams
+        //ChangeActiveTeam(ActiveTeam);
+        fadeCountDown = 0.7f;
+        fadeCountDown1 = fadeCountDown;
+        victoryCountDown = 0.5f;
+        respawnEnemiesDuringThisTurn = false;
+        undoAction = new UndoAction();
+        undoAction.available = false;
+        GameObject.Find("Canvas").transform.Find("FadeScreen")?.gameObject.SetActive(true);
+    }
 
     void Update()
     {
@@ -210,37 +232,24 @@ public class GameInformation : MonoBehaviour
             GetComponent<PlayerTeams>().allCharacterList.teams[activeTeamIndex].undoCount--;
         }
     }
-    void Start()
-    {
-        ActiveTeam = GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName; //The team who goes first.
-        AddButton = GameObject.Find("Canvas").transform.Find("AddButton")?.gameObject;
-        //ChangeVisionTiles();
-        activateAfter2Frames = 1;
-        //kviesti is playerTeams
-        //ChangeActiveTeam(ActiveTeam);
-        fadeCountDown = 0.7f;
-        fadeCountDown1 = fadeCountDown;
-        victoryCountDown = 0.5f;
-        respawnEnemiesDuringThisTurn = false;
-        undoAction = new UndoAction();
-        undoAction.available = false;
-        GameObject.Find("Canvas").transform.Find("FadeScreen")?.gameObject.SetActive(true);
-    }
+
     public void EnableMovementAction()
     {
         DisableGrids();
         if (SelectedCharacter != null)
         {
             SelectedCharacter.GetComponent<GridMovement>().EnableGrid();
-            SelectedCharacter.GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().DisableSelection(
-                SelectedCharacter.GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().ButtonList[0].transform.Find("ActionButtonFrame").gameObject); //ijungia movement frame
+            cornerButtonManager.DisableSelection(
+                cornerButtonManager.ButtonList[0].transform.Find("ActionButtonFrame").gameObject); //ijungia movement frame
+            
         }
         else if (InspectedCharacter != null)
         {
             InspectedCharacter.GetComponent<GridMovement>().EnableGrid();
-            InspectedCharacter.GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().DisableSelection(
-                InspectedCharacter.GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().ButtonList[0].transform.Find("ActionButtonFrame").gameObject); //ijungia movement frame
+            cornerButtonManager.DisableSelection(
+                cornerButtonManager.ButtonList[0].transform.Find("ActionButtonFrame").gameObject); //ijungia movement frame
         }
+        Debug.Log("Cia kazkas daroma su corner ui manager");
     }
     public void SelectACharacter(GameObject character)
     {
@@ -289,7 +298,8 @@ public class GameInformation : MonoBehaviour
                 DeselectTeam(SelectedCharacter);
             DisableOtherCharacterMovement(CharacterToInspect);
             CharacterToInspect.GetComponent<GridMovement>().EnableGrid();
-            CharacterToInspect.GetComponent<PlayerInformation>().CornerUIManager.transform.GetChild(0).gameObject.SetActive(true);
+            cornerButtonManager.transform.GetChild(0).gameObject.SetActive(true);
+            Debug.Log("cia kazkas daroma su corner ui manager");
             SelectedCharacter = null;
             if (CharacterToInspect.GetComponent<PlayerInformation>().CharactersTeam == "Default")
             {
@@ -340,7 +350,7 @@ public class GameInformation : MonoBehaviour
     {
         character.GetComponent<PlayerInformation>().ToggleSelectionBorder(false);
         character.GetComponent<GridMovement>().DisableGrid();
-        character.GetComponent<PlayerInformation>().CornerUIManager.transform.GetChild(0).gameObject.SetActive(false);
+        insance.cornerButtonManager.transform.GetChild(0).gameObject.SetActive(false);
         for (int k = 0; k < character.GetComponent<ActionManager>().ActionScripts.Count; k++)
         {
             character.GetComponent<ActionManager>().ActionScripts[k].action.DisableGrid();

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e7a680e8e5ea640918088349ee98bb, type: 3}
+  m_Name: ForestWitch
+  m_EditorClassIdentifier: 
+  textColor: {r: 0.3647059, g: 1, b: 0.13333334, a: 1}
+  backgroundColor: {r: 0.3254902, g: 0.5058824, b: 0.23529413, a: 1}
+  characterSprite: {fileID: 5215637411366904250, guid: 88a9dc2923d4fa842a8fce4120dbf698,
+    type: 3}
+  abilitySprites:
+  - {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  abilities:
+  - sprite: {fileID: -6000465129233884172, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 47
+  - sprite: {fileID: 6003129548037305118, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 36

@@ -39,6 +39,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4991873443301276837}
   - {fileID: 6128914949816081562}
@@ -153,8 +154,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: 9061640590526611639, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 219515216111128601, guid: 9b6e601c936ed0c40a57d29ce7d8bf28,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 582040496b01dee47b4140155b538322, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -441,6 +442,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!1 &6128914949816081561
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +469,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6128914949322519981}
   m_RootOrder: 1
@@ -487,7 +490,7 @@ PrefabInstance:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
@@ -653,7 +656,7 @@ PrefabInstance:
     - target: {fileID: 4689621008488017737, guid: ed24e842bb536204eb6846cc53311643,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}

@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Classes;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +15,21 @@ public class BottomCornerUI : MonoBehaviour
     private GameObject currentCharacter;
     private GameObject movementText;
     private GameObject healthText;
+    public GameObject buttonPrefab;
+    public List<TextMeshProUGUI> buttonText;
+    public List<ActionButton> buttonAction;
+    public List<Image> buttonImages;
+    public List<Image> buttonBackgroundImages;
+    public Image staminaBackground;
+    public Image portrait;
+    public CharacterUiData characterUiData;
+    private ButtonManager _buttonManager;
     void Awake()
     {
         GameInformation = GameObject.Find("GameInformation").gameObject;
         movementText = transform.GetChild(0).Find("MovementTextBackground").GetChild(0).gameObject;
         healthText = transform.GetChild(0).Find("HealthBar").Find("HealthText").gameObject;
+        _buttonManager = GetComponent<ButtonManager>();
     }
 
     /*void Update()
@@ -40,7 +52,7 @@ public class BottomCornerUI : MonoBehaviour
             currentCharacter = null;
         }
         if (currentCharacter != null &&
-            currentCharacter.GetComponent<PlayerInformation>().CornerUIManager == transform.gameObject)
+            currentCharacter.GetComponent<PlayerInformation>().characterUiData == characterUiData)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             /*characterPortrait.GetComponent<Image>().sprite = GameInformation.GetComponent<GameInformation>()
@@ -63,6 +75,68 @@ public class BottomCornerUI : MonoBehaviour
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             ActivateOnce = true;
+        }
+    }
+
+    public void UpdateData()
+    {
+        portrait.sprite = characterUiData.characterSprite;
+        Color half = characterUiData.backgroundColor;
+        half.a = 0.5f;
+        staminaBackground.color = half;
+        for (int i = 0; i < characterUiData.abilities.Count; i++)
+        {
+            buttonText[i].color = characterUiData.textColor;
+            buttonImages[i].sprite = characterUiData.abilities[i].sprite;
+            buttonAction[i].buttonState = characterUiData.abilities[i].abilityAction.ToString();
+            buttonBackgroundImages[i].color = characterUiData.backgroundColor;
+        }
+        
+    }
+    
+    public void UpdateData(int buttonIndex, int index)
+    {
+        portrait.sprite = characterUiData.characterSprite;
+        Color half = characterUiData.backgroundColor;
+        half.a = 0.5f;
+        staminaBackground.color = half;
+        for (int i = 0; i < characterUiData.abilities.Count; i++)
+        {
+            buttonText[buttonIndex].color = characterUiData.textColor;
+            buttonImages[buttonIndex].sprite = characterUiData.abilities[index].sprite;
+            buttonAction[buttonIndex].buttonState = characterUiData.abilities[index].abilityAction.ToString();
+            buttonBackgroundImages[buttonIndex].color = characterUiData.backgroundColor;
+        }
+        
+    }
+
+    public void EnableAbilities(SavedCharacter savedCharacter)
+    {
+        int currentButtonIndex = 2;
+        int buttonIndex = 0;
+        if (savedCharacter != null)
+        {
+            for (int i = 0; i < savedCharacter.unlockedAbilities.Length; i++)
+            {
+                if (_buttonManager.ButtonList.Count > currentButtonIndex)
+                {
+                    if (savedCharacter.prefab.GetComponent<ActionManager>().FindActionByIndex(i) != null && savedCharacter.unlockedAbilities[i] == '1')
+                    {
+                        _buttonManager.ButtonList[currentButtonIndex].transform.parent.gameObject.SetActive(true);
+                        UpdateData(buttonIndex, i);
+                        // ButtonList[currentButtonIndex].transform.Find("ActionButtonImage").GetComponent<Image>().sprite = savedCharacter.prefab.GetComponent<ActionManager>().FindActionByIndex(i).AbilityIcon;
+                        // ButtonList[currentButtonIndex].GetComponent<ActionButton>().buttonState = savedCharacter.prefab.GetComponent<ActionManager>().FindActionByIndex(i).actionName;
+                        currentButtonIndex++;
+                        buttonIndex++;
+                    }
+                }
+            }
+            for (int i = currentButtonIndex; i < _buttonManager.ButtonList.Count; i++)
+            {
+                _buttonManager.ButtonList[i].transform.parent.gameObject.SetActive(false);
+                // string extensionName = "Extension" + (i + 1).ToString();
+                // transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
+            }
         }
     }
 }

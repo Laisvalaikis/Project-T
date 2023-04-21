@@ -16,6 +16,7 @@ public class AIManager : MonoBehaviour
     private RaycastHit2D raycast;
     public LayerMask blockingLayer;
     public LayerMask groundLayer;
+    public GameObject cornerUIManager;
     public Data _data;
 
     void Awake()
@@ -66,9 +67,6 @@ public class AIManager : MonoBehaviour
                             spawnedEnemy.GetComponent<PlayerInformation>().CharacterPortraitSprite;
                         */
                         //
-                        Transform CornerUIManagerContainer = PlayerTeams.CornerUIManagerContainer;
-                        GameObject cornerUIManager = Instantiate(spawnedEnemy.GetComponent<PlayerInformation>().CornerUIManager, CornerUIManagerContainer);
-                        spawnedEnemy.GetComponent<PlayerInformation>().CornerUIManager = cornerUIManager;
                         cornerUIManager.GetComponent<ButtonManager>().CharacterOnBoard = spawnedEnemy;
                         spawnedEnemy.GetComponent<PlayerInformation>().cornerPortraitBoxInGame = cornerUIManager;
                         spawnedEnemy.GetComponent<AIBehaviour>()._data = _data;

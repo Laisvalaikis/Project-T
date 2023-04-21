@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 332953138002955273}
   m_RootOrder: 1
@@ -71,6 +72,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2818654834016752195}
   - {fileID: 332953137426588990}
@@ -183,8 +185,8 @@ MonoBehaviour:
     type: 3}
   CharacterSplashArt: {fileID: 0}
   CroppedSplashArt: {fileID: 0}
-  CornerUIManager: {fileID: 2861782309322184228, guid: df567f8d9ce13ff4dadf1d23e95e3069,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 906295b6e5ecf0a40a592d4df9290f86, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -285,16 +287,16 @@ MonoBehaviour:
     AbilityIcon: {fileID: 2770929758457341302, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 2
-  - action: {fileID: 2435472771142719551}
-    actionName: CreateBearTrap
-    AbilityIcon: {fileID: -5250772273186044626, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: -1
   - action: {fileID: 5596205724893707146}
     actionName: LongShot
     AbilityIcon: {fileID: -9139038222646363919, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 3
+  - action: {fileID: 2435472771142719551}
+    actionName: CreateBearTrap
+    AbilityIcon: {fileID: -5250772273186044626, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: -1
   hasSlowAbilityBeenCast: 0
 --- !u!114 &787870582142606753
 MonoBehaviour:
@@ -418,6 +420,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &8304171456884574880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +533,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8068200105209010620, guid: 87b6cf5f874713e4f882391546df6d12,
         type: 3}
+    - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -750,6 +758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689621008488017737, guid: ed24e842bb536204eb6846cc53311643,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}

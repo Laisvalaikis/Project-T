@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4992332202872890993}
   m_RootOrder: 1
@@ -70,6 +71,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8485040509813477740}
   - {fileID: 4992332202425847622}
@@ -184,8 +186,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: 4672966334877237986, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 2708150716993928882, guid: a08888725ba1ffe46b6767e42866b2c3,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: a3cfa8a315b99224e9b4c0372ec6a05e, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -271,20 +273,11 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 240675051581214535}
-    actionName: SilenceBeam
-    AbilityIcon: {fileID: -6000465129233884172, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 3
   - action: {fileID: 278763047832048528}
     actionName: PinkBarrier
     AbilityIcon: {fileID: -2885244205613315195, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
-  - action: {fileID: 7022162792890341850}
-    actionName: HealSingle
-    AbilityIcon: {fileID: 0}
-    AbilityIndex: -1
   - action: {fileID: 1481712078402011389}
     actionName: Purify
     AbilityIcon: {fileID: -4147313178977208927, guid: 38f03c585e84a1640a863ffc47a7d49b,
@@ -295,6 +288,16 @@ MonoBehaviour:
     AbilityIcon: {fileID: 850385056709354357, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 2
+  - action: {fileID: 240675051581214535}
+    actionName: SilenceBeam
+    AbilityIcon: {fileID: -6000465129233884172, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 3
+  - action: {fileID: 7022162792890341850}
+    actionName: HealSingle
+    AbilityIcon: {fileID: 1064230382522644472, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: -1
   hasSlowAbilityBeenCast: 0
 --- !u!114 &5420544717587281881
 MonoBehaviour:
@@ -400,6 +403,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &7022162792890341850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +797,7 @@ PrefabInstance:
     - target: {fileID: 4689621008488017737, guid: ed24e842bb536204eb6846cc53311643,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}
@@ -819,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}

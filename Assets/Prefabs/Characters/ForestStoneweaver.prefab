@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 330868429183524322}
   - component: {fileID: 3228690234083009646}
   - component: {fileID: 770838431890194374}
-  - component: {fileID: 2070992735581942341}
   - component: {fileID: 5104389081067678456}
+  - component: {fileID: 2070992735581942341}
   - component: {fileID: 6620832645968982236}
   - component: {fileID: 311237760707422314}
   - component: {fileID: 9091832487457855706}
@@ -41,6 +41,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5993343513178656303}
   - {fileID: 330868429677229231}
@@ -155,8 +156,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: -5125940699952450712, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 9195877149546137799, guid: 84c158ab2a159df4ea83fc19d456155c,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 6b460d6af38bb3b4eb1de6889e26655c, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -222,47 +223,6 @@ MonoBehaviour:
   officiallyRemovedMovementPoints: 0
   WayTilesList: []
   PreferredWayTile: {fileID: 0}
---- !u!114 &2070992735581942341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330868429183524323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6edcc5bf56b2e3c4e9587a6d545001bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityBackground: {fileID: -5530371819613864454, guid: f12fdd45e276893438b8ce4098f754cb,
-    type: 3}
-  ActionScripts:
-  - action: {fileID: 5104389081067678456}
-    actionName: Attack
-    AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: -1
-  - action: {fileID: 4156664721190068763}
-    actionName: WallEntrap
-    AbilityIcon: {fileID: -3297504094695843550, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 3
-  - action: {fileID: 6766374907701197965}
-    actionName: LeapAndSlam
-    AbilityIcon: {fileID: -4900127969809747176, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 2
-  - action: {fileID: 6154540893461515490}
-    actionName: WallSmash
-    AbilityIcon: {fileID: 4693665290838367390, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 1
-  - action: {fileID: 4185089606427051332}
-    actionName: RaiseRock
-    AbilityIcon: {fileID: -1071641158705808608, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 0
-  hasSlowAbilityBeenCast: 0
 --- !u!114 &5104389081067678456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +248,47 @@ MonoBehaviour:
   isDisabled: 0
   spawnedCharacter: {fileID: 0}
   impactVFXName: 
+--- !u!114 &2070992735581942341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330868429183524323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6edcc5bf56b2e3c4e9587a6d545001bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityBackground: {fileID: -5530371819613864454, guid: f12fdd45e276893438b8ce4098f754cb,
+    type: 3}
+  ActionScripts:
+  - action: {fileID: 5104389081067678456}
+    actionName: Attack
+    AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: -1
+  - action: {fileID: 4185089606427051332}
+    actionName: RaiseRock
+    AbilityIcon: {fileID: -1071641158705808608, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 0
+  - action: {fileID: 6154540893461515490}
+    actionName: WallSmash
+    AbilityIcon: {fileID: 4693665290838367390, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 1
+  - action: {fileID: 6766374907701197965}
+    actionName: LeapAndSlam
+    AbilityIcon: {fileID: -4900127969809747176, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 2
+  - action: {fileID: 4156664721190068763}
+    actionName: WallEntrap
+    AbilityIcon: {fileID: -3297504094695843550, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 3
+  hasSlowAbilityBeenCast: 0
 --- !u!114 &6620832645968982236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &6766374907701197965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +513,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 330868429183524248}
   m_RootOrder: 1

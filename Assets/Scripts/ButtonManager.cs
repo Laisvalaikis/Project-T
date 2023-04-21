@@ -246,18 +246,20 @@ public class ButtonManager : MonoBehaviour
                 {
                     if (character.prefab.GetComponent<ActionManager>().FindActionByIndex(i) != null && character.unlockedAbilities[i] == '1')
                     {
+                        ButtonList[currentButtonIndex].transform.parent.gameObject.SetActive(true);
                         ButtonList[currentButtonIndex].transform.Find("ActionButtonImage").GetComponent<Image>().sprite = character.prefab.GetComponent<ActionManager>().FindActionByIndex(i).AbilityIcon;
                         ButtonList[currentButtonIndex].GetComponent<ActionButton>().buttonState = character.prefab.GetComponent<ActionManager>().FindActionByIndex(i).actionName;
                         currentButtonIndex++;
                     }
                 }
             }
-            for (int i = currentButtonIndex; i < ButtonList.Count; i++)
-            {
-                    ButtonList[i].gameObject.SetActive(false);
-                    string extensionName = "Extension" + (i + 1).ToString();
-                    transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
-            }
+            // for (int i = currentButtonIndex; i < ButtonList.Count; i++)
+            // {
+            //         ButtonList[i].gameObject.SetActive(false);
+            //         string extensionName = "Extension" + (i + 1).ToString();
+            //         transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
+            // }
+            Debug.LogError("Commented disable ability button");
         }
     }
 
@@ -271,6 +273,7 @@ public class ButtonManager : MonoBehaviour
             {
                 if (ButtonList.Count > currentButtonIndex && character.GetComponent<ActionManager>().FindActionListByName(ability) != null)
                 {
+                    ButtonList[currentButtonIndex].transform.parent.gameObject.SetActive(false);
                     ButtonList[currentButtonIndex].transform.Find("ActionButtonImage").GetComponent<Image>().sprite = character.GetComponent<ActionManager>().FindActionListByName(ability).AbilityIcon;
                     ButtonList[currentButtonIndex].GetComponent<ActionButton>().buttonState = character.GetComponent<ActionManager>().FindActionListByName(ability).actionName;
                     currentButtonIndex++;
@@ -278,7 +281,7 @@ public class ButtonManager : MonoBehaviour
             }
             for (int i = currentButtonIndex; i < ButtonList.Count; i++)
             {
-                ButtonList[i].gameObject.SetActive(false);
+                ButtonList[i].transform.parent.gameObject.SetActive(false);
                 string extensionName = "Extension" + (i + 1).ToString();
                 transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
             }

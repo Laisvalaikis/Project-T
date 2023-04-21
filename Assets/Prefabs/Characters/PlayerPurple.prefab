@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1466404997717818991}
   m_RootOrder: 1
@@ -69,6 +70,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5426122581637575304}
   - {fileID: 1466404997276014424}
@@ -183,8 +185,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: 7947849650263423474, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 5080999086158971314, guid: c7eb827015a9cea45aa8cbaa19e2c0cd,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 6ac0302a8d11e174bb1a1dd2b1c8b303, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -270,26 +272,26 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 3109224438125991045}
-    actionName: CreatePortal
-    AbilityIcon: {fileID: -1290873878513007113, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 2
   - action: {fileID: 6433718165815191512}
     actionName: ThrowSpear
     AbilityIcon: {fileID: 8361226031749484295, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
-  - action: {fileID: 3586424458969066845}
-    actionName: SwitchPlaces
-    AbilityIcon: {fileID: -4035232837558371148, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 3
   - action: {fileID: 4325581555394127729}
     actionName: SpearPulse
     AbilityIcon: {fileID: 850385056709354357, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 1
+  - action: {fileID: 3109224438125991045}
+    actionName: CreatePortal
+    AbilityIcon: {fileID: -1290873878513007113, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 2
+  - action: {fileID: 3586424458969066845}
+    actionName: SwitchPlaces
+    AbilityIcon: {fileID: -4035232837558371148, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 3
   hasSlowAbilityBeenCast: 0
 --- !u!114 &1884827434860179399
 MonoBehaviour:
@@ -385,6 +387,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &6433718165815191512
 MonoBehaviour:
   m_ObjectHideFlags: 0

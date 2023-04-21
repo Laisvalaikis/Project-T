@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e7a680e8e5ea640918088349ee98bb, type: 3}
+  m_Name: Green
+  m_EditorClassIdentifier: 
+  textColor: {r: 0.3647059, g: 1, b: 0.13333334, a: 1}
+  backgroundColor: {r: 0.2784314, g: 0.50980395, b: 0.16470589, a: 1}
+  characterSprite: {fileID: -2578982626072357038, guid: 88a9dc2923d4fa842a8fce4120dbf698,
+    type: 3}
+  abilitySprites:
+  - {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  - {fileID: 5321582045164929636, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  - {fileID: -5244227264245802611, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  - {fileID: -4933178696744715701, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  - {fileID: 4693665290838367390, guid: 38f03c585e84a1640a863ffc47a7d49b, type: 3}
+  abilities:
+  - sprite: {fileID: -660037021321600360, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 41
+  - sprite: {fileID: -6000465129233884172, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 38
+  - sprite: {fileID: 2770929758457341302, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 57
+  - sprite: {fileID: -9139038222646363919, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 31
+  - sprite: {fileID: -5250772273186044626, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    abilityAction: 10

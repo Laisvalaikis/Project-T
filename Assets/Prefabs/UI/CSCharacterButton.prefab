@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 2049439866527123730}
   - component: {fileID: 2049439866527123820}
   - component: {fileID: 2049439866527123821}
+  - component: {fileID: 3761597442863303416}
   - component: {fileID: 3817544768904689186}
   - component: {fileID: 2049439866527123818}
   m_Layer: 5
@@ -528,8 +529,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3817544768904689186}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 3761597442863303416}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: OnPortraitClick
         m_Mode: 1
         m_Arguments:
@@ -588,8 +589,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3817544768904689186}
-          m_TargetAssemblyTypeName: 
+        - m_Target: {fileID: 3761597442863303416}
+          m_TargetAssemblyTypeName: PortraitButton, Assembly-CSharp
           m_MethodName: OnHover
           m_Mode: 1
           m_Arguments:
@@ -604,8 +605,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3817544768904689186}
-          m_TargetAssemblyTypeName: 
+        - m_Target: {fileID: 3761597442863303416}
+          m_TargetAssemblyTypeName: PortraitButton, Assembly-CSharp
           m_MethodName: OffHover
           m_Mode: 1
           m_Arguments:
@@ -620,8 +621,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3817544768904689186}
-          m_TargetAssemblyTypeName: 
+        - m_Target: {fileID: 3761597442863303416}
+          m_TargetAssemblyTypeName: PortraitButton, Assembly-CSharp
           m_MethodName: OnHover
           m_Mode: 1
           m_Arguments:
@@ -632,7 +633,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &3817544768904689186
+--- !u!114 &3761597442863303416
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -641,15 +642,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 2049439866527123823}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63a8291b17a7ef4cb49cf14e827cc1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  available: 1
+  characterIndex: 0
+  chharacterSelect: {fileID: 0}
+--- !u!114 &3817544768904689186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049439866527123823}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ab9a16d23a5e545ac8a6e0d561a573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  available: 1
   characterIndex: 0
   characterImage: {fileID: 2049439865613776547}
   levelText: {fileID: 7750291894963004531}
   abilityPointCorner: {fileID: 9085256792828139963}
-  available: 1
-  _data: {fileID: 0}
+  _portraitBar: {fileID: 0}
 --- !u!114 &2049439866527123818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,8 +683,8 @@ MonoBehaviour:
   onLongClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3817544768904689186}
-        m_TargetAssemblyTypeName: TownPortrait, Assembly-CSharp
+      - m_Target: {fileID: 3761597442863303416}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
         m_MethodName: DisplayCharacterInfo
         m_Mode: 1
         m_Arguments:
