@@ -7,6 +7,7 @@ public class DebuffManager : MonoBehaviour
 {
     private List<string> debuffs;
     public GameObject CharacterOnBoard;
+    public float offsetDebuff = 80f;
     public void UpdateDebuffs()
     {
         UpdateDebuffList();
@@ -174,7 +175,7 @@ public class DebuffManager : MonoBehaviour
     }
     private void UpdateDebuffIcons()
     {
-        float yPosition = 120f;
+        float yPosition = offsetDebuff;
         for (int i = 0; i < transform.childCount - 1; i++)
         {
             if (debuffs.Find(x => x == transform.GetChild(i).name) != null)
@@ -188,7 +189,7 @@ public class DebuffManager : MonoBehaviour
                 }
                 transform.GetChild(i).gameObject.SetActive(true);
                 transform.GetChild(i).transform.localPosition = new Vector3(0f, yPosition, 0f);
-                yPosition += 120f;
+                yPosition += offsetDebuff;
             }
             else
             {

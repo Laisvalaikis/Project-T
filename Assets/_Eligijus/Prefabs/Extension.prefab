@@ -253,6 +253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonState: Attack
   _helpTableController: {fileID: 0}
+  actionButtonFrame: {fileID: 219515216192904968}
+  buttonManager: {fileID: 0}
 --- !u!114 &219515216868777239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,13 +541,14 @@ GameObject:
   - component: {fileID: 1766874358070206603}
   - component: {fileID: 5075560637164952074}
   - component: {fileID: 9174238544832956496}
+  - component: {fileID: 7754272335296695028}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1766874358070206603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -594,7 +597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 976a677d0677ef641931ecb5d5aec3d7, type: 2}
   m_sharedMaterial: {fileID: -5198555027823409852, guid: 976a677d0677ef641931ecb5d5aec3d7,
@@ -622,8 +625,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -664,6 +667,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7754272335296695028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6584517831477331097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de28e4263cec4fa49e16ea86def7bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coolDown: {fileID: 9174238544832956496}
+  _actionButton: {fileID: 219515216868777238}
+  action: {fileID: 0}
 --- !u!1 &8199173460617785570
 GameObject:
   m_ObjectHideFlags: 0

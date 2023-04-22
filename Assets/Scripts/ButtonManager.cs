@@ -10,7 +10,11 @@ public class ButtonManager : MonoBehaviour
     public List<GameObject> ButtonList;
     [HideInInspector] public List<GameObject> ButtonFrameList;
     private List<GameObject> ButtonIconList;
-    [HideInInspector] public GameObject CharacterOnBoard;
+    private GameObject _characterOnBorad;
+    [HideInInspector] public GameObject CharacterOnBoard {
+        get { return _characterOnBorad; }
+        set { _characterOnBorad = value; }
+    }
     private KeyCode[] AbilityChangingButtonSequence = { KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y };
     private List<ActionButton> _actionButtons;
     void Awake()
@@ -31,7 +35,7 @@ public class ButtonManager : MonoBehaviour
                 CantAttackIcon.gameObject.GetComponent<Image>().color = GetComponent<BottomCornerUI>().ButtonIconColor;
             }
         }
-        transform.GetChild(0).Find("MovementTextBackground").GetChild(0).gameObject.GetComponent<Text>().color = GetComponent<BottomCornerUI>().ButtonIconColor;
+        // transform.GetChild(0).Find("MovementTextBackground").GetChild(0).gameObject.GetComponent<Text>().color = GetComponent<BottomCornerUI>().ButtonIconColor;
     }
     void Start()
     {

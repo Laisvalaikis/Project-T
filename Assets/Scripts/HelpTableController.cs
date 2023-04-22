@@ -133,38 +133,24 @@ public class HelpTableController : MonoBehaviour
         if (gameInformation.SelectedCharacter != null || gameInformation.InspectedCharacter != null)
         {
             var character = gameInformation.SelectedCharacter == null ? gameInformation.InspectedCharacter : gameInformation.SelectedCharacter;
-            var ability = character.GetComponent<ActionManager>().FindActionByName(abilityName).GetBuffedAbility(character.GetComponent<PlayerInformation>().savedCharacter.blessings);
-            AbilityText abilityText = _abilities[ability.actionStateName];
-            if (abilityText != null)
+            BaseAction action = character.GetComponent<ActionManager>().FindActionByName(abilityName);
+            if (action != null) 
             {
-                gameInformation.helpTableOpen = true;
-                gameInformation.isBoardDisabled = true;
-                if (GameObject.Find("Canvas").transform.Find("HelpScreen") != null)
+                var ability = action.GetBuffedAbility(character.GetComponent<PlayerInformation>().savedCharacter.blessings);
+                AbilityText abilityText = _abilities[ability.actionStateName];
+                if (abilityText != null)
                 {
-                    GameObject.Find("Canvas").transform.Find("HelpScreen").gameObject.SetActive(true);
+                    gameInformation.helpTableOpen = true;
+                    gameInformation.isBoardDisabled = true;
+                    if (GameObject.Find("Canvas").transform.Find("HelpScreen") != null)
+                    {
+                        GameObject.Find("Canvas").transform.Find("HelpScreen").gameObject.SetActive(true);
+                    }
+
+                    helpTable.gameObject.SetActive(true);
+                    FillTableWithInfo(ability, abilityText, character.GetComponent<PlayerInformation>().savedCharacter,
+                        character.GetComponent<ActionManager>());
                 }
-                helpTable.gameObject.SetActive(true);
-                FillTableWithInfo(ability, abilityText, character.GetComponent<PlayerInformation>().savedCharacter, character.GetComponent<ActionManager>());
-                //table.transform.Find("Button").Find("TableContents").Find("CooldownText").GetComponent<Text>().text = ability.AbilityCooldown.ToString();
-                //if (ability.maxAttackDamage == 0)
-                //{
-                //    table.transform.Find("Button").Find("TableContents").Find("DamageIcon").gameObject.SetActive(false);
-                //    table.transform.Find("Button").Find("TableContents").Find("DamageText").gameObject.SetActive(false);
-                //    table.transform.Find("Button").Find("TableContents").Find("IsAbilitySlow").position = table.transform.Find("Button").Find("TableContents").Find("IsAbilitySlow").position + new Vector3(0f, 80f);
-                //}
-                //else
-                //    table.transform.Find("Button").Find("TableContents").Find("DamageText").GetComponent<Text>().text = ability.GetDamageString();
-                //table.transform.Find("Button").Find("TableContents").Find("IsAbilitySlow").Find("Slow").gameObject.SetActive(ability.isAbilitySlow);
-                //table.transform.Find("Button").Find("TableContents").Find("IsAbilitySlow").Find("Fast").gameObject.SetActive(!ability.isAbilitySlow);
-                //table.transform.Find("Button").Find("TableContents").Find("RangeText").GetComponent<Text>().text = ability.AttackRange.ToString();
-                //var blessingsList = character.GetComponent<PlayerInformation>().savedCharacter.blessings.FindAll(x => x.spellName == ability.actionStateName);
-                //string blessingsText = "";
-                //foreach (var blessing in blessingsList)
-                //{
-                //    blessingsText += $"{blessing.blessingName}\n";
-                //}
-                //table.transform.Find("Button").Find("TableContents").Find("BlessingsTable").Find("BlessingsList").GetComponent<Text>().text = blessingsText;
-                //
             }
         }
     }

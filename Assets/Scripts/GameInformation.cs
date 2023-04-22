@@ -269,6 +269,7 @@ public class GameInformation : MonoBehaviour
             DisableOtherCharacterMovement(character);
            // if (!character.GetComponent<PlayerInformation>().isThisObject)
           //  {
+          cornerButtonManager.CharacterOnBoard = character;
                 character.GetComponent<PlayerInformation>().TeamManager.GetComponent<TeamInformation>().DisableSelection(
                 character.GetComponent<PlayerInformation>().characterPortrait);
                 GetComponent<PlayerTeams>().allCharacterList.teams[activeTeamIndex].lastSelectedPlayer = SelectedCharacter;
