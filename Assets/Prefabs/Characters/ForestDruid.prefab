@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4560430366766835687}
   m_RootOrder: 1
@@ -67,6 +68,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5505100128509814087}
   - {fileID: 4560430366273818320}
@@ -179,8 +181,8 @@ MonoBehaviour:
     type: 3}
   CharacterSplashArt: {fileID: 0}
   CroppedSplashArt: {fileID: 0}
-  CornerUIManager: {fileID: 1873019491043396151, guid: 78d8a24154e4029498f2555dc98bb1e0,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 156133d2d597f6d4babd1b3246837152, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -351,6 +353,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &-7772956906545683175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +645,7 @@ PrefabInstance:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
@@ -818,7 +821,7 @@ PrefabInstance:
     - target: {fileID: 4689621008488017737, guid: ed24e842bb536204eb6846cc53311643,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377012265061634777, guid: ed24e842bb536204eb6846cc53311643,
         type: 3}

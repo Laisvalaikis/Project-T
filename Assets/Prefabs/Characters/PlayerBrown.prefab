@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5368946581862913205}
   m_RootOrder: 1
@@ -71,6 +72,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2105869636837525250}
   - {fileID: 5368946581281308034}
@@ -185,8 +187,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: -5125940699952450712, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 9195877149546137799, guid: 84c158ab2a159df4ea83fc19d456155c,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 6b460d6af38bb3b4eb1de6889e26655c, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -272,26 +274,26 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 8627313483231406902}
-    actionName: WallEntrap
-    AbilityIcon: {fileID: -3297504094695843550, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 3
-  - action: {fileID: 1437722838054860192}
-    actionName: LeapAndSlam
-    AbilityIcon: {fileID: -4900127969809747176, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 2
-  - action: {fileID: 1980595618552153551}
-    actionName: WallSmash
-    AbilityIcon: {fileID: 4693665290838367390, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 1
   - action: {fileID: 8359036874775268457}
     actionName: RaiseRock
     AbilityIcon: {fileID: -1071641158705808608, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
+  - action: {fileID: 1980595618552153551}
+    actionName: WallSmash
+    AbilityIcon: {fileID: 4693665290838367390, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 1
+  - action: {fileID: 1437722838054860192}
+    actionName: LeapAndSlam
+    AbilityIcon: {fileID: -4900127969809747176, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 2
+  - action: {fileID: 8627313483231406902}
+    actionName: WallEntrap
+    AbilityIcon: {fileID: -3297504094695843550, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 3
   hasSlowAbilityBeenCast: 0
 --- !u!114 &631420657153303509
 MonoBehaviour:
@@ -465,6 +467,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &1437722838054860192
 MonoBehaviour:
   m_ObjectHideFlags: 0

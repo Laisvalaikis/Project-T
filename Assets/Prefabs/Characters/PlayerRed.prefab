@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7896836077047742815}
   m_RootOrder: 1
@@ -73,6 +74,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4436216301449668508}
   - {fileID: 7896836076466530408}
@@ -187,8 +189,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: -8913815223202546545, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 1425642155728886693, guid: 788d664283098614981535877c68e44e,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 615fbf1d2d1bdae4f8d3d9ec7f4627ef, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -274,21 +276,26 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 3277735718628666889}
-    actionName: Enrage
-    AbilityIcon: {fileID: -1473824630161842880, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 1
   - action: {fileID: 6263850219097736289}
     actionName: ShadowBlink
     AbilityIcon: {fileID: -4900127969809747176, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
+  - action: {fileID: 3277735718628666889}
+    actionName: Enrage
+    AbilityIcon: {fileID: -1473824630161842880, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 1
   - action: {fileID: 3736915990180218745}
     actionName: Execute
     AbilityIcon: {fileID: -431620073777160903, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 2
+  - action: {fileID: 2720904733145322621}
+    actionName: Scream
+    AbilityIcon: {fileID: 285764324283905352, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 3
   - action: {fileID: 6800830062715459706}
     actionName: IsolatedStrike
     AbilityIcon: {fileID: 2653253005981326686, guid: 38f03c585e84a1640a863ffc47a7d49b,
@@ -299,11 +306,6 @@ MonoBehaviour:
     AbilityIcon: {fileID: 285764324283905352, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 2720904733145322621}
-    actionName: Scream
-    AbilityIcon: {fileID: 285764324283905352, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 3
   hasSlowAbilityBeenCast: 0
 --- !u!114 &-5104098614347520090
 MonoBehaviour:
@@ -497,6 +499,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &6800830062715459706
 MonoBehaviour:
   m_ObjectHideFlags: 0

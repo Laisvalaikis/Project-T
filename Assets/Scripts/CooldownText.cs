@@ -2,17 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Classes;
+using TMPro;
 using UnityEngine.UI;
 
 public class CooldownText : MonoBehaviour
 {
-    private string ActionName;
+    public TextMeshProUGUI coolDown;
+    public ActionButton _actionButton;
     [HideInInspector]public BaseAction action;
+    private ButtonManager _buttonManager;
+    private string actionName;
+    private ActionManager _actionManager;
+    
 
     void Start()
     {
-        ActionName = transform.parent.GetComponent<ActionButton>().buttonState;
-        action = transform.parent.parent.parent.GetComponent<ButtonManager>().CharacterOnBoard.GetComponent<ActionManager>().FindActionByName(ActionName);
+        actionName = _actionButton.buttonState;
+        _buttonManager = _actionButton.buttonManager;
+        if (_buttonManager.CharacterOnBoard != null)
+        {
+            _actionManager = _buttonManager.CharacterOnBoard.GetComponent<ActionManager>();
+            action = _actionManager.FindActionByName(actionName);
+        }
+        
     }
 
     private void OnEnable()
@@ -21,18 +33,21 @@ public class CooldownText : MonoBehaviour
         {
             if (action.AbilityCooldown - action.AbilityPoints > 0)
             {
-                gameObject.GetComponent<Text>().text = (action.AbilityCooldown - action.AbilityPoints).ToString();
+                coolDown.text = (action.AbilityCooldown - action.AbilityPoints).ToString();
             }
-            else gameObject.GetComponent<Text>().text = null;
+            else coolDown.text = null;
         }
-        else gameObject.GetComponent<Text>().text = null;
+        else coolDown.text = null;
     }
     private void Update()
     {
-        if (action.AbilityCooldown - action.AbilityPoints > 0)
+        actionName = _actionButton.buttonState;
+        _actionManager = _buttonManager.CharacterOnBoard.GetComponent<ActionManager>();
+        action = _actionManager.FindActionByName(actionName);
+        if (action != null && action.AbilityCooldown - action.AbilityPoints > 0)
         {
-            gameObject.GetComponent<Text>().text = (action.AbilityCooldown - action.AbilityPoints).ToString();
+            coolDown.text = (action.AbilityCooldown - action.AbilityPoints).ToString();
         }
-        else gameObject.GetComponent<Text>().text = "";
+        else coolDown.text = "";
     }
 }

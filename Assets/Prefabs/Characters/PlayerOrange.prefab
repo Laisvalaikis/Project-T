@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8021659028330577254}
   m_RootOrder: 1
@@ -70,6 +71,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8027488076593794353}
   - {fileID: 8021659027750491217}
@@ -184,8 +186,8 @@ MonoBehaviour:
     type: 3}
   CroppedSplashArt: {fileID: -2651821824365294045, guid: 9c6ad0d1b545e344a8dc5c80f421d3cb,
     type: 3}
-  CornerUIManager: {fileID: 3710632828516732051, guid: c519ad7019cd38d43bed965d1be11b82,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 6391a7223f3a2c94bbbd61dbe6a66a56, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -276,16 +278,16 @@ MonoBehaviour:
     AbilityIcon: {fileID: 1157241994225065092, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
-  - action: {fileID: 2565246235916623726}
-    actionName: FlameBlast
-    AbilityIcon: {fileID: -660037021321600360, guid: 38f03c585e84a1640a863ffc47a7d49b,
-      type: 3}
-    AbilityIndex: 2
   - action: {fileID: 1051409761967172891}
     actionName: Blaze
     AbilityIcon: {fileID: 6003129548037305118, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 1
+  - action: {fileID: 2565246235916623726}
+    actionName: FlameBlast
+    AbilityIcon: {fileID: -660037021321600360, guid: 38f03c585e84a1640a863ffc47a7d49b,
+      type: 3}
+    AbilityIndex: 2
   - action: {fileID: 6024958575352261181}
     actionName: Inferno
     AbilityIcon: {fileID: -1071641158705808608, guid: 38f03c585e84a1640a863ffc47a7d49b,
@@ -390,6 +392,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &1051409761967172891
 MonoBehaviour:
   m_ObjectHideFlags: 0

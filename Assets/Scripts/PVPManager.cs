@@ -16,6 +16,7 @@ public class PVPManager : MonoBehaviour
     private int currentTeam;
     public Sprite emptySprite;
     [HideInInspector] public static PVPManager instance;
+    public GameObject cornerUIManager;
 
     void Awake()
     {
@@ -270,14 +271,15 @@ public class PVPManager : MonoBehaviour
             teamSettings.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().savedCharacter = allAvailableCharacters[selectedTeams[0][i].index];
             teamSettings.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().savedCharacter.unlockedAbilities = selectedTeams[0][i].unlockedAbilities;
             teamSettings.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().savedCharacter.level = 3;
-            teamSettings.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().GenerateAbilities();
+            cornerUIManager.GetComponent<ButtonManager>().GenerateAbilities();
         }
         for (int i = 0; i < 3; i++)
         {
             teamSettings.allCharacterList.teams[1].characters[i].GetComponent<PlayerInformation>().savedCharacter = allAvailableCharacters[selectedTeams[1][i].index];
             teamSettings.allCharacterList.teams[1].characters[i].GetComponent<PlayerInformation>().savedCharacter.unlockedAbilities = selectedTeams[1][i].unlockedAbilities;
             teamSettings.allCharacterList.teams[1].characters[i].GetComponent<PlayerInformation>().savedCharacter.level = 3;
-            teamSettings.allCharacterList.teams[1].characters[i].GetComponent<PlayerInformation>().CornerUIManager.GetComponent<ButtonManager>().GenerateAbilities();
+            cornerUIManager.GetComponent<ButtonManager>().GenerateAbilities();
+            Debug.Log("Cia kazkas darom su Ui Manager");
         }
     }
 

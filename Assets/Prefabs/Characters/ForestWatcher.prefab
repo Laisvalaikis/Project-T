@@ -38,6 +38,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.3812523, y: 1.893262, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 883459129166494327}
   - {fileID: 9182066968744972768}
@@ -150,8 +151,8 @@ MonoBehaviour:
     type: 3}
   CharacterSplashArt: {fileID: 0}
   CroppedSplashArt: {fileID: 0}
-  CornerUIManager: {fileID: 6746639140376513594, guid: 3a51d440e4641f84ab7530925ec5afad,
-    type: 3}
+  characterUiData: {fileID: 11400000, guid: 000cbd68725e69740a594f9f253b6bad, type: 2}
+  _data: {fileID: 0}
   Blocker: 0
   BlockingAlly: {fileID: 0}
   BarrierProvider: {fileID: 0}
@@ -349,6 +350,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   DestinationObject: {fileID: 0}
+  _data: {fileID: 0}
 --- !u!114 &8105192102911251860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +428,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9182066968097274071}
   m_RootOrder: 1
@@ -521,7 +524,7 @@ PrefabInstance:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
@@ -692,7 +695,7 @@ PrefabInstance:
     - target: {fileID: 4689621008488017737, guid: ed24e842bb536204eb6846cc53311643,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}

@@ -47,7 +47,7 @@ public class CharacterSelect : MonoBehaviour
         }
         for (int i = 0; i < characterList.Count; i++)
         {
-            CharacterButtons.GetChild(i).GetComponent<CharacterPortrait>().characterIndex = i;
+            CharacterButtons.GetChild(i).GetComponent<CharacterSelection>().characterIndex = i;
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
             CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
                 characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
@@ -63,7 +63,7 @@ public class CharacterSelect : MonoBehaviour
         var canvasCamera = GameObject.Find("CanvasCamera").transform;
         canvasCamera.Find("AutoFill").gameObject.SetActive(!enemySelection);
         canvasCamera.Find("Clear").gameObject.SetActive(!enemySelection);
-        canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
+        // canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
         canvasCamera.Find("Back").gameObject.SetActive(!enemySelection);
         canvasCamera.Find("AllNone").gameObject.SetActive(enemySelection);
         canvasCamera.Find("AllowDuplicates").gameObject.SetActive(enemySelection);
@@ -172,7 +172,7 @@ public class CharacterSelect : MonoBehaviour
     public void RemoveCharacterFromTeam(int characterIndex)
     {
         var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
-        charactersToGoOnMission.RemoveAll(character => character.Item2 == characterIndex);
+        charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
         teamPortraitManager.RemoveCharacter(characterIndex);
         GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
         EnableCharacters();
@@ -186,7 +186,7 @@ public class CharacterSelect : MonoBehaviour
         GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
         if(charactersToGoOnMission.Count == 3)
         {
-            GameObject.Find("CanvasCamera").transform.Find("Next").GetComponent<Button>().interactable = true;
+            GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = true;
             DisableCharacters();
         }
     }
@@ -291,17 +291,17 @@ public class CharacterSelect : MonoBehaviour
         //     posingCharacters.GetChild(i).GetComponent<Animator>().SetTrigger("playerHit");
         // }
         //Canvas
-        Transform canvas = GameObject.Find("CanvasCamera").transform;
+        // Transform canvas = GameObject.Find("CanvasCamera").transform;
         // // canvas.Find("Enemies").gameObject.SetActive(false);
         // canvas.Find("Clear").gameObject.SetActive(false);
         // canvas.Find("AutoFill").gameObject.SetActive(false);
         // canvas.Find("CharacterButtons").gameObject.SetActive(false);
-        canvas.Find("TeamPortraitBox").gameObject.SetActive(false);
+        // canvas.Find("TeamPortraitBox").gameObject.SetActive(false);
         // //
-        canvas.Find("Next").gameObject.SetActive(false);
-        canvas.Find("Back").gameObject.SetActive(false);
-        canvas.Find("Embark").gameObject.SetActive(true);
-        canvas.Find("TemporaryBack").gameObject.SetActive(true);
+        // canvas.Find("Next").gameObject.SetActive(false);
+        // canvas.Find("Back").gameObject.SetActive(false);
+        // canvas.Find("Embark").gameObject.SetActive(true);
+        // canvas.Find("TemporaryBack").gameObject.SetActive(true);
     }
     public void StopDisplayingSelectedCharacters()
     {
@@ -311,16 +311,16 @@ public class CharacterSelect : MonoBehaviour
         //     posingCharacters.GetChild(i).gameObject.SetActive(false);
         // }
         // //Canvas
-        Transform canvas = GameObject.Find("CanvasCamera").transform;
+        // Transform canvas = GameObject.Find("CanvasCamera").transform;
         // // canvas.Find("Enemies").gameObject.SetActive(true);
         // canvas.Find("Clear").gameObject.SetActive(true);
         // canvas.Find("AutoFill").gameObject.SetActive(true);
         // canvas.Find("CharacterButtons").gameObject.SetActive(true);
-        canvas.Find("TeamPortraitBox").gameObject.SetActive(true);
-        // //
-        canvas.Find("Next").gameObject.SetActive(true);
-        canvas.Find("Back").gameObject.SetActive(true);
-        canvas.Find("Embark").gameObject.SetActive(false);
-        canvas.Find("TemporaryBack").gameObject.SetActive(false);
+        // canvas.Find("TeamPortraitBox").gameObject.SetActive(true);
+        // // //
+        // canvas.Find("Next").gameObject.SetActive(true);
+        // canvas.Find("Back").gameObject.SetActive(true);
+        // canvas.Find("Embark").gameObject.SetActive(false);
+        // canvas.Find("TemporaryBack").gameObject.SetActive(false);
     }
 }

@@ -11,6 +11,8 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     private bool _isSelected = false;
     private GameInformation gameInformation;
     public HelpTableController _helpTableController;
+    public GameObject actionButtonFrame;
+    public ButtonManager buttonManager;
     void Start()
     {
         gameInformation = GameObject.Find("GameInformation").GetComponent<GameInformation>();
@@ -18,7 +20,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     public void ChangePlayersState()
     {
-        var buttonManager = transform.parent.parent.GetComponent<ButtonManager>();
+
         transform.GetChild(0).GetComponent<Animator>().SetBool("select", true);
         _isSelected = true;
         _helpTableController.helpTable.closeHelpTable();
@@ -44,7 +46,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
                 character.GetComponent<ActionManager>().FindActionByName(buttonState).EnableGrid();
             }
         }
-        buttonManager.DisableSelection(transform.Find("ActionButtonFrame").gameObject);
+        buttonManager.DisableSelection(actionButtonFrame);
     }
 
     public void OnPointerClick(PointerEventData eventData)
