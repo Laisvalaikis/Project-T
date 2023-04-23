@@ -104,15 +104,15 @@ public class GameInformation : MonoBehaviour
         {
             EnableMovementAction();
         }
-        if (GameObject.Find("HelpButton") != null)
-        {
-            if (((SelectedCharacter != null && SelectedCharacter.GetComponent<PlayerInformation>().currentState != "Movement")
-                || (InspectedCharacter != null && InspectedCharacter.GetComponent<PlayerInformation>().currentState != "Movement")) && helpTableOpen == false)
-            {
-                GameObject.Find("HelpButton").GetComponent<Button>().interactable = true;
-            }
-            else GameObject.Find("HelpButton").GetComponent<Button>().interactable = false;
-        }
+        // if (GameObject.Find("HelpButton") != null)
+        // {
+        //     if (((SelectedCharacter != null && SelectedCharacter.GetComponent<PlayerInformation>().currentState != "Movement")
+        //         || (InspectedCharacter != null && InspectedCharacter.GetComponent<PlayerInformation>().currentState != "Movement")) && helpTableOpen == false)
+        //     {
+        //         GameObject.Find("HelpButton").GetComponent<Button>().interactable = true;
+        //     }
+        //     else GameObject.Find("HelpButton").GetComponent<Button>().interactable = false;
+        // }
         if (isVictoryScreenEnabled)
         {
             if (victoryCountDown > 0)
@@ -159,7 +159,7 @@ public class GameInformation : MonoBehaviour
         {
             GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(true);
-            GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("HelpButton").gameObject.SetActive(true);
+            // GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("HelpButton").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("CornerUIManagerContainer").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("PortalButton").gameObject.SetActive(true);
             GameObject.Find("Canvas").transform.Find("EndTurnScreen").gameObject.SetActive(false);
@@ -737,7 +737,7 @@ public class GameInformation : MonoBehaviour
     {
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(false);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(false);
+        // GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("CornerUIManagerContainer").gameObject.SetActive(false);
         addButtonState = GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.activeSelf;
         GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.SetActive(false);
@@ -759,7 +759,7 @@ public class GameInformation : MonoBehaviour
     {
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(true);
-        GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(true);
+        // GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row2").transform.Find("HelpButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("CornerUIManagerContainer").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row3").transform.Find("AddButton").gameObject.SetActive(addButtonState);
         GameObject.Find("Canvas").transform.Find("TopRightCornerUI").transform.Find("Row1").transform.Find("PortalButton").gameObject.SetActive(portalButtonState);
