@@ -30,6 +30,7 @@ public class GameInformation : MonoBehaviour
     public Data _data;
     public HelpTableController helpTableController;
     public ButtonManager cornerButtonManager;
+    public BottomCornerUI bottomCornerUI;
     //Other
     [HideInInspector] public GameObject SelectedCharacter  {
         get { return _selectedCharacter; }
@@ -274,7 +275,10 @@ public class GameInformation : MonoBehaviour
                 character.GetComponent<PlayerInformation>().characterPortrait);
                 GetComponent<PlayerTeams>().allCharacterList.teams[activeTeamIndex].lastSelectedPlayer = SelectedCharacter;
           //  }
+          
             character.GetComponent<GridMovement>().EnableGrid();
+            bottomCornerUI.characterUiData = _selectedCharacter.GetComponent<PlayerInformation>().characterUiData;
+            bottomCornerUI.EnableAbilities(SelectedCharacter.GetComponent<PlayerInformation>().savedCharacter);
             //character.GetComponent<PlayerInformation>().CornerUIManager.transform.GetChild(0).gameObject.SetActive(true);
             //Camera.GetComponent<CinemachineVirtualCamera>().Follow = character.transform;
         }
@@ -302,6 +306,9 @@ public class GameInformation : MonoBehaviour
             cornerButtonManager.transform.GetChild(0).gameObject.SetActive(true);
             Debug.Log("cia kazkas daroma su corner ui manager");
             SelectedCharacter = null;
+            cornerButtonManager.CharacterOnBoard = CharacterToInspect;
+            bottomCornerUI.characterUiData = InspectedCharacter.GetComponent<PlayerInformation>().characterUiData;
+            bottomCornerUI.EnableAbilities();
             if (CharacterToInspect.GetComponent<PlayerInformation>().CharactersTeam == "Default")
             {
                 AddButton?.SetActive(true);
@@ -394,6 +401,7 @@ public class GameInformation : MonoBehaviour
         }
         SelectedCharacter.transform.position = newPosition.transform.position + new Vector3(0f, 0f, -1f);
         SelectedCharacter.GetComponent<GridMovement>().RemoveAvailableMovementPoints(newPosition);
+        bottomCornerUI.EnableAbilities(SelectedCharacter.GetComponent<PlayerInformation>().savedCharacter);
     }
     public void MoveCharacter(GameObject newPosition, GameObject character)
     {
@@ -408,6 +416,7 @@ public class GameInformation : MonoBehaviour
         }
         character.transform.position = newPosition.transform.position + new Vector3(0f, 0f, -1f);
         character.GetComponent<GridMovement>().RemoveAvailableMovementPoints(newPosition);
+        bottomCornerUI.EnableAbilities(character.GetComponent<PlayerInformation>().savedCharacter);
     }
     public void FocusSelectedCharacter(GameObject character)
     {

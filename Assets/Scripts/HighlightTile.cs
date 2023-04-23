@@ -189,6 +189,7 @@ public class HighlightTile : MonoBehaviour
                 gameInformation.SelectedCharacter.GetComponent<GridMovement>().DisableWayTiles();
                 FlipSelectedCharacter(gameInformation);
                 gameInformation.MoveSelectedCharacter(gameObject);
+                
                 gameInformation.FocusSelectedCharacter(gameInformation.SelectedCharacter);
                 gameInformation.SelectedCharacter.GetComponent<GridMovement>().ClearWayList();
                 GameObject characterToSelect = gameInformation.SelectedCharacter;

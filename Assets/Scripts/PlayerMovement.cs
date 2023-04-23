@@ -128,21 +128,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void FakeUpdate()
     {
-        GameInformation gameInformation = GameObject.Find("GameInformation").gameObject.GetComponent<GameInformation>();
         
-        // if (GetComponent<PlayerInformation>().health > 0)
-        // {
-        //     GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<ButtonManager>().ChangeCooldownVisuals();
-        // }
-        // GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<BottomCornerUI>().ChangesInCornerUI();
-        // GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<ButtonManager>().ChangesInCornerUIButtons();
-        if (gameInformation != null && gameInformation.SelectedCharacter != null)
-        {
-            gameInformation.cornerButtonManager.GetComponent<BottomCornerUI>().characterUiData = gameInformation.SelectedCharacter.GetComponent<PlayerInformation>().characterUiData;
-            // gameInformation.cornerButtonManager.GetComponent<BottomCornerUI>().UpdateData();
-            gameInformation.cornerButtonManager.GetComponent<BottomCornerUI>().EnableAbilities(gameInformation.SelectedCharacter.GetComponent<PlayerInformation>().savedCharacter);
-        }
-
         Debug.LogError("Critical need to fix ui doesnt update");
         GetComponent<GridMovement>().FakeUpdate();
     }

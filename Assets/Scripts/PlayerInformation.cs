@@ -59,6 +59,7 @@ public class PlayerInformation : MonoBehaviour
     [HideInInspector] public bool Stasis = false;
     [HideInInspector] public List<Poison> Poisons = new List<Poison>();
     [HideInInspector] public bool wasThisCharacterSpawned = false;
+    [HideInInspector] public List<string> enabledAbilitiesEnemy;
     public bool Respawn;
     //
     [HideInInspector] public int XPToGain = 0;

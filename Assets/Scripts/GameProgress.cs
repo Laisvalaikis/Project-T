@@ -510,6 +510,7 @@ public class GameProgress : MonoBehaviour
                         abilitiesToEnable.Add(ability.abilityName);
                     }
                 }
+                character.GetComponent<PlayerInformation>().enabledAbilitiesEnemy = abilitiesToEnable;
                 //Blessings
                 foreach (var blessing in character.GetComponent<AIBehaviour>().specialBlessings)
                 {
@@ -520,7 +521,7 @@ public class GameProgress : MonoBehaviour
                 }
                 // cornerButtonManager.GenerateAbilitiesForEnemy(abilitiesToEnable);
                 Debug.LogError("Disabled Enemies Ability Generation");
-                Debug.Log("Cia kazkas daroma su corener ui manager");
+                Debug.Log("Cia Sukuria Enemies ir pateikia ju abilities");
             }
         }
         print("saved characters set");

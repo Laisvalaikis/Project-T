@@ -83,35 +83,6 @@ public class BottomCornerUI : MonoBehaviour
     //     }
     // }
 
-    public void UpdateData()
-    {
-        if (_buttonManager.CharacterOnBoard != null)
-        {
-            cornerUi.SetActive(true);
-        }
-        else
-        {
-            cornerUi.SetActive(false);
-        }
-
-        portrait.sprite = characterUiData.characterSprite;
-        Color half = characterUiData.backgroundColor;
-        half.a = 0.5f;
-        staminaBackground.color = half;
-        for (int i = 0; i < characterUiData.abilities.Count; i++)
-        {
-            buttonText[i].color = characterUiData.textColor;
-            buttonImages[i].sprite = characterUiData.abilities[i].sprite;
-            buttonAction[i].buttonState = characterUiData.abilities[i].abilityAction.ToString();
-            buttonBackgroundImages[i].color = characterUiData.backgroundColor;
-            if (i < backgroundImages.Count)
-            {
-                backgroundImages[i].color = characterUiData.backgroundColor;
-            }
-        }
-        
-    }
-    
     public void UpdateData(int buttonIndex, int index)
     {
         if (_buttonManager.CharacterOnBoard != null)
@@ -122,24 +93,28 @@ public class BottomCornerUI : MonoBehaviour
         {
             cornerUi.SetActive(false);
         }
-
-        portrait.sprite = characterUiData.characterSprite;
-        Color half = characterUiData.backgroundColor;
-        half.a = 0.5f;
-        staminaBackground.color = half;
         buttonText[buttonIndex].color = characterUiData.textColor;
         buttonImages[buttonIndex].sprite = characterUiData.abilities[index].sprite;
         buttonAction[buttonIndex].buttonState = characterUiData.abilities[index].abilityAction.ToString();
         buttonBackgroundImages[buttonIndex].color = characterUiData.backgroundColor;
+        UpdateCommonData();
+    }
+
+    public void UpdateCommonData()
+    {
+        portrait.sprite = characterUiData.characterSprite;
+        Color half = characterUiData.backgroundColor;
+        half.a = 0.5f;
+        staminaBackground.color = half;
         for (int i = 0; i < backgroundImages.Count; i++)
         {
             backgroundImages[i].color = characterUiData.backgroundColor;
         }
-        
         currentCharacter = _buttonManager.CharacterOnBoard;
         staminaPoints.text = currentCharacter.GetComponent<GridMovement>().AvailableMovementPoints.ToString(); //Sets movement text
         healthPoints.text = currentCharacter.GetComponent<PlayerInformation>().health.ToString(); //Sets health text
         healthAnimator.SetFloat("healthPercent", currentCharacter.GetComponent<PlayerInformation>().GetHealthPercentage());
+        _buttonManager.SelectMovementButton();
     }
 
     public void EnableAbilities(SavedCharacter savedCharacter)
@@ -169,6 +144,46 @@ public class BottomCornerUI : MonoBehaviour
                 // string extensionName = "Extension" + (i + 1).ToString();
                 // transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
             }
+
+            if (savedCharacter.unlockedAbilities.Length == 0)
+            {
+                UpdateCommonData();
+            }
+        }
+    }
+    
+    public void EnableAbilities()
+    {
+        int currentButtonIndex = 2;
+        int buttonIndex = 0;
+        GameObject character = _buttonManager.CharacterOnBoard;
+        PlayerInformation playerInformation = character.GetComponent<PlayerInformation>();
+        if (character != null)
+        {
+            for (int i = 0; i < playerInformation.enabledAbilitiesEnemy.Count; i++)
+            {
+                if (_buttonManager.ButtonList.Count > currentButtonIndex && character.GetComponent<ActionManager>().FindActionListByName(playerInformation.enabledAbilitiesEnemy[i]) != null)
+                {
+                    UpdateData(buttonIndex, i);
+                    buttonAction[buttonIndex].buttonState = character.GetComponent<ActionManager>().FindActionListByName(playerInformation.enabledAbilitiesEnemy[i]).actionName;
+                    // _buttonManager.ButtonList[currentButtonIndex].transform.Find("ActionButtonImage").GetComponent<Image>().sprite = character.GetComponent<ActionManager>().FindActionListByName(playerInformation.enabledAbilitiesEnemy[i]).AbilityIcon;
+                    // _buttonManager.ButtonList[currentButtonIndex].GetComponent<ActionButton>().buttonState = 
+                    currentButtonIndex++;
+                    buttonIndex++;
+                }
+            }
+            Debug.LogError("Need to change this");
+            if (playerInformation.enabledAbilitiesEnemy.Count == 0)
+            {
+                UpdateCommonData();
+            }
+            for (int i = currentButtonIndex; i < _buttonManager.ButtonList.Count; i++)
+            {
+                _buttonManager.ButtonList[i].transform.parent.gameObject.SetActive(false);
+                // string extensionName = "Extension" + (i + 1).ToString();
+                // transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
+            }
+            
         }
     }
 }

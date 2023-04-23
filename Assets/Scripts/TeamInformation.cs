@@ -66,7 +66,7 @@ public class TeamInformation : MonoBehaviour
                 }
             }
             selected.GetComponent<Animator>().SetBool("select", true);
-            
+            Debug.Log("Need to fix this");
         }
     public void DisableSelectionAll()
     {

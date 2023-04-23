@@ -45,6 +45,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
             {
                 character.GetComponent<ActionManager>().FindActionByName(buttonState).EnableGrid();
             }
+            
         }
         buttonManager.DisableSelection(actionButtonFrame);
     }

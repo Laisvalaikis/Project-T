@@ -17,6 +17,9 @@ public class ButtonManager : MonoBehaviour
     }
     private KeyCode[] AbilityChangingButtonSequence = { KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y };
     private List<ActionButton> _actionButtons;
+    [SerializeField] private ActionButton movementButton;
+    [SerializeField] private Animator movementButtonFrame;
+    private Animator _selectedButton;
     void Awake()
     {
         _actionButtons = new List<ActionButton>();
@@ -68,14 +71,41 @@ public class ButtonManager : MonoBehaviour
 
     public void DisableSelection(GameObject selected)
     {
-        for (int i = 0; i < ButtonFrameList.Count; i++)
+        if (_selectedButton != null)
         {
-            if (ButtonFrameList[i] != selected)
-            {
-                ButtonFrameList[i].GetComponent<Animator>().SetBool("select", false);
-            }
+            _selectedButton.SetBool("select", false);
+            _selectedButton = selected.GetComponent<Animator>();
+            _selectedButton.SetBool("select", true);
         }
-        selected.GetComponent<Animator>().SetBool("select", true);
+        else
+        {
+            _selectedButton = selected.GetComponent<Animator>();
+            _selectedButton.SetBool("select", true);
+        }
+
+        // for (int i = 0; i < ButtonFrameList.Count; i++)
+        // {
+        //     if (ButtonFrameList[i] != selected)
+        //     {
+        //         ButtonFrameList[i].GetComponent<Animator>().SetBool("select", false);
+        //     }
+        // }
+        // selected.GetComponent<Animator>().SetBool("select", true);
+    }
+
+    public void SelectMovementButton()
+    {
+        if (_selectedButton != null)
+        {
+            _selectedButton.SetBool("select", false);
+            _selectedButton = movementButtonFrame;
+            _selectedButton.SetBool("select", true);
+        }
+        else
+        {
+            _selectedButton = movementButtonFrame;
+            _selectedButton.SetBool("select", true);
+        }
     }
 
     /*void Update()
