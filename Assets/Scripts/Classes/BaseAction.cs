@@ -198,7 +198,7 @@ namespace Assets.Scripts.Classes
         {
             if(!laserGrid)
             {
-                transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
+                // transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
                 this.AvailableTiles.Clear();
                 if (AttackRange > 0)
                 {
@@ -218,7 +218,7 @@ namespace Assets.Scripts.Classes
             }
             else
             {
-                transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
+                // transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
                 this.AvailableTiles.Clear();
                 this.AvailableTiles.Add(new List<GameObject>());
                 var directionVectors = new List<(int, int)>
@@ -236,6 +236,7 @@ namespace Assets.Scripts.Classes
                     i++;
                 }
             }
+            Debug.Log("Removed action set");
         }
         protected void MergeIntoOneList()
         {

@@ -246,7 +246,8 @@ public class GridMovement : BaseAction
     }
     public override void EnableGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
+        Debug.Log("disable changing state");
         if (canGridBeEnabled())
         {
             CreateGrid();

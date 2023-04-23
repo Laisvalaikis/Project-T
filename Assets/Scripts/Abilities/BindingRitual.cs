@@ -20,7 +20,7 @@ public class BindingRitual : BaseAction
 
     public override void CreateGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
         this.AvailableTiles.Clear();
         if (AttackRange > 0)
         {

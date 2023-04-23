@@ -63,18 +63,51 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         _helpTableController.hasActionButtonBeenEntered = true;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", true);
         _helpTableController.EnableTableForInGameRightClick(buttonState);
-        
-
         gameInformation.isBoardDisabled = true;
+        EnableGridPreview(buttonState);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        GameObject character;
+        if (gameInformation.SelectedCharacter != null)
+        {
+            character = gameInformation.SelectedCharacter;
+        }
+        else {
+            character = gameInformation.InspectedCharacter;
+        }
         _helpTableController.hasActionButtonBeenEntered = false;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", false);
         GameObject.Find("GameInformation").gameObject.GetComponent<GameInformation>().isBoardDisabled = gameInformation.helpTableOpen;
         _helpTableController.helpTable.closeHelpTable();
+        EnableGridPreview(character.GetComponent<PlayerInformation>().currentState);
         
-        
+    }
+
+    private void EnableGridPreview(string selectedButtonState)
+    {
+        GameObject character;
+        if (gameInformation.SelectedCharacter != null)
+        {
+            character = gameInformation.SelectedCharacter;
+        }
+        else {
+            character = gameInformation.InspectedCharacter;
+        }
+        if (selectedButtonState == "Movement")
+        {
+            gameInformation.DisableGrids();
+            character.GetComponent<GridMovement>().EnableGrid();
+        }
+        else //galima prideti else if jei kazkokie jau special abilities.
+        {
+            gameInformation.DisableGrids();
+            if (character.GetComponent<ActionManager>().FindActionByName(selectedButtonState) != null)
+            {
+                character.GetComponent<ActionManager>().FindActionByName(selectedButtonState).EnableGrid();
+            }
+            
+        }
     }
 }

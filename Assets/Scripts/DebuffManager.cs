@@ -7,6 +7,7 @@ public class DebuffManager : MonoBehaviour
 {
     private List<string> debuffs;
     public GameObject CharacterOnBoard;
+    public float offsetStartPosition = 0f;
     public float offsetDebuff = 80f;
     public void UpdateDebuffs()
     {
@@ -170,12 +171,12 @@ public class DebuffManager : MonoBehaviour
             debuffs.Add("Danger");
             k++;
         }
-        transform.Find("HelpButton").gameObject.SetActive(k != 0);
+        // transform.Find("HelpButton").gameObject.SetActive(k != 0);
         // pratesti
     }
     private void UpdateDebuffIcons()
     {
-        float yPosition = offsetDebuff;
+        float yPosition = offsetStartPosition;
         for (int i = 0; i < transform.childCount - 1; i++)
         {
             if (debuffs.Find(x => x == transform.GetChild(i).name) != null)
@@ -198,17 +199,17 @@ public class DebuffManager : MonoBehaviour
         }
 
     }
-    public void DisplayDebuffText()
-    {
-        for (int i = 0; i < transform.childCount - 1; i++)
-        {
-            if(transform.GetChild(i).transform.Find("DebuffText").gameObject.activeSelf)
-            {
-                transform.GetChild(i).transform.Find("DebuffText").gameObject.SetActive(false);
-            }
-            else transform.GetChild(i).transform.Find("DebuffText").gameObject.SetActive(true);
-        }
-    }
+    // public void DisplayDebuffText()
+    // {
+    //     for (int i = 0; i < transform.childCount - 1; i++)
+    //     {
+    //         if(transform.GetChild(i).transform.Find("DebuffText").gameObject.activeSelf)
+    //         {
+    //             transform.GetChild(i).transform.Find("DebuffText").gameObject.SetActive(false);
+    //         }
+    //         else transform.GetChild(i).transform.Find("DebuffText").gameObject.SetActive(true);
+    //     }
+    // }
     private void DisableDebuffText()
     {
         for (int i = 0; i < transform.childCount - 1; i++)
@@ -216,11 +217,11 @@ public class DebuffManager : MonoBehaviour
             transform.GetChild(i).transform.Find("DebuffText").gameObject.SetActive(false);
         }
     }
-    public void Update()
-    {
-        if(Input.GetKeyDown("i"))
-        {
-            DisplayDebuffText();
-        }
-    }
+    // public void Update()
+    // {
+    //     if(Input.GetKeyDown("i"))
+    //     {
+    //         DisplayDebuffText();
+    //     }
+    // }
 }

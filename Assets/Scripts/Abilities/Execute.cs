@@ -51,7 +51,8 @@ public class Execute : BaseAction
         }
         else
         {
-            transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
+            // transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
+            Debug.Log("Current state is not changing anymore in baseAction exapmle: BindingRitual");
         }
 
     }

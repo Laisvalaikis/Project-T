@@ -31,7 +31,7 @@ public class SelfMovementBoost : BaseAction
     */
     public override void CreateGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = "SelfMovementBoost";
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = "SelfMovementBoost";
         this.AvailableTiles.Clear();
         this.AvailableTiles.Add(new List<GameObject>());
         AddSurroundingsToList(transform.gameObject, 0);

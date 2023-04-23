@@ -112,72 +112,7 @@ public class ButtonManager : MonoBehaviour
     {
         //if (GameObject.Find("GameInformation").gameObject.GetComponent<GameInformation>().SelectedCharacter == CharacterOnBoard)
     }*/
-
-    public void ChangeCooldownVisuals()
-    {
-        if (gameObject.activeSelf)
-        {
-            for (int i = 0; i < ButtonList.Count; i++)
-            {
-                if (ButtonList[i].GetComponent<ActionButton>().buttonState != "Movement" &&
-                CharacterOnBoard.GetComponent<ActionManager>().FindActionByName(ButtonList[i].GetComponent<ActionButton>().buttonState) != null)
-                {
-                    var buttonActionScript = CharacterOnBoard.GetComponent<ActionManager>().FindActionByName(ButtonList[i].GetComponent<ActionButton>().buttonState);
-                    if (buttonActionScript.AbilityPoints < buttonActionScript.AbilityCooldown || buttonActionScript.AvailableAttacks == 0)
-                    {
-                        ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = Color.gray;
-                        for(int j = 0; j < ButtonList[i].transform.childCount; j++)
-                        {
-                            if(ButtonList[i].transform.GetChild(j).name == "CoolDownText" && buttonActionScript.AbilityPoints < buttonActionScript.AbilityCooldown)
-                            {
-                                var image = ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
-                                image.color = new Color(image.color.r, image.color.g, image.color.b, 0.1f);
-                            }
-                        }
-                        /*if (ButtonList[i].transform.Find("CoolDownText") != null
-                            && (ButtonList[i].transform.Find("CoolDownText").GetComponent<CooldownText>().action.AbilityCooldown - ButtonList[i].transform.Find("CoolDownText").GetComponent<CooldownText>().action.AbilityPoints) > 0)
-                        {
-                            var image = ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
-                            image.color = new Color(image.color.r, image.color.g, image.color.b, 0.1f);
-                        }*/
-                    }
-                    else
-                    {
-                        ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = Color.white;
-                        if (ButtonList[i].transform.Find("CoolDownText") != null)
-                        {
-                            var image = ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
-                            image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
-                        }
-                    }
-                }
-
-                else if (ButtonList[i].GetComponent<ActionButton>().buttonState == "Movement")
-                {
-                    var characterMovementScript = CharacterOnBoard.GetComponent<GridMovement>();
-                    if (characterMovementScript.AvailableMovementPoints == 0)
-                    {
-                        ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = Color.gray;
-                        if (ButtonList[i].transform.Find("CoolDownText") != null
-                            && (ButtonList[i].transform.Find("CoolDownText").GetComponent<CooldownText>().action.AbilityCooldown - ButtonList[i].transform.Find("CoolDownText").GetComponent<CooldownText>().action.AbilityPoints) > 0)
-                        {
-                            var image = ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
-                            image.color = new Color(image.color.r, image.color.g, image.color.b, 0.1f);
-                        }
-                    }
-                    else
-                    {
-                        ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = Color.white;
-                        if (ButtonList[i].transform.Find("CoolDownText") != null)
-                        {
-                            var image = ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
-                            image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
     public void ChangesInCornerUIButtons()// This changes debuff icons and cantattack icons
     {
         if (transform.Find("CornerUI").Find("DebuffIcons") != null)
@@ -234,6 +169,16 @@ public class ButtonManager : MonoBehaviour
             }
         }
     }
+
+    public void UpdateDebuffIcons()
+    {
+        if (transform.Find("CornerUI").Find("DebuffIcons") != null)
+        {
+            transform.Find("CornerUI").Find("DebuffIcons").gameObject.GetComponent<DebuffManager>().CharacterOnBoard = CharacterOnBoard;
+            transform.Find("CornerUI").Find("DebuffIcons").gameObject.GetComponent<DebuffManager>().UpdateDebuffs();
+        }
+    }
+
     public void ChangeAbilityDisabledConditions()
     {
         for (int i = 0; i < ButtonList.Count; i++)

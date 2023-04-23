@@ -128,6 +128,11 @@ public class PlayerMovement : MonoBehaviour
     }
     public void FakeUpdate()
     {
+        if (GetComponent<PlayerInformation>().health > 0)
+        {
+            GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<BottomCornerUI>().ChangeCooldownVisuals();
+        }
+        GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<ButtonManager>().UpdateDebuffIcons();
         
         Debug.LogError("Critical need to fix ui doesnt update");
         GetComponent<GridMovement>().FakeUpdate();

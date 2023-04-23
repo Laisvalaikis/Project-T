@@ -186,4 +186,68 @@ public class BottomCornerUI : MonoBehaviour
             
         }
     }
+    
+    public void ChangeCooldownVisuals()
+    {
+        if (gameObject.activeSelf)
+        {
+            for (int i = 0; i < _buttonManager.ButtonList.Count; i++)
+            {
+                if (_buttonManager.ButtonList[i].GetComponent<ActionButton>().buttonState != "Movement" &&
+                    _buttonManager.CharacterOnBoard.GetComponent<ActionManager>().FindActionByName(_buttonManager.ButtonList[i].GetComponent<ActionButton>().buttonState) != null)
+                {
+                    var buttonActionScript = _buttonManager.CharacterOnBoard.GetComponent<ActionManager>().FindActionByName(_buttonManager.ButtonList[i].GetComponent<ActionButton>().buttonState);
+                    if (buttonActionScript.AbilityPoints < buttonActionScript.AbilityCooldown || buttonActionScript.AvailableAttacks == 0)
+                    {
+                        // _buttonManager.ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = Color.gray;
+                        _buttonManager.ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = characterUiData.backgroundColor - new Color(0.2f, 0.2f, 0.2f, 0f);
+                        for(int j = 0; j < _buttonManager.ButtonList[i].transform.childCount; j++)
+                        {
+                            if(_buttonManager.ButtonList[i].transform.GetChild(j).name == "Text" && buttonActionScript.AbilityPoints < buttonActionScript.AbilityCooldown)
+                            {
+                                var image = _buttonManager.ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
+                                image.color = new Color(image.color.r, image.color.g, image.color.b, 0.3f);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        _buttonManager.ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = characterUiData.backgroundColor;
+                        if (_buttonManager.ButtonList[i].transform.Find("Text") != null)
+                        {
+                            var image = _buttonManager.ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
+                            image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
+                        }
+                    }
+                    Debug.Log("Need to redo this some time");
+                }
+
+                else if (_buttonManager.ButtonList[i].GetComponent<ActionButton>().buttonState == "Movement")
+                {
+                    var characterMovementScript = _buttonManager.CharacterOnBoard.GetComponent<GridMovement>();
+                    if (characterMovementScript.AvailableMovementPoints == 0)
+                    {
+                        _buttonManager.ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = characterUiData.backgroundColor - new Color(0.2f, 0.2f, 0.2f, 0f);
+                        // if (ButtonList[i].transform.Find("Text") != null
+                        //     && (ButtonList[i].transform.Find("Text").GetComponent<CooldownText>().action.AbilityCooldown - ButtonList[i].transform.Find("Text").GetComponent<CooldownText>().action.AbilityPoints) > 0)
+                        // {
+                        var image = _buttonManager.ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
+                        image.color = new Color(image.color.r, image.color.g, image.color.b, 0.3f);
+                        // }
+                    }
+                    else
+                    {
+                        _buttonManager.ButtonList[i].transform.Find("ActionButtonBackground").GetComponent<Image>().color = characterUiData.backgroundColor;
+                        // if (ButtonList[i].transform.Find("Text") != null)
+                        // {
+                        var image = _buttonManager.ButtonList[i].transform.Find("ActionButtonImage").GetComponent<Image>();
+                        image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
+                        // }
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }

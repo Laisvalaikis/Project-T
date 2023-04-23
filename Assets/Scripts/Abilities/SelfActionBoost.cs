@@ -31,7 +31,7 @@ public class SelfActionBoost : BaseAction
     */
     public override void CreateGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = "AttackTwice";
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = "AttackTwice";
         this.AvailableTiles.Clear();
         this.AvailableTiles.Add(new List<GameObject>());
         AddSurroundingsToList(transform.gameObject, 0);

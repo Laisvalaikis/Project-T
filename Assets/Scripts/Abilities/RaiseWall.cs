@@ -50,7 +50,7 @@ public class RaiseWall : BaseAction
    */
     public override void CreateGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
         this.AvailableTiles.Clear();
             this.AvailableTiles.Add(new List<GameObject>());
             AddSurroundingsToList(transform.gameObject, 0);

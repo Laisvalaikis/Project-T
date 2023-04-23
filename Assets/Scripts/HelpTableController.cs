@@ -62,14 +62,16 @@ public class HelpTableController : MonoBehaviour
         {
             helpTable.damageIcon.SetActive(false);
             helpTable.damageText.gameObject.SetActive(false);
-            helpTable.isAbilitySlow.transform.localPosition = isAbilitySlowOriginalPosition + new Vector3(0f, 80f);
+            // helpTable.isAbilitySlow.transform.localPosition = isAbilitySlowOriginalPosition + new Vector3(0f, 80f);
+            Debug.Log("Offset for slow/fast ability off");
         }
         else
         {
             helpTable.damageIcon.SetActive(true);
             helpTable.damageText.gameObject.SetActive(true);
             helpTable.damageText.text = ability.GetDamageString();
-            helpTable.isAbilitySlow.transform.localPosition = isAbilitySlowOriginalPosition;
+            Debug.Log("Offset for slow/fast ability off");
+            // helpTable.isAbilitySlow.transform.localPosition = isAbilitySlowOriginalPosition;
         }
         helpTable.slowAbility.SetActive(ability.isAbilitySlow);
         helpTable.fastAbility.SetActive(!ability.isAbilitySlow);
@@ -96,10 +98,6 @@ public class HelpTableController : MonoBehaviour
                 
                 gameInformation.helpTableOpen = true;
                 gameInformation.isBoardDisabled = true;
-                if (GameObject.Find("Canvas").transform.Find("HelpScreen") != null)
-                {
-                    GameObject.Find("Canvas").transform.Find("HelpScreen").gameObject.SetActive(true);
-                }
                 helpTable.gameObject.SetActive(true);
                 //
                 FillTableWithInfo(ability, abilityText, character.GetComponent<PlayerInformation>().savedCharacter, character.GetComponent<ActionManager>());
@@ -142,11 +140,6 @@ public class HelpTableController : MonoBehaviour
                 {
                     gameInformation.helpTableOpen = true;
                     gameInformation.isBoardDisabled = true;
-                    if (GameObject.Find("Canvas").transform.Find("HelpScreen") != null)
-                    {
-                        GameObject.Find("Canvas").transform.Find("HelpScreen").gameObject.SetActive(true);
-                    }
-
                     helpTable.gameObject.SetActive(true);
                     FillTableWithInfo(ability, abilityText, character.GetComponent<PlayerInformation>().savedCharacter,
                         character.GetComponent<ActionManager>());

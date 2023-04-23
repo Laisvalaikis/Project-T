@@ -58,7 +58,7 @@ public class SpearPulse : BaseAction
     */
     public override void CreateGrid()
     {
-        transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
+        // transform.gameObject.GetComponent<PlayerInformation>().currentState = actionStateName;
         this.AvailableTiles.Clear();
         startingPoint = gameObject;
         if (GetComponent<ActionManager>().FindActionByName("ThrowSpear") != null && GetComponent<ActionManager>().FindActionByName("ThrowSpear").spawnedCharacter != null)

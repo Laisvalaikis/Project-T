@@ -29,7 +29,7 @@ public class PlayerAttack : BaseAction
         }
         else
         {
-            transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
+            // transform.gameObject.GetComponent<PlayerInformation>().currentState = "Movement";
         }
 
     }

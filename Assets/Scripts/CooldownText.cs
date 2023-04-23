@@ -9,7 +9,7 @@ public class CooldownText : MonoBehaviour
 {
     public TextMeshProUGUI coolDown;
     public ActionButton _actionButton;
-    [HideInInspector]public BaseAction action;
+    public BaseAction action;
     private ButtonManager _buttonManager;
     private string actionName;
     private ActionManager _actionManager;
