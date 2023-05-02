@@ -1,57 +1,70 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TownHall : MonoBehaviour
 {
-   [HideInInspector] public GameObject SelectedUpgrade;
-   public Data _data;
-    void Start()
-    {
-        //UpdateButtons();
-    }
-        public void UpdateButtons()
-    {
-        GameObject buttons = transform.Find("UpgradeButtons").gameObject;
-        for(int i = 0; i < buttons.transform.childCount; i++)
-        {
-            buttons.transform.GetChild(i).gameObject.GetComponent<UpgradeButton>().UpdateUpgradeButton();
-        }
-        if(SelectedUpgrade != null)
-        {
-            transform.Find("UpgradeName").gameObject.SetActive(true);
-            transform.Find("UpgradeDescription").gameObject.SetActive(true);
-            transform.Find("UpgradeCost").gameObject.SetActive(true);
-            transform.Find("BuyButton").gameObject.SetActive(true);
-            //
-            transform.Find("UpgradeName").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeName;
-            transform.Find("UpgradeDescription").GetComponent<TextMeshProUGUI>().text = SelectedUpgrade.GetComponent<UpgradeButton>().upgradeDescription;
-            transform.Find("UpgradeCost").GetComponent<TextMeshProUGUI>().text = "-" + SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost.ToString() + "g";
-            transform.Find("BuyButton").GetComponent<Button>().interactable = _data.townData.townGold >= SelectedUpgrade.GetComponent<UpgradeButton>().upgradeCost;
-            Debug.Log("Reikia perdaryti");
+    [HideInInspector] public GameObject SelectedUpgrade;
+    public Data _data;
 
+    public List<UpgradeButton> upgradeButtons;
+    public TextMeshProUGUI upgradeNameText;
+    public TextMeshProUGUI upgradeDescriptionText;
+    public TextMeshProUGUI upgradeCostText;
+    public Button buyButton;
+    public GameObject backgroundForText;
+    private Image backgroundImage;
+
+    private void Start()
+    {
+        backgroundForText.SetActive(true);
+        backgroundImage = backgroundForText.GetComponent<Image>();
+    }
+    public void UpdateButtons()
+    {
+        foreach (UpgradeButton button in upgradeButtons)
+        {
+            button.UpdateUpgradeButton();
+        }
+
+        if (SelectedUpgrade != null)
+        {
+            UpgradeButton selectedUpgradeButton = SelectedUpgrade.GetComponent<UpgradeButton>();
+
+            upgradeNameText.gameObject.SetActive(true);
+            upgradeDescriptionText.gameObject.SetActive(true);
+            upgradeCostText.gameObject.SetActive(true);
+            //buyButton.gameObject.SetActive(true);
+            backgroundForText.gameObject.SetActive(true);
+
+            upgradeNameText.text = selectedUpgradeButton.upgradeName;
+            upgradeDescriptionText.text = selectedUpgradeButton.upgradeDescription;
+            upgradeCostText.text = "-" + selectedUpgradeButton.upgradeCost.ToString() + "g";
+            buyButton.interactable = _data.townData.townGold >= selectedUpgradeButton.upgradeCost;
+            Debug.Log("Reikia perdaryti");
         }
         else
         {
-            transform.Find("UpgradeName").gameObject.SetActive(false);
-            transform.Find("UpgradeDescription").gameObject.SetActive(false);
-            transform.Find("UpgradeCost").gameObject.SetActive(false);
-            transform.Find("BuyButton").gameObject.SetActive(false);
+            upgradeNameText.gameObject.SetActive(false);
+            upgradeDescriptionText.gameObject.SetActive(false);
+            upgradeCostText.gameObject.SetActive(false);
+            buyButton.gameObject.SetActive(false);
         }
     }
+
     public void BuyUpgrade()
     {
         SelectedUpgrade.GetComponent<UpgradeButton>().BuyUpgrade();
-        SelectedUpgrade = null;
         UpdateButtons();
     }
+
     public void CloseTownHall()
     {
         SelectedUpgrade = null;
         UpdateButtons();
         gameObject.SetActive(false);
-        GameObject.Find("CanvasCamera").transform.Find("TownHallTable").Find("BackgroundForText").gameObject.SetActive(false);
+        backgroundForText.SetActive(false);
+        backgroundImage.color = new Color(backgroundImage.color.r, backgroundImage.color.g, backgroundImage.color.b, 0f);
     }
 }
