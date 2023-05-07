@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portraitBarControl: {fileID: 0}
+  gameUi: {fileID: 0}
   _saveData: {fileID: 5252738720612935281}
+  cornerButtonManager: {fileID: 0}
   _data: {fileID: 2141037190933514941}
 --- !u!114 &6847408503071179581
 MonoBehaviour:
@@ -76,6 +78,8 @@ MonoBehaviour:
   - {fileID: 5813706836119385935, guid: e261d9b8eeca03b4fa48ca7d90a74cff, type: 3}
   - {fileID: 4177073564369104485, guid: 35171f295737d314299bb55c37f60ecb, type: 3}
   - {fileID: 2140477715814270949, guid: b6efde265ebb80a47af7ed6c09651de6, type: 3}
+  - {fileID: 752644140541573668, guid: f81ba52231d7ac54f8289639583178ec, type: 3}
+  - {fileID: 4867105554276554750, guid: ea13e896c0001ad44aa846cf28672634, type: 3}
 --- !u!114 &2141037190933514941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,11 +459,6 @@ MonoBehaviour:
       attackHelper: 0
       masterVolume: 1
       mute: 0
-  townPortraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &5252738720612935281
 MonoBehaviour:
   m_ObjectHideFlags: 0

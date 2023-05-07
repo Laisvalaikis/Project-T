@@ -148,8 +148,6 @@ MonoBehaviour:
     type: 3}
   CharacterSplashArt: {fileID: 0}
   CroppedSplashArt: {fileID: 0}
-  CornerUIManager: {fileID: 1978670911296937951, guid: 7beb9d174ab884844b30a4de618c1a00,
-    type: 3}
   characterUiData: {fileID: 11400000, guid: ec3039742eeebef479706bd25a142d9d, type: 2}
   _data: {fileID: 0}
   Blocker: 0
@@ -177,6 +175,7 @@ MonoBehaviour:
   MistShield: 0
   Stasis: 0
   wasThisCharacterSpawned: 0
+  enabledAbilitiesEnemy: []
   Respawn: 0
   XPToGain: 0
   isThisObject: 0
@@ -449,7 +448,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: abfb4aef33934d4489c6cc2a8397bd6d,
+      objectReference: {fileID: 22100000, guid: 9666297a397a0c44ea168087f041805f,
         type: 2}
     - target: {fileID: 5642735115460123181, guid: 7fdd704e297a46e429bd5056e2628f3a,
         type: 3}
