@@ -14,6 +14,16 @@ public class UpgradeButton : MonoBehaviour
     public string upgradeDescription;
     public Data _data;
     public GameUi gameUi;
+    public GameObject backgroundForText;
+    private ImageFadeController imageFadeController;
+
+
+    private void Start()
+    {
+        imageFadeController = backgroundForText.GetComponent<ImageFadeController>();
+        backgroundForText.SetActive(true);
+    }
+
     public void UpdateUpgradeButton()
     {
         string townHall = _data.townData.townHall;
@@ -56,14 +66,13 @@ public class UpgradeButton : MonoBehaviour
         if (TownHallTable.SelectedUpgrade == gameObject)
         {
             TownHallTable.SelectedUpgrade = null;
-            GameObject.Find("CanvasCamera").transform.Find("TownHallTable").Find("BackgroundForText").gameObject.SetActive(false);
+            imageFadeController.FadeOut();
         }
         else
         {
             TownHallTable.SelectedUpgrade = gameObject;
-            GameObject.Find("CanvasCamera").transform.Find("TownHallTable").Find("BackgroundForText").gameObject.SetActive(true);
+            imageFadeController.FadeIn();
         }
         TownHallTable.GetComponent<TownHall>().UpdateButtons();
     }
-
 }
