@@ -14,12 +14,10 @@ public class TownHall : MonoBehaviour
     public TextMeshProUGUI upgradeCostText;
     public Button buyButton;
     public GameObject backgroundForText;
-    private Image backgroundImage;
 
     private void Start()
     {
         backgroundForText.SetActive(true);
-        backgroundImage = backgroundForText.GetComponent<Image>();
     }
     public void UpdateButtons()
     {
@@ -35,14 +33,12 @@ public class TownHall : MonoBehaviour
             upgradeNameText.gameObject.SetActive(true);
             upgradeDescriptionText.gameObject.SetActive(true);
             upgradeCostText.gameObject.SetActive(true);
-            //buyButton.gameObject.SetActive(true);
             backgroundForText.gameObject.SetActive(true);
 
             upgradeNameText.text = selectedUpgradeButton.upgradeName;
             upgradeDescriptionText.text = selectedUpgradeButton.upgradeDescription;
             upgradeCostText.text = "-" + selectedUpgradeButton.upgradeCost.ToString() + "g";
             buyButton.interactable = _data.townData.townGold >= selectedUpgradeButton.upgradeCost;
-            Debug.Log("Reikia perdaryti");
         }
         else
         {
@@ -55,8 +51,11 @@ public class TownHall : MonoBehaviour
 
     public void BuyUpgrade()
     {
-        SelectedUpgrade.GetComponent<UpgradeButton>().BuyUpgrade();
-        UpdateButtons();
+        if (buyButton.interactable)
+        {
+            SelectedUpgrade.GetComponent<UpgradeButton>().BuyUpgrade();
+            UpdateButtons();
+        }
     }
 
     public void CloseTownHall()
@@ -64,7 +63,5 @@ public class TownHall : MonoBehaviour
         SelectedUpgrade = null;
         UpdateButtons();
         gameObject.SetActive(false);
-        backgroundForText.SetActive(false);
-        backgroundImage.color = new Color(backgroundImage.color.r, backgroundImage.color.g, backgroundImage.color.b, 0f);
     }
 }

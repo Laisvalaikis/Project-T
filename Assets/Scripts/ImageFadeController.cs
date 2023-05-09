@@ -13,31 +13,61 @@ public class ImageFadeController : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    private void OnEnable()
+    {
         targetImage = GetComponent<Image>();
         currentAlpha = targetImage.color.a;
+        FadeInStart();
+    }
+
+    private void OnDisable()
+    {
+        Color fixedColor = targetImage.color;
+        fixedColor.a = 1;
+        targetImage.color = fixedColor;
+        Debug.Log("Disabled");
+    }
+
+    public void FadeInStart()
+    {
+        targetImage.CrossFadeAlpha(0f, 0, true);
     }
 
     public void FadeIn()
     {
         if (targetImage == null) return;
-
-        if (fadeCoroutine != null)
-        {
-            StopCoroutine(fadeCoroutine);
-        }
-        fadeCoroutine = StartCoroutine(FadeImage(currentAlpha, 0.5f, fadeInDuration * (1f - currentAlpha)));
+        targetImage.CrossFadeAlpha(0.5f, fadeInDuration, true);
     }
 
     public void FadeOut()
     {
         if (targetImage == null) return;
-
-        if (fadeCoroutine != null)
-        {
-            StopCoroutine(fadeCoroutine);
-        }
-        fadeCoroutine = StartCoroutine(FadeImage(currentAlpha, 0f, fadeOutDuration * currentAlpha));
+        targetImage.CrossFadeAlpha(0f, fadeOutDuration, true);
     }
+
+    /*    public void FadeIn()
+        {
+            if (targetImage == null) return;
+
+            if (fadeCoroutine != null)
+            {
+                StopCoroutine(fadeCoroutine);
+            }
+            fadeCoroutine = StartCoroutine(FadeImage(currentAlpha, 0.5f, fadeInDuration * (1f - currentAlpha)));
+        }
+
+        public void FadeOut()
+        {
+            if (targetImage == null) return;
+
+            if (fadeCoroutine != null)
+            {
+                StopCoroutine(fadeCoroutine);
+            }
+            fadeCoroutine = StartCoroutine(FadeImage(currentAlpha, 0f, fadeOutDuration * currentAlpha));
+        }*/
 
     private IEnumerator FadeImage(float startAlpha, float endAlpha, float duration)
     {
