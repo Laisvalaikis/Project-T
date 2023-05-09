@@ -1019,7 +1019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 72, y: 17.5}
+  m_AnchoredPosition: {x: 45, y: 20}
   m_SizeDelta: {x: 50, y: 16}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &85286212
@@ -1078,13 +1078,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11
-  m_fontSizeBase: 11
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1276,7 +1276,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: RECRUITMENT CENTER 3
+      value: EXPANDED RECRUITMENT 1
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -1291,7 +1291,8 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases the number of attracted characters to 3.
+      value: Get an extra character to choose from in the Recruitment Center after
+        each mission.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -6755,7 +6756,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: RECRUITMENT CENTER 4
+      value: EXPANDED RECRUITMENT 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -6775,7 +6776,8 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases the number of attracted characters to 4.
+      value: Get an extra character to choose from in the Recruitment Center after
+        each mission.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -6945,7 +6947,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: MAX RECRUITS
+      value: RANK EXPANSION
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -6960,7 +6962,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases the number of max recruits to 12.
+      value: ' Strengthen your reserves. Increase your character inventory to 12.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -7473,7 +7475,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: LEVEL 2 RECRUITS
+      value: SEASONED RECRUITS
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -7488,7 +7490,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Recruits who come to Recruitment Center are now Level 2.
+      value: Recruits who come to the Recruitment Center are now Level 2.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -11800,7 +11802,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: MAX LVL 2
+      value: ENHANCED TRAINING 1
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -11812,6 +11814,11 @@ PrefabInstance:
       propertyPath: backgroundForText
       value: 
       objectReference: {fileID: 1178979674}
+    - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
+        type: 3}
+      propertyPath: upgradeDescription
+      value: Raise character level cap to 2.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
 --- !u!1 &850222801
@@ -20192,7 +20199,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4280650423
-  m_fontColor: {r: 0.7176471, g: 0.5411765, b: 0.14509805, a: 1}
+  m_fontColor: {r: 1, g: 0.6917808, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -22540,7 +22547,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: MAX LVL 3
+      value: ENHANCED TRAINING 2
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -22560,7 +22567,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases max level to 3.
+      value: Raise character level cap to 3.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -23026,7 +23033,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: RECRUITMENT CENTER 5
+      value: EXPANDED RECRUITMENT 3
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -23046,7 +23053,8 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases the number of attracted characters to 5.
+      value: Get an extra character to choose from in the Recruitment Center after
+        each mission.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -23371,7 +23379,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeName
-      value: MAX LVL 4
+      value: ENHANCED TRAINING 3
       objectReference: {fileID: 0}
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
@@ -23391,7 +23399,7 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Increases max level to 4.
+      value: Raise character level cap to 4.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
@@ -24944,8 +24952,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.1
-  m_fontSizeBase: 13.1
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -25800,8 +25808,8 @@ PrefabInstance:
     - target: {fileID: 4629577040614292180, guid: 8126cd9b8e37ab94886fbdaa32fd205f,
         type: 3}
       propertyPath: upgradeDescription
-      value: Reroll button can be used in Recruitment Center to reroll attracted
-        characters.
+      value: Don't like the characters on offer? No problem! With the Reroll Option,
+        get a fresh set of potential recruits in the Recruitment Center.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8126cd9b8e37ab94886fbdaa32fd205f, type: 3}
