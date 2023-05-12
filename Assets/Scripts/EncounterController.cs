@@ -39,11 +39,38 @@ public class EncounterController : MonoBehaviour
         return generatedEncounters;
     }
 
+    private void AddAttributesToEncounter(Encounter encounter, GameObject map, string category, int level)
+    {
+        encounter.missionCategory = category;
+        encounter.encounterLevel = level;
+        encounter.mapName = map.name;
+        encounter.enemyPool = map.GetComponent<Map>().suitableEnemies;
+        encounter.allowDuplicates = map.GetComponent<Map>().allowDuplicates;
+        encounter.numOfEnemies = map.GetComponent<Map>().numberOfEnemies;
+    }
+    
     private void GenerateEncounters(out List<Encounter> encounterListToPopulate, List<Encounter> pastEncounters)
     {
         encounterListToPopulate = new List<Encounter>();
         var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-        for (int i = 1; i <= 5; i++)
+
+        GameObject tutorialMap = gameProgress.GetComponent<MapSetup>().MapPrefabs.Find(x => x.GetComponent<Map>().name == "Tutorial");
+        Encounter tutorialEncounter = new Encounter();
+        AddAttributesToEncounter(tutorialEncounter, tutorialMap, "Forest", 1);
+        encounterListToPopulate.Add(tutorialEncounter);
+        if (pastEncounters.Find(x => x.missionCategory == "Forest" && x.encounterLevel == 1) != null)
+        {
+            GameObject merchantMap = gameProgress.GetComponent<MapSetup>().MapPrefabs.Find(x => x.GetComponent<Map>().name == "Merchant Ambush");
+            Encounter merchantEncounter = new Encounter();
+            AddAttributesToEncounter(merchantEncounter, merchantMap, "Forest", 2);
+            encounterListToPopulate.Add(merchantEncounter);
+        }
+
+
+        //This part generates random levels and adds them to encounter list
+        //It is commented out for now because we only want 2 levels for the demo
+        //They are added manually in the code above (this will probably change for non-demo release)
+/*        for (int i = 2; i <= 5; i++)
         {
             foreach (string category in encounterCategories)
             {
@@ -61,7 +88,8 @@ public class EncounterController : MonoBehaviour
                     encounterListToPopulate.Add(newEncounter);
                 }
             }
-        }
+        }*/
+
     }
 
     private void ToggleEncounterButtons(List<Encounter> generatedEncounters)
