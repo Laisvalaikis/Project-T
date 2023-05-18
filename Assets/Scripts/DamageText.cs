@@ -32,8 +32,8 @@ public class DamageText : MonoBehaviour
     {
         time -= Time.deltaTime;
         
-            transform.position += new Vector3(0f, moveSpeed);
-            color.a -= (disappearSpeed * Time.fixedDeltaTime);
+       transform.position += new Vector3(0f, moveSpeed);
+       color.a -= (disappearSpeed * Time.fixedDeltaTime);
         
         GetComponent<TextMeshPro>().color = color;
         if (time <= 0)
