@@ -211,6 +211,7 @@ public class GameProgress : MonoBehaviour
             gameUi.UpdateTownCost();
             gameUi.UpdateDayNumber();
             gameUi.UpdateDifficultyButton();
+            gameUi.UpdateUnspentPointWarnings();
             GameObject.Find("CanvasCamera").transform.Find("RecruitmentCenterTable").GetComponent<Recruitment>().UpdateButtons();
             GameObject.Find("CanvasCamera").transform.Find("TownHallTable").GetComponent<TownHall>().UpdateButtons();
         }
@@ -233,6 +234,7 @@ public class GameProgress : MonoBehaviour
     public void UpdateCharacterButtons(int direction)//up - 1, down - -1, none - 0
     {
         Transform CharacterButtons = GameObject.Find("CanvasCamera").transform.Find("CharacterButtons");
+        gameUi.UpdateUnspentPointWarnings();
         for (int i = 0; i < 6; i++)
         {
             CharacterButtons.GetChild(i).gameObject.SetActive(false);
@@ -277,9 +279,9 @@ public class GameProgress : MonoBehaviour
             CharacterButtons.GetChild(i % 6).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
                 _data.Characters[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
             CharacterButtons.GetChild(i % 6).Find("Character").Find("LevelText").GetComponent<Text>().text = _data.Characters[i].level.ToString();
-
-            //CharacterButtons.GetChild(i % 6).Find("AbilityPointCorner").gameObject.SetActive(Characters[i].abilityPointCount > 0);
-            //CharacterButtons.GetChild(i % 6).Find("AbilityPointText").gameObject.SetActive(Characters[i].abilityPointCount > 0);
+            /////////// CIA GAL?
+            //CharacterButtons.GetChild(i % 6).Find("AbilityPointCorner").gameObject.SetActive(_data.AllAvailableCharacters[i].abilityPointCount > 0);
+            //CharacterButtons.GetChild(i % 6).Find("AbilityPointText").gameObject.SetActive(_data.AllAvailableCharacters[i].abilityPointCount > 0);
 
             CharacterButtons.GetChild(i % 6).gameObject.SetActive(true);
             if (CharacterButtons.GetChild(i % 6).GetComponent<CharacterPortrait>().characterIndex == _data.currentCharacterIndex)
@@ -300,6 +302,7 @@ public class GameProgress : MonoBehaviour
             // FakeUpdate();
             gameUi.UpdateTownCost();
             portraitBarControl.InsertCharacter();
+            gameUi.UpdateUnspentPointWarnings();
             _data.statistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
             _data.globalStatistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
         }
