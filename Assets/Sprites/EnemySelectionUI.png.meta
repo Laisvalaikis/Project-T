@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac010ffe03470e74793ca8908a44e000
+guid: 5cf6570d6a8ba3b40842525e23413aed
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 960
+    maxTextureSize: 198
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -103,10 +103,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SceneImage 0
+      name: EnemySelectionUI 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 270
-        width: 480
-        height: 270
+        y: 66
+        width: 66
+        height: 66
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0082e4a95c6f87770800000000000000
-      internalID: 8608902016276506624
+      spriteID: 9dd56eed0c9cba240800000000000000
+      internalID: 4804155257731309017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SceneImage 1
+      name: EnemySelectionUI 1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 270
-        width: 480
-        height: 270
+        x: 66
+        y: 66
+        width: 66
+        height: 66
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f77ab618c65ca6640800000000000000
-      internalID: 5074085000004740991
+      spriteID: c8b50aba5c4e1a3f0800000000000000
+      internalID: -891179713603544180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SceneImage 2
+      name: EnemySelectionUI 2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 66
+        width: 66
+        height: 66
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bbae1a4c8f52cd0800000000000000
+      internalID: -2583385287813317863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySelectionUI 3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 480
-        height: 270
+        width: 66
+        height: 66
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1868c03ebb22bc590800000000000000
-      internalID: -7652984951422548351
+      spriteID: 539deda698580a3d0800000000000000
+      internalID: -3197408910183048907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SceneImage 3
+      name: EnemySelectionUI 4
       rect:
         serializedVersion: 2
-        x: 480
+        x: 66
         y: 0
-        width: 480
-        height: 270
+        width: 66
+        height: 66
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +215,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00000000000000000800000000000000
-      internalID: 0
+      spriteID: d7a3b0e03692ba210800000000000000
+      internalID: 1345214419114343037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemySelectionUI 5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 66
+        height: 66
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ff8b89d9a64d190800000000000000
+      internalID: -7938603018042671275
       vertices: []
       indices: 
       edges: []
@@ -211,10 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SceneImage 3: 0
-      SceneImage 0: 8608902016276506624
-      SceneImage 1: 5074085000004740991
-      SceneImage 2: -7652984951422548351
+      EnemySelectionUI 3: -3197408910183048907
+      EnemySelectionUI 1: -891179713603544180
+      EnemySelectionUI 5: -7938603018042671275
+      EnemySelectionUI 4: 1345214419114343037
+      EnemySelectionUI 2: -2583385287813317863
+      EnemySelectionUI 0: 4804155257731309017
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
