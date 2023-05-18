@@ -31,11 +31,10 @@ public class DamageText : MonoBehaviour
     void FixedUpdate()
     {
         time -= Time.deltaTime;
-        if (!GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject.activeSelf)
-        {
-            transform.position += new Vector3(0f, moveSpeed);
-            color.a -= (disappearSpeed * Time.fixedDeltaTime);
-        }
+        
+       transform.position += new Vector3(0f, moveSpeed);
+       color.a -= (disappearSpeed * Time.fixedDeltaTime);
+        
         GetComponent<TextMeshPro>().color = color;
         if (time <= 0)
         {
