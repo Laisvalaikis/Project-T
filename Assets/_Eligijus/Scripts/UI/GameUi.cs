@@ -82,10 +82,6 @@ public class GameUi : MonoBehaviour
                 {
                     abilityPointCorner.gameObject.SetActive(true);
                 }
-                else
-                {
-                    Debug.Log("Shit was null, yo");
-                }
             }
             else
             {
