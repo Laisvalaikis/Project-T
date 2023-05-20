@@ -58,7 +58,9 @@ MonoBehaviour:
   isFogOfWarEnabled: 1
   _saveData: {fileID: 0}
   _data: {fileID: 0}
-  SelectedCharacter: {fileID: 0}
+  helpTableController: {fileID: 0}
+  cornerButtonManager: {fileID: 0}
+  bottomCornerUI: {fileID: 0}
   InspectedCharacter: {fileID: 0}
   environmentalHazards: []
   Camera: {fileID: 0}
@@ -115,12 +117,26 @@ MonoBehaviour:
       undoCount: 0
       teamPortraitBoxGameObject: {fileID: 0}
       lastSelectedPlayer: {fileID: 0}
+    - characters: []
+      coordinates: []
+      teamName: White
+      teamAllegiance: 1
+      teamFlag: {fileID: 0}
+      teamFlagSprite: {fileID: -3657524750541581921, guid: 630bb4f4005d4a34b8a8ae386b90a3fa,
+        type: 3}
+      teamFlagPoint: {fileID: 0}
+      isTeamAI: 1
+      undoCount: 0
+      teamPortraitBoxGameObject: {fileID: 0}
+      lastSelectedPlayer: {fileID: 0}
   ChampionTeam: 
   ChampionAllegiance: 
   undoCount: 2
   otherCharacters: []
   isGameOver: 0
   _data: {fileID: 0}
+  helpTableController: {fileID: 0}
+  characterUiButtonManager: {fileID: 0}
 --- !u!114 &3011627871469372111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,4 +229,5 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
+  cornerUIManager: {fileID: 0}
   _data: {fileID: 0}

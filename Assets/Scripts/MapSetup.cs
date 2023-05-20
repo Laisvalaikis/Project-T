@@ -12,8 +12,11 @@ public class MapSetup : MonoBehaviour
     {
         GameObject gameInformation = GameObject.Find("GameInformation");
         GameObject MapPrefab = GetSelectedMap();
+        
         if (MapPrefab != null)
         {
+            Map MapInformation = MapPrefab.GetComponent<Map>();
+            List<GameObject> NpcTeam = MapInformation.NpcTeam;
             //coordinates
             var coordinatesGameObject = MapPrefab.transform.Find("Coordinates");
             var teamSettings = gameInformation.GetComponent<PlayerTeams>();
@@ -25,6 +28,19 @@ public class MapSetup : MonoBehaviour
             for(int i = 0; i < coordinatesGameObject.GetChild(1).childCount; i++)
             {
                 teamSettings.allCharacterList.teams[1].coordinates.Add(coordinatesGameObject.GetChild(1).GetChild(i));
+            }
+            //NPC team spawning
+            if (MapInformation.NpcTeam.Count == 0)
+            {
+                teamSettings.allCharacterList.teams.RemoveAt(2);
+            }
+            else
+            {
+                for (int i = 0; i < NpcTeam.Count; i++)
+                {
+                    teamSettings.allCharacterList.teams[2].coordinates.Add(coordinatesGameObject.GetChild(2).GetChild(i));
+                    teamSettings.allCharacterList.teams[2].characters.Add (NpcTeam[i]);
+                }
             }
             //AI destinations
             var destinationsGameObject = MapPrefab.transform.Find("AIDestinations");
