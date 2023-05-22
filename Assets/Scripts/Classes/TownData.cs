@@ -166,7 +166,7 @@ namespace Assets.Scripts.Classes
                 newGame = true,
                 singlePlayer = false,
                 selectedMission = "",
-                townHall = "00000",
+                townHall = "000000",
                 rcCharacters = { },
                 //RCcharacters = { },
                 //RCcharacterLevels = { },

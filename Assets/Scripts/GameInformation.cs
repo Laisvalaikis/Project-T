@@ -31,6 +31,7 @@ public class GameInformation : MonoBehaviour
     public HelpTableController helpTableController;
     public ButtonManager cornerButtonManager;
     public BottomCornerUI bottomCornerUI;
+    public List<String> Events; // Merchant death
     //Other
     [HideInInspector] public GameObject SelectedCharacter  {
         get { return _selectedCharacter; }
@@ -58,11 +59,11 @@ public class GameInformation : MonoBehaviour
     [HideInInspector] public int activeTeamIndex = 0;
     private int activateAfter2Frames = 0;
 
-    private static GameInformation insance;
+    public static GameInformation instance;
     
     void Start()
     {
-        insance = this;
+        instance = this;
         ActiveTeam = GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName; //The team who goes first.
         AddButton = GameObject.Find("Canvas").transform.Find("AddButton")?.gameObject;
         //ChangeVisionTiles();
@@ -358,7 +359,7 @@ public class GameInformation : MonoBehaviour
     {
         character.GetComponent<PlayerInformation>().ToggleSelectionBorder(false);
         character.GetComponent<GridMovement>().DisableGrid();
-        insance.cornerButtonManager.transform.GetChild(0).gameObject.SetActive(false);
+        instance.cornerButtonManager.transform.GetChild(0).gameObject.SetActive(false);
         for (int k = 0; k < character.GetComponent<ActionManager>().ActionScripts.Count; k++)
         {
             character.GetComponent<ActionManager>().ActionScripts[k].action.DisableGrid();
@@ -738,6 +739,13 @@ public class GameInformation : MonoBehaviour
                 _data.townData.wasLastMissionSuccessful = true;
                 _data.townData.pastEncounters.Add(_data.townData.selectedEncounter);
                 _data.townData.generateNewEncounters = true;
+                if(_data.townData.selectedEncounter.mapName == "Merchant Ambush") 
+                {
+                    string townHall = _data.townData.townHall;
+                    char[] chars = townHall.ToCharArray();
+                    chars[5] = Events.Contains("MerchantDied") ? Convert.ToChar(1) : Convert.ToChar(2);
+                    _data.townData.townHall = new string(chars);
+                }
             }
             //DEFEAT
             else
@@ -750,6 +758,13 @@ public class GameInformation : MonoBehaviour
                     _data.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
                 }
                 _data.townData.wasLastMissionSuccessful = false;
+                if (_data.townData.selectedEncounter.mapName == "Merchant Ambush")
+                {
+                    string townHall = _data.townData.townHall;
+                    char[] chars = townHall.ToCharArray();
+                    chars[5] = Convert.ToChar(1);
+                    _data.townData.townHall = new string(chars);
+                }
             }
             _saveData.SaveTownData();
         }

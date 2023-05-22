@@ -60,6 +60,8 @@ public class PlayerInformation : MonoBehaviour
     [HideInInspector] public List<Poison> Poisons = new List<Poison>();
     [HideInInspector] public bool wasThisCharacterSpawned = false;
     [HideInInspector] public List<string> enabledAbilitiesEnemy;
+    public GameInformation gameInformation;
+
     public bool Respawn;
     //
     [HideInInspector] public int XPToGain = 0;
@@ -81,6 +83,7 @@ public class PlayerInformation : MonoBehaviour
         LoadPlayerProgression();
         PlayerSetup();
         health = MaxHealth;
+        gameInformation = GameInformation.instance;
     }
     void Update()
     {
@@ -156,7 +159,7 @@ public class PlayerInformation : MonoBehaviour
                             }
                             Marker = null;
                             transform.Find("VFX").Find("Mark").GetComponent<Animator>().SetTrigger("explode");
-                            GameObject.Find("GameInformation").GetComponent<GameInformation>().FakeUpdate();
+                            gameInformation.FakeUpdate();
                         }));
                     }
                     if (PinkWeakSpot != null && specialInformation != "PinkWeakSpot")
@@ -169,7 +172,7 @@ public class PlayerInformation : MonoBehaviour
                                 weakSpotDamage = 2;
                             }
                             DealDamage(weakSpotDamage, false, PinkWeakSpot, "PinkWeakSpot");
-                            GameObject.Find("GameInformation").GetComponent<GameInformation>().FakeUpdate();
+                            gameInformation.FakeUpdate();
                         }));
                     }
                     if (IsCreatingWhiteField)
@@ -234,6 +237,10 @@ public class PlayerInformation : MonoBehaviour
         {
             characterPortrait.transform.GetChild(0).GetComponent<Image>().color = Color.grey;
         }*/
+        if(ClassName == "MERCHANT") 
+        {
+            gameInformation.Events.Add("MerchantDied");
+        }
         if (TeamManager != null)
         {
             TeamManager.GetComponent<TeamInformation>().ModifyList();
@@ -242,10 +249,10 @@ public class PlayerInformation : MonoBehaviour
         {
             if (Respawn && GameObject.Find("GameInformation").GetComponent<AIManager>().RespawnEnemyWaves && GameObject.Find("GameInformation").GetComponent<AIManager>().RespawnCount > 0)
             {
-                GameObject.Find("GameInformation").GetComponent<GameInformation>().respawnEnemiesDuringThisTurn = true;
+                gameInformation.respawnEnemiesDuringThisTurn = true;
             }
             else
-                GameObject.Find("GameInformation").GetComponent<GameInformation>().GameOver();
+                gameInformation.GameOver();
         }
         //gameObject.SetActive(false);
     }
