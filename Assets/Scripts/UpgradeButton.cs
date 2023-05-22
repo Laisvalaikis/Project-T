@@ -57,9 +57,15 @@ public class UpgradeButton : MonoBehaviour
                 newTownHall += upgradeValue.ToString();
             }
         }*/
-        char[] chars = townHall.ToCharArray();
+        /*char[] chars = townHall.ToCharArray();
         chars[upgradeIndex] = Convert.ToChar(upgradeValue);
         string newTownHall = new string(chars);
+        Debug.Log("Is " + townHall + " i " + newTownHall);*/
+        string newTownHall = "";
+        for (int i = 0; i < townHall.Length; i++)
+        {
+            newTownHall += (i != upgradeIndex) ? townHall[i] : upgradeValue.ToString();
+        }
         _data.townData.townHall = newTownHall;
 
         GameObject.Find("GameProgress").GetComponent<GameProgress>().SpendGold(upgradeCost);

@@ -742,9 +742,12 @@ public class GameInformation : MonoBehaviour
                 if(_data.townData.selectedEncounter.mapName == "Merchant Ambush") 
                 {
                     string townHall = _data.townData.townHall;
-                    char[] chars = townHall.ToCharArray();
-                    chars[5] = Events.Contains("MerchantDied") ? Convert.ToChar(1) : Convert.ToChar(2);
-                    _data.townData.townHall = new string(chars);
+                    string newTownHall = "";
+                    for (int i = 0; i < townHall.Length; i++)
+                    {
+                        newTownHall += (i != 5) ? townHall[i] : (Events.Contains("MerchantDied") ? 1 : 2).ToString();
+                    }
+                    _data.townData.townHall = newTownHall;
                 }
             }
             //DEFEAT
@@ -761,9 +764,12 @@ public class GameInformation : MonoBehaviour
                 if (_data.townData.selectedEncounter.mapName == "Merchant Ambush")
                 {
                     string townHall = _data.townData.townHall;
-                    char[] chars = townHall.ToCharArray();
-                    chars[5] = Convert.ToChar(1);
-                    _data.townData.townHall = new string(chars);
+                    string newTownHall = "";
+                    for (int i = 0; i < townHall.Length; i++)
+                    {
+                        newTownHall += (i != 5) ? townHall[i] : 1.ToString();
+                    }
+                    _data.townData.townHall = newTownHall;
                 }
             }
             _saveData.SaveTownData();
