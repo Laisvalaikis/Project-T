@@ -13,8 +13,6 @@ public class ConditionalSpawn : MonoBehaviour
 
     void Start()
     {
-        if (_data.townData.townHall[5] != null)
-        {
             if (_data.townData.townHall[5] == '0')
             {
                 buttonObject.SetActive(false);
@@ -33,7 +31,6 @@ public class ConditionalSpawn : MonoBehaviour
                 townHall = new string(townHallChars);
                 _data.townData.townHall = townHall;
             }
-        }
     }
 
 
