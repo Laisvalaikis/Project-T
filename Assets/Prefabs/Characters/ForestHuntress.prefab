@@ -212,6 +212,8 @@ MonoBehaviour:
   MistShield: 0
   Stasis: 0
   wasThisCharacterSpawned: 0
+  enabledAbilitiesEnemy: []
+  gameInformation: {fileID: 0}
   Respawn: 0
   XPToGain: 0
   isThisObject: 0
@@ -313,8 +315,8 @@ MonoBehaviour:
   actionStateName: Attack
   AttackRange: 2
   AbilityCooldown: 1
-  minAttackDamage: 7
-  maxAttackDamage: 10
+  minAttackDamage: 6
+  maxAttackDamage: 8
   isAbilitySlow: 1
   friendlyFire: 0
   AttackAbility: 0
@@ -511,8 +513,8 @@ MonoBehaviour:
   actionStateName: LongShot
   AttackRange: 3
   AbilityCooldown: 2
-  minAttackDamage: 5
-  maxAttackDamage: 7
+  minAttackDamage: 3
+  maxAttackDamage: 5
   isAbilitySlow: 0
   friendlyFire: 0
   AttackAbility: 0
