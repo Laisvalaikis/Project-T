@@ -303,6 +303,7 @@ public class GameProgress : MonoBehaviour
             gameUi.UpdateTownCost();
             portraitBarControl.InsertCharacter();
             gameUi.UpdateUnspentPointWarnings();
+            gameUi.UpdateBuyRecruitsWarning();
             _data.statistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
             _data.globalStatistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
         }
@@ -333,6 +334,7 @@ public class GameProgress : MonoBehaviour
         {
             if (CharactersCopy[i].dead)
             {
+                portraitBarControl.RemoveCharacter(i);
                 _data.Characters.Remove(CharactersCopy[i]);
             }
         }

@@ -10,6 +10,7 @@ public class ConditionalSpawn : MonoBehaviour
     public float flashDuration = 1f;
     public float flashInterval = 0.2f;
     public GameObject buttonObject; // Assign your button GameObject to this in the inspector.
+    public TownHall townHallScript;
 
     void Start()
     {
@@ -23,9 +24,10 @@ public class ConditionalSpawn : MonoBehaviour
             }
             else
             {
+                string townHall = _data.townData.townHall;
+                townHallScript.SetupMerchantSprite();
                 StartCoroutine(PlayFlashingAnimation());
                 buttonObject.SetActive(true);
-                string townHall = _data.townData.townHall;
                 char[] townHallChars = townHall.ToCharArray();
                 townHallChars[5] = '4';
                 townHall = new string(townHallChars);

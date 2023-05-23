@@ -13,6 +13,7 @@ public class GameUi : MonoBehaviour
     public Data _data;
     public GameObject abilityPointWarning;
     public GameObject CharacterButtons;
+    public GameObject BuyRecruitsWarning;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,8 +61,12 @@ public class GameUi : MonoBehaviour
                 }
             }
     }
-    
-    public void UpdateUnspentPointWarnings()
+    public void UpdateBuyRecruitsWarning()
+    {
+        BuyRecruitsWarning.SetActive(_data.Characters.Count < 3);
+    }
+
+        public void UpdateUnspentPointWarnings()
     {
         bool playerHasUnspentPoints = false;
         int i=1;

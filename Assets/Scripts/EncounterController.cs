@@ -119,7 +119,16 @@ public class EncounterController : MonoBehaviour
             level.text = _data.townData.selectedEncounter.encounterLevel.ToString();
             category.text = _data.townData.selectedEncounter.missionCategory;
             numOfEnemies.text = _data.townData.selectedEncounter.numOfEnemies.ToString();
-            missionInfo.text = "information";
+            string missionText = "";
+            if(_data.townData.selectedEncounter.mapName == "Merchant Ambush") 
+            {
+                missionText = "Merchant was ambushed by enemies. Defeat the enemies while keeping the merchant alive. The merchant will help you fight.";
+            }
+            else 
+            {
+                missionText = "Defeat the enemies to complete the mission.";
+            }
+            missionInfo.text = missionText;
         }
         else
         {
