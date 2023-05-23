@@ -46,6 +46,8 @@ public class CharacterTable : MonoBehaviour
 
     private void OnDisable()
     {
+
+        gameUI.UpdateUnspentPointWarnings();
         ResetTempUnlockedAbilities();
     }
 

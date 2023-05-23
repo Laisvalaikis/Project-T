@@ -15,8 +15,24 @@ public class TownHall : MonoBehaviour
     public Button buyButton;
     public GameObject backgroundForText;
 
+    public Sprite[] sprites;
+    private Image imageComponent;
+
     private void Start()
     {
+        imageComponent = GetComponent<Image>();
+    }
+    public void SetupMerchantSprite()
+    {
+        imageComponent = GetComponent<Image>();
+        if (_data.townData.townHall[5].ToString() == 1.ToString())
+        {
+            imageComponent.sprite = sprites[0];
+        }
+        else if (_data.townData.townHall[5].ToString() == 2.ToString())
+        {
+            imageComponent.sprite = sprites[1];
+        }
         backgroundForText.SetActive(true);
     }
     public void UpdateButtons()

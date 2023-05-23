@@ -8,6 +8,10 @@ public class CharacterModel : MonoBehaviour
     {
         transform.parent.GetComponent<PlayerInformation>().Die();
     }
+    public void DestroyProp() 
+    {
+        Destroy(transform.parent.gameObject);
+    }
     public void RaiseRockAnimationEnd()
     {
         transform.parent.GetComponent<RaiseRock>().RaiseRockAnimationEnd();

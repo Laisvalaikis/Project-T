@@ -6,7 +6,7 @@ using UnityEngine;
 public class SortingLayer : MonoBehaviour
 {
     public int Priority = 0;
-    void Update()
+    void Start()
     {
         //Changing Order in layer
         if (transform.Find("CharacterModel") != null)

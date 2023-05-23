@@ -116,7 +116,7 @@ public class Scream : BaseAction
     */
     public override void OnTileHover(GameObject tile)
     {
-        EnableTextPreview(tile, "STUN");
+        EnableTextPreview(tile, "SILENCE");
     }
     public override GameObject PossibleAIActionTile()
     {

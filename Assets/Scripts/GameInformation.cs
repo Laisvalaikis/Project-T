@@ -31,6 +31,7 @@ public class GameInformation : MonoBehaviour
     public HelpTableController helpTableController;
     public ButtonManager cornerButtonManager;
     public BottomCornerUI bottomCornerUI;
+    public List<String> Events; // Merchant death
     //Other
     [HideInInspector] public GameObject SelectedCharacter  {
         get { return _selectedCharacter; }
@@ -58,11 +59,11 @@ public class GameInformation : MonoBehaviour
     [HideInInspector] public int activeTeamIndex = 0;
     private int activateAfter2Frames = 0;
 
-    private static GameInformation insance;
+    public static GameInformation instance;
     
     void Start()
     {
-        insance = this;
+        instance = this;
         ActiveTeam = GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName; //The team who goes first.
         AddButton = GameObject.Find("Canvas").transform.Find("AddButton")?.gameObject;
         //ChangeVisionTiles();
@@ -358,7 +359,7 @@ public class GameInformation : MonoBehaviour
     {
         character.GetComponent<PlayerInformation>().ToggleSelectionBorder(false);
         character.GetComponent<GridMovement>().DisableGrid();
-        insance.cornerButtonManager.transform.GetChild(0).gameObject.SetActive(false);
+        instance.cornerButtonManager.transform.GetChild(0).gameObject.SetActive(false);
         for (int k = 0; k < character.GetComponent<ActionManager>().ActionScripts.Count; k++)
         {
             character.GetComponent<ActionManager>().ActionScripts[k].action.DisableGrid();
@@ -669,20 +670,43 @@ public class GameInformation : MonoBehaviour
 
     public void GameOver()
     {
-        if (GetComponent<PlayerTeams>().ChampionTeam != null)
+        PlayerTeams teamsInformation = GetComponent<PlayerTeams>();
+        if (teamsInformation.ChampionTeam != null)
         {
             string team = GetComponent<PlayerTeams>().ChampionTeam;
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionTeam.ToUpper() + " TEAM WINS";
+            if (teamsInformation.allCharacterList.teams[0].teamName == team) {
+                GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "VICTORY";
+            }
+            else 
+            {
+                GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "DEFEAT";
+            }
+            //GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionTeam.ToUpper() + " TEAM WINS";
             Color victoryColor = ColorStorage.TeamColor(team);
             GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().color = victoryColor;
             GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("TeamColor").GetComponent<Image>().color = victoryColor;
             GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<TextMeshProUGUI>().color = victoryColor;
         }
-        else if (GetComponent<PlayerTeams>().ChampionAllegiance != null)
+        else if (teamsInformation.ChampionAllegiance != null)
         {
-            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionAllegiance + " ALLEGIANCE WINS!";
+            Color victoryColor = Color.white;
+            if (teamsInformation.ChampionAllegiance == "1") 
+            {
+                GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "VICTORY";
+                victoryColor = ColorStorage.TeamColor(teamsInformation.allCharacterList.teams[0].teamName);
+            }
+            else
+            {
+                GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "DEFEAT";
+                victoryColor = ColorStorage.TeamColor(teamsInformation.allCharacterList.teams[1].teamName);
+            }
+            
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().color = victoryColor;
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("TeamColor").GetComponent<Image>().color = victoryColor;
+            GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("Continue").GetComponent<TextMeshProUGUI>().color = victoryColor;
+            //GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = GetComponent<PlayerTeams>().ChampionAllegiance + " ALLEGIANCE WINS!";
         }
-        else GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "Draw";
+        else GameObject.Find("Canvas").transform.Find("VictoryScreen").transform.Find("VictoryText").GetComponent<TextMeshProUGUI>().text = "DRAW";
         isBoardDisabled = true;
         GameObject.Find("Canvas").transform.Find("PortraitBoxesContainer").gameObject.SetActive(false);
         GameObject.Find("Canvas").transform.Find("EndTurn").gameObject.SetActive(false);
@@ -698,13 +722,13 @@ public class GameInformation : MonoBehaviour
         {
 
             //VICTORY
-            if (GetComponent<PlayerTeams>().ChampionTeam == GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName)
+            if (teamsInformation.ChampionTeam == teamsInformation.allCharacterList.teams[0].teamName || teamsInformation.ChampionAllegiance == "1")
             {
                 for (int i = 0; i < _data.CharactersOnLastMission.Count; i++)
                 {
-                    GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().AddKillXP();
-                    _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 750 + GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().XPToGain;
-                    _data.Characters[_data.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
+                    teamsInformation.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().AddKillXP();
+                    _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 750 + teamsInformation.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().XPToGain;
+                    _data.Characters[_data.CharactersOnLastMission[i]].dead = teamsInformation.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
                     if (_data.Characters[_data.CharactersOnLastMission[i]].dead)
                     {
                         _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 0;
@@ -715,18 +739,38 @@ public class GameInformation : MonoBehaviour
                 _data.townData.wasLastMissionSuccessful = true;
                 _data.townData.pastEncounters.Add(_data.townData.selectedEncounter);
                 _data.townData.generateNewEncounters = true;
+                if(_data.townData.selectedEncounter.mapName == "Merchant Ambush") 
+                {
+                    string townHall = _data.townData.townHall;
+                    string newTownHall = "";
+                    for (int i = 0; i < townHall.Length; i++)
+                    {
+                        newTownHall += (i != 5) ? townHall[i] : (Events.Contains("MerchantDied") ? 1 : 2).ToString();
+                    }
+                    _data.townData.townHall = newTownHall;
+                }
             }
             //DEFEAT
             else
             {
                 for (int i = 0; i < _data.CharactersOnLastMission.Count; i++)
                 {
-                    _data.Characters[_data.CharactersOnLastMission[i]].dead = GetComponent<PlayerTeams>().allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
+                    _data.Characters[_data.CharactersOnLastMission[i]].dead = teamsInformation.allCharacterList.teams[0].characters[i].GetComponent<PlayerInformation>().health <= 0;
                     _data.Characters[_data.CharactersOnLastMission[i]].xPToGain = 0;
                     _data.statistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
                     _data.globalStatistics.characterDeathsCountByClass[Statistics.getClassIndex(_data.Characters[_data.CharactersOnLastMission[i]].prefab.GetComponent<PlayerInformation>().ClassName)]++;
                 }
                 _data.townData.wasLastMissionSuccessful = false;
+                if (_data.townData.selectedEncounter.mapName == "Merchant Ambush")
+                {
+                    string townHall = _data.townData.townHall;
+                    string newTownHall = "";
+                    for (int i = 0; i < townHall.Length; i++)
+                    {
+                        newTownHall += (i != 5) ? townHall[i] : 1.ToString();
+                    }
+                    _data.townData.townHall = newTownHall;
+                }
             }
             _saveData.SaveTownData();
         }
