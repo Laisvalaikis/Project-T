@@ -10,7 +10,12 @@ public class Town : MonoBehaviour
     [SerializeField] private GameProgress _gameProgress;
     [SerializeField] private Recruitment _recruitment;
     [SerializeField] private SaveData _saveData;
+    [SerializeField] private Button _embark;
+    [SerializeField] private int _charactersCount = 3;
     public Data _data;
+    [SerializeField] private GameObject _abilityPointWarning;
+    [SerializeField] private GameObject _recruitmentWarning;
+    
     void OnEnable()
     {
         _saveData.LoadTownData();
@@ -22,14 +27,45 @@ public class Town : MonoBehaviour
         _recruitment.RecruitmentStart();
         _gameProgress.PrepareNewTownDay();
         ToggleAbilityPointWarning();
+        _data.characterRecruitmentEvent.AddListener(RecruitedCharacter);
+        if (_data.Characters.Count >= 3)
+        {
+            _embark.interactable = true;
+        }
+    }
+
+    public void RecruitedCharacter()
+    {
+        if (_data.Characters.Count >= 3)
+        {
+            _embark.interactable = true;
+        }
+        else
+        {
+            _embark.interactable = false; 
+        }
     }
 
     public void ToggleAbilityPointWarning()
     {
-        GameObject.Find("CanvasCamera").transform.Find("AbilityPointWarning").gameObject
-            .SetActive(_data.Characters.Find(x => x.abilityPointCount > 0) != null);
-        GameObject.Find("CanvasCamera").transform.Find("RecruitmentWarning").gameObject
-           .SetActive(_data.Characters.Count < 3);
+
+        if (_data.Characters.Count < _charactersCount)
+        {
+            _recruitmentWarning.SetActive(true);
+        }
+        else
+        {
+            _recruitmentWarning.SetActive(false);
+        }
+
+        if (_data.Characters.Find(x => x.abilityPointCount > 0) != null)
+        {
+            _abilityPointWarning.SetActive(true);
+        }
+        else
+        {
+            _abilityPointWarning.SetActive(false);
+        }
     }
 
 }

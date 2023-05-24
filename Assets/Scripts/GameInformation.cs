@@ -374,6 +374,7 @@ public class GameInformation : MonoBehaviour
             {
                 GameObject characterInList = GetComponent<PlayerTeams>().allCharacterList.teams[i].characters[j];
                 characterInList.GetComponent<GridMovement>().DisableGrid();
+                characterInList.GetComponent<GridMovement>().DisableWayTiles();
                 for (int k = 0; k < characterInList.GetComponent<ActionManager>().ActionScripts.Count; k++)
                 {
                     characterInList.GetComponent<ActionManager>().ActionScripts[k].action.DisableGrid();

@@ -102,6 +102,14 @@ public class BottomCornerUI : MonoBehaviour
 
     public void UpdateCommonData()
     {
+        if (_buttonManager.CharacterOnBoard != null)
+        {
+            cornerUi.SetActive(true);
+        }
+        else
+        {
+            cornerUi.SetActive(false);
+        }
         portrait.sprite = characterUiData.characterSprite;
         Color half = characterUiData.backgroundColor;
         half.a = 0.5f;
@@ -145,7 +153,7 @@ public class BottomCornerUI : MonoBehaviour
                 // transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
             }
 
-            if (savedCharacter.unlockedAbilities.Length == 0)
+            if (savedCharacter.unlockedAbilities == "0000")
             {
                 UpdateCommonData();
             }
