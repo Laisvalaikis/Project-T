@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts.Classes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Data : MonoBehaviour
 {
@@ -27,15 +28,12 @@ public class Data : MonoBehaviour
     [HideInInspector] public Statistics globalStatistics;
     /*[HideInInspector]*/
     public TownData townData;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public UnityEvent characterRecruitmentEvent;
+    // Start is called before the first frame update
+    public void InsertCharacter(SavedCharacter character)
     {
-        
+        Characters.Add(character);
+        characterRecruitmentEvent.Invoke();
     }
 }

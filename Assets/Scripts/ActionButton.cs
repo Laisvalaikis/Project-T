@@ -103,6 +103,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         else //galima prideti else if jei kazkokie jau special abilities.
         {
             gameInformation.DisableGrids();
+            // panaudoti DisableWayTiles()
             if (character.GetComponent<ActionManager>().FindActionByName(selectedButtonState) != null)
             {
                 character.GetComponent<ActionManager>().FindActionByName(selectedButtonState).EnableGrid();

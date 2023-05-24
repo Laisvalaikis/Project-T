@@ -296,7 +296,7 @@ public class GameProgress : MonoBehaviour
     {
         if (_data.canButtonsBeClicked)
         {
-            _data.Characters.Add(character);
+            _data.InsertCharacter(character);
             _data.townData.townGold -= character.cost;
             gameUi.EnableGoldChange("-" + character.cost + "g");
             // FakeUpdate();
@@ -306,6 +306,7 @@ public class GameProgress : MonoBehaviour
             gameUi.UpdateBuyRecruitsWarning();
             _data.statistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
             _data.globalStatistics.charactersBoughtCountByClass[Statistics.getClassIndex(character.prefab.GetComponent<PlayerInformation>().ClassName)]++;
+            
         }
     }
     public void SpendGold(int cost)
