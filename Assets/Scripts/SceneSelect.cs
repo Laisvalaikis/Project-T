@@ -69,6 +69,7 @@ public class SceneSelect : MonoBehaviour
 
     public void SceneTransition(string sceneName)
     {
+        MusicManager.instance.NextLevelMusic();
         GameObject.Find("LoadingScreenCanvas").GetComponent<LoadingScreenController>().LoadScene(sceneName);
     }
 

@@ -11546,6 +11546,131 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 26.896002, y: -90.19701, z: 89.564}
+--- !u!1 &1185996827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1185996829}
+  - component: {fileID: 1185996828}
+  - component: {fileID: 1185996830}
+  - component: {fileID: 1185996831}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1185996828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185996827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8791b7102a72545bbd771c3fc705a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectSelection: 0
+  tempEffectSelection: 0
+  songSelection: 0
+  sounds: {fileID: 0}
+  selectedSoundIndex: 0
+  selectedSoundIndexArray: 
+  createSound: 0
+  editSound: 0
+  createSoundType: 0
+  editSoundType: 0
+  removeSoundType: 0
+  removeSound: 0
+  soundTypeName: 
+  soundsToAdd: []
+  soundType:
+    name: 
+    soundList: []
+  soundToEdit: {fileID: 0}
+  SoundsData: {fileID: 11400000, guid: 789d55a58674dee45845eaecaf0291d5, type: 2}
+  soundData:
+    name: 
+    clip: {fileID: 0}
+    mixer: {fileID: 0}
+    SubText: []
+    soundParameters:
+      volume: 0.5
+      pitch: 1
+      looping: 0
+      playOnAwake: 0
+      randomVolume: 0.1
+      randomPitch: 0.1
+      spatialBlend: 0
+      dopplerLevel: 1
+      rolloffMode: 0
+      minDistance: 1
+      maxDistance: 500
+    isPlaying: 0
+    playedOnce: 0
+    silinceBackground: 0
+    silinceVolume: 0
+--- !u!4 &1185996829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185996827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185996830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185996827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60923c24dc30554468c8994cf2669cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicLevels:
+  - {fileID: 11400000, guid: 905a67871b3f2054e811caea61adaea2, type: 2}
+  - {fileID: 11400000, guid: 1b274e424fb6a134c8e48ed39a6642ef, type: 2}
+  _soundData:
+    volume: 0.5
+    pitch: 0.9
+    looping: 1
+    playOnAwake: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    spatialBlend: 0
+    dopplerLevel: 1
+    rolloffMode: 0
+    minDistance: 1
+    maxDistance: 500
+--- !u!114 &1185996831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185996827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e656b4d3bcdb4b8ee1d33ce2ba2d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279713327
 GameObject:
   m_ObjectHideFlags: 0

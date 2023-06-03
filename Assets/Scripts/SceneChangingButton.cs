@@ -27,6 +27,7 @@ public class SceneChangingButton : MonoBehaviour
     }
     public void ChangeScene()
     { 
+        // MusicManager.instance.NextLevelMusic();
         SceneManager.LoadScene(SceneToLoad, LoadSceneMode.Single);
         Time.timeScale = 1;
     }
