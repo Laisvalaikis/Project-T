@@ -91,6 +91,7 @@ public class GroundSlam : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell3");
         DealDamageToAdjacent();
         //

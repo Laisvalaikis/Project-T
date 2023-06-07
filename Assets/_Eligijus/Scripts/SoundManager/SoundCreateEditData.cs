@@ -9,7 +9,6 @@ public class SoundCreateEditData
     public string name;
     public AudioClip clip;
     public AudioMixerGroup mixer;
-    public SText[] SubText;
 
     public SoundParameters soundParameters;
 
@@ -24,7 +23,6 @@ public class SoundCreateEditData
         name = data.name;
         clip = data.clip;
         mixer = data.mixer;
-        SubText = new List<SText>(data.SubText).ToArray();
         soundParameters.volume = data.soundParameters.volume;
         soundParameters.pitch = data.soundParameters.pitch;
         soundParameters.randomVolume = data.soundParameters.randomVolume;

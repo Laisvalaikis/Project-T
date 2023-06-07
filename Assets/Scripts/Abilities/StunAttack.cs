@@ -96,6 +96,7 @@ public class StunAttack : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             //bool crit = IsItCriticalStrike(ref spellDamage);
             //dodgeActivation(ref spellDamage, target);

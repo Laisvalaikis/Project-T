@@ -148,8 +148,10 @@ public class InfernoOld : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             isAbilityActive = true;
             transform.Find("VFX").Find("WindBoost").gameObject.SetActive(true);
             //  

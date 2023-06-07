@@ -31,8 +31,10 @@ public class LeapAndSlam : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
-        {          
+        {   
+            base.ResolveAbility(clickedTile);
             DealDamageToAdjacent(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
             transform.position = clickedTile.transform.position + new Vector3(0f, 0f, -1f);

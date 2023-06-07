@@ -145,6 +145,7 @@ public class SilenceBeam : BaseAction
     {
         if (FindIndexOfTile(clickedTile) != -1)
         {
+            base.ResolveAbility(clickedTile);
             DamageTiles.Clear();
             foreach (GameObject tile in AvailableTiles[FindIndexOfTile(clickedTile)])
             {

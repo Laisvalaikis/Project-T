@@ -126,6 +126,7 @@ public class RainOfArrows : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         CometTiles.Clear();
         CreateDamageTileList(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");

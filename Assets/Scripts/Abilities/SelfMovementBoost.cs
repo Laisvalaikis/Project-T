@@ -66,6 +66,7 @@ public class SelfMovementBoost : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         GetComponent<GridMovement>().AvailableMovementPoints++;
         AbilityPoints = 0;
         AvailableAttacks = 0;

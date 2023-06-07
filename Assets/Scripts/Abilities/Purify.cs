@@ -128,8 +128,10 @@ public class Purify : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             if (DoesCharacterHaveBlessing("Enlighten"))
             {

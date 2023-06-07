@@ -15,8 +15,10 @@ public class Avalanche : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");
             foreach (GameObject tile in MergedTileList)
             {

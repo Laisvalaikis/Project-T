@@ -34,8 +34,10 @@ public class FrontSlash : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (FindIndexOfTile(clickedTile) != -1)
         {
+            base.ResolveAbility(clickedTile);
             foreach (GameObject tile in AvailableTiles[FindIndexOfTile(clickedTile)])
             {
 

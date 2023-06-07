@@ -114,6 +114,7 @@ public class CryoFreeze : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         isAbilityActive = true;
         transform.Find("CharacterModel").GetComponent<Animator>().SetBool("stasis", true);
         GetComponent<PlayerInformation>().Stasis = true;

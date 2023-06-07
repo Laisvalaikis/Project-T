@@ -32,8 +32,10 @@ public class ChillingGust : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             if (isAllegianceSame(clickedTile))
             {
                 GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);

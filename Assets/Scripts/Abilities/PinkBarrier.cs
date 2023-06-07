@@ -112,8 +112,10 @@ public class PinkBarrier : BaseAction
     }*/
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer).GetComponent<PlayerInformation>().BarrierProvider = gameObject;
             //characterWithBarrier = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer).transform.Find("VFX").Find("VFXBool").GetComponent<Animator>().SetTrigger("shieldStart");

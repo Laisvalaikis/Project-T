@@ -34,14 +34,14 @@ public class AssignSoundEditor : Editor
 
         string[] typeNames = SoundsData.Instance.GetTypeNames();
         EditorGUI.BeginDisabledGroup(typeNames.Length == 0);
-        assignSound.effectSelection = EditorGUILayout.Popup("Select Pose Data Edit: ", assignSound.effectSelection, typeNames);
+        assignSound.effectSelection = EditorGUILayout.Popup("Select Sound Effect Group: ", assignSound.effectSelection, typeNames);
         EditorGUI.EndDisabledGroup();
         assignSound.soundNames = new string[0];
         if (typeNames.Length > 0)
         {
             assignSound.soundNames = SoundsData.Instance.GetSoundNames(assignSound.effectSelection);
             EditorGUI.BeginDisabledGroup(assignSound.soundNames.Length == 0);
-            assignSound.songSelection = EditorGUILayout.Popup("Select Pose Data Edit: ", assignSound.songSelection, assignSound.soundNames);
+            assignSound.songSelection = EditorGUILayout.Popup("Select Sound Effect: ", assignSound.songSelection, assignSound.soundNames);
             EditorGUI.EndDisabledGroup();
         }
 

@@ -128,6 +128,7 @@ public class WallSmash : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             if(CheckIfSpecificTag(clickedTile, 0, 0, blockingLayer, "Wall"))
             {
                 tileForAnimation = clickedTile;

@@ -115,6 +115,7 @@ public class ThrowSpear : BaseAction
     {
         if (FindIndexOfTile(clickedTile) != -1)
         {
+            base.ResolveAbility(clickedTile);
             int bonusBlessingDamage = 0;
             foreach (GameObject tile in AvailableTiles[FindIndexOfTile(clickedTile)])
             {

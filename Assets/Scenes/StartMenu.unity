@@ -11580,7 +11580,7 @@ MonoBehaviour:
   effectSelection: 0
   tempEffectSelection: 0
   songSelection: 0
-  sounds: {fileID: 0}
+  sounds: {fileID: 11400000, guid: 88fe40a83f757db43bb478adfe58dc2d, type: 2}
   selectedSoundIndex: 0
   selectedSoundIndexArray: 
   createSound: 0
@@ -11590,7 +11590,8 @@ MonoBehaviour:
   removeSoundType: 0
   removeSound: 0
   soundTypeName: 
-  soundsToAdd: []
+  soundsToAdd:
+  - {fileID: 11400000, guid: 88fe40a83f757db43bb478adfe58dc2d, type: 2}
   soundType:
     name: 
     soundList: []
@@ -11600,7 +11601,6 @@ MonoBehaviour:
     name: 
     clip: {fileID: 0}
     mixer: {fileID: 0}
-    SubText: []
     soundParameters:
       volume: 0.5
       pitch: 1

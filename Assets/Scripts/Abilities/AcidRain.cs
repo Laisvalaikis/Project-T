@@ -1,3 +1,6 @@
+
+
+
 using Assets.Scripts.Classes;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,8 +15,10 @@ public class AcidRain : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");
             foreach (GameObject tile in MergedTileList)

@@ -19,8 +19,10 @@ public class FromTheShadows : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");
             DamageAdjacent(clickedTile);

@@ -122,8 +122,10 @@ public class CreateFog : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             FinishAbility();
             tileForAnimation = clickedTile;
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("createFog");

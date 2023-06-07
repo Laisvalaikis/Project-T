@@ -121,8 +121,10 @@ public class MarkEnemy : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             //bool crit = IsItCriticalStrike(ref spellDamage);
             //dodgeActivation(ref spellDamage, target);

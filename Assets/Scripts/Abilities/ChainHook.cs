@@ -132,8 +132,10 @@ public class ChainHook : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             //Normal ability
             if (CheckIfSpecificTag(clickedTile, 0, 0, blockingLayer, "Player"))
             {

@@ -153,6 +153,7 @@ public class SummonBear : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell1");
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("createFog");
             spawnedCharacter = Instantiate(BearPrefab, clickedTile.transform.position - new Vector3(0f,0f,1f), Quaternion.identity) as GameObject;

@@ -128,6 +128,7 @@ public class RaiseRock : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         if (canTileBeClicked(clickedTile))
         {
             FinishAbility();

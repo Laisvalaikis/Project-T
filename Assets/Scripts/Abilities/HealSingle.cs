@@ -131,8 +131,10 @@ public class HealSingle : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (DoesCharacterHaveBlessing("Gather round"))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("heal");
             int randomHeal = Random.Range(minHealAmount, maxHealAmount);
             bool crit = IsItCriticalStrike(ref randomHeal);

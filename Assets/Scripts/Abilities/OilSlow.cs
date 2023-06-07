@@ -24,8 +24,10 @@ public class OilSlow : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");
             GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer).GetComponent<PlayerInformation>().ApplyDebuff("OilSlow");

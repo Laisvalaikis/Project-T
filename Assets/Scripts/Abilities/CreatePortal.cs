@@ -105,6 +105,7 @@ public class CreatePortal : BaseAction
     {
         if (!CheckIfSpecificLayer(gameObject, 0, 0, portalLayer) && !CheckIfSpecificLayer(clickedTile, 0, 0, portalLayer))
         {
+            base.ResolveAbility(clickedTile);
             portalExit = Instantiate(PortalPrefab, clickedTile.transform.position + new Vector3(0f, 0f, 1f), Quaternion.identity) as GameObject;
             portalEntrance = Instantiate(PortalPrefab, transform.position + new Vector3(0f, 0f, 2f), Quaternion.identity) as GameObject;
             portalExit.GetComponent<Portal>().OtherPortalExit = portalEntrance;

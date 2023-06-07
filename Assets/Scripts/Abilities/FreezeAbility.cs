@@ -95,6 +95,7 @@ public class FreezeAbility : BaseAction
     */
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell1");
         transform.Find("VFX").Find("VFX9x9").gameObject.GetComponent<Animator>().SetTrigger("iceFreeze");
         foreach (List<GameObject> MovementTileList in this.AvailableTiles)

@@ -126,8 +126,10 @@ public class Execute : BaseAction
     */
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             int damage = ExecuteDamage(target);
             //dodgeActivation(ref damage, target);

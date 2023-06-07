@@ -185,6 +185,7 @@ public class SummonOrb : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("createFog");
             spawnedCharacter = Instantiate(OrbPrefab, clickedTile.transform.position - new Vector3(0f, 0f, 1f), Quaternion.identity) as GameObject;

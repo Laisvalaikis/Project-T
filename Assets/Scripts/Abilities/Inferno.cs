@@ -113,8 +113,10 @@ public class Inferno : BaseAction
     */
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell1");
             foreach (GameObject tile in MergedTileList)
             {

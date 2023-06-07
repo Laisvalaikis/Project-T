@@ -139,6 +139,7 @@ public class FlameBlast : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
         CometTiles.Clear();
         CreateDamageTileList(clickedTile);

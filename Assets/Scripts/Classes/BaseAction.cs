@@ -8,10 +8,17 @@ using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Assets.Scripts.Classes
-{
+
+[RequireComponent(typeof(AssignSound))]
     public abstract class BaseAction : MonoBehaviour
     {
+
+        // audio effect indexes
+        [Header("Sound Effect")]
+        public int selectedEffectIndex;
+        public int selectedSongIndex;
+
+        [Header("Base Action")]
         public string actionStateName;
         protected LayerMask groundLayer;
         protected LayerMask blockingLayer;
@@ -35,6 +42,8 @@ namespace Assets.Scripts.Classes
         [HideInInspector] public GameObject spawnedCharacter;
         protected List<List<GameObject>> AvailableTiles = new List<List<GameObject>>();
         protected List<GameObject> MergedTileList = new List<GameObject>();
+        private AssignSound _assignSound;
+        
         void Awake()
         {
             AbilityPoints = AbilityCooldown;
@@ -45,6 +54,7 @@ namespace Assets.Scripts.Classes
             portalLayer = LayerMask.GetMask("Portal");
             whiteFieldLayer = LayerMask.GetMask("WhiteField");
             gameInformation = GameObject.Find("GameInformation").GetComponent<GameInformation>();
+            _assignSound = GetComponent<AssignSound>();
         }
         public virtual void OnTileHover(GameObject tile)//parodo kas bus
         {
@@ -289,6 +299,10 @@ namespace Assets.Scripts.Classes
         }
         public virtual void ResolveAbility(GameObject clickedTile)
         {
+           
+            _assignSound.PlaySound(selectedEffectIndex, selectedSongIndex);
+            Debug.LogWarning("PlaySound");
+            
         }
         public virtual void FinishAbility()
         {
@@ -543,5 +557,6 @@ namespace Assets.Scripts.Classes
             }
             task();
         }
+        
     }
-}
+

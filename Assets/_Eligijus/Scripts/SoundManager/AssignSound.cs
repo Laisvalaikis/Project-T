@@ -60,6 +60,22 @@ public class AssignSound : MonoBehaviour
         }
     }
 
+    public void PlaySound(int effectIndex, int soundIndex)
+    {
+        if (soundNames.Length > soundIndex && soundIndex >= 0)
+        {
+            try
+            {
+                Debug.Log(SoundsData.Instance.name);
+            }
+            catch
+            {
+                Debug.Log("SoundsData.Instance null ref");
+            }
+            SoundManager.instance.CreateSound(effectIndex, soundIndex, this.transform);
+        }
+    }
+
     public void PlaySound(bool isActive)
     {
         if(isActive)

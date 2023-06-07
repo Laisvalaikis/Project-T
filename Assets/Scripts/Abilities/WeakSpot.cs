@@ -124,6 +124,7 @@ public class WeakSpot : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             clickedTile.transform.Find("mapTile").Find("VFXImpactUpper").gameObject.GetComponent<Animator>().SetTrigger("pink1");
             target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             DealRandomDamageToTarget(target, minAttackDamage, maxAttackDamage);

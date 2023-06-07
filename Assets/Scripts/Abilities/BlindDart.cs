@@ -114,8 +114,10 @@ public class BlindDart : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             BlindedTarget = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             BlindedTarget.GetComponent<CharacterVision>().VisionRange = 1;
 

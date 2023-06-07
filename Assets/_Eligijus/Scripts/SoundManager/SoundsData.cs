@@ -15,8 +15,9 @@ public class SoundsData : ScriptableObject
     public string[] GetTypeNames()
     {
          if(typeList == null) 
-                typeList = new List<SoundType>(); 
-         return typeList.Count > 0 ? typeList.Select(sound => sound.name).ToArray() : new string[0];
+                typeList = new List<SoundType>();
+         int index = 0;
+         return typeList.Count > 0 ? typeList.Select(sound => sound.name + " " + index++).ToArray() : new string[0];
     }
 
     public string[] GetAllSoundNames()
@@ -62,7 +63,9 @@ public class SoundsData : ScriptableObject
                 {
                     typeList[typeIndex].soundList = new List<Sound>();
                 }
-                return typeList[typeIndex].soundList.Count > 0 ? typeList[typeIndex].soundList.Select(sound => sound.name).ToArray() : new string[0]; 
+
+                int index = 0;
+                return typeList[typeIndex].soundList.Count > 0 ? typeList[typeIndex].soundList.Select(sound => sound.name + " " + index++).ToArray() : new string[0]; 
             }
             else
             {

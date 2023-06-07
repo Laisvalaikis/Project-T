@@ -126,6 +126,7 @@ public class CometFall : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell1"); //CometFallStart animation
         DamageTiles.Clear();
         if (CheckIfSpecificLayer(clickedTile, 0, 0, groundLayer))

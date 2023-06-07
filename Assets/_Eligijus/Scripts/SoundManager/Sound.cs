@@ -51,7 +51,6 @@ public class Sound : ScriptableObject
         name = data.name;
         clip = data.clip;
         mixer = data.mixer;
-        SubText = new List<SText>(data.SubText).ToArray();
         soundParameters.volume = data.soundParameters.volume;
         soundParameters.pitch = data.soundParameters.pitch;
         soundParameters.playOnAwake = data.soundParameters.playOnAwake;

@@ -83,6 +83,7 @@ public class RaiseWall : BaseAction
     */
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         FinishAbility();
         GameObject spawnedWall = Instantiate(WallPrefab, clickedTile.transform.position + new Vector3(0f, 0f, 1f), Quaternion.identity) as GameObject;
         if (transform.position.x == clickedTile.transform.position.x)

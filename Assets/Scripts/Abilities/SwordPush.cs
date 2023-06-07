@@ -16,6 +16,7 @@ public class SwordPush : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        base.ResolveAbility(clickedTile);
         transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell1");
         TileThatWasClicked = clickedTile;
     }

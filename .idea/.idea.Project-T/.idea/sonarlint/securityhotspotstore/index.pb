@@ -3,44 +3,20 @@ r
 BAssets/Fonts/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc,3\0\30df0c73d93efc5fa7c68dcd50350ce1e07d5094
 z
 JAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader,e\4\e45ae640599d533e6416eb38ee351bda5f93c08d
-V
-&Assets/Scripts/Abilities/PoisonDart.cs,2\8\28d8d86c27b8646373a88b197b88927fbccd507c
 m
 =Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader,2\b\2b8064e82463d6feeb4dd239b81dd71790c8656c
-X
-(Assets/Scripts/Abilities/ChillingGust.cs,0\6\06597a0f9ae15c70d58fafc30ea026defecc1451
 r
 BAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader,d\4\d4a02760f05aa6a4faa4dd0670124738bbbb04ff
-V
-&Assets/Scripts/Abilities/CryoFreeze.cs,3\7\3782117c590cc3518d456340a86c7d9bcc52f093
-T
-$Assets/Scripts/Abilities/LongShot.cs,0\b\0bf77effbff05a4e8360e5d4ecfe875d422b363c
 q
 AAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader,c\1\c1657f41f6ba66db421f46942fcbcd6bd8b0b2e9
-R
-"Assets/Scripts/Abilities/Purify.cs,e\d\edf514b648947fd3d60dc9e9a605f735f3c4653a
 r
 BAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader,0\7\0746215d2e89289e7e56eb7ea85657d30204ae22
-Y
-)Assets/Scripts/Abilities/DisarmingSlam.cs,f\7\f7dc455a23aa84d4dd5931519bb3d314548daeb8
-V
-&Assets/Scripts/Abilities/StunAttack.cs,c\7\c72603836b02f21a91445c00abca8ef7c92201d0
-V
-&Assets/Scripts/Abilities/CrowAttack.cs,4\a\4afd6c62a516417178ff452e7e21ae2756157b26
 t
 DAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader,1\6\16f42e346ce1fab6585e6bb1a095638001b5c6a9
-V
-&Assets/Scripts/Abilities/FrontSlash.cs,7\3\73ceaed663cae40e8c321584d84f5b56fc7e7c92
-[
-+Assets/Scripts/Abilities/SelfActionBoost.cs,b\e\be906642c3a86dd7d7a0148db8cc2dbb13801b34
-V
-&Assets/Scripts/Abilities/WallEntrap.cs,f\a\fa816b584edf8223cd941cbe6adf22cab7157f34
 Y
 )Assets/Scripts/Consumables/PurpleSpear.cs,5\4\5487d7e66a10cbdb65ad020a77357a752dcb22a8
 `
 0Assets/_Eligijus/Scripts/Data/CharacterUiData.cs,2\3\231da60f7c680e2b617b6000b57057acd621f4de
-V
-&Assets/Scripts/Abilities/FlameBlast.cs,7\c\7c950e80e13b0c840b3af138aeeea60f323f2087
 \
 ,Assets/Scripts/SenoTutorialo/BoardManager.cs,8\e\8ebf6fe5feb97653ba4f5704bcd04d7199167113
 U
@@ -269,8 +245,6 @@ R
 "Assets/Scripts/Classes/Blessing.cs,5\b\5b3b80b8b52573c45275e4b84e815ac02d4b6b0c
 T
 $Assets/Scripts/Classes/UndoAction.cs,1\a\1ac6019708eb02d9cfd371cf4f01eada193b6751
-T
-$Assets/Scripts/Classes/BaseAction.cs,5\2\5237f7d244bc856d3673a3b04b36750d75570919
 S
 #Assets/Scripts/Classes/Character.cs,e\0\e02315caa9a10fa35f2e9230b17e3f99cfe967e2
 P
@@ -279,158 +253,50 @@ Y
 )Assets/Scripts/Classes/LocalSaveSystem.cs,f\3\f351eebe109c29c96771cf4ee2d5ae355d0bbe33
 N
 Assets/Scripts/Classes/Team.cs,3\7\37d041f55f60bb976bc35d604b2f351fb8089e13
-Z
-*Assets/Scripts/Abilities/FromTheShadows.cs,8\b\8b53167ed96a575c1e746d1620306dc61ec1000f
-U
-%Assets/Scripts/Abilities/WallSmash.cs,c\d\cd8eec4e0ac9bfa806e4e4fb215aa822fec730fa
 T
 $Assets/Scripts/Classes/Consumable.cs,f\4\f45ca6ee6d576368377d4d32322a1387532dc031
 X
 (Assets/Scripts/Classes/SavedCharacter.cs,7\5\7501888359674418202f55eef5b1d8da47f81bf3
-U
-%Assets/Scripts/Abilities/CometFall.cs,2\0\20c976949e042d6fcf176a316a59660294cb4eeb
-Q
-!Assets/Scripts/Abilities/Blaze.cs,f\0\f055862bd56e1fcbacf598c1559019bb26ada9ae
-U
-%Assets/Scripts/Abilities/SideSlash.cs,e\5\e52c35f14f406deae5e6040466288f0a606def5c
-X
-(Assets/Scripts/Abilities/SwitchPlaces.cs,7\c\7cbeaa608417158bd421a047016c576782510cfa
-U
-%Assets/Scripts/Abilities/MarkEnemy.cs,8\0\8011e83413b228a203a7697b7aaa78271f48383b
-S
-#Assets/Scripts/Abilities/Inferno.cs,4\1\4135837d94553966caa9bd09c24f626c5ff94bac
-X
-(Assets/Scripts/Abilities/PlayerAttack.cs,3\6\36a75ea8859f6d8506126d0c97232808cea7321b
-T
-$Assets/Scripts/Abilities/AcidRain.cs,2\1\2123efde61f15421efb420930ab7ee2c3ea5df2d
-W
-'Assets/Scripts/Abilities/PinkBarrier.cs,f\b\fbf79540d088159b22b104b59fd1e90fc2c31e20
-U
-%Assets/Scripts/Abilities/PowerShot.cs,5\1\5155fa6d9a68add0b0cd4efcaff26198e78cd9e1
-Y
-)Assets/Scripts/Abilities/FreezeAbility.cs,f\1\f1b0e3f0b1f1ce3cd97452e4b0b56f8e586eac96
-T
-$Assets/Scripts/Abilities/IceQuake.cs,6\a\6acb0e4e5c480bc65b2b8b0ce21456f927a0e6a2
-V
-&Assets/Scripts/Abilities/MistShield.cs,d\f\dfae12494f5e5d88a8f2cd5fb6c23ef678040272
-V
-&Assets/Scripts/Abilities/HealSingle.cs,a\c\ac0ed0ed12ae61f4089e3e8b09a38e990c7b9c54
-\
-,Assets/Scripts/Abilities/CreateWhiteField.cs,3\6\3649e9120252b76b2cd2782d8842b1fc5c4186d7
-Z
-*Assets/Scripts/Abilities/IsolatedStrike.cs,d\6\d64c750815a74a4564163e6cd00470a423fedcbe
 X
 (Assets/_Eligijus/Scripts/SaveSlotCard.cs,3\b\3bf0bcf14735251fce403fb4322e1c360129e90e
-X
-(Assets/Scripts/Abilities/RainOfArrows.cs,8\b\8b5cfd75285fe98bff740b9bf65618fe59af5624
-T
-$Assets/Scripts/Abilities/WeakSpot.cs,e\c\ec9d2a6f430a43d059634f3e417db9b83043bf59
-W
-'Assets/Scripts/Abilities/SilenceBeam.cs,8\a\8a440481b3b11cb0d47200c6c06e1fa24ff6d294
 W
 'Assets/Scripts/ButtonHoverController.cs,7\f\7fde1acb515113130d2050ac0423574a7c0f4bd9
 J
 Assets/Scripts/CrowProp.cs,c\8\c84c44ff8e6bf5a94126881b07802ee08fcd8524
 U
-%Assets/Scripts/Abilities/ChainHook.cs,1\1\114cd4c7f0eea59d99850253337411a8e923e85c
-W
-'Assets/Scripts/Abilities/MindControl.cs,a\5\a5eac5e240c1409b3cd7f550c63e0bc3147dd096
-U
 %Assets/Scripts/ImageFadeController.cs,3\0\30d84427a34dc730a025cf0fa27e3b073c309e9e
-U
-%Assets/Scripts/Abilities/SwordPush.cs,c\e\ce4156930d7c4bb70602ff99ba82f8ec0b8f2ca2
-V
-&Assets/Scripts/Abilities/SpearPulse.cs,1\0\103364de62d2f2cbc2d4e3b33a2f030c6f95535c
-U
-%Assets/Scripts/Abilities/SummonOrb.cs,5\d\5d6ce8322233d293a81a79d0b559cc2a980d7314
-V
-&Assets/Scripts/Abilities/GroundSlam.cs,5\f\5f04f265e84379c9fdc5fda88f94c6241ef23754
-W
-'Assets/Scripts/Abilities/LeapAndSlam.cs,f\5\f54f6e0470294d74c155c18d9a8b57fff66c03d1
 J
 Assets/ConditionalSpawn.cs,7\e\7e31da21e4145b09471bdc7bccac8b0ea29f06ff
-V
-&Assets/Scripts/Abilities/ThrowSpear.cs,5\b\5b9075c3c6fe8132cdd39abde621b455af43d45f
 F
 Assets/Text/NamesW.txt,4\6\4671f4b852006f3cd4b34517d19a5bf4c48f7b07
 F
 Assets/Text/NamesM.txt,7\9\79f8ceac66da4ddcee6ceb47c938166d0071ac1a
-U
-%Assets/Scripts/Abilities/FlameKick.cs,4\d\4da625bcf1149dde559fac61b639d81065f0e127
 I
 Assets/Text/Blessings.txt,f\b\fbc46dfa50b05dfa7569c502563b39a677af64d9
-U
-%Assets/Scripts/Abilities/CreateFog.cs,b\6\b60cc5a7509d0fb1abbafb4a645b6824bf39e44d
-Z
-*Assets/Scripts/Abilities/CreateBearTrap.cs,1\7\173da4e7223269d343529154c4d6c4a37ba4cc6d
-X
-(Assets/Scripts/Abilities/HealingSight.cs,9\5\9595d6c6b46b97e26dac353dfe266ca6561adb6e
-]
--Assets/Scripts/Abilities/SelfMovementBoost.cs,c\5\c54188d32c0231c66e19d9c51c399566df9a3399
-U
-%Assets/Scripts/Abilities/RaiseWall.cs,5\0\5031fd60ed70d488a71c5c42789a68aa5329d2ba
-R
-"Assets/Scripts/Abilities/Scream.cs,6\4\64aeea9e9db0d254a7bf6e96ac40abf1707e0303
-U
-%Assets/Scripts/Abilities/LaserBeam.cs,e\c\ecc5e17d327055130b1951a8276e0fddd8504b8c
-V
-&Assets/Scripts/Abilities/SummonBear.cs,9\a\9a66e458b12ee6ba845fb451e75a672513e12c08
 h
 8Assets/Fonts/TextMesh Pro/Fonts/LiberationSans - OFL.txt,9\9\99ea423af030940a1e30174889a3bdb098efadb1
-S
-#Assets/Scripts/Abilities/Execute.cs,c\4\c4d99ad515c61276a043669e8ceef9bb47879df8
-U
-%Assets/Scripts/Abilities/BlindDart.cs,b\f\bf152bf6c35ceb54523067a4b26b763b260fb265
-S
-#Assets/Scripts/Abilities/OilSlow.cs,9\6\961887ab4e590179e5de8abda1895cd35c565c39
 j
 :Assets/Fonts/TextMesh Pro/Sprites/EmojiOne Attribution.txt,e\2\e26a4c01c2edd4f05ccd4be7243fd0ad264cd8c3
 _
 /Assets/Fonts/TextMesh Pro/Sprites/EmojiOne.json,e\c\ecbf7ef6c951a1ea634b751eb2c613f9b878eca6
-V
-&Assets/Scripts/Abilities/InfernoOld.cs,c\a\ca5bc8682f00eb6b3e5db2548829a66bbac5823a
-U
-%Assets/Scripts/Abilities/RaiseRock.cs,c\5\c57bc70ce7e9367de07d8af570d3a53e09651c90
-U
-%Assets/Scripts/Abilities/WindBoost.cs,9\6\96abb9fa262cdc8ac087baeb44404e7085d9946d
-Z
-*Assets/Scripts/Abilities/DisarmingBlast.cs,c\2\c2daf224a22109d1b1fd4b5db8b3d9004383f829
-U
-%Assets/Scripts/Abilities/Avalanche.cs,4\3\434ec958b4bd88f66d81cb96ee744402af58b7be
 y
 IAssets/Fonts/TextMesh Pro/Resources/LineBreaking Following Characters.txt,8\a\8addfe7866416cfdbb8574443318605e54fd8227
-T
-$Assets/Scripts/Abilities/Entangle.cs,4\c\4c368f6f8224534d8566f357e9fc782c59f26c29
-U
-%Assets/Scripts/Abilities/CreateEye.cs,a\5\a5c12149aa738c52853d2d865fdba21eac7952f0
-X
-(Assets/Scripts/Abilities/CreatePortal.cs,6\a\6a0db825579d8402beb7aeca49fa6ca2cb69f0d1
 w
 GAssets/Fonts/TextMesh Pro/Resources/LineBreaking Leading Characters.txt,e\f\ef07584ba53f9a666696f9baca59a3e0ae264608
-Y
-)Assets/Scripts/Abilities/BindingRitual.cs,5\d\5db0a1374e71ff46ad4bfe876110f8fcca9cc14b
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader,b\e\be5e56eec37656513de24d866c1bd8599eb6a508
-R
-"Assets/Scripts/Abilities/Volley.cs,6\d\6ddb451d29f3ac69cffeeb8aea3288cd376a365d
 m
 =Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader,9\1\91e3ee98d97cf2500407dd5ed7408ffaa845c2eb
-W
-'Assets/Scripts/Abilities/ShadowBlink.cs,2\6\2626246b9fe32fa0d49fae829b0113651cd090ca
 o
 ?Assets/Fonts/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc,a\d\ad489af5b5674cd64bb7648adb6341c222663507
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader,5\9\5943936dcc13e8146be01d9edb738e2f30ef03f9
-R
-"Assets/Scripts/Abilities/Enrage.cs,a\c\ac44c62266d1e9534c9ec961a0f559766c1987a7
 g
 7Assets/Fonts/TextMesh Pro/Resources/Shaders/TMPro.cginc,f\8\f813fb9420ea004e9e9e488410893710c9a52936
 j
 :Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF.shader,a\c\ac9a096551f3174a941f28d0dd1945c6ec9b6fbf
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader,2\5\25e44d2c087988bec521d3373d269e07d2415b33
-X
-(Assets/Scripts/Abilities/BlockAbility.cs,f\4\f4c1ed3ada444741d8be82d608446d16cec53cd0
 J
 Assets/Scripts/SaveData.cs,e\2\e2fbf21b6239099984e990ac1a0d5dce5b3a54ce
 S
@@ -439,3 +305,21 @@ Q
 !Assets/Scripts/GameInformation.cs,c\b\cb529fc42bbc33613e7a91e60d923a5628dcc27d
 N
 Assets/Scripts/GameProgress.cs,3\f\3f0104371d0fd73130bbd864f804f9ae0e272336
+Y
+)Assets/Scripts/LoadingScreenController.cs,4\1\417ae029423d89d8e12accecfd45feb260fddd85
+M
+Assets/Scripts/SceneSelect.cs,1\f\1fc873d20a82418b208da022eac60864170379c7
+e
+5Assets/_Eligijus/Scripts/SoundManager/MusicManager.cs,d\9\d988cba870b328ddccf79f2e6bbb1697ec5c6662
+N
+Assets/Scripts/ActionButton.cs,3\8\38158cbdae8f2d2c1d28ca8ca5450032681565ce
+N
+Assets/Scripts/GridMovement.cs,a\d\ad8fc92893e51b07f3601780e613d2e038d9bacc
+T
+$Assets/Scripts/PvPCharacterSelect.cs,d\2\d259492ec33afc8724b9733f7467da49ff6faf9e
+U
+%Assets/Scripts/SceneChangingButton.cs,5\6\568bab2e321e8c788b20d1ebdd00664ceb1d68eb
+P
+ Assets/Scripts/BottomCornerUI.cs,4\3\43090f608b6cd9eb71307fc06c14598f3e9b5e31
+^
+.Assets/_Eligijus/Scripts/DontDestroyManager.cs,a\6\a69bd640b9575e844b58cff5385793d0489e9882

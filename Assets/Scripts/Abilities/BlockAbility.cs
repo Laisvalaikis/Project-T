@@ -104,8 +104,10 @@ public class BlockAbility : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spellToBool");
             transform.Find("CharacterModel").GetComponent<Animator>().SetBool("block", true);
             GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer).GetComponent<PlayerInformation>().BlockingAlly = transform.gameObject;

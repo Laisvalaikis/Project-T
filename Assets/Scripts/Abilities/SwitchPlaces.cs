@@ -113,6 +113,7 @@ public class SwitchPlaces : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spell2");
             var CurrentPosition = transform.position;
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);

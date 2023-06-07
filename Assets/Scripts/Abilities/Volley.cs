@@ -150,9 +150,10 @@ public class Volley : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
-        int spellDamageDealt = spellDamage;
+
         if (FindIndexOfTile(clickedTile) != -1)
         {
+            base.ResolveAbility(clickedTile);
             foreach (GameObject tile in AvailableTiles[FindIndexOfTile(clickedTile)])
             {
                 if (CheckIfSpecificTag(tile, 0, 0, blockingLayer, "Player") && (!isAllegianceSame(tile) || friendlyFire))

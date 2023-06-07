@@ -154,8 +154,10 @@ public class DisarmingSlam : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("blockSpell1");
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             DealRandomDamageToTarget(target, minAttackDamage, maxAttackDamage);//??was crit false

@@ -124,9 +124,10 @@ public class CreateWhiteField : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
-
+            base.ResolveAbility(clickedTile);
             FinishAbility();
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("spellToBool");
             transform.Find("CharacterModel").GetComponent<Animator>().SetBool("block", true);

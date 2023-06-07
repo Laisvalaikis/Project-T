@@ -33,6 +33,7 @@ public class WallEntrap : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             SpawnedWalls.Clear();
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);

@@ -34,8 +34,10 @@ public class LaserBeam : BaseAction
 
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (FindIndexOfTile(clickedTile) != -1)
         {
+            base.ResolveAbility(clickedTile);
             foreach (GameObject tile in AvailableTiles[FindIndexOfTile(clickedTile)])
             {
                 GetSpecificGroundTile(tile, 0, 0, groundLayer).transform.Find("mapTile").Find("VFXImpactUpper").gameObject.GetComponent<Animator>().SetTrigger("orange2");

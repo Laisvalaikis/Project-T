@@ -17,7 +17,6 @@ public class DestroySound : MonoBehaviour
     void Start()
     {
 		source = gameObject.GetComponent<AudioSource>();
-		StartCoroutine(Playsubtitle(0, Naratortext.Length));
     }
 
     // Update is called once per frame
@@ -36,17 +35,4 @@ public class DestroySound : MonoBehaviour
 		}
     }
 
-	IEnumerator Playsubtitle(int i,int length)
-	{
-		if (i < length)
-		{
-			textField.text = Naratortext[i].Text;
-			yield return new WaitForSeconds(Naratortext[i].Time);
-			StartCoroutine(Playsubtitle(i + 1, length));
-		}
-		else
-		{
-			yield return null;
-		}
-	}
 }

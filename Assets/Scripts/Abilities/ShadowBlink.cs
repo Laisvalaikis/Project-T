@@ -132,6 +132,7 @@ public class ShadowBlink : BaseAction
     {
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             bool wasTargetAlly = true;
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");

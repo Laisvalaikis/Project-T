@@ -80,8 +80,10 @@ public class HealingSight : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             clickedTile.transform.Find("mapTile").Find("VFX9x9Upper").gameObject.GetComponent<Animator>().SetTrigger("healingSight");
             int randomHeal = Random.Range(minHealAmount, maxHealAmount);
             bool crit = IsItCriticalStrike(ref randomHeal);

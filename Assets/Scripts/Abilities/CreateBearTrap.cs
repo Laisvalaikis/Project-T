@@ -140,8 +140,10 @@ public class CreateBearTrap : BaseAction
     }
     public override void ResolveAbility(GameObject clickedTile)
     {
+        
         if (canTileBeClicked(clickedTile))
         {
+            base.ResolveAbility(clickedTile);
             FinishAbility();
 
             //transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("createFog");
