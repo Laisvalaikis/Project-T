@@ -156,8 +156,6 @@ P
 N
 Assets/Scripts/ColorManager.cs,7\6\7630f684f1162839e92bb67518550728bb82e6d6
 O
-Assets/Scripts/ButtonManager.cs,a\e\ae96c987bb85c21765eae9c69d47b71c17b20063
-O
 Assets/Scripts/ActionManager.cs,b\3\b34fc770b10b3ac739ff7e070fce1d7d6adabaee
 H
 Assets/Scripts/Loader.cs,6\d\6d2694529a292d51f3990dd64c6bed6e6863510d
@@ -311,10 +309,6 @@ M
 Assets/Scripts/SceneSelect.cs,1\f\1fc873d20a82418b208da022eac60864170379c7
 e
 5Assets/_Eligijus/Scripts/SoundManager/MusicManager.cs,d\9\d988cba870b328ddccf79f2e6bbb1697ec5c6662
-N
-Assets/Scripts/ActionButton.cs,3\8\38158cbdae8f2d2c1d28ca8ca5450032681565ce
-N
-Assets/Scripts/GridMovement.cs,a\d\ad8fc92893e51b07f3601780e613d2e038d9bacc
 T
 $Assets/Scripts/PvPCharacterSelect.cs,d\2\d259492ec33afc8724b9733f7467da49ff6faf9e
 U

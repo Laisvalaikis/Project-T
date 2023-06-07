@@ -13,17 +13,15 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
     public HelpTableController _helpTableController;
     public GameObject actionButtonFrame;
     public ButtonManager buttonManager;
+    private Button _button;
     void Start()
     {
         gameInformation = GameObject.Find("GameInformation").GetComponent<GameInformation>();
+        _button = GetComponent<Button>();
     }
 
     public void ChangePlayersState()
     {
-
-        transform.GetChild(0).GetComponent<Animator>().SetBool("select", true);
-        _isSelected = true;
-        _helpTableController.helpTable.closeHelpTable();
         GameObject character;
         if (gameInformation.SelectedCharacter != null)
         {
@@ -32,22 +30,81 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         else {
             character = gameInformation.InspectedCharacter;
         }
-        character.GetComponent<PlayerInformation>().currentState = buttonState;
+
+        bool interact = false;
         if (buttonState == "Movement")
         {
-            gameInformation.DisableGrids();;
-            character.GetComponent<GridMovement>().EnableGrid();
+            BaseAction action = character.GetComponent<GridMovement>();
+            if (!action.canGridBeEnabled())
+            {
+                interact = false;
+            }
+            else
+            {
+                interact = true;
+                transform.GetChild(0).GetComponent<Animator>().SetBool("select", true);
+            }
         }
-        else //galima prideti else if jei kazkokie jau special abilities.
+        else
         {
-            gameInformation.DisableGrids();
             if (character.GetComponent<ActionManager>().FindActionByName(buttonState) != null)
             {
-                character.GetComponent<ActionManager>().FindActionByName(buttonState).EnableGrid();
+                BaseAction action = character.GetComponent<ActionManager>().FindActionByName(buttonState);
+                if (!action.canGridBeEnabled())
+                {
+                    interact = false;
+                }
+                else
+                {
+                    interact = true;
+                    transform.GetChild(0).GetComponent<Animator>().SetBool("select", true);
+ 
+                }
             }
-            
         }
-        buttonManager.DisableSelection(actionButtonFrame);
+
+        if (interact)
+        {
+            _isSelected = true;
+            _helpTableController.helpTable.closeHelpTable();
+            character.GetComponent<PlayerInformation>().currentState = buttonState;
+            if (buttonState == "Movement")
+            {
+                BaseAction action = character.GetComponent<GridMovement>();
+                if (!action.canGridBeEnabled())
+                {
+                    _button.interactable = false;
+                }
+                else
+                {
+                    _button.interactable = true;
+                }
+
+                gameInformation.DisableGrids();
+                action.EnableGrid();
+            }
+            else //galima prideti else if jei kazkokie jau special abilities.
+            {
+                gameInformation.DisableGrids();
+                if (character.GetComponent<ActionManager>().FindActionByName(buttonState) != null)
+                {
+                    BaseAction action = character.GetComponent<ActionManager>().FindActionByName(buttonState);
+                    action.EnableGrid();
+                    if (!action.canGridBeEnabled())
+                    {
+                        _button.interactable = false;
+                    }
+                    else
+                    {
+                        _button.interactable = true;
+                    }
+                }
+
+            }
+            buttonManager.DisableSelection(actionButtonFrame);
+        }
+
+        
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -60,6 +117,7 @@ public class ActionButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        
         _helpTableController.hasActionButtonBeenEntered = true;
         transform.Find("ActionButtonFrame").GetComponent<Animator>().SetBool("hover", true);
         _helpTableController.EnableTableForInGameRightClick(buttonState);
