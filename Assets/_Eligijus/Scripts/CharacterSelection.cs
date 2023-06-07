@@ -1,21 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelection : PortraitButton
 {
     public int characterIndex = 0;
-    public CharacterSelect chharacterSelect;
+    public CharacterSelect characterSelect;
+    public Image portrait;
+    public TextMeshProUGUI levelText;
+    public Animator onHover;
+    public Button selectionButton;
+    public CharacterPortrait characterPortrait;
 
     public override void OnPortraitClick()
     {
-        chharacterSelect.OnCharacterButtonClick(characterIndex);
+        characterSelect.OnCharacterButtonClick(characterIndex);
     }
-
-    public void DisplayCharacterInfo()
-    {
-        GameObject.Find("Canvas").transform.Find("CharacterTable").GetComponent<CharacterTable>().DisplayCharacterTable(characterIndex);
-        // GameObject.Find("GameProgress").GetComponent<GameProgress>().DisplayCharacterTable(characterIndex);
-        Debug.Log("Pakeisti sita vieta");
-    }
+    
+    
+    
 }

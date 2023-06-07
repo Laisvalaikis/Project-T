@@ -193,19 +193,6 @@ public class GameProgress : MonoBehaviour
     public void FakeUpdate()
     {
         UpdateMaxCharacterCount();
-        if (SceneManager.GetActiveScene().name != "CharacterSelect3")
-        {
-            if (SceneManager.GetActiveScene().name != "CharacterSelect")
-            {
-                Debug.Log("Need To change function?");
-                
-                // UpdateCharacterBar(0);
-            }
-            else
-            {
-                UpdateCharacterButtons(0);
-            }
-        }
         if (SceneManager.GetActiveScene().name == "Town")
         {
             gameUi.UpdateTownCost();

@@ -14,13 +14,13 @@ public class CharacterSelect : MonoBehaviour
     private List<(SavedCharacter, int)> selectedEnemies;
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
+    public List<CharacterSelection> characterButtons;
     public bool allowDuplicates;
     public SaveData saveData;
     public Data _data;
     // Start is called before the first frame update
     void Start()
     {
-        gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
         charactersToGoOnMission = new List<(SavedCharacter, int)>();
         selectedEnemies = new List<(SavedCharacter, int)>();
         //defaultEnemies = gameProgress.AllEnemySavedCharacters;
@@ -31,29 +31,66 @@ public class CharacterSelect : MonoBehaviour
         //allowDuplicates = false;
         allowDuplicates = SaveSystem.LoadTownData().selectedEncounter.allowDuplicates;
         saveData.LoadTownData();
-        gameProgress.PrepareNewTownDay();
         GameObject.Find("CanvasCamera").transform.Find("AutoFill").GetComponent<Button>().interactable = _data.Characters.Count >= 3;
         UpdateView();
     }
 
+    // public void UpdateView()
+    // {
+    //     List<SavedCharacter> characterList = enemySelection ? _data.AllEnemySavedCharacters : _data.Characters;
+    //     List<(SavedCharacter, int)> selectedCharList = enemySelection ? selectedEnemies : charactersToGoOnMission;
+    //     Transform CharacterButtons = GameObject.Find("CanvasCamera").transform.Find("CharacterButtons");
+    //     foreach (Transform child in CharacterButtons)
+    //     {
+    //         child.gameObject.SetActive(false);
+    //     }
+    //     for (int i = 0; i < characterList.Count; i++)
+    //     {
+    //         CharacterButtons.GetChild(i).GetComponent<CharacterSelection>().characterIndex = i;
+    //         CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
+    //         CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
+    //             characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
+    //         CharacterButtons.GetChild(i).Find("Character").Find("LevelText").GetComponent<TextMeshProUGUI>().text = characterList[i].level.ToString();
+    //         CharacterButtons.GetChild(i).gameObject.SetActive(true);
+    //         CharacterButtons.GetChild(i).transform.Find("Hover").GetComponent<Animator>().SetBool("select", AlreadySelected(i));
+    //     }
+    //     if (!enemySelection && selectedCharList.Count == 3)
+    //     {
+    //         DisableCharacters();
+    //     }
+    //     else EnableCharacters();
+    //     
+    //     
+    //     var canvasCamera = GameObject.Find("CanvasCamera").transform;
+    //     canvasCamera.Find("AutoFill").gameObject.SetActive(!enemySelection);
+    //     canvasCamera.Find("Clear").gameObject.SetActive(!enemySelection);
+    //     // canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
+    //     canvasCamera.Find("Back").gameObject.SetActive(!enemySelection);
+    //     canvasCamera.Find("AllNone").gameObject.SetActive(enemySelection);
+    //     canvasCamera.Find("AllowDuplicates").gameObject.SetActive(enemySelection);
+    //     canvasCamera.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+    //     Debug.Log("Reikia sutvarkyti");
+    // }
     public void UpdateView()
     {
         List<SavedCharacter> characterList = enemySelection ? _data.AllEnemySavedCharacters : _data.Characters;
         List<(SavedCharacter, int)> selectedCharList = enemySelection ? selectedEnemies : charactersToGoOnMission;
-        Transform CharacterButtons = GameObject.Find("CanvasCamera").transform.Find("CharacterButtons");
-        foreach (Transform child in CharacterButtons)
+        for (int i = 0; i < characterButtons.Count; i++)
         {
-            child.gameObject.SetActive(false);
-        }
-        for (int i = 0; i < characterList.Count; i++)
-        {
-            CharacterButtons.GetChild(i).GetComponent<CharacterSelection>().characterIndex = i;
-            CharacterButtons.GetChild(i).Find("Character").Find("Portrait").gameObject.SetActive(true);
-            CharacterButtons.GetChild(i).Find("Character").Find("Portrait").GetComponent<Image>().sprite =
-                characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
-            CharacterButtons.GetChild(i).Find("Character").Find("LevelText").GetComponent<TextMeshProUGUI>().text = characterList[i].level.ToString();
-            CharacterButtons.GetChild(i).gameObject.SetActive(true);
-            CharacterButtons.GetChild(i).transform.Find("Hover").GetComponent<Animator>().SetBool("select", AlreadySelected(i));
+            if (i < characterList.Count)
+            {
+                characterButtons[i].gameObject.SetActive(true);
+                characterButtons[i].characterIndex = i;
+                characterButtons[i].portrait.gameObject.SetActive(true);
+                characterButtons[i].portrait.sprite =
+                    characterList[i].prefab.GetComponent<PlayerInformation>().CharacterPortraitSprite;
+                characterButtons[i].levelText.text = characterList[i].level.ToString();
+                characterButtons[i].onHover.SetBool("select", AlreadySelected(i));
+            }
+            else
+            {
+                characterButtons[i].gameObject.SetActive(false);
+            }
         }
         if (!enemySelection && selectedCharList.Count == 3)
         {
@@ -144,6 +181,8 @@ public class CharacterSelect : MonoBehaviour
         {
             _data.selectedEnemies.Add(enemy.Item2);
         }
+        _data.townData.allowEnemySelection = true;
+        _data.townData.allowDuplicates = allowDuplicates;
     }
 
     public void OnCharacterButtonClick(int characterIndex)
@@ -211,29 +250,54 @@ public class CharacterSelect : MonoBehaviour
     //    }
     //}
 
-    private void EnableCharacters()
-    {
-        foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
-        {
-            if (characterButton.gameObject.activeSelf)
-            {
-                characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white;
-                characterButton.GetComponent<CharacterPortrait>().available = true;
-            }
-        }
-    }
-
-    private void DisableCharacters()
-    {
-        foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
-        {
-            if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<CharacterPortrait>().characterIndex))
-            {
-                characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.grey;
-                characterButton.GetComponent<CharacterPortrait>().available = false;
-            }
-        }
-    }
+      private void EnableCharacters()
+      {
+          foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons")) //pabandyti cia for sukti
+          {
+             if (characterButton.gameObject.activeSelf) //palikti
+              {
+                  characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
+                  characterButton.GetComponent<CharacterPortrait>().available = true;
+              }
+          }
+      }
+      
+      private void DisableCharacters()
+      {
+          foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
+          {
+              if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<CharacterPortrait>().characterIndex))
+              {
+                  characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.grey;
+                 characterButton.GetComponent<CharacterPortrait>().available = false;
+              }
+          }
+      }
+     // private void EnableCharacters()
+     // {
+     //     for(int i=0; i<characterButtons.Count; i++) //pabandyti cia for sukti
+     //     {
+     //         if (characterButtons[i].gameObject.activeSelf) //palikti
+     //         {
+     //             //characterButtons.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
+     //             characterButtons[i].portrait.color = Color.white;
+     //            // characterButtons[i].GetComponent<CharacterPortrait>().available = true;
+     //             characterButtons[i].characterPortrait.available = true;
+     //         }
+     //     }
+     // }
+     //
+     // private void DisableCharacters()
+     // {
+     //     for(int i=0; i<characterButtons.Count; i++)
+     //     {
+     //         if (characterButtons[i].gameObject.activeSelf && !AlreadySelected(characterButtons[i].GetComponent<CharacterPortrait>().characterIndex))
+     //         {
+     //             characterButtons[i].portrait.color = Color.grey;
+     //             characterButtons[i].characterPortrait.available = false;
+     //         }
+     //     }
+     // }
 
     private bool AlreadySelected(int characterIndex)
     {

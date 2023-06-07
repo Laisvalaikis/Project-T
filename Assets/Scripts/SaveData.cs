@@ -25,14 +25,6 @@ public class SaveData : MonoBehaviour
 
         TownData townData = _data.townData;
         _data.selectedEnemies = new List<int>();
-        bool allowEnemySelection = false;
-        bool allowDuplicates = false;
-        if (SceneManager.GetActiveScene().name == "CharacterSelect3")
-        {
-            GetComponent<CharacterSelect>().SaveData();
-            allowEnemySelection = true;
-            allowDuplicates = GetComponent<CharacterSelect>().allowDuplicates;
-        }
         List<SavedCharacter> RCcharacters = new List<SavedCharacter>();
         if (SceneManager.GetActiveScene().name == "Town")
         {
@@ -59,7 +51,7 @@ public class SaveData : MonoBehaviour
         }
         TownData data = new TownData(townData.difficultyLevel, townData.townGold, townData.day, _data.Characters, _data.CharactersOnLastMission,
             townData.wasLastMissionSuccessful, false, townData.singlePlayer, townData.selectedMission, townData.townHall, RCcharacters,
-            _data.selectedEnemies, allowEnemySelection, allowDuplicates, SaveSystem.LoadTownData().teamColor,
+            _data.selectedEnemies, townData.allowEnemySelection, townData.allowDuplicates, SaveSystem.LoadTownData().teamColor,
             townData.slotName, townData.selectedEncounter, townData.pastEncounters, townData.generateNewEncounters, townData.generatedEncounters, townData.gameSettings);
         SaveSystem.SaveTownData(data);
         SaveSystem.SaveStatistics(_data.statistics);
@@ -114,5 +106,11 @@ public class SaveData : MonoBehaviour
         _data.statistics = SaveSystem.LoadStatistics();
         //selectedMission = townData.selectedMission;
     }
-    
+
+    public void ResetCharacterSelectData()
+    {
+        _data.townData.allowEnemySelection = false;
+        _data.townData.allowDuplicates = false;
+    }
+
 }

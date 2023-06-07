@@ -28,7 +28,6 @@ public class Data : MonoBehaviour
     [HideInInspector] public Statistics globalStatistics;
     /*[HideInInspector]*/
     public TownData townData;
-
     public UnityEvent characterRecruitmentEvent;
     // Start is called before the first frame update
     public void InsertCharacter(SavedCharacter character)
