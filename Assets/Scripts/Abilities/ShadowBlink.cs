@@ -9,6 +9,7 @@ public class ShadowBlink : BaseAction
     //private string actionStateName = "ShadowBlink";
     //public int minAttackDamage = 5;
     //public int maxAttackDamage = 8;
+    public string abilityAnimationName = "playerChop";
     private Color alphaColor = new Color(1, 1, 1, 110 / 255f);
 
     //private List<List<GameObject>> AvailableTiles = new List<List<GameObject>>();
@@ -134,7 +135,7 @@ public class ShadowBlink : BaseAction
         {
             bool wasTargetAlly = true;
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
-            transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger("playerChop");
+            transform.Find("CharacterModel").GetComponent<Animator>().SetTrigger(abilityAnimationName);
             if (!isAllegianceSame(clickedTile))
             {
                 DealRandomDamageToTarget(target, minAttackDamage, maxAttackDamage);

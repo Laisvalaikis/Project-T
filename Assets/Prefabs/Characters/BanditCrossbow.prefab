@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 5650371459112608456}
   - component: {fileID: 2127402707182618150}
   - component: {fileID: 2681791250472325733}
-  - component: {fileID: 4461856746223960945}
   - component: {fileID: 7148836411892714279}
   - component: {fileID: 1255205872592345222}
+  - component: {fileID: 2544824530211817665}
   m_Layer: 8
   m_Name: BanditCrossbow
   m_TagString: Player
@@ -205,11 +205,11 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
-  - action: {fileID: 4461856746223960945}
-    actionName: MistShield
-    AbilityIcon: {fileID: -7589370023057454629, guid: 38f03c585e84a1640a863ffc47a7d49b,
+  - action: {fileID: 2544824530211817665}
+    actionName: ReadyAimFire
+    AbilityIcon: {fileID: 2770929758457341302, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
-    AbilityIndex: -1
+    AbilityIndex: 0
   hasSlowAbilityBeenCast: 0
 --- !u!114 &2127402707182618150
 MonoBehaviour:
@@ -269,30 +269,6 @@ MonoBehaviour:
   isDisabled: 0
   spawnedCharacter: {fileID: 0}
   impactVFXName: 
---- !u!114 &4461856746223960945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8991762641195365324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c666638001fd2d45b63faa23c386596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionStateName: MistShield
-  AttackRange: 1
-  AbilityCooldown: 2
-  minAttackDamage: 0
-  maxAttackDamage: 0
-  isAbilitySlow: 0
-  friendlyFire: 0
-  AttackAbility: 0
-  AvailableAttacks: 1
-  AbilityPoints: 0
-  isDisabled: 0
-  spawnedCharacter: {fileID: 0}
 --- !u!114 &7148836411892714279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +300,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278e2e3312708b04693234f4740d58e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialAbilities: []
+  specialAbilities:
+  - abilityName: ReadyAimFire
+    castOrder: 3
+    difficultyLevel: 0
   specialBlessings: []
   groundLayer:
     serializedVersion: 2
@@ -337,6 +316,30 @@ MonoBehaviour:
     m_Bits: 8192
   DestinationObject: {fileID: 0}
   _data: {fileID: 0}
+--- !u!114 &2544824530211817665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8991762641195365324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c70c6c7efc4bb4bb762881f9565889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionStateName: ReadyAimFire
+  AttackRange: 2
+  AbilityCooldown: 2
+  minAttackDamage: 4
+  maxAttackDamage: 5
+  isAbilitySlow: 1
+  friendlyFire: 0
+  AttackAbility: 0
+  AvailableAttacks: 1
+  AbilityPoints: 0
+  isDisabled: 0
+  spawnedCharacter: {fileID: 0}
 --- !u!1 &8991762641709865603
 GameObject:
   m_ObjectHideFlags: 0
