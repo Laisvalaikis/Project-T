@@ -13,6 +13,7 @@ public class CharacterSelection : PortraitButton
     public Animator onHover;
     public Button selectionButton;
     public CharacterPortrait characterPortrait;
+    public CSTeamPortraitManager manager;
 
     public override void OnPortraitClick()
     {

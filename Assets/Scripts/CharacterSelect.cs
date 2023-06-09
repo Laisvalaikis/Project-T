@@ -15,6 +15,7 @@ public class CharacterSelect : MonoBehaviour
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
     public List<CharacterSelection> characterButtons;
+    public List<CSTeamPortraitManager> csTeamPortraitManager;
     public bool allowDuplicates;
     public SaveData saveData;
     public Data _data;
@@ -97,13 +98,14 @@ public class CharacterSelect : MonoBehaviour
             DisableCharacters();
         }
         else EnableCharacters();
-        var canvasCamera = GameObject.Find("CanvasCamera").transform;
-        canvasCamera.Find("AutoFill").gameObject.SetActive(!enemySelection);
-        canvasCamera.Find("Clear").gameObject.SetActive(!enemySelection);
+        //sito kaip ir nereikia
+        var canvasCamera = gameObject.transform;
+        canvasCamera.gameObject.SetActive(!enemySelection);
+        canvasCamera.gameObject.SetActive(!enemySelection);
         // canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
-        canvasCamera.Find("Back").gameObject.SetActive(!enemySelection);
-        canvasCamera.Find("AllNone").gameObject.SetActive(enemySelection);
-        canvasCamera.Find("AllowDuplicates").gameObject.SetActive(enemySelection);
+        canvasCamera.gameObject.SetActive(!enemySelection);
+        canvasCamera.gameObject.SetActive(enemySelection);
+        canvasCamera.gameObject.SetActive(enemySelection);
         canvasCamera.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
         Debug.Log("Reikia sutvarkyti");
     }
@@ -208,13 +210,24 @@ public class CharacterSelect : MonoBehaviour
         }
     }
 
+    // public void RemoveCharacterFromTeam(int characterIndex)
+    // {
+    //     var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
+    //     charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
+    //     teamPortraitManager.RemoveCharacter(characterIndex);
+    //     GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
+    //     EnableCharacters();
+    // }
     public void RemoveCharacterFromTeam(int characterIndex)
     {
-        var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
-        charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
-        teamPortraitManager.RemoveCharacter(characterIndex);
-        GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
-        EnableCharacters();
+        for (int i = 0; i < csTeamPortraitManager.Count; i++)
+        {
+            var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
+            charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
+            teamPortraitManager.RemoveCharacter(characterIndex);
+            characterButtons[i].onHover.SetBool("select", false);
+            EnableCharacters();
+        }
     }
 
     public void AddCharacterToTeam(int characterIndex)
@@ -250,54 +263,54 @@ public class CharacterSelect : MonoBehaviour
     //    }
     //}
 
-      private void EnableCharacters()
-      {
-          foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons")) //pabandyti cia for sukti
-          {
-             if (characterButton.gameObject.activeSelf) //palikti
-              {
-                  characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
-                  characterButton.GetComponent<CharacterPortrait>().available = true;
-              }
-          }
-      }
-      
-      private void DisableCharacters()
-      {
-          foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
-          {
-              if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<CharacterPortrait>().characterIndex))
-              {
-                  characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.grey;
-                 characterButton.GetComponent<CharacterPortrait>().available = false;
-              }
-          }
-      }
-     // private void EnableCharacters()
-     // {
-     //     for(int i=0; i<characterButtons.Count; i++) //pabandyti cia for sukti
-     //     {
-     //         if (characterButtons[i].gameObject.activeSelf) //palikti
-     //         {
-     //             //characterButtons.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
-     //             characterButtons[i].portrait.color = Color.white;
-     //            // characterButtons[i].GetComponent<CharacterPortrait>().available = true;
-     //             characterButtons[i].characterPortrait.available = true;
-     //         }
-     //     }
-     // }
-     //
-     // private void DisableCharacters()
-     // {
-     //     for(int i=0; i<characterButtons.Count; i++)
-     //     {
-     //         if (characterButtons[i].gameObject.activeSelf && !AlreadySelected(characterButtons[i].GetComponent<CharacterPortrait>().characterIndex))
-     //         {
-     //             characterButtons[i].portrait.color = Color.grey;
-     //             characterButtons[i].characterPortrait.available = false;
-     //         }
-     //     }
-     // }
+      // private void EnableCharacters()
+      // {
+      //     foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons")) //pabandyti cia for sukti
+      //     {
+      //        if (characterButton.gameObject.activeSelf) //palikti
+      //         {
+      //             characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
+      //             characterButton.GetComponent<CharacterPortrait>().available = true;
+      //         }
+      //     }
+      // }
+      //
+      // private void DisableCharacters()
+      // {
+      //     foreach (Transform characterButton in GameObject.Find("CanvasCamera").transform.Find("CharacterButtons"))
+      //     {
+      //         if (characterButton.gameObject.activeSelf && !AlreadySelected(characterButton.GetComponent<CharacterPortrait>().characterIndex))
+      //         {
+      //             characterButton.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.grey;
+      //            characterButton.GetComponent<CharacterPortrait>().available = false;
+      //         }
+      //     }
+      // }
+     private void EnableCharacters()
+     {
+         for(int i=0; i<characterButtons.Count; i++) //pabandyti cia for sukti
+         {
+             if (characterButtons[i].gameObject.activeSelf) //palikti
+             {
+                 //characterButtons.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
+                 characterButtons[i].portrait.color = Color.white;
+                // characterButtons[i].GetComponent<CharacterPortrait>().available = true;
+                 characterButtons[i].characterPortrait.available = true;
+             }
+         }
+     }
+     
+     private void DisableCharacters()
+     {
+         for(int i=0; i<characterButtons.Count; i++)
+         {
+             if (characterButtons[i].gameObject.activeSelf && !AlreadySelected(characterButtons[i].GetComponent<CharacterPortrait>().characterIndex))
+             {
+                 characterButtons[i].portrait.color = Color.grey;
+                 characterButtons[i].characterPortrait.available = false;
+             }
+         }
+     }
 
     private bool AlreadySelected(int characterIndex)
     {
