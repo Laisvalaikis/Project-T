@@ -9,6 +9,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     public List<PortraitButtonData> PortraitButtonList;
     public List<Animator> posingCharacters;
     [HideInInspector] public GameObject ActiveButton = null;
+    [SerializeField] public CharacterSelect characterSelect;
     public Sprite EmptySprite;
     public Data _data;
     public CharacterSelection characterSelection;
@@ -135,9 +136,14 @@ public class CSTeamPortraitManager : MonoBehaviour
         }
         GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = false;
     }
+    // public void RemoveCharacter(GameObject button)
+    // {
+    //     GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex); //fix this A V
+    //    
+    // }
     public void RemoveCharacter(GameObject button)
     {
-        GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex); //fix this A V
+        characterSelect.RemoveCharacterFromTeam(FindByButton(button).characterIndex); //fix this A V
        
     }
     private void Remove(PortraitButtonData x)

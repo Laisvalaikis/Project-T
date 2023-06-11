@@ -16,6 +16,7 @@ public class CharacterSelect : MonoBehaviour
     private bool enemySelection;
     public List<CharacterSelection> characterButtons;
     public List<CSTeamPortraitManager> csTeamPortraitManager;
+    [SerializeField]public CSTeamPortraitManager teamPortraitManager;
     public bool allowDuplicates;
     public SaveData saveData;
     public Data _data;
@@ -222,7 +223,6 @@ public class CharacterSelect : MonoBehaviour
     {
         for (int i = 0; i < csTeamPortraitManager.Count; i++)
         {
-            var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
             charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
             teamPortraitManager.RemoveCharacter(characterIndex);
             characterButtons[i].onHover.SetBool("select", false);

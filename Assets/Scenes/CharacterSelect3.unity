@@ -7518,11 +7518,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1205595426}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9636,11 +9636,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1460385243}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14871,9 +14871,11 @@ MonoBehaviour:
   - {fileID: 345044181}
   - {fileID: 507586042}
   ActiveButton: {fileID: 0}
+  characterSelect: {fileID: 7305146774762416556}
   EmptySprite: {fileID: 7275749007581436860, guid: 88a9dc2923d4fa842a8fce4120dbf698,
     type: 3}
   _data: {fileID: 1994418457}
+  characterSelection: {fileID: 3033456434883165579}
 --- !u!224 &1520309126
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21834,10 +21836,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 2091660733}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -22510,6 +22512,8 @@ MonoBehaviour:
   - {fileID: 3033456434883165579}
   - {fileID: 668901288}
   - {fileID: 450843135}
+  csTeamPortraitManager: []
+  teamPortraitManager: {fileID: 1520309125}
   allowDuplicates: 0
   saveData: {fileID: 1994418458}
   _data: {fileID: 1994418457}

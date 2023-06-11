@@ -55,8 +55,6 @@ n
 >Assets/AnimationImporter/Editor/AnimationAssetPostProcessor.cs,8\d\8d86127b99ba44d9f935732cfa58128ad48b7474
 S
 #Assets/AnimationImporter/readme.txt,6\4\64dc9a86e1b27a917dbcd78d7a373ef045e64e5a
-c
-3Assets/_Eligijus/Scripts/Data/PortraitButtonData.cs,6\1\6107603db3f6ce7c4150c30a263bd3fccd2c0eb3
 d
 4Assets/AnimationImporter/Editor/AnimationImporter.cs,4\8\488d4288aa76167b1f83fa74a26cdaeb5a633506
 j
@@ -289,16 +287,12 @@ j
 :Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF.shader,a\c\ac9a096551f3174a941f28d0dd1945c6ec9b6fbf
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader,2\5\25e44d2c087988bec521d3373d269e07d2415b33
-F
-Assets/Scripts/Data.cs,4\0\405aa31920961498deee203b585255fffe7bf714
 J
 Assets/Scripts/SaveData.cs,e\2\e2fbf21b6239099984e990ac1a0d5dce5b3a54ce
 S
 #Assets/Scripts/XPProgressManager.cs,e\c\ec806fdccfa11da46f3e0125b26c51e7d827ff80
 Q
 !Assets/Scripts/GameInformation.cs,c\b\cb529fc42bbc33613e7a91e60d923a5628dcc27d
-N
-Assets/Scripts/GameProgress.cs,3\f\3f0104371d0fd73130bbd864f804f9ae0e272336
 Y
 )Assets/Scripts/LoadingScreenController.cs,4\1\417ae029423d89d8e12accecfd45feb260fddd85
 M
