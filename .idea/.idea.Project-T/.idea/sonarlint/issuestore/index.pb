@@ -111,8 +111,6 @@ J
 Assets/Scripts/MapSetup.cs,5\7\57f0b4001677ef55c29009537ecce4c0c26e9c46
 P
  Assets/Scripts/CameraFollower.cs,e\f\efd09738c3e9e3107eacd1f7d36c3b6cea34ba51
-^
-.Assets/_Eligijus/Scripts/CharacterSelection.cs,e\6\e65840d050213d3f964956c844d178041fc304cc
 q
 AAssets/AnimationImporter/Editor/Utilities/AssetDatabaseUtility.cs,f\6\f692682462a0cfe409872f4fb6eb96bc3992ed9c
 L
@@ -203,8 +201,6 @@ R
 "Assets/Scripts/CameraController.cs,1\9\19ab53079cee46b93c9edb6fcda45169a200d88f
 L
 Assets/Scripts/DamageText.cs,7\b\7b93f80fb29101bd9b0984eb4f5dda53932f8de7
-W
-'Assets/Scripts/CSTeamPortraitManager.cs,0\c\0cd6196e63d9bef82772fb5d97443871cf903d9d
 O
 Assets/Scripts/UpgradeButton.cs,5\4\54600c6b0730e67d3d95c10efa25adf36ab74146
 O
@@ -213,8 +209,6 @@ M
 Assets/Scripts/Recruitment.cs,6\8\68823cba480fbb4e5259faa46d961aa2df308108
 L
 Assets/Scripts/FadeScreen.cs,4\a\4a706e9324820c922e07240fe8245ada7af63693
-Q
-!Assets/Scripts/CharacterSelect.cs,7\9\7929ce27a99248b3f30ecc4092c00bb76be5474a
 O
 Assets/Scripts/TestingScript.cs,9\a\9ad57a964c1de6d9b80b9cbe126c35b061ade1e3
 P

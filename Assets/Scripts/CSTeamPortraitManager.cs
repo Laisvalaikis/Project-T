@@ -8,9 +8,10 @@ public class CSTeamPortraitManager : MonoBehaviour
 {
     public List<PortraitButtonData> PortraitButtonList;
     public List<Animator> posingCharacters;
-    [HideInInspector]public GameObject ActiveButton = null;
+    [HideInInspector] public GameObject ActiveButton = null;
     public Sprite EmptySprite;
     public Data _data;
+    public CharacterSelection characterSelection;
     public void AddCharacter(GameObject givenCharacterPrefab)
     {
         if (ActiveButton != null && FindByButton(ActiveButton) != null)
@@ -136,7 +137,8 @@ public class CSTeamPortraitManager : MonoBehaviour
     }
     public void RemoveCharacter(GameObject button)
     {
-        GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex);
+        GameObject.Find("GameProgress").GetComponent<CharacterSelect>().RemoveCharacterFromTeam(FindByButton(button).characterIndex); //fix this A V
+       
     }
     private void Remove(PortraitButtonData x)
     {
