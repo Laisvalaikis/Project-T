@@ -52,28 +52,20 @@ public class MusicManager : MonoBehaviour
         
     }
 
-    public void NextLevelMusic()
-    {
-        level++;
-        StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
-    }
-
-    public void PreviousLevelMusic()
-    {
-        level--;
-        StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
-    }
-
     public void ChangeLevelMusic(int levelMusicIndex)
     {
-        if (levelMusicIndex > 0 && levelMusicIndex < _musicLevels.Count)
+        if (level != levelMusicIndex)
         {
-            level = levelMusicIndex;
-            StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
-        }
-        else
-        {
-            Debug.LogError("Music index is out of bounds, please set index that is less or equal to music song count");
+            if (levelMusicIndex >= 0 && levelMusicIndex < _musicLevels.Count)
+            {
+                level = levelMusicIndex;
+                StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
+            }
+            else
+            {
+                Debug.LogError(
+                    "Music index is out of bounds, please set index that is less or equal to music song count");
+            }
         }
     }
 

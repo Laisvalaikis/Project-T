@@ -12,10 +12,13 @@ public class SceneSelect : MonoBehaviour
     private int difficulty;
     private string color;
     [SerializeField] private Button buttonForCreation;
+
+    private MusicIndex _musicIndex;
     //public TownData newGameData;
 
     void Start()
     {
+        _musicIndex = GetComponent<MusicIndex>();
         for(int i = 0; i < 3; i++)
         {
             Transform slotCard = GameObject.Find("CanvasCamera").transform.Find("NewGameContinue").Find("SlotCards").GetChild(i);
@@ -68,6 +71,7 @@ public class SceneSelect : MonoBehaviour
 
     public void SceneTransition(string sceneName)
     {
+        _musicIndex.ChangeLevelMusic();
         GameObject.Find("LoadingScreenCanvas").GetComponent<LoadingScreenController>().LoadScene(sceneName);
     }
 
