@@ -64,6 +64,19 @@ public class MusicManager : MonoBehaviour
         StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
     }
 
+    public void ChangeLevelMusic(int levelMusicIndex)
+    {
+        if (levelMusicIndex > 0 && levelMusicIndex < _musicLevels.Count)
+        {
+            level = levelMusicIndex;
+            StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
+        }
+        else
+        {
+            Debug.LogError("Music index is out of bounds, please set index that is less or equal to music song count");
+        }
+    }
+
     public void ChangeSoundVolume(float level)
     {
         audioSource.volume = level;

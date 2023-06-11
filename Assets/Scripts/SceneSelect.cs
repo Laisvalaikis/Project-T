@@ -63,13 +63,11 @@ public class SceneSelect : MonoBehaviour
 
     public void ChangeScene(string SceneToLoad)
     {
-        SceneManager.LoadScene(SceneToLoad);
         Time.timeScale = 1;
     }
 
     public void SceneTransition(string sceneName)
     {
-        MusicManager.instance.NextLevelMusic();
         GameObject.Find("LoadingScreenCanvas").GetComponent<LoadingScreenController>().LoadScene(sceneName);
     }
 

@@ -303,10 +303,6 @@ N
 Assets/Scripts/GameProgress.cs,3\f\3f0104371d0fd73130bbd864f804f9ae0e272336
 Y
 )Assets/Scripts/LoadingScreenController.cs,4\1\417ae029423d89d8e12accecfd45feb260fddd85
-M
-Assets/Scripts/SceneSelect.cs,1\f\1fc873d20a82418b208da022eac60864170379c7
-e
-5Assets/_Eligijus/Scripts/SoundManager/MusicManager.cs,d\9\d988cba870b328ddccf79f2e6bbb1697ec5c6662
 T
 $Assets/Scripts/PvPCharacterSelect.cs,d\2\d259492ec33afc8724b9733f7467da49ff6faf9e
 U
@@ -321,8 +317,6 @@ O
 Assets/Scripts/HighlightTile.cs,1\4\14cd317f453988ee6233d494d3577c857a1d64f7
 l
 <Assets/_Eligijus/Scripts/SoundManager/SoundCreateEditData.cs,a\3\a30798d3493d961c3fdbcfcdc92940aaf0d70fa4
-e
-5Assets/_Eligijus/Scripts/SoundManager/SoundManager.cs,c\6\c68d2181140c56edbb15b82ce69cdc831f2b6c23
 k
 ;Assets/_Eligijus/Scripts/SoundManager/SoundManagerEditor.cs,6\1\61993fbca3f454955768c23061ef9e763072508c
 j
@@ -455,23 +449,7 @@ T
 $Assets/Scripts/Abilities/WeakSpot.cs,e\c\ec9d2a6f430a43d059634f3e417db9b83043bf59
 U
 %Assets/Scripts/Abilities/WindBoost.cs,9\6\96abb9fa262cdc8ac087baeb44404e7085d9946d
-X
-(Assets/Scripts/Abilities/PlayerAttack.cs,3\6\36a75ea8859f6d8506126d0c97232808cea7321b
-c
-3Assets/_Eligijus/Scripts/SoundManager/SoundsData.cs,e\7\e798275bc932a1b0894b567e0babc508e2d3bd1e
 T
 $Assets/Scripts/Classes/BaseAction.cs,5\2\5237f7d244bc856d3673a3b04b36750d75570919
-N
-Assets/Scripts/GridMovement.cs,a\d\ad8fc92893e51b07f3601780e613d2e038d9bacc
-T
-$Assets/Scripts/Abilities/AcidRain.cs,2\1\2123efde61f15421efb420930ab7ee2c3ea5df2d
-O
-Assets/Scripts/ButtonManager.cs,a\e\ae96c987bb85c21765eae9c69d47b71c17b20063
-U
-%Assets/Scripts/HelpTableController.cs,3\c\3cddddde397d3d0d77c46be5c7c2968cc6057efd
 e
 5Assets/_Eligijus/Scripts/SoundManager/DestroySound.cs,5\f\5f60d0b27a918b3fb63f942c37fb086f3ad1b52c
-d
-4Assets/_Eligijus/Scripts/SoundManager/AssignSound.cs,9\9\990fa6726843232efac02fafdf0e1bcf880f163b
-N
-Assets/Scripts/ActionButton.cs,3\8\38158cbdae8f2d2c1d28ca8ca5450032681565ce
