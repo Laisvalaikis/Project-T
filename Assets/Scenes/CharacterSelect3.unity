@@ -1649,7 +1649,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CharacterSelect, Assembly-CSharp
-        m_MethodName: DisplaySelectedCharacters
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2790,6 +2790,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3257428135472531043}
     m_Modifications:
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 450843135}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnPortraitClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CharacterSelection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049439866527123730, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2049439866527123822, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2917,9 +2952,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
       propertyPath: characterSelect
       value: 
       objectReference: {fileID: 7305146774762416556}
+    - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: selectionButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
       propertyPath: chharacterSelect
@@ -14875,7 +14925,6 @@ MonoBehaviour:
   EmptySprite: {fileID: 7275749007581436860, guid: 88a9dc2923d4fa842a8fce4120dbf698,
     type: 3}
   _data: {fileID: 1994418457}
-  characterSelection: {fileID: 3033456434883165579}
 --- !u!224 &1520309126
 RectTransform:
   m_ObjectHideFlags: 0

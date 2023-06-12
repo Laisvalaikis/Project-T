@@ -12,7 +12,7 @@ public class CSTeamPortraitManager : MonoBehaviour
     [SerializeField] public CharacterSelect characterSelect;
     public Sprite EmptySprite;
     public Data _data;
-    public CharacterSelection characterSelection;
+   // public CharacterSelection characterSelection;
     public void AddCharacter(GameObject givenCharacterPrefab)
     {
         if (ActiveButton != null && FindByButton(ActiveButton) != null)

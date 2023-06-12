@@ -243,16 +243,26 @@ public class CharacterSelect : MonoBehaviour
         }
     }
 
+    // public void SelectEnemy(int enemyIndex)
+    // {
+    //     selectedEnemies.Add((_data.AllEnemySavedCharacters[enemyIndex], enemyIndex));
+    //     GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(enemyIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
+    // }
     public void SelectEnemy(int enemyIndex)
     {
         selectedEnemies.Add((_data.AllEnemySavedCharacters[enemyIndex], enemyIndex));
-        GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(enemyIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
+        characterButtons[enemyIndex].onHover.SetBool("select", true);
     }
 
+    // public void DeselectEnemy(int enemyIndex)
+    // {
+    //     selectedEnemies.RemoveAll(enemy => enemy.Item2 == enemyIndex);
+    //     GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(enemyIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
+    // }
     public void DeselectEnemy(int enemyIndex)
     {
         selectedEnemies.RemoveAll(enemy => enemy.Item2 == enemyIndex);
-        GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(enemyIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", false);
+        characterButtons[enemyIndex].onHover.SetBool("select", false);
     }
 
     //private void ClearSelectedEnemies()
