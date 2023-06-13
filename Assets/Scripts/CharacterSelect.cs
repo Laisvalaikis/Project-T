@@ -15,7 +15,7 @@ public class CharacterSelect : MonoBehaviour
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
     public List<CharacterSelection> characterButtons;
-    public List<CSTeamPortraitManager> csTeamPortraitManager;
+    //public List<CSTeamPortraitManager> csTeamPortraitManager;
     [SerializeField]public CSTeamPortraitManager teamPortraitManager;
     public bool allowDuplicates;
     public SaveData saveData;
@@ -221,7 +221,7 @@ public class CharacterSelect : MonoBehaviour
     // }
     public void RemoveCharacterFromTeam(int characterIndex)
     {
-        for (int i = 0; i < csTeamPortraitManager.Count; i++)
+        for (int i = 0; i < characterButtons.Count; i++)
         {
             charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
             teamPortraitManager.RemoveCharacter(characterIndex);
@@ -230,12 +230,23 @@ public class CharacterSelect : MonoBehaviour
         }
     }
 
+    // public void AddCharacterToTeam(int characterIndex)
+    // {
+    //     var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
+    //     charactersToGoOnMission.Add((_data.Characters[characterIndex], characterIndex));
+    //     teamPortraitManager.AddCharacterInCS3(_data.Characters[characterIndex].prefab, characterIndex);
+    //     GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
+    //     if(charactersToGoOnMission.Count == 3)
+    //     {
+    //         GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = true;
+    //         DisableCharacters();
+    //     }
+    // }
     public void AddCharacterToTeam(int characterIndex)
     {
-        var teamPortraitManager = GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").transform.Find("PortraitBoxesContainer").GetComponent<CSTeamPortraitManager>();
         charactersToGoOnMission.Add((_data.Characters[characterIndex], characterIndex));
         teamPortraitManager.AddCharacterInCS3(_data.Characters[characterIndex].prefab, characterIndex);
-        GameObject.Find("CanvasCamera").transform.Find("CharacterButtons").GetChild(characterIndex).transform.Find("Hover").GetComponent<Animator>().SetBool("select", true);
+        characterButtons[characterIndex].onHover.SetBool("select", true);
         if(charactersToGoOnMission.Count == 3)
         {
             GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = true;
