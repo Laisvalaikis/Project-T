@@ -15,6 +15,8 @@ public class CharacterSelect : MonoBehaviour
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
     public List<CharacterSelection> characterButtons;
+
+    [SerializeField] public Canvas canvasCamera;
     //public List<CSTeamPortraitManager> csTeamPortraitManager;
     [SerializeField]public CSTeamPortraitManager teamPortraitManager;
     public bool allowDuplicates;
@@ -22,7 +24,7 @@ public class CharacterSelect : MonoBehaviour
     public Data _data;
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         charactersToGoOnMission = new List<(SavedCharacter, int)>();
         selectedEnemies = new List<(SavedCharacter, int)>();
         //defaultEnemies = gameProgress.AllEnemySavedCharacters;
@@ -100,14 +102,13 @@ public class CharacterSelect : MonoBehaviour
         }
         else EnableCharacters();
         //sito kaip ir nereikia
-        var canvasCamera = gameObject.transform;
         canvasCamera.gameObject.SetActive(!enemySelection);
         canvasCamera.gameObject.SetActive(!enemySelection);
         // canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
         canvasCamera.gameObject.SetActive(!enemySelection);
         canvasCamera.gameObject.SetActive(enemySelection);
         canvasCamera.gameObject.SetActive(enemySelection);
-        canvasCamera.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+        canvasCamera.transform.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
         Debug.Log("Reikia sutvarkyti");
     }
 
@@ -151,6 +152,27 @@ public class CharacterSelect : MonoBehaviour
         throw new Exception("Enemy index exception");
     }
 
+    // public void OnEnemyButtonClick()
+    // {
+    //     int numOfEnemies = 3;
+    //     if(_data.townData.selectedEncounter.numOfEnemies > 0)
+    //     {
+    //         numOfEnemies = _data.townData.selectedEncounter.numOfEnemies;
+    //     }
+    //     //if(gameProgress.GetComponent<MapSetup>().MapPrefabs.Find(x => x.name == gameProgress.townData.selectedMission) != null)
+    //     //{
+    //     //    numOfEnemies = gameProgress.GetComponent<MapSetup>().MapPrefabs.Find(x => x.name == gameProgress.townData.selectedMission).GetComponent<Map>().numberOfEnemies;
+    //     //}
+    //     if (enemySelection && ((!allowDuplicates && selectedEnemies.Count < numOfEnemies) || (allowDuplicates && selectedEnemies.Count == 0)))
+    //     {
+    //         Debug.Log("Per mazai pasirinktu priesu");
+    //         return;
+    //     }
+    //     enemySelection = !enemySelection;
+    //     GameObject.Find("CanvasCamera").transform.Find("Enemies").transform.Find("Hover").GetComponent<Animator>().SetBool("select", enemySelection);
+    //     GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").gameObject.SetActive(!enemySelection);
+    //     UpdateView();
+    // }
     public void OnEnemyButtonClick()
     {
         int numOfEnemies = 3;
@@ -169,7 +191,7 @@ public class CharacterSelect : MonoBehaviour
         }
         enemySelection = !enemySelection;
         GameObject.Find("CanvasCamera").transform.Find("Enemies").transform.Find("Hover").GetComponent<Animator>().SetBool("select", enemySelection);
-        GameObject.Find("CanvasCamera").transform.Find("TeamPortraitBox").gameObject.SetActive(!enemySelection);
+        teamPortraitManager.gameObject.SetActive(!enemySelection);
         UpdateView();
     }
 
@@ -371,6 +393,11 @@ public class CharacterSelect : MonoBehaviour
         return true;
     }
 
+    // public void ToggleAllowDuplication()
+    // {
+    //     allowDuplicates = !allowDuplicates;
+    //     GameObject.Find("CanvasCamera").transform.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+    // }
     public void ToggleAllowDuplication()
     {
         allowDuplicates = !allowDuplicates;
