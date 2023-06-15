@@ -190,7 +190,7 @@ public class CharacterSelect : MonoBehaviour
             return;
         }
         enemySelection = !enemySelection;
-        GameObject.Find("CanvasCamera").transform.Find("Enemies").transform.Find("Hover").GetComponent<Animator>().SetBool("select", enemySelection);
+        characterButtons[numOfEnemies].onHover.SetBool("select", enemySelection);
         teamPortraitManager.gameObject.SetActive(!enemySelection);
         UpdateView();
     }
@@ -271,7 +271,7 @@ public class CharacterSelect : MonoBehaviour
         characterButtons[characterIndex].onHover.SetBool("select", true);
         if(charactersToGoOnMission.Count == 3)
         {
-            GameObject.Find("CanvasCamera").transform.Find("Embark").GetComponent<Button>().interactable = true;
+            characterButtons[characterIndex].selectionButton.interactable = true;
             DisableCharacters();
         }
     }
@@ -400,8 +400,12 @@ public class CharacterSelect : MonoBehaviour
     // }
     public void ToggleAllowDuplication()
     {
-        allowDuplicates = !allowDuplicates;
-        GameObject.Find("CanvasCamera").transform.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+        for (int i = 0; i < characterButtons.Count; i++)
+        {
+            allowDuplicates = !allowDuplicates;
+            characterButtons[i].onHover.SetBool("select", allowDuplicates);
+        }
+        
     }
     //Epic poses
     public void DisplaySelectedCharacters()
