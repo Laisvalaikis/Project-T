@@ -3013,13 +3013,13 @@ GameObject:
   m_Component:
   - component: {fileID: 463209178}
   - component: {fileID: 463209177}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &463209177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3061,16 +3061,15 @@ SpriteRenderer:
   m_SortingLayerID: 909423799
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1920969552226627869, guid: f1870aa3f7cc35b4f80ba124bc4cf186,
-    type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.060606, y: 4.3333335}
+  m_Size: {x: 10.606061, y: 4.5454545}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &463209178
@@ -8265,7 +8264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1302091175
 Transform:
   m_ObjectHideFlags: 0
@@ -9466,7 +9465,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
 --- !u!114 &1395156472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9874,7 +9873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1461312253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16757,6 +16756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameProgress
       objectReference: {fileID: 0}
+    - target: {fileID: 3712572144158417205, guid: 45bd5a8ec2bd7144d9a97a52ee3675a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3712572144158417207, guid: 45bd5a8ec2bd7144d9a97a52ee3675a3,
         type: 3}
       propertyPath: m_RootOrder
@@ -22109,6 +22113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelpTableController
       objectReference: {fileID: 0}
+    - target: {fileID: 6104573439657039551, guid: 3d4dc62a0c9c641c2a0b5eb7cd24d8cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d4dc62a0c9c641c2a0b5eb7cd24d8cd, type: 3}
 --- !u!114 &2111105799 stripped
@@ -22391,6 +22400,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 401416723}
+    - target: {fileID: 1820735060290734059, guid: f01382487ee05a74995c64f3a5117600,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01382487ee05a74995c64f3a5117600, type: 3}
 --- !u!224 &3033456434883165576 stripped
@@ -22636,8 +22650,13 @@ MonoBehaviour:
   - {fileID: 3033456434883165579}
   - {fileID: 668901288}
   - {fileID: 450843135}
-  canvasCamera: {fileID: 0}
+  autoFill: {fileID: 401416723}
+  back: {fileID: 340599242}
+  allNone: {fileID: 581082853}
+  allowDuplicate: {fileID: 752789407}
+  hover: {fileID: 1271334354}
   embark: {fileID: 1497955417}
+  autofill: {fileID: 401416725}
   teamPortraitManager: {fileID: 1520309125}
   allowDuplicates: 0
   saveData: {fileID: 1994418458}
@@ -22842,6 +22861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingScreenCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654795073857118576, guid: 606b69f8d3f5d4cdb8bbc19e4c08a955,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8654795073857118588, guid: 606b69f8d3f5d4cdb8bbc19e4c08a955,
         type: 3}

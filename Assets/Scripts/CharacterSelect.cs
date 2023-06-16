@@ -15,10 +15,15 @@ public class CharacterSelect : MonoBehaviour
     private List<SavedCharacter> defaultEnemies;
     private bool enemySelection;
     public List<CharacterSelection> characterButtons;
-
-    [SerializeField] public Canvas canvasCamera;
-
+    
+    [SerializeField] private GameObject autoFill;
+    [SerializeField] private GameObject back;
+    [SerializeField] private GameObject allNone;
+    [SerializeField] private GameObject allowDuplicate;
+    [SerializeField] private Animator hover;
     [SerializeField] public Button embark;
+    [SerializeField] public Button autofill;
+    
     //public List<CSTeamPortraitManager> csTeamPortraitManager;
     [SerializeField]public CSTeamPortraitManager teamPortraitManager;
     public bool allowDuplicates;
@@ -37,7 +42,7 @@ public class CharacterSelect : MonoBehaviour
         //allowDuplicates = false;
         allowDuplicates = SaveSystem.LoadTownData().selectedEncounter.allowDuplicates;
         saveData.LoadTownData();
-        GameObject.Find("CanvasCamera").transform.Find("AutoFill").GetComponent<Button>().interactable = _data.Characters.Count >= 3;
+        autofill.interactable = _data.Characters.Count >= 3;
         UpdateView();
     }
 
@@ -103,14 +108,12 @@ public class CharacterSelect : MonoBehaviour
             DisableCharacters();
         }
         else EnableCharacters();
-        //sito kaip ir nereikia
-        canvasCamera.gameObject.SetActive(!enemySelection);
-        canvasCamera.gameObject.SetActive(!enemySelection);
+        autoFill.SetActive(!enemySelection);
         // canvasCamera.Find("Next").gameObject.SetActive(!enemySelection);
-        canvasCamera.gameObject.SetActive(!enemySelection);
-        canvasCamera.gameObject.SetActive(enemySelection);
-        canvasCamera.gameObject.SetActive(enemySelection);
-        canvasCamera.transform.Find("AllowDuplicates").transform.Find("Hover").GetComponent<Animator>().SetBool("select", allowDuplicates);
+        back.SetActive(!enemySelection);
+        allNone.SetActive(enemySelection);
+        allowDuplicate.SetActive(enemySelection);
+        hover.SetBool("select", allowDuplicates);
         Debug.Log("Reikia sutvarkyti");
     }
 
@@ -246,9 +249,9 @@ public class CharacterSelect : MonoBehaviour
     public void RemoveCharacterFromTeam(int characterIndex)
     {
         charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
-            teamPortraitManager.RemoveCharacter(characterIndex);
-            characterButtons[characterIndex].onHover.SetBool("select", false);
-            EnableCharacters();
+        teamPortraitManager.RemoveCharacter(characterIndex); 
+        characterButtons[characterIndex].onHover.SetBool("select", false);
+        EnableCharacters();
     }
 
     // public void AddCharacterToTeam(int characterIndex)
