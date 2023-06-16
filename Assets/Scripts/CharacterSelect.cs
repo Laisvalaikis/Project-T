@@ -17,6 +17,8 @@ public class CharacterSelect : MonoBehaviour
     public List<CharacterSelection> characterButtons;
 
     [SerializeField] public Canvas canvasCamera;
+
+    [SerializeField] public Button embark;
     //public List<CSTeamPortraitManager> csTeamPortraitManager;
     [SerializeField]public CSTeamPortraitManager teamPortraitManager;
     public bool allowDuplicates;
@@ -271,7 +273,7 @@ public class CharacterSelect : MonoBehaviour
         characterButtons[characterIndex].onHover.SetBool("select", true);
         if(charactersToGoOnMission.Count == 3)
         {
-            characterButtons[characterIndex].selectionButton.interactable = true;
+            embark.interactable = true;
             DisableCharacters();
         }
     }

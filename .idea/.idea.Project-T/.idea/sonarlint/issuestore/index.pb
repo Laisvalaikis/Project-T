@@ -87,8 +87,6 @@ n
 >Assets/AnimationImporter/Editor/PyxelEdit/PyxelEditImporter.cs,a\0\a04c4d0b483c065cc4bd5ca0739eb2e885121828
 l
 <Assets/AnimationImporter/Editor/Aseprite/AsepriteImporter.cs,a\b\ab72790710676a24912301e9968a2d0fe4a5bf95
-Q
-!Assets/Scripts/LongPressButton.cs,3\9\39956de24346e493e3c13268cebcd93a8b8f067d
 r
 BAssets/AnimationImporter/Editor/Config/ImportAnimatorController.cs,5\5\550d2b8f3d2639fec524f1fb5819c3a9b93eeee0
 j
@@ -145,8 +143,6 @@ K
 Assets/Scripts/AIManager.cs,f\a\fafb5819a9721068a5eea04e05f8cb3cd36625e7
 U
 %Assets/Scripts/EnvironmentalHazard.cs,5\5\55a8343389b59c56d306ef53f90de04cad40a5d6
-P
- Assets/Scripts/CharacterTable.cs,9\2\925fa3c086ed8fe79dd9e8096dc34e040b18b4ca
 N
 Assets/Scripts/ColorManager.cs,7\6\7630f684f1162839e92bb67518550728bb82e6d6
 O
@@ -293,12 +289,8 @@ S
 #Assets/Scripts/XPProgressManager.cs,e\c\ec806fdccfa11da46f3e0125b26c51e7d827ff80
 Q
 !Assets/Scripts/GameInformation.cs,c\b\cb529fc42bbc33613e7a91e60d923a5628dcc27d
-Y
-)Assets/Scripts/LoadingScreenController.cs,4\1\417ae029423d89d8e12accecfd45feb260fddd85
 M
 Assets/Scripts/SceneSelect.cs,1\f\1fc873d20a82418b208da022eac60864170379c7
-e
-5Assets/_Eligijus/Scripts/SoundManager/MusicManager.cs,d\9\d988cba870b328ddccf79f2e6bbb1697ec5c6662
 N
 Assets/Scripts/ActionButton.cs,3\8\38158cbdae8f2d2c1d28ca8ca5450032681565ce
 N
