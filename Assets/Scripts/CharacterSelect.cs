@@ -245,13 +245,10 @@ public class CharacterSelect : MonoBehaviour
     // }
     public void RemoveCharacterFromTeam(int characterIndex)
     {
-        for (int i = 0; i < characterButtons.Count; i++)
-        {
-            charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
+        charactersToGoOnMission.RemoveAt(charactersToGoOnMission.FindIndex(character => character.Item2 == characterIndex));
             teamPortraitManager.RemoveCharacter(characterIndex);
-            characterButtons[i].onHover.SetBool("select", false);
+            characterButtons[characterIndex].onHover.SetBool("select", false);
             EnableCharacters();
-        }
     }
 
     // public void AddCharacterToTeam(int characterIndex)
@@ -340,7 +337,7 @@ public class CharacterSelect : MonoBehaviour
                  //characterButtons.transform.Find("Character").Find("Portrait").GetComponent<Image>().color = Color.white; //naudoti game object bet kazkaip su portrait neina
                  characterButtons[i].portrait.color = Color.white;
                 // characterButtons[i].GetComponent<CharacterPortrait>().available = true;
-                 characterButtons[i].characterPortrait.available = true;
+                 characterButtons[i].characterButton.available = true;
              }
          }
      }
@@ -349,10 +346,10 @@ public class CharacterSelect : MonoBehaviour
      {
          for(int i=0; i<characterButtons.Count; i++)
          {
-             if (characterButtons[i].gameObject.activeSelf && !AlreadySelected(characterButtons[i].GetComponent<CharacterPortrait>().characterIndex))
+             if (characterButtons[i].gameObject.activeSelf && !AlreadySelected(characterButtons[i].characterIndex))
              {
                  characterButtons[i].portrait.color = Color.grey;
-                 characterButtons[i].characterPortrait.available = false;
+                 characterButtons[i].characterButton.available = false;
              }
          }
      }

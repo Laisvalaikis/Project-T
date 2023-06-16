@@ -442,6 +442,7 @@ GameObject:
   - component: {fileID: 2049439866527123820}
   - component: {fileID: 2049439866527123821}
   - component: {fileID: 3761597442863303416}
+  - component: {fileID: 4694383401146388500}
   m_Layer: 5
   m_Name: CSCharacterButton
   m_TagString: Untagged
@@ -638,7 +639,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049439866527123823}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e63a8291b17a7ef4cb49cf14e827cc1c, type: 3}
   m_Name: 
@@ -649,6 +650,22 @@ MonoBehaviour:
   portrait: {fileID: 2049439865613776547}
   levelText: {fileID: 7750291894963004531}
   onHover: {fileID: 8886142377404332814}
+  selectionButton: {fileID: 0}
+  characterButton: {fileID: 3761597442863303416}
+  manager: {fileID: 0}
+--- !u!114 &4694383401146388500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049439866527123823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b9d204e7b61df48a1971c415b9d52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  available: 1
 --- !u!1 &2049439866777343892
 GameObject:
   m_ObjectHideFlags: 0

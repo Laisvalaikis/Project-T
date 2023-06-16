@@ -12,7 +12,7 @@ public class CharacterSelection : PortraitButton
     public TextMeshProUGUI levelText;
     public Animator onHover;
     public Button selectionButton;
-    public CharacterPortrait characterPortrait;
+    public PortraitButton characterButton;
     public CSTeamPortraitManager manager;
 
     public override void OnPortraitClick()

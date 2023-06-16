@@ -19,15 +19,15 @@ public class CharacterPortrait : PortraitButton
 
     private void Start()
     {
-        _data = _portraitBar._data;
+        
     }
 
     public override void OnPortraitClick()
     {
         if (SceneManager.GetActiveScene().name == "CharacterSelect3")
         {
-            var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
-            gameProgress.GetComponent<CharacterSelect>().OnCharacterButtonClick(characterIndex);
+            // var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
+            // gameProgress.GetComponent<CharacterSelect>().OnCharacterButtonClick(characterIndex);
         }
         else if (SceneManager.GetActiveScene().name == "PVPCharacterSelect" || SceneManager.GetActiveScene().name == "PVPMapSelect")
         {
@@ -35,6 +35,7 @@ public class CharacterPortrait : PortraitButton
         }
         else
         {
+            _data = _portraitBar._data;
             var gameProgress = GameObject.Find("GameProgress").GetComponent<GameProgress>();
             if (_data.switchPortraits)
             {

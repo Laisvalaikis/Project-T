@@ -2753,6 +2753,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3003216592742121421, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: characterIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: characterIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
       propertyPath: characterSelect
@@ -2938,6 +2948,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3003216592742121421, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: characterIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
       propertyPath: manager
@@ -2947,6 +2962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: characterIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3761597442863303416, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
@@ -4753,7 +4773,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 450522436}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e63a8291b17a7ef4cb49cf14e827cc1c, type: 3}
   m_Name: 
@@ -7618,10 +7638,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1205595426}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9736,10 +9756,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1460385243}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -21935,10 +21955,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1520309125}
         m_TargetAssemblyTypeName: CSTeamPortraitManager, Assembly-CSharp
         m_MethodName: RemoveCharacter
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2091660733}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -22549,6 +22569,11 @@ PrefabInstance:
     - target: {fileID: 2049439866527123823, guid: a0a781540178a490a8dc6f85aa9cd6f7,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003216592742121421, guid: a0a781540178a490a8dc6f85aa9cd6f7,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3018952339623584041, guid: a0a781540178a490a8dc6f85aa9cd6f7,
