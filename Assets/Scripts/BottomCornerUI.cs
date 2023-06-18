@@ -227,7 +227,7 @@ public class BottomCornerUI : MonoBehaviour
                             image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
                         }
                     }
-                    Debug.Log("Need to redo this some time");
+                    //Debug.Log("Need to redo this some time");
                 }
 
                 else if (_buttonManager.ButtonList[i].GetComponent<ActionButton>().buttonState == "Movement")
