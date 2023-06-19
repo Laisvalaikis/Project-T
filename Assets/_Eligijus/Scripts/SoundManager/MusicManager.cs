@@ -33,6 +33,22 @@ public class MusicManager : MonoBehaviour
         audioSource.Play();
     }
 
+    public void ChangeLevelMusic(int levelMusicIndex)
+    {
+        if (level != levelMusicIndex)
+        {
+            if (levelMusicIndex >= 0 && levelMusicIndex < _musicLevels.Count)
+            {
+                level = levelMusicIndex;
+                StartCoroutine(FadeIt(_musicLevels[level].audioClips[0], _soundData.volume));
+            }
+            else
+            {
+                Debug.LogError(
+                    "Music index is out of bounds, please set index that is less or equal to music song count");
+            }
+        }
+    }
     public void UpdateSettings()
     {
         audioSource.volume = _soundData.volume;
