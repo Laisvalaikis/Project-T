@@ -37,7 +37,7 @@ public class GameInformation : MonoBehaviour
         get { return _selectedCharacter; }
         set { _selectedCharacter = value; }
     }
-    private GameObject _selectedCharacter;
+    public GameObject _selectedCharacter;
     [HideInInspector] public GameObject InspectedCharacter;
     [HideInInspector] public UndoAction undoAction;
     [HideInInspector] public List<EnvironmentalHazard> environmentalHazards;
@@ -63,7 +63,14 @@ public class GameInformation : MonoBehaviour
     
     void Start()
     {
-        instance = this;
+        //if (instance != null && instance != this)
+       // {
+          //  Destroy(this);
+       // }
+        //else
+       // {
+            instance = this;
+        //}
         ActiveTeam = GetComponent<PlayerTeams>().allCharacterList.teams[0].teamName; //The team who goes first.
         AddButton = GameObject.Find("Canvas").transform.Find("AddButton")?.gameObject;
         //ChangeVisionTiles();
@@ -224,7 +231,7 @@ public class GameInformation : MonoBehaviour
             GameObject.Find("Canvas").transform.Find("EndTurn").transform.Find("Text").GetComponent<Text>().text = "END TURN";
             GameObject.Find("Canvas").transform.Find("EndTurn").GetComponent<EndTurn>().confirmState = false;
         }
-        Debug.Log("Reikia sutvarkyti");
+       // Debug.Log("Reikia sutvarkyti");
     }
     public void UndoMove()
     {

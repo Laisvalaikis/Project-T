@@ -238,7 +238,7 @@ public class ButtonManager : MonoBehaviour
             //         string extensionName = "Extension" + (i + 1).ToString();
             //         transform.Find("CornerUI").Find(extensionName).gameObject.SetActive(false);
             // }
-            Debug.LogError("Commented disable ability button");
+           // Debug.LogError("Commented disable ability button");
         }
     }
 
