@@ -21,6 +21,7 @@ public class TownHall : MonoBehaviour
     private void Start()
     {
         imageComponent = GetComponent<Image>();
+        _data.townData.hasClickedTH = true;
     }
     public void SetupMerchantSprite()
     {

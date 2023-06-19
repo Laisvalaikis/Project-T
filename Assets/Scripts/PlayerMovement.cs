@@ -134,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         }
         GetComponent<PlayerInformation>().cornerPortraitBoxInGame.GetComponent<ButtonManager>().UpdateDebuffIcons();
         
-        Debug.LogError("Critical need to fix ui doesnt update");
+        //Debug.LogError("Critical need to fix ui doesnt update");
         GetComponent<GridMovement>().FakeUpdate();
     }
     private bool isItBlockingTheWay(int x, int y)

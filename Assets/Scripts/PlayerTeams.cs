@@ -69,7 +69,7 @@ public class PlayerTeams : MonoBehaviour
                 {
                     int points = 2 * (_data.townData.selectedEncounter.encounterLevel - 1);
                     spawnedCharacter.GetComponent<PlayerInformation>().MaxHealth += points;
-                    Debug.Log("Player " + spawnedCharacter.name + " received additional " + points + " points.");
+                   // Debug.Log("Player " + spawnedCharacter.name + " received additional " + points + " points.");
                 }
                 
                 spawnedCharacter.GetComponent<PlayerInformation>()._data = _data;
@@ -91,7 +91,7 @@ public class PlayerTeams : MonoBehaviour
                     spawnedCharacter.GetComponent<PlayerInformation>().Respawn = true;
                 }
                 
-                Debug.Log("Cia kazkas daroma su ui corner");
+                //Debug.Log("Cia kazkas daroma su ui corner");
             }
             i++;
         }

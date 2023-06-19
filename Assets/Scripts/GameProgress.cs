@@ -197,7 +197,7 @@ public class GameProgress : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name != "CharacterSelect")
             {
-                Debug.Log("Need To change function?");
+                //Debug.Log("Need To change function?");
                 
                 // UpdateCharacterBar(0);
             }
@@ -526,11 +526,11 @@ public class GameProgress : MonoBehaviour
                     }
                 }
                 // cornerButtonManager.GenerateAbilitiesForEnemy(abilitiesToEnable);
-                Debug.LogError("Disabled Enemies Ability Generation");
-                Debug.Log("Cia Sukuria Enemies ir pateikia ju abilities");
+                //Debug.LogError("Disabled Enemies Ability Generation");
+                //Debug.Log("Cia Sukuria Enemies ir pateikia ju abilities");
             }
         }
-        print("saved characters set");
+        //print("saved characters set");
     }
     
     public static int currentMaxLevel()

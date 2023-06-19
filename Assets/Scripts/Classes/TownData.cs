@@ -33,6 +33,17 @@ namespace Assets.Scripts.Classes
         public bool generateNewEncounters;
         public List<Encounter> generatedEncounters;
         public GameSettings gameSettings;
+
+        //Tutorializer
+        /*Tracking the state of the start of the game
+        Has the player figured out you can click on
+        the Recruitment Center, has he figured out 
+        embarking, does he know you can embark again?*/
+        public bool hasClickedRC = false;
+        public bool hasClickedEmbark = false;
+        public bool finishedFirstMission = false;
+        public bool finishedSecondMission = false;
+        public bool hasClickedTH = false;
         //Legacy
         //public int[] characters;
         //public int[] characterLevels;
