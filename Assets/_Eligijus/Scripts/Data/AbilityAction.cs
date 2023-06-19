@@ -64,4 +64,6 @@ public enum AbilityAction
     Volley,
     IsolatedStrike,
     FromTheShadows,
+    ThrowBehind,
+    ReadyAimFire
 }
