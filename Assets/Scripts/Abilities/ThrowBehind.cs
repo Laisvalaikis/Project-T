@@ -80,13 +80,18 @@ public class ThrowBehind : BaseAction
                 DealRandomDamageToTarget(target, minAttackDamage, maxAttackDamage);
             }*/
             //perkelimas
-
-            if (TileToThrowTo(clickedTile) != null)
-            {
-                target.transform.position = TileToThrowTo(clickedTile).transform.position + new Vector3(0f, 0f, -1f);
-            }
+            StartCoroutine(ActivateAimArrow(0.16f, clickedTile, target));
+            
             //
             FinishAbility();
+        }
+    }
+    IEnumerator ActivateAimArrow(float secs, GameObject clickedTile, GameObject target)
+    {
+        yield return new WaitForSeconds(secs);
+        if (TileToThrowTo(clickedTile) != null)
+        {
+            target.transform.position = TileToThrowTo(clickedTile).transform.position + new Vector3(0f, 0f, -1f);
         }
     }
     public override void OnTileHover(GameObject tile)

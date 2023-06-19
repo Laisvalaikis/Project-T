@@ -69,6 +69,7 @@ public class ReadyAimFire : BaseAction
         {
             ShootInDirection(aimDirection);
             transform.Find("CharacterModel").GetComponent<Animator>().SetBool("block", false);
+            transform.Find("VFX").GetComponent<VFXContainer>().AimArrow.GetComponent<Animator>().SetBool("aim", false);
             //GetComponent<PlayerInformation>().Blocker = false;
             aimDirection = -1;
         }
@@ -118,12 +119,24 @@ public class ReadyAimFire : BaseAction
             aimDirection = FindIndexOfTile(clickedTile);
             GameObject target = GetSpecificGroundTile(clickedTile, 0, 0, blockingLayer);
             transform.Find("CharacterModel").GetComponent<Animator>().SetBool("block", true);
-
+            StartCoroutine(ActivateAimArrow(0.45f));
+            
             //clickedTile.transform.Find("mapTile").Find("VFXImpactUpper").gameObject.GetComponent<Animator>().SetTrigger("green1");
             //
             //DealRandomDamageToTarget(target, minAttackDamage, maxAttackDamage);
             FinishAbility();
         }
+    }
+
+    IEnumerator ActivateAimArrow(float secs)
+    {
+        GameObject AimVFX = transform.Find("VFX").GetComponent<VFXContainer>().AimArrow;
+        AimVFX.SetActive(true);
+        yield return new WaitForSeconds(secs);
+        Animator AimAnimator = AimVFX.GetComponent<Animator>();
+        AimAnimator.SetBool("aim", true);
+        AimAnimator.SetFloat("Direction", aimDirection + 1);
+        AimAnimator.SetInteger("DirectionInt", aimDirection + 1);
     }
     public override void OnTileHover(GameObject tile)
     {
