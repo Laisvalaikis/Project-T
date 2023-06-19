@@ -634,7 +634,7 @@ public class GameInformation : MonoBehaviour
                     }
                 }
                 //Debug.Log(TimeSpent);
-                StartCoroutine(ExecuteAfterTime(0.5f + TimeSpent, () =>
+                StartCoroutine(ExecuteAfterTime(1f + TimeSpent, () =>
                 {
                     EndAITurn(false);
                 }));
