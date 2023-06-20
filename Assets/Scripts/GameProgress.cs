@@ -193,6 +193,7 @@ public class GameProgress : MonoBehaviour
     public void FakeUpdate()
     {
         UpdateMaxCharacterCount();
+
         if (SceneManager.GetActiveScene().name == "Town")
         {
             gameUi.UpdateTownCost();
@@ -513,11 +514,11 @@ public class GameProgress : MonoBehaviour
                     }
                 }
                 // cornerButtonManager.GenerateAbilitiesForEnemy(abilitiesToEnable);
-                Debug.LogError("Disabled Enemies Ability Generation");
-                Debug.Log("Cia Sukuria Enemies ir pateikia ju abilities");
+                //Debug.LogError("Disabled Enemies Ability Generation");
+                //Debug.Log("Cia Sukuria Enemies ir pateikia ju abilities");
             }
         }
-        print("saved characters set");
+        //print("saved characters set");
     }
     
     public static int currentMaxLevel()

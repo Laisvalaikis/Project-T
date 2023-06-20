@@ -12,6 +12,7 @@ public class SceneSelect : MonoBehaviour
     private int difficulty;
     private string color;
     [SerializeField] private Button buttonForCreation;
+    public AudioIndex audioIndex;
     //public TownData newGameData;
 
     void Start()
@@ -69,7 +70,7 @@ public class SceneSelect : MonoBehaviour
 
     public void SceneTransition(string sceneName)
     {
-        MusicManager.instance.NextLevelMusic();
+        audioIndex.ChangeLevelMusic();//indeksas scenoj town
         GameObject.Find("LoadingScreenCanvas").GetComponent<LoadingScreenController>().LoadScene(sceneName);
     }
 

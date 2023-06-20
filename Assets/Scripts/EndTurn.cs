@@ -88,14 +88,14 @@ public class EndTurn : MonoBehaviour
             GetComponent<Image>().sprite = highlightedSprite;
             transform.Find("Text").GetComponent<TextMeshProUGUI>().color = highlightedColor;
             highlighted = true;
-            Debug.Log("Change This");
+            //Debug.Log("Change This");
         }
         else
         {
             GetComponent<Image>().sprite = normalSprite;
             transform.Find("Text").GetComponent<TextMeshProUGUI>().color = normalColor;
             highlighted = false;
-            Debug.Log("Change This");
+            //Debug.Log("Change This");
         }
     }
 
@@ -106,13 +106,13 @@ public class EndTurn : MonoBehaviour
             DisplayEndTurnScreen();
             confirmState = false;
             transform.Find("Text").GetComponent<TextMeshProUGUI>().text = "END TURN";
-            Debug.Log("Reikia sutvarkyti cia");
+            //Debug.Log("Reikia sutvarkyti cia");
         }
         else
         {
             confirmState = true;
             transform.Find("Text").GetComponent<TextMeshProUGUI>().text = "CONFIRM";
-            Debug.Log("Reikia sutvarkyti cia");
+            //Debug.Log("Reikia sutvarkyti cia");
         }
     }
 
