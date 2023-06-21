@@ -29,8 +29,6 @@ U
 %Assets/_Eligijus/Scripts/UI/XPCard.cs,9\8\981c1800b466a6ca47906dc6e3615b088e99977b
 \
 ,Assets/Scripts/SenoTutorialo/MovingObject.cs,5\7\5705c0014b6dacedce956181b7c3614e451b6f15
-U
-%Assets/_Eligijus/Scripts/UI/GameUi.cs,6\b\6bcc4e1e9d6190b5610707c154cd7889fd887a9b
 V
 &Assets/Scripts/SenoTutorialo/Player.cs,d\2\d2652c4c9e1e89f15dd54b599aa39be8792e7237
 [
@@ -283,8 +281,6 @@ j
 :Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF.shader,a\c\ac9a096551f3174a941f28d0dd1945c6ec9b6fbf
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader,2\5\25e44d2c087988bec521d3373d269e07d2415b33
-J
-Assets/Scripts/SaveData.cs,e\2\e2fbf21b6239099984e990ac1a0d5dce5b3a54ce
 S
 #Assets/Scripts/XPProgressManager.cs,e\c\ec806fdccfa11da46f3e0125b26c51e7d827ff80
 Q
@@ -301,3 +297,17 @@ P
  Assets/Scripts/BottomCornerUI.cs,4\3\43090f608b6cd9eb71307fc06c14598f3e9b5e31
 ^
 .Assets/_Eligijus/Scripts/DontDestroyManager.cs,a\6\a69bd640b9575e844b58cff5385793d0489e9882
+^
+.Assets/_Eligijus/Scripts/CharacterSelection.cs,e\6\e65840d050213d3f964956c844d178041fc304cc
+W
+'Assets/Scripts/CSTeamPortraitManager.cs,0\c\0cd6196e63d9bef82772fb5d97443871cf903d9d
+Q
+!Assets/Scripts/CharacterSelect.cs,7\9\7929ce27a99248b3f30ecc4092c00bb76be5474a
+N
+Assets/Scripts/GameProgress.cs,3\f\3f0104371d0fd73130bbd864f804f9ae0e272336
+J
+Assets/Scripts/SaveData.cs,e\2\e2fbf21b6239099984e990ac1a0d5dce5b3a54ce
+?
+Assets/Reset.cs,9\c\9c698697772066c42e7c192cbff0b653a89f7c50
+U
+%Assets/_Eligijus/Scripts/UI/GameUi.cs,6\b\6bcc4e1e9d6190b5610707c154cd7889fd887a9b

@@ -12,7 +12,7 @@ public class GameUi : MonoBehaviour
     public TextMeshProUGUI difficulty;
     public Data _data;
     public GameObject abilityPointWarning;
-    public GameObject CharacterButtons;
+    public List<GameObject> CharacterButtons;
     public GameObject BuyRecruitsWarning;
     // Start is called before the first frame update
     void Start()
@@ -65,42 +65,47 @@ public class GameUi : MonoBehaviour
     {
         BuyRecruitsWarning.SetActive(_data.Characters.Count < 3);
     }
-
-        public void UpdateUnspentPointWarnings()
+    
+    public void UpdateUnspentPointWarnings()
     {
-        bool playerHasUnspentPoints = false;
-        int i=1;
-        List<SavedCharacter> charactersToUpdate;
-        if (_data.Characters != null)
-            charactersToUpdate = _data.Characters;
-        else
-            charactersToUpdate = _data.AllAvailableCharacters;
-        foreach(SavedCharacter character in charactersToUpdate)
-        {
-            GameObject child = CharacterButtons.transform.GetChild(i).gameObject;
-            GameObject abilityPointCorner = child.transform.GetChild(3).gameObject;
-            if(character.abilityPointCount>0)
-            {
-                playerHasUnspentPoints = true;
-                abilityPointWarning.SetActive(true);
-                if (abilityPointCorner != null)
-                {
-                    abilityPointCorner.gameObject.SetActive(true);
-                }
-            }
-            else
-            {
-                if (abilityPointCorner != null)
-                {
-                    abilityPointCorner.gameObject.SetActive(false);
-                }
-            }
-            i++;
-        }
-        if(!playerHasUnspentPoints)
-        {
-            abilityPointWarning.SetActive(false);
-        }
+        // bool playerHasUnspentPoints = false;
+        // int i=1;
+        // List<SavedCharacter> charactersToUpdate;
+        // if (_data.Characters != null)
+        //     charactersToUpdate = _data.Characters;
+        // else
+        //     charactersToUpdate = _data.AllAvailableCharacters;
+        // foreach(SavedCharacter character in charactersToUpdate)
+        // {
+        //     if (i < 4)
+        //     {
+        //         GameObject child = CharacterButtons[i];
+        //         GameObject abilityPointCorner = child.transform.GetChild(3).gameObject;
+        //         if (character.abilityPointCount > 0)
+        //         {
+        //             playerHasUnspentPoints = true;
+        //             abilityPointWarning.SetActive(true);
+        //             if (abilityPointCorner != null)
+        //             {
+        //                 abilityPointCorner.gameObject.SetActive(true);
+        //             }
+        //         }
+        //         else
+        //         {
+        //             if (abilityPointCorner != null)
+        //             {
+        //                 abilityPointCorner.gameObject.SetActive(false);
+        //             }
+        //         }
+        //
+        //         i++;
+        //     }
+        //     else break;
+        // }
+        // if(!playerHasUnspentPoints)
+        // {
+        //     abilityPointWarning.SetActive(false);
+        // }
     }
 
 }
