@@ -25,7 +25,7 @@ public class PlayerAttack : BaseAction
         if (canGridBeEnabled())
         {
             CreateGrid();
-            HighlightOuter();
+            HighlightAll();
         }
         else
         {

@@ -24,7 +24,7 @@ public class SceneSelect : MonoBehaviour
         }
         slotNameInput.onValidateInput += delegate (string input, int charIndex, char addedChar) { return CharacterTable.MyValidate(addedChar); };
         difficulty = -1;
-        color = "";
+        color = "Yellow";
         //if (!SaveSystem.DoesSaveFileExist() || SaveSystem.LoadTownData().newGame)
         //{
         //    Vector3 startPosition = GameObject.Find("CanvasCamera").transform.Find("NewGameContinue").transform.position;
