@@ -1,7 +1,5232 @@
 fileFormatVersion: 2
 guid: c5c82a441b2596743ab160d1aacf4d88
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: VFXImpact_Frame_0
+    originalName: 
+    pivot: {x: 0.4999999, y: -3.9130437}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 999
+      y: 72
+      width: 20
+      height: 23
+    spriteID: a368a5f879fecc74fb82f88041c36f0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 999, y: 72}
+  - name: VFXImpact_Frame_1
+    originalName: 
+    pivot: {x: 0.4482759, y: -2.3823528}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 901
+      width: 29
+      height: 34
+    spriteID: 24c59fc6cf5dc494a81bf7aca04900fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 357, y: 901}
+  - name: VFXImpact_Frame_2
+    originalName: 
+    pivot: {x: 0.46666664, y: -1.2033899}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 840
+      width: 60
+      height: 59
+    spriteID: 0e43b62ecc5d07d40b347bf7c84cc9cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 840}
+  - name: VFXImpact_Frame_3
+    originalName: 
+    pivot: {x: 0.46774194, y: -1.1475409}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 142
+      width: 62
+      height: 61
+    spriteID: fa3428a2e315fc74294a757bc7c1c1d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 142}
+  - name: VFXImpact_Frame_4
+    originalName: 
+    pivot: {x: 0.46875, y: -1.030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 431
+      width: 64
+      height: 66
+    spriteID: 8fa2926d46d4b2840bb362582d8133e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 431}
+  - name: VFXImpact_Frame_5
+    originalName: 
+    pivot: {x: 0.49295774, y: -0.8783784}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 71
+      height: 74
+    spriteID: e1adba2adaa06684992d5a8dd95d6ed1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: VFXImpact_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 296
+      width: 60
+      height: 60
+    spriteID: 7dce58b0f7cad2a469e2822a8843fbae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 296}
+  - name: VFXImpact_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 364
+      width: 60
+      height: 60
+    spriteID: 20eb8d37ef8b68f478384c769426bc5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 364}
+  - name: VFXImpact_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 432
+      width: 60
+      height: 60
+    spriteID: d5618f8286a45584e90cf9a46a1d9306
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 432}
+  - name: VFXImpact_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 500
+      width: 60
+      height: 60
+    spriteID: 9453a0442e71a974d9dd34c8ad012464
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 500}
+  - name: VFXImpact_Frame_12
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 884
+      y: 180
+      width: 50
+      height: 16
+    spriteID: 08dbf0202492f7e43a567882a4b6b776
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 884, y: 180}
+  - name: VFXImpact_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 180
+      width: 58
+      height: 17
+    spriteID: 85585def1e129d541b0afb9e09647bff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 180}
+  - name: VFXImpact_Frame_14
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 910
+      y: 153
+      width: 66
+      height: 17
+    spriteID: 757353ad40c58614090ca0a5efb2662f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 910, y: 153}
+  - name: VFXImpact_Frame_15
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.5789473}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 153
+      width: 66
+      height: 19
+    spriteID: 306a987f5c2442d4cbb2c05223a77f10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 153}
+  - name: VFXImpact_Frame_16
+    originalName: 
+    pivot: {x: 0.50000006, y: -3.7777777}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 694
+      y: 153
+      width: 64
+      height: 18
+    spriteID: bd9d4ed54a91da34cb5c00df7769536c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 694, y: 153}
+  - name: VFXImpact_Frame_17
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 1006
+      width: 64
+      height: 14
+    spriteID: d87f7a51d8d6a514fb75338071673f94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 1006}
+  - name: VFXImpact_Frame_18
+    originalName: 
+    pivot: {x: 1.3333328, y: -2.7674417}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 391
+      width: 3
+      height: 43
+    spriteID: 1a3f76d6efeffac419f3935fe72d433a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 391}
+  - name: VFXImpact_Frame_19
+    originalName: 
+    pivot: {x: 0.7272729, y: -10.545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 737
+      width: 11
+      height: 11
+    spriteID: c3a2c35c3a6184547b0aa01b11050e3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 737}
+  - name: VFXImpact_Frame_20
+    originalName: 
+    pivot: {x: 0.631579, y: -2.3023255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 756
+      width: 38
+      height: 43
+    spriteID: 191952094dddd1d4491f614deb87d745
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 756}
+  - name: VFXImpact_Frame_21
+    originalName: 
+    pivot: {x: 0.5813954, y: -2.0208333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 225
+      width: 43
+      height: 48
+    spriteID: a55b60608ddb54445afeae7a33d3c0b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 225}
+  - name: VFXImpact_Frame_22
+    originalName: 
+    pivot: {x: 0.5555556, y: -1.7222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 752
+      y: 4
+      width: 45
+      height: 54
+    spriteID: dac4f5b046ab3f846a8a56e01d8880a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 752, y: 4}
+  - name: VFXImpact_Frame_23
+    originalName: 
+    pivot: {x: 0.5999999, y: -4.5416665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 329
+      width: 25
+      height: 24
+    spriteID: ba05cf6017991d64e99d11850245d5e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 329}
+  - name: VFXImpact_Frame_25
+    originalName: 
+    pivot: {x: 0.5172413, y: -4.0869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 205
+      width: 29
+      height: 23
+    spriteID: efcdcc3538b22bd40b21be8c7e564a97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 205}
+  - name: VFXImpact_Frame_26
+    originalName: 
+    pivot: {x: 0.5172413, y: -4.0869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 236
+      width: 29
+      height: 23
+    spriteID: c61b9476dcb9ad840bd3d87b1babb49e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 236}
+  - name: VFXImpact_Frame_27
+    originalName: 
+    pivot: {x: 0.5172413, y: -4.0869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 267
+      width: 29
+      height: 23
+    spriteID: cd596606ef558ac44bd993927d281a86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 267}
+  - name: VFXImpact_Frame_28
+    originalName: 
+    pivot: {x: 0.5172413, y: -4.0869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 298
+      width: 29
+      height: 23
+    spriteID: 6744d3668e84dbc44b822dd8588c2b16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 298}
+  - name: VFXImpact_Frame_29
+    originalName: 
+    pivot: {x: 0.4999999, y: -3.6153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 135
+      width: 30
+      height: 26
+    spriteID: 014ac508184cded4a8a8ef6c4f31ffbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 135}
+  - name: VFXImpact_Frame_30
+    originalName: 
+    pivot: {x: 0.33333343, y: -4.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 361
+      width: 24
+      height: 22
+    spriteID: 9bde698719c238644ba111450543e7b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 361}
+  - name: VFXImpact_Frame_31
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 584
+      width: 64
+      height: 64
+    spriteID: 0711a07c6a5ca7444aa19f1879fae816
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 584}
+  - name: VFXImpact_Frame_32
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 656
+      width: 64
+      height: 64
+    spriteID: 5179bfdb7d886454894129ffd71c3428
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 656}
+  - name: VFXImpact_Frame_33
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 728
+      width: 64
+      height: 64
+    spriteID: a23add2d109eb91489ea7a315ee7d2c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 728}
+  - name: VFXImpact_Frame_34
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 800
+      width: 64
+      height: 64
+    spriteID: 8149fae339d9fb44b80b8226c32a5223
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 800}
+  - name: VFXImpact_Frame_35
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 872
+      width: 64
+      height: 64
+    spriteID: 6d5dee67b0422e94e9f02f0eac0281e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 872}
+  - name: VFXImpact_Frame_36
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 944
+      width: 64
+      height: 64
+    spriteID: c828edb8b9e9ed549acc5c19748656ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 944}
+  - name: VFXImpact_Frame_37
+    originalName: 
+    pivot: {x: -1.4000002, y: -8.692307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 943
+      width: 10
+      height: 13
+    spriteID: e2225d2d45c869b41a4954ac04e2a6e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 943}
+  - name: VFXImpact_Frame_38
+    originalName: 
+    pivot: {x: -1.0909091, y: -8.692307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 357
+      y: 943
+      width: 11
+      height: 13
+    spriteID: 90ba1f58d583c6541bbaea4ddc203e4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 357, y: 943}
+  - name: VFXImpact_Frame_39
+    originalName: 
+    pivot: {x: 0.55263156, y: -2.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 855
+      width: 38
+      height: 40
+    spriteID: de005e439053795428723a912ac35539
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 855}
+  - name: VFXImpact_Frame_40
+    originalName: 
+    pivot: {x: 1.5714285, y: -7.181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 553
+      y: 53
+      width: 14
+      height: 11
+    spriteID: 6612a67c2003bbd46987cbf45e7c538d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 553, y: 53}
+  - name: VFXImpact_Frame_41
+    originalName: 
+    pivot: {x: 1.8333333, y: -15.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 1015
+      width: 12
+      height: 5
+    spriteID: e2bac67f025bbf94789182310b048b25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 1015}
+  - name: VFXImpact_Frame_42
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.52}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 541
+      width: 38
+      height: 50
+    spriteID: aabadfb80d7e3e249b6e5ff24d321e24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 541}
+  - name: VFXImpact_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: -1.9512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 903
+      width: 36
+      height: 41
+    spriteID: 8026bc671985b1d4d8c357fb28ca28e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 903}
+  - name: VFXImpact_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: -7.416667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 546
+      y: 205
+      width: 36
+      height: 12
+    spriteID: 925f6e68084473044b77eede6b72df07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 546, y: 205}
+  - name: VFXImpact_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: -6.2857146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 205
+      width: 36
+      height: 14
+    spriteID: 20c2504a841e78f439d355787031f800
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 205}
+  - name: VFXImpact_Frame_46
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 942
+      y: 180
+      width: 50
+      height: 16
+    spriteID: f3dfc635c8cef5f44b011ee332cecf5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 942, y: 180}
+  - name: VFXImpact_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 608
+      y: 180
+      width: 58
+      height: 17
+    spriteID: e31e6cf662f4d9d42b0bd4384a7b41ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 608, y: 180}
+  - name: VFXImpact_Frame_48
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 180
+      width: 66
+      height: 17
+    spriteID: f0263fc669b11e442b22eafacf1ae6ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 180}
+  - name: VFXImpact_Frame_49
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.5789473}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 153
+      width: 66
+      height: 19
+    spriteID: 78b82b4e929b3294a967328e719c4c88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 153}
+  - name: VFXImpact_Frame_50
+    originalName: 
+    pivot: {x: 0.50000006, y: -3.7777777}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 766
+      y: 153
+      width: 64
+      height: 18
+    spriteID: 05535939cef078d48b1048a49ec211d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 766, y: 153}
+  - name: VFXImpact_Frame_51
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 740
+      y: 180
+      width: 64
+      height: 14
+    spriteID: 71d23b8d4d5aa684ab1fef94dcd5b856
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 740, y: 180}
+  - name: VFXImpact_Frame_52
+    originalName: 
+    pivot: {x: 0.54761904, y: -1.5892857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 908
+      y: 4
+      width: 42
+      height: 56
+    spriteID: 89c541b47c6a841449bb1958ece70c1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 908, y: 4}
+  - name: VFXImpact_Frame_53
+    originalName: 
+    pivot: {x: 0.54761904, y: -1.6363636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 72
+      width: 42
+      height: 55
+    spriteID: 6877d38f4de26d7419f1fc155f44d9f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 72}
+  - name: VFXImpact_Frame_54
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.6181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 805
+      y: 4
+      width: 44
+      height: 55
+    spriteID: b8df6bf07f2730d49831eb423e6108bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 805, y: 4}
+  - name: VFXImpact_Frame_55
+    originalName: 
+    pivot: {x: 0.5813954, y: -1.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 857
+      y: 4
+      width: 43
+      height: 55
+    spriteID: 6b81b50fd5192154eb8de4ea33330a08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 857, y: 4}
+  - name: VFXImpact_Frame_56
+    originalName: 
+    pivot: {x: 0.49999985, y: -1.2678572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 901
+      width: 18
+      height: 56
+    spriteID: 86ed3d844f400a54d9e8d4cac79977e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 901}
+  - name: VFXImpact_Frame_57
+    originalName: 
+    pivot: {x: 0.54166675, y: -1.6739131}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 117
+      width: 48
+      height: 46
+    spriteID: a0851c43419ae96469a688269d9b4220
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 117}
+  - name: VFXImpact_Frame_58
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 489
+      width: 44
+      height: 44
+    spriteID: b7a2d5ca0cbdfd846b59c61552af5a7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 489}
+  - name: VFXImpact_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: -1.652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 171
+      width: 46
+      height: 46
+    spriteID: 87a247e42a473e74abd32c3a2ae844ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 171}
+  - name: VFXImpact_Frame_60
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.48}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 694
+      y: 4
+      width: 50
+      height: 50
+    spriteID: 738825f7687beed4aa02b6e15fafebbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 694, y: 4}
+  - name: VFXImpact_Frame_61
+    originalName: 
+    pivot: {x: 0.4905661, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 444
+      y: 4
+      width: 53
+      height: 54
+    spriteID: 94f8182b57a228244ba6143005b8c43e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 444, y: 4}
+  - name: VFXImpact_Frame_62
+    originalName: 
+    pivot: {x: 0.48214284, y: -1.1694915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 4
+      width: 56
+      height: 59
+    spriteID: 1b9c5aa5329e3e848b3ff011884c71f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 306, y: 4}
+  - name: VFXImpact_Frame_63
+    originalName: 
+    pivot: {x: 0.55263156, y: -2.413793}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 822
+      width: 38
+      height: 29
+    spriteID: 1bd7a1a31e527eb4fa5401ee52f9662c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 822}
+  - name: VFXImpact_Frame_64
+    originalName: 
+    pivot: {x: 0.48979592, y: -2.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 369
+      width: 49
+      height: 32
+    spriteID: 9b704862f93ad474b93fd2cdfab70921
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 369}
+  - name: VFXImpact_Frame_65
+    originalName: 
+    pivot: {x: 0.50000006, y: -2.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 448
+      width: 50
+      height: 30
+    spriteID: 9eef45c0f57495846a3bd01e5b2176dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 448}
+  - name: VFXImpact_Frame_66
+    originalName: 
+    pivot: {x: 0.4905661, y: -2.4333332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 331
+      width: 53
+      height: 30
+    spriteID: 95669ec0464fe3e49a1a867c9769f364
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 331}
+  - name: VFXImpact_Frame_67
+    originalName: 
+    pivot: {x: 0.48214284, y: -2.8148148}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 458
+      y: 117
+      width: 56
+      height: 27
+    spriteID: 1baacc483d3fd6c4f906cfd71a3dda10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 458, y: 117}
+  - name: VFXImpact_Frame_68
+    originalName: 
+    pivot: {x: 1.9090908, y: -4.0357146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 668
+      width: 11
+      height: 28
+    spriteID: 8af4f42149df43f41918c0a20247ed7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 668}
+  - name: VFXImpact_Frame_69
+    originalName: 
+    pivot: {x: 0.8399999, y: -3.607143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 169
+      width: 25
+      height: 28
+    spriteID: 13b5eabba70a1454589ed99c228fdfcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 169}
+  - name: VFXImpact_Frame_70
+    originalName: 
+    pivot: {x: 0.5333335, y: -1.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 965
+      width: 15
+      height: 42
+    spriteID: fc1daa40e7c63e84aada450032aec95d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 965}
+  - name: VFXImpact_Frame_71
+    originalName: 
+    pivot: {x: 0.38888896, y: -5.3846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1000
+      y: 180
+      width: 18
+      height: 13
+    spriteID: 9c0692353b3ae6b48b0e94fdfc517639
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1000, y: 180}
+  - name: VFXImpact_Frame_72
+    originalName: 
+    pivot: {x: 0.5348837, y: -2.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 526
+      width: 43
+      height: 31
+    spriteID: 237d71a114562794594c7f0f0b49d6c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 526}
+  - name: VFXImpact_Frame_73
+    originalName: 
+    pivot: {x: 0.4901961, y: -2.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 291
+      width: 51
+      height: 32
+    spriteID: 9db5dd3330550c84ab21eea20080acea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 291}
+  - name: VFXImpact_Frame_74
+    originalName: 
+    pivot: {x: 0.50000006, y: -2.3225808}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 409
+      width: 50
+      height: 31
+    spriteID: 520e7037f32d3864485771427682610a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 409}
+  - name: VFXImpact_Frame_75
+    originalName: 
+    pivot: {x: 0.4905661, y: -2.3548386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 252
+      width: 53
+      height: 31
+    spriteID: 3ac6ab63a2c1d2f4281075087abf6206
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 252}
+  - name: VFXImpact_Frame_76
+    originalName: 
+    pivot: {x: 0.48214284, y: -2.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 117
+      width: 56
+      height: 28
+    spriteID: dedf00917a10fcb4a80fe8e73effe83a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 117}
+  - name: VFXImpact_Frame_77
+    originalName: 
+    pivot: {x: 0.5238095, y: -32.333332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 61
+      width: 63
+      height: 3
+    spriteID: 35e3323f1c61c0846952d8f0518feeae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 61}
+  - name: VFXImpact_Frame_78
+    originalName: 
+    pivot: {x: 0.5084746, y: -16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 958
+      y: 57
+      width: 59
+      height: 6
+    spriteID: b8e0d91d922b8d94da7bdc177631d129
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 958, y: 57}
+  - name: VFXImpact_Frame_79
+    originalName: 
+    pivot: {x: 0.52000004, y: -19.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 58
+      width: 50
+      height: 5
+    spriteID: c92cb3323d73b4144b2030fdd12ee30a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 58}
+  - name: VFXImpact_Frame_80
+    originalName: 
+    pivot: {x: 0.56666666, y: -4.0454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 998
+      width: 30
+      height: 22
+    spriteID: 104a87a4cbc717b42a4b16aab2598671
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 998}
+  - name: VFXImpact_Frame_81
+    originalName: 
+    pivot: {x: 0.42857105, y: -3.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 329
+      width: 7
+      height: 24
+    spriteID: 53deecaa74536724a85673e0f2fe142e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 329}
+  - name: VFXImpact_Frame_82
+    originalName: 
+    pivot: {x: 0, y: -3.0714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 756
+      width: 1
+      height: 28
+    spriteID: 0df8b2a8e4f2bb94290b170201968ba0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 756}
+  - name: VFXImpact_Frame_83
+    originalName: 
+    pivot: {x: -1.0909091, y: -23.399998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 1005
+      width: 11
+      height: 5
+    spriteID: 4db4f57c1eeacb048a03d4b70e79885a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 1005}
+  - name: VFXImpact_Frame_84
+    originalName: 
+    pivot: {x: 0.49999997, y: -2.3611112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 668
+      width: 34
+      height: 36
+    spriteID: 4d25e3a042fe79e42b00b6e58021e1e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 668}
+  - name: VFXImpact_Frame_85
+    originalName: 
+    pivot: {x: 1.7272729, y: -4.705882}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 712
+      width: 11
+      height: 17
+    spriteID: af75e37e4d1a0c64987c4a4874e36fcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 712}
+  - name: VFXImpact_Frame_86
+    originalName: 
+    pivot: {x: 3.8000002, y: -19.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 442
+      width: 5
+      height: 4
+    spriteID: 75bf8174da5af224a8ac82c2be5d92ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 442}
+  - name: VFXImpact_Frame_87
+    originalName: 
+    pivot: {x: 2.090909, y: -23.399998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 350
+      y: 1005
+      width: 11
+      height: 5
+    spriteID: 30a3ee843a2dbec46a8d23771a3aa84c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 350, y: 1005}
+  - name: VFXImpact_Frame_88
+    originalName: 
+    pivot: {x: 0.49999997, y: -2.3611112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 712
+      width: 34
+      height: 36
+    spriteID: 6c52f324286c0f547abd14b3d0aefa19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 712}
+  - name: VFXImpact_Frame_89
+    originalName: 
+    pivot: {x: -0.7272724, y: -4.705882}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 460
+      width: 11
+      height: 17
+    spriteID: 451b1791e64d81e409050d20ec0795e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 460}
+  - name: VFXImpact_Frame_90
+    originalName: 
+    pivot: {x: -2.8000004, y: -19.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 1016
+      width: 5
+      height: 4
+    spriteID: d1059daacc91f904a8cf0aba9796dc3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 1016}
+  - name: VFXImpact_Frame_97
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 590
+      y: 205
+      width: 26
+      height: 16
+    spriteID: 72631d289e5730740b7cac113b63d583
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 590, y: 205}
+  - name: VFXImpact_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: -2.5925927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 598
+      width: 46
+      height: 27
+    spriteID: 321b18cd01fbccc498d695725691c4db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 598}
+  - name: VFXImpact_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: -2.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 972
+      y: 117
+      width: 48
+      height: 27
+    spriteID: 37f6b5925b643e2479e3984c6e7707ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 972, y: 117}
+  - name: VFXImpact_Frame_100
+    originalName: 
+    pivot: {x: 0.48076925, y: -2.7037036}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 779
+      y: 117
+      width: 52
+      height: 27
+    spriteID: d3966ff4eb319884c8d975aa81f52841
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 779, y: 117}
+  - name: VFXImpact_Frame_101
+    originalName: 
+    pivot: {x: 0.48214284, y: -2.9230769}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 654
+      y: 117
+      width: 56
+      height: 26
+    spriteID: 4ef637a6098590a42b606aaacead5e7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 654, y: 117}
+  - name: VFXImpact_Frame_102
+    originalName: 
+    pivot: {x: 0.50000006, y: -2.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 565
+      width: 50
+      height: 25
+    spriteID: 572d3a5b0f35c2941b516e373041d490
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 565}
+  - name: VFXImpact_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: -0.9577464}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 505
+      width: 58
+      height: 71
+    spriteID: d1d387ffb850d9947b7bb31360ef1bc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 505}
+  - name: VFXImpact_Frame_104
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.8947368}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 347
+      width: 66
+      height: 76
+    spriteID: 4be809ed1ccd93e45a940397a3d25787
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 347}
+  - name: VFXImpact_Frame_105
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.8717948}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 86
+      width: 66
+      height: 78
+    spriteID: 04ce0f3dc170fee4c82bc2b86bf2e898
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 86}
+  - name: VFXImpact_Frame_106
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.86075944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 260
+      width: 64
+      height: 79
+    spriteID: c09870048acea994f8283405f17e21b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 260}
+  - name: VFXImpact_Frame_107
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.84999996}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 64
+      height: 80
+    spriteID: 4ccb69353458d5e49afbb05f5781a990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: VFXImpact_Frame_108
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 792
+      width: 54
+      height: 22
+    spriteID: ff6dee27879f6934baa7ab7c51ca89fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 792}
+  - name: VFXImpact_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: -2.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 586
+      y: 117
+      width: 60
+      height: 25
+    spriteID: 293dce17b285a1e419a003c24671b193
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 586, y: 117}
+  - name: VFXImpact_Frame_110
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.942857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 72
+      width: 62
+      height: 35
+    spriteID: b1b73ce599f17604e918fe32001e5333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 72}
+  - name: VFXImpact_Frame_111
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.387755}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 4
+      width: 66
+      height: 49
+    spriteID: d4f9ad1286e7b7842aadad7c7370e058
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 4}
+  - name: VFXImpact_Frame_112
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1724137}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 4
+      width: 68
+      height: 58
+    spriteID: 3e8dfdf07c621bd4c9905ec92f574799
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 4}
+  - name: VFXImpact_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: -1.1333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 4
+      width: 72
+      height: 60
+    spriteID: 8b95676afb981814991c1e9b06296ba9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 4}
+  - name: VFXImpact_Frame_114
+    originalName: 
+    pivot: {x: 0.50000006, y: -30.999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1016
+      width: 40
+      height: 4
+    spriteID: 24ca5d2ca854bb54fa5ae99b541332c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1016}
+  - name: VFXImpact_Frame_115
+    originalName: 
+    pivot: {x: 0.50000006, y: -31.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 659
+      y: 105
+      width: 40
+      height: 4
+    spriteID: f8cbd64770e379445a0067c668478529
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 659, y: 105}
+  - name: VFXImpact_Frame_122
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 72
+      width: 64
+      height: 64
+    spriteID: 326cda180115da14dab99b51770ef84f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 72}
+  - name: VFXImpact_Frame_123
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 144
+      width: 64
+      height: 64
+    spriteID: 9545875bf9461994cb5babaaa7c2b53f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 144}
+  - name: VFXImpact_Frame_124
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 216
+      width: 64
+      height: 64
+    spriteID: 5b8b46c6b6ddbd44091e8a4eaa979f6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 216}
+  - name: VFXImpact_Frame_125
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 288
+      width: 64
+      height: 64
+    spriteID: e149aadd49e84a147b27a5728cb6bb5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 288}
+  - name: VFXImpact_Frame_126
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 360
+      width: 64
+      height: 64
+    spriteID: fc53b3b97ab425f4a95ed31017bb8b22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 360}
+  - name: VFXImpact_Frame_127
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 432
+      width: 64
+      height: 64
+    spriteID: 560052752a8d2e045b1a58fdc52ab67e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 432}
+  - name: VFXImpact_Frame_128
+    originalName: 
+    pivot: {x: 0.9999995, y: -25.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 1016
+      width: 4
+      height: 4
+    spriteID: 99afc1ade676d3d4ab9758e0a6896cc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 1016}
+  - name: VFXImpact_Frame_129
+    originalName: 
+    pivot: {x: 0.5909091, y: -6.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 658
+      y: 205
+      width: 22
+      height: 16
+    spriteID: 45a516b7e174d724486d4159a74bdc1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 658, y: 205}
+  - name: VFXImpact_Frame_135
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 504
+      width: 64
+      height: 64
+    spriteID: b7026da646c4e2c40b659e5631d8b5cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 504}
+  - name: VFXImpact_Frame_136
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 576
+      width: 64
+      height: 64
+    spriteID: 5b5922bc96ec47446a68bcab08ceaf41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 576}
+  - name: VFXImpact_Frame_137
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 648
+      width: 64
+      height: 64
+    spriteID: d72ad02e09df6d7428bf9ec3b8e5e402
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 648}
+  - name: VFXImpact_Frame_138
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 720
+      width: 64
+      height: 64
+    spriteID: 125f5cd35f02d2b4d83c5ed695e8deac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 720}
+  - name: VFXImpact_Frame_139
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 792
+      width: 64
+      height: 64
+    spriteID: 48a57c5dc230ea94d86af70310eae132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 792}
+  - name: VFXImpact_Frame_140
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.046875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 864
+      width: 64
+      height: 64
+    spriteID: 73a39bf8a79aa3346acaefa59845b971
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 864}
+  - name: VFXImpact_Frame_141
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 624
+      y: 205
+      width: 26
+      height: 16
+    spriteID: ddd0e9c26e3bed54085331d894224417
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 624, y: 205}
+  - name: VFXImpact_Frame_142
+    originalName: 
+    pivot: {x: 0.5, y: -2.5925927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 633
+      width: 46
+      height: 27
+    spriteID: d51bfde23446998448d664a5e09aeb08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 633}
+  - name: VFXImpact_Frame_143
+    originalName: 
+    pivot: {x: 0.50000006, y: -2.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 117
+      width: 50
+      height: 27
+    spriteID: bb865325815a8184792b3e86640f0704
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 839, y: 117}
+  - name: VFXImpact_Frame_144
+    originalName: 
+    pivot: {x: 0.4905661, y: -2.7037036}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 718
+      y: 117
+      width: 53
+      height: 27
+    spriteID: 676c6ba01b4f3eb438508c5e7565db11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 718, y: 117}
+  - name: VFXImpact_Frame_145
+    originalName: 
+    pivot: {x: 0.48214284, y: -2.8148148}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 522
+      y: 117
+      width: 56
+      height: 27
+    spriteID: d39ee00232ea60a4ea63e56cbaab40b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 522, y: 117}
+  - name: VFXImpact_Frame_146
+    originalName: 
+    pivot: {x: 0.54545456, y: -2.142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 873
+      y: 72
+      width: 55
+      height: 35
+    spriteID: ae9cdc10692274843ae37b5612cfc3aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 873, y: 72}
+  - name: VFXImpact_Frame_147
+    originalName: 
+    pivot: {x: 0.55357146, y: -1.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 576
+      y: 4
+      width: 56
+      height: 46
+    spriteID: b85765819d6b5f447aa05b63e77542fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 576, y: 4}
+  - name: VFXImpact_Frame_148
+    originalName: 
+    pivot: {x: 0.55357146, y: -1.4090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 975
+      width: 56
+      height: 44
+    spriteID: 9c1475eaedf7af543923cd93ef606225
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 975}
+  - name: VFXImpact_Frame_149
+    originalName: 
+    pivot: {x: 0.5192307, y: -1.3777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 958
+      y: 4
+      width: 52
+      height: 45
+    spriteID: 65ccbb6be2f617b4db39bf1c5e729719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 958, y: 4}
+  - name: VFXImpact_Frame_150
+    originalName: 
+    pivot: {x: 0.5192307, y: -2.0571427}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 164
+      width: 52
+      height: 35
+    spriteID: 0ef50e2c9cec43a4e912330a7169c85f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 164}
+  - name: VFXImpact_Frame_151
+    originalName: 
+    pivot: {x: -0.39999962, y: -20.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 999
+      y: 103
+      width: 15
+      height: 4
+    spriteID: b21022b13db0d8b4987a80fae088e404
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 999, y: 103}
+  - name: VFXImpact_Frame_152
+    originalName: 
+    pivot: {x: 0.49999997, y: -39.333332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 572
+      y: 106
+      width: 42
+      height: 3
+    spriteID: 9f97fd9bd5e06694e9eb5a57eb87dfe1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 572, y: 106}
+  - name: VFXImpact_Frame_153
+    originalName: 
+    pivot: {x: 0.4999999, y: -2.5294116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 859
+      width: 30
+      height: 34
+    spriteID: 782cf72a31a96ea408df7e8bb6cf0c80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 859}
+  - name: VFXImpact_Frame_154
+    originalName: 
+    pivot: {x: 0.49999997, y: -5.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 984
+      y: 153
+      width: 34
+      height: 15
+    spriteID: 738b042ac89b1584ea8eb240092a6b2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 984, y: 153}
+  - name: VFXImpact_Frame_155
+    originalName: 
+    pivot: {x: 0.49999997, y: -39.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 694
+      y: 62
+      width: 34
+      height: 2
+    spriteID: fb48a9cc1d01b7544a19cdf950de3436
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 694, y: 62}
+  - name: VFXImpact_Frame_156
+    originalName: 
+    pivot: {x: 0.47916666, y: -0.88311684}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 211
+      width: 48
+      height: 77
+    spriteID: bbfece1dba6d0504794ccb88dbe8ab4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 211}
+  - name: VFXImpact_Frame_157
+    originalName: 
+    pivot: {x: 0.5, y: -1.8378377}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 72
+      width: 60
+      height: 37
+    spriteID: 9cf9cbbda7760ad4d8f5631254cf8fe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 72}
+  - name: VFXImpact_Frame_158
+    originalName: 
+    pivot: {x: 0.44155842, y: -2.5185184}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 487
+      y: 72
+      width: 77
+      height: 27
+    spriteID: b0cc9e99bb21c354ea4417d1ee635058
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 487, y: 72}
+  - name: VFXImpact_Frame_159
+    originalName: 
+    pivot: {x: 0.44303796, y: -2.6153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 572
+      y: 72
+      width: 79
+      height: 26
+    spriteID: 23e9ee55dd4230140bbc3c10f91725fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 572, y: 72}
+  - name: VFXImpact_Frame_160
+    originalName: 
+    pivot: {x: 0.44444445, y: -2.72}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 659
+      y: 72
+      width: 81
+      height: 25
+    spriteID: d7d4b3ec1be36d2439607b1e8525b640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 659, y: 72}
+  - name: VFXImpact_Frame_161
+    originalName: 
+    pivot: {x: 0.42857143, y: -4.1764708}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 616
+      y: 153
+      width: 70
+      height: 17
+    spriteID: fcab5cfdadcce424ca6415c3198b0019
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 616, y: 153}
+  - name: VFXImpact_Frame_162
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 205
+      width: 50
+      height: 16
+    spriteID: 9c2655825e2bbf24d8dd90a29390aeab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 205}
+  - name: VFXImpact_Frame_163
+    originalName: 
+    pivot: {x: 0.5, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 674
+      y: 180
+      width: 58
+      height: 17
+    spriteID: dbfac58117597af44a3925f406e667dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 674, y: 180}
+  - name: VFXImpact_Frame_164
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.9999998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 180
+      width: 66
+      height: 17
+    spriteID: dd7c406dfc9eff44bb48aa6c91e85507
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 180}
+  - name: VFXImpact_Frame_165
+    originalName: 
+    pivot: {x: 0.49999997, y: -3.5789473}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 153
+      width: 66
+      height: 19
+    spriteID: 349d7657e27b50c498e79584b0397767
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 153}
+  - name: VFXImpact_Frame_166
+    originalName: 
+    pivot: {x: 0.50000006, y: -3.7777777}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 153
+      width: 64
+      height: 18
+    spriteID: b77cca0087bd3d94aa868788d5ff4e56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 838, y: 153}
+  - name: VFXImpact_Frame_167
+    originalName: 
+    pivot: {x: 0.50000006, y: -4.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 812
+      y: 180
+      width: 64
+      height: 14
+    spriteID: 9103ddfe184d78944bfed36ce22d224f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 812, y: 180}
+  - name: VFXImpact_Frame_168
+    originalName: 
+    pivot: {x: 0.8571429, y: -1.2786885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 391
+      width: 7
+      height: 61
+    spriteID: 23936a75065a3e642848fbabcffed368
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 391}
+  - name: VFXImpact_Frame_169
+    originalName: 
+    pivot: {x: 0.76923066, y: -2.9199998}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 369
+      y: 859
+      width: 13
+      height: 25
+    spriteID: 1456deef856332148bcfea56b2c5503e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 369, y: 859}
+  - name: VFXImpact_Frame_170
+    originalName: 
+    pivot: {x: 0.5510204, y: -1.8378377}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 207
+      width: 49
+      height: 37
+    spriteID: 6ac40435360f858449eb42b276aae3bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 207}
+  - name: VFXImpact_Frame_171
+    originalName: 
+    pivot: {x: 0.5471698, y: -1.8378377}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 748
+      y: 72
+      width: 53
+      height: 37
+    spriteID: ec4f447b36ca22a4595fa86f9897de37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 748, y: 72}
+  - name: VFXImpact_Frame_172
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.7435896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 117
+      width: 55
+      height: 39
+    spriteID: c4eefa1ee9d6bc747a27918f2f6c509a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 117}
+  - name: VFXImpact_Frame_173
+    originalName: 
+    pivot: {x: 0.5999999, y: -44}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 622
+      y: 106
+      width: 25
+      height: 2
+    spriteID: dd229fc9ee3d5734383550187fd5bad8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 622, y: 106}
+  - name: VFXImpact_Frame_174
+    originalName: 
+    pivot: {x: 0.5, y: -1.309091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 640
+      y: 4
+      width: 46
+      height: 55
+    spriteID: 3e7f5ed93af2575439889c9b605c7e44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 640, y: 4}
+  - name: VFXImpact_Frame_175
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.52}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 599
+      width: 38
+      height: 50
+    spriteID: dae89ac9066edcd4bb2c93e2804a67a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 599}
+  - name: VFXImpact_Frame_176
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.9512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 707
+      width: 42
+      height: 41
+    spriteID: 00b82c0a1db0cbe43b34868f74e5dc2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 707}
+  - name: VFXImpact_Frame_177
+    originalName: 
+    pivot: {x: 0.50000006, y: -9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 53
+      width: 40
+      height: 10
+    spriteID: 52589c48c5f49d242b91945dbfcbcf63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 505, y: 53}
+  - name: VFXImpact_Frame_178
+    originalName: 
+    pivot: {x: 0.49999997, y: -5.7999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 452
+      y: 205
+      width: 42
+      height: 15
+    spriteID: c7dfd700b6f649c4dab270dfc4131042
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 452, y: 205}
+  - name: VFXImpact_Frame_179
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.8571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 657
+      width: 42
+      height: 42
+    spriteID: 107052dfc028bbe4b9f6795537b0d522
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 657}
+  - name: VFXImpact_Frame_180
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.9749999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 807
+      width: 40
+      height: 40
+    spriteID: 681f069f1846903439ae21d04416896b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 807}
+  - name: VFXImpact_Frame_181
+    originalName: 
+    pivot: {x: 0.50000006, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 952
+      width: 38
+      height: 38
+    spriteID: 37ff0060e51b5c64fb81ad8b3ddb2144
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 952}
+  - name: VFXImpact_Frame_183
+    originalName: 
+    pivot: {x: 0.53731346, y: -3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 897
+      y: 117
+      width: 67
+      height: 20
+    spriteID: 591c01bd7dd4ce640a1882f5d2b1b702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 897, y: 117}
+  - name: VFXImpact_Frame_6
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 936
+      width: 62
+      height: 62
+    spriteID: 8a6595de2dd361b4d82e02137676377e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 83, y: 936}
+  - name: VFXImpact_Frame_11
+    originalName: 
+    pivot: {x: 0.5084746, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 907
+      width: 59
+      height: 60
+    spriteID: ff7caf7d7f9671d429d20aa21a9458a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 907}
+  - name: VFXImpact_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 568
+      width: 60
+      height: 60
+    spriteID: 3f79b4109ebbf814f9744c9c9e2b3cdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 568}
+  - name: VFXImpact_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 636
+      width: 60
+      height: 60
+    spriteID: c68f41a701a2cd247a05430d01084605
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 636}
+  - name: VFXImpact_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 704
+      width: 60
+      height: 60
+    spriteID: fecd75ec16c2dfc4aa546b07f9f4e05b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 704}
+  - name: VFXImpact_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 772
+      width: 60
+      height: 60
+    spriteID: bfe950bc7aed25246aec61c53a5a5aef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 772}
+  - name: VFXImpact_Frame_130
+    originalName: 
+    pivot: {x: 0.5581395, y: -3.1785715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 756
+      width: 43
+      height: 28
+    spriteID: 88de015738bf4c54faf1f94a058750be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 756}
+  - name: VFXImpact_Frame_131
+    originalName: 
+    pivot: {x: 0.54545456, y: -2.4285712}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 936
+      y: 72
+      width: 55
+      height: 35
+    spriteID: dc8f58b4e3ae3a344a67e26f72cc1e1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 936, y: 72}
+  - name: VFXImpact_Frame_132
+    originalName: 
+    pivot: {x: 0.55357146, y: -2.4285712}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 809
+      y: 72
+      width: 56
+      height: 35
+    spriteID: fb20624b6af46f046a5ad1e0cdd4bcf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 809, y: 72}
+  - name: VFXImpact_Frame_133
+    originalName: 
+    pivot: {x: 0.5238095, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 4
+      width: 63
+      height: 41
+    spriteID: 0a000731d41a8b0489a7b038b5e43cee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 505, y: 4}
+  - name: VFXImpact_Frame_134
+    originalName: 
+    pivot: {x: 0.5151515, y: -2.84375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 413
+      y: 72
+      width: 66
+      height: 32
+    spriteID: 2d7c34be82db92348a02a114c7d23772
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 413, y: 72}
+  - name: VFXImpact_Frame_91
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 72
+      width: 62
+      height: 62
+    spriteID: 7fd2b65c3c6950e4fa1ffbf1d6cf2be0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 72}
+  - name: VFXImpact_Frame_96
+    originalName: 
+    pivot: {x: 0.5084746, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 4
+      width: 59
+      height: 60
+    spriteID: 0777c639f7b3fe240a677867699bc101
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 4}
+  - name: VFXImpact_Frame_116
+    originalName: 
+    pivot: {x: 0.48888886, y: -1.7272727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 281
+      width: 45
+      height: 44
+    spriteID: f9ad555f23ef6034ca75b594852344b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 281}
+  - name: VFXImpact_Frame_117
+    originalName: 
+    pivot: {x: 0.48888886, y: -1.7272727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 333
+      width: 45
+      height: 44
+    spriteID: 7030ecd7dc46dbd46a33a3464a69a6cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 333}
+  - name: VFXImpact_Frame_118
+    originalName: 
+    pivot: {x: 0.48888886, y: -1.7272727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 385
+      width: 45
+      height: 44
+    spriteID: 4a7800ab60a3c8b4689d0cb8e7664f34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 385}
+  - name: VFXImpact_Frame_119
+    originalName: 
+    pivot: {x: 0.48888886, y: -1.7272727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 437
+      width: 45
+      height: 44
+    spriteID: 9e4c98ab3851fd848885b986dfb647eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 437}
+  - name: VFXImpact_Frame_120
+    originalName: 
+    pivot: {x: 0.4772727, y: -2.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 486
+      width: 44
+      height: 32
+    spriteID: 960bc73177f4aed40947c068b9ad2168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 486}
+  - name: VFXImpact_Frame_121
+    originalName: 
+    pivot: {x: 0.2580646, y: -2.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 965
+      width: 31
+      height: 32
+    spriteID: 2e0ab4f1516b4fe4da9437b54f7e76a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 965}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1190778768
+    name: VFXImpact
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: VFXImpact_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 89
+        y: 90
+        width: 20
+        height: 23
+      spriteId: a368a5f879fecc74fb82f88041c36f0d
+    - name: VFXImpact_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 86
+        y: 81
+        width: 29
+        height: 34
+      spriteId: 24c59fc6cf5dc494a81bf7aca04900fd
+    - name: VFXImpact_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 71
+        y: 71
+        width: 60
+        height: 59
+      spriteId: 0e43b62ecc5d07d40b347bf7c84cc9cb
+    - name: VFXImpact_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 70
+        y: 70
+        width: 62
+        height: 61
+      spriteId: fa3428a2e315fc74294a757bc7c1c1d2
+    - name: VFXImpact_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 69
+        y: 68
+        width: 64
+        height: 66
+      spriteId: 8fa2926d46d4b2840bb362582d8133e7
+    - name: VFXImpact_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 64
+        y: 65
+        width: 71
+        height: 74
+      spriteId: e1adba2adaa06684992d5a8dd95d6ed1
+    - name: VFXImpact_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: 7dce58b0f7cad2a469e2822a8843fbae
+    - name: VFXImpact_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: 20eb8d37ef8b68f478384c769426bc5a
+    - name: VFXImpact_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: d5618f8286a45584e90cf9a46a1d9306
+    - name: VFXImpact_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: 9453a0442e71a974d9dd34c8ad012464
+    - name: VFXImpact_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 74
+        y: 68
+        width: 50
+        height: 16
+      spriteId: 08dbf0202492f7e43a567882a4b6b776
+    - name: VFXImpact_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 70
+        y: 68
+        width: 58
+        height: 17
+      spriteId: 85585def1e129d541b0afb9e09647bff
+    - name: VFXImpact_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 17
+      spriteId: 757353ad40c58614090ca0a5efb2662f
+    - name: VFXImpact_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 19
+      spriteId: 306a987f5c2442d4cbb2c05223a77f10
+    - name: VFXImpact_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 18
+      spriteId: bd9d4ed54a91da34cb5c00df7769536c
+    - name: VFXImpact_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 14
+      spriteId: d87f7a51d8d6a514fb75338071673f94
+    - name: VFXImpact_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 95
+        y: 119
+        width: 3
+        height: 43
+      spriteId: 1a3f76d6efeffac419f3935fe72d433a
+    - name: VFXImpact_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 91
+        y: 116
+        width: 11
+        height: 11
+      spriteId: c3a2c35c3a6184547b0aa01b11050e3c
+    - name: VFXImpact_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 75
+        y: 99
+        width: 38
+        height: 43
+      spriteId: 191952094dddd1d4491f614deb87d745
+    - name: VFXImpact_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 74
+        y: 97
+        width: 43
+        height: 48
+      spriteId: a55b60608ddb54445afeae7a33d3c0b7
+    - name: VFXImpact_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 74
+        y: 93
+        width: 45
+        height: 54
+      spriteId: dac4f5b046ab3f846a8a56e01d8880a7
+    - name: VFXImpact_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 84
+        y: 109
+        width: 25
+        height: 24
+      spriteId: ba05cf6017991d64e99d11850245d5e3
+    - name: VFXImpact_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 84
+        y: 94
+        width: 29
+        height: 23
+      spriteId: efcdcc3538b22bd40b21be8c7e564a97
+    - name: VFXImpact_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 84
+        y: 94
+        width: 29
+        height: 23
+      spriteId: c61b9476dcb9ad840bd3d87b1babb49e
+    - name: VFXImpact_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 84
+        y: 94
+        width: 29
+        height: 23
+      spriteId: cd596606ef558ac44bd993927d281a86
+    - name: VFXImpact_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 84
+        y: 94
+        width: 29
+        height: 23
+      spriteId: 6744d3668e84dbc44b822dd8588c2b16
+    - name: VFXImpact_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 84
+        y: 94
+        width: 30
+        height: 26
+      spriteId: 014ac508184cded4a8a8ef6c4f31ffbf
+    - name: VFXImpact_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 91
+        y: 99
+        width: 24
+        height: 22
+      spriteId: 9bde698719c238644ba111450543e7b8
+    - name: VFXImpact_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 0711a07c6a5ca7444aa19f1879fae816
+    - name: VFXImpact_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 5179bfdb7d886454894129ffd71c3428
+    - name: VFXImpact_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: a23add2d109eb91489ea7a315ee7d2c7
+    - name: VFXImpact_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 8149fae339d9fb44b80b8226c32a5223
+    - name: VFXImpact_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 6d5dee67b0422e94e9f02f0eac0281e0
+    - name: VFXImpact_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: c828edb8b9e9ed549acc5c19748656ad
+    - name: VFXImpact_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 113
+        y: 113
+        width: 10
+        height: 13
+      spriteId: e2225d2d45c869b41a4954ac04e2a6e0
+    - name: VFXImpact_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 111
+        y: 113
+        width: 11
+        height: 13
+      spriteId: 90ba1f58d583c6541bbaea4ddc203e4b
+    - name: VFXImpact_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 78
+        y: 84
+        width: 38
+        height: 40
+      spriteId: de005e439053795428723a912ac35539
+    - name: VFXImpact_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 77
+        y: 79
+        width: 14
+        height: 11
+      spriteId: 6612a67c2003bbd46987cbf45e7c538d
+    - name: VFXImpact_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 77
+        y: 77
+        width: 12
+        height: 5
+      spriteId: e2bac67f025bbf94789182310b048b25
+    - name: VFXImpact_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 80
+        y: 76
+        width: 38
+        height: 50
+      spriteId: aabadfb80d7e3e249b6e5ff24d321e24
+    - name: VFXImpact_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 81
+        y: 80
+        width: 36
+        height: 41
+      spriteId: 8026bc671985b1d4d8c357fb28ca28e3
+    - name: VFXImpact_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 81
+        y: 89
+        width: 36
+        height: 12
+      spriteId: 925f6e68084473044b77eede6b72df07
+    - name: VFXImpact_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 81
+        y: 88
+        width: 36
+        height: 14
+      spriteId: 20c2504a841e78f439d355787031f800
+    - name: VFXImpact_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 74
+        y: 68
+        width: 50
+        height: 16
+      spriteId: f3dfc635c8cef5f44b011ee332cecf5c
+    - name: VFXImpact_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 70
+        y: 68
+        width: 58
+        height: 17
+      spriteId: e31e6cf662f4d9d42b0bd4384a7b41ec
+    - name: VFXImpact_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 17
+      spriteId: f0263fc669b11e442b22eafacf1ae6ed
+    - name: VFXImpact_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 19
+      spriteId: 78b82b4e929b3294a967328e719c4c88
+    - name: VFXImpact_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 18
+      spriteId: 05535939cef078d48b1048a49ec211d9
+    - name: VFXImpact_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 14
+      spriteId: 71d23b8d4d5aa684ab1fef94dcd5b856
+    - name: VFXImpact_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 76
+        y: 89
+        width: 42
+        height: 56
+      spriteId: 89c541b47c6a841449bb1958ece70c1d
+    - name: VFXImpact_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 76
+        y: 90
+        width: 42
+        height: 55
+      spriteId: 6877d38f4de26d7419f1fc155f44d9f9
+    - name: VFXImpact_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 75
+        y: 89
+        width: 44
+        height: 55
+      spriteId: b8df6bf07f2730d49831eb423e6108bd
+    - name: VFXImpact_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 74
+        y: 88
+        width: 43
+        height: 55
+      spriteId: 6b81b50fd5192154eb8de4ea33330a08
+    - name: VFXImpact_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 90
+        y: 71
+        width: 18
+        height: 56
+      spriteId: 86ed3d844f400a54d9e8d4cac79977e4
+    - name: VFXImpact_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 73
+        y: 77
+        width: 48
+        height: 46
+      spriteId: a0851c43419ae96469a688269d9b4220
+    - name: VFXImpact_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 77
+        y: 77
+        width: 44
+        height: 44
+      spriteId: b7a2d5ca0cbdfd846b59c61552af5a7c
+    - name: VFXImpact_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 76
+        y: 76
+        width: 46
+        height: 46
+      spriteId: 87a247e42a473e74abd32c3a2ae844ef
+    - name: VFXImpact_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 74
+        y: 74
+        width: 50
+        height: 50
+      spriteId: 738825f7687beed4aa02b6e15fafebbd
+    - name: VFXImpact_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 73
+        y: 72
+        width: 53
+        height: 54
+      spriteId: 94f8182b57a228244ba6143005b8c43e
+    - name: VFXImpact_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 72
+        y: 69
+        width: 56
+        height: 59
+      spriteId: 1b9c5aa5329e3e848b3ff011884c71f9
+    - name: VFXImpact_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 78
+        y: 70
+        width: 38
+        height: 29
+      spriteId: 1bd7a1a31e527eb4fa5401ee52f9662c
+    - name: VFXImpact_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 75
+        y: 70
+        width: 49
+        height: 32
+      spriteId: 9b704862f93ad474b93fd2cdfab70921
+    - name: VFXImpact_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 74
+        y: 72
+        width: 50
+        height: 30
+      spriteId: 9eef45c0f57495846a3bd01e5b2176dc
+    - name: VFXImpact_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 73
+        y: 73
+        width: 53
+        height: 30
+      spriteId: 95669ec0464fe3e49a1a867c9769f364
+    - name: VFXImpact_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 72
+        y: 76
+        width: 56
+        height: 27
+      spriteId: 1baacc483d3fd6c4f906cfd71a3dda10
+    - name: VFXImpact_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 78
+        y: 113
+        width: 11
+        height: 28
+      spriteId: 8af4f42149df43f41918c0a20247ed7b
+    - name: VFXImpact_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 78
+        y: 101
+        width: 25
+        height: 28
+      spriteId: 13b5eabba70a1454589ed99c228fdfcf
+    - name: VFXImpact_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 91
+        y: 70
+        width: 15
+        height: 42
+      spriteId: fc1daa40e7c63e84aada450032aec95d
+    - name: VFXImpact_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 92
+        y: 70
+        width: 18
+        height: 13
+      spriteId: 9c0692353b3ae6b48b0e94fdfc517639
+    - name: VFXImpact_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 76
+        y: 70
+        width: 43
+        height: 31
+      spriteId: 237d71a114562794594c7f0f0b49d6c1
+    - name: VFXImpact_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 74
+        y: 70
+        width: 51
+        height: 32
+      spriteId: 9db5dd3330550c84ab21eea20080acea
+    - name: VFXImpact_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 74
+        y: 72
+        width: 50
+        height: 31
+      spriteId: 520e7037f32d3864485771427682610a
+    - name: VFXImpact_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 73
+        y: 73
+        width: 53
+        height: 31
+      spriteId: 3ac6ab63a2c1d2f4281075087abf6206
+    - name: VFXImpact_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 72
+        y: 76
+        width: 56
+        height: 28
+      spriteId: dedf00917a10fcb4a80fe8e73effe83a
+    - name: VFXImpact_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 66
+        y: 97
+        width: 63
+        height: 3
+      spriteId: 35e3323f1c61c0846952d8f0518feeae
+    - name: VFXImpact_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 69
+        y: 96
+        width: 59
+        height: 6
+      spriteId: b8e0d91d922b8d94da7bdc177631d129
+    - name: VFXImpact_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 73
+        y: 96
+        width: 50
+        height: 5
+      spriteId: c92cb3323d73b4144b2030fdd12ee30a
+    - name: VFXImpact_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 82
+        y: 89
+        width: 30
+        height: 22
+      spriteId: 104a87a4cbc717b42a4b16aab2598671
+    - name: VFXImpact_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 96
+        y: 88
+        width: 7
+        height: 24
+      spriteId: 53deecaa74536724a85673e0f2fe142e
+    - name: VFXImpact_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 99
+        y: 86
+        width: 1
+        height: 28
+      spriteId: 0df8b2a8e4f2bb94290b170201968ba0
+    - name: VFXImpact_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 111
+        y: 117
+        width: 11
+        height: 5
+      spriteId: 4db4f57c1eeacb048a03d4b70e79885a
+    - name: VFXImpact_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 82
+        y: 85
+        width: 34
+        height: 36
+      spriteId: 4d25e3a042fe79e42b00b6e58021e1e3
+    - name: VFXImpact_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 80
+        y: 80
+        width: 11
+        height: 17
+      spriteId: af75e37e4d1a0c64987c4a4874e36fcd
+    - name: VFXImpact_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 80
+        y: 78
+        width: 5
+        height: 4
+      spriteId: 75bf8174da5af224a8ac82c2be5d92ef
+    - name: VFXImpact_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 76
+        y: 117
+        width: 11
+        height: 5
+      spriteId: 30a3ee843a2dbec46a8d23771a3aa84c
+    - name: VFXImpact_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 82
+        y: 85
+        width: 34
+        height: 36
+      spriteId: 6c52f324286c0f547abd14b3d0aefa19
+    - name: VFXImpact_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 107
+        y: 80
+        width: 11
+        height: 17
+      spriteId: 451b1791e64d81e409050d20ec0795e9
+    - name: VFXImpact_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 113
+        y: 78
+        width: 5
+        height: 4
+      spriteId: d1059daacc91f904a8cf0aba9796dc3e
+    - name: VFXImpact_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 86
+        y: 70
+        width: 26
+        height: 16
+      spriteId: 72631d289e5730740b7cac113b63d583
+    - name: VFXImpact_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 76
+        y: 70
+        width: 46
+        height: 27
+      spriteId: 321b18cd01fbccc498d695725691c4db
+    - name: VFXImpact_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 75
+        y: 72
+        width: 48
+        height: 27
+      spriteId: 37f6b5925b643e2479e3984c6e7707ef
+    - name: VFXImpact_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 74
+        y: 73
+        width: 52
+        height: 27
+      spriteId: d3966ff4eb319884c8d975aa81f52841
+    - name: VFXImpact_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 72
+        y: 76
+        width: 56
+        height: 26
+      spriteId: 4ef637a6098590a42b606aaacead5e7e
+    - name: VFXImpact_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 74
+        y: 68
+        width: 50
+        height: 25
+      spriteId: 572d3a5b0f35c2941b516e373041d490
+    - name: VFXImpact_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 70
+        y: 68
+        width: 58
+        height: 71
+      spriteId: d1d387ffb850d9947b7bb31360ef1bc5
+    - name: VFXImpact_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 76
+      spriteId: 4be809ed1ccd93e45a940397a3d25787
+    - name: VFXImpact_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 78
+      spriteId: 04ce0f3dc170fee4c82bc2b86bf2e898
+    - name: VFXImpact_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 79
+      spriteId: c09870048acea994f8283405f17e21b2
+    - name: VFXImpact_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 80
+      spriteId: 4ccb69353458d5e49afbb05f5781a990
+    - name: VFXImpact_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 72
+        y: 68
+        width: 54
+        height: 22
+      spriteId: ff6dee27879f6934baa7ab7c51ca89fc
+    - name: VFXImpact_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 69
+        y: 68
+        width: 60
+        height: 25
+      spriteId: 293dce17b285a1e419a003c24671b193
+    - name: VFXImpact_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 68
+        y: 68
+        width: 62
+        height: 35
+      spriteId: b1b73ce599f17604e918fe32001e5333
+    - name: VFXImpact_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 49
+      spriteId: d4f9ad1286e7b7842aadad7c7370e058
+    - name: VFXImpact_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 65
+        y: 68
+        width: 68
+        height: 58
+      spriteId: 3e8dfdf07c621bd4c9905ec92f574799
+    - name: VFXImpact_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 63
+        y: 68
+        width: 72
+        height: 60
+      spriteId: 8b95676afb981814991c1e9b06296ba9
+    - name: VFXImpact_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 79
+        y: 124
+        width: 40
+        height: 4
+      spriteId: 24ca5d2ca854bb54fa5ae99b541332c4
+    - name: VFXImpact_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 79
+        y: 125
+        width: 40
+        height: 4
+      spriteId: f8cbd64770e379445a0067c668478529
+    - name: VFXImpact_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 326cda180115da14dab99b51770ef84f
+    - name: VFXImpact_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 9545875bf9461994cb5babaaa7c2b53f
+    - name: VFXImpact_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 5b8b46c6b6ddbd44091e8a4eaa979f6f
+    - name: VFXImpact_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: e149aadd49e84a147b27a5728cb6bb5f
+    - name: VFXImpact_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: fc53b3b97ab425f4a95ed31017bb8b22
+    - name: VFXImpact_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 560052752a8d2e045b1a58fdc52ab67e
+    - name: VFXImpact_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 95
+        y: 101
+        width: 4
+        height: 4
+      spriteId: 99afc1ade676d3d4ab9758e0a6896cc3
+    - name: VFXImpact_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 86
+        y: 97
+        width: 22
+        height: 16
+      spriteId: 45a516b7e174d724486d4159a74bdc1e
+    - name: VFXImpact_Frame_135
+      frameIndex: 135
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: b7026da646c4e2c40b659e5631d8b5cc
+    - name: VFXImpact_Frame_136
+      frameIndex: 136
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 5b5922bc96ec47446a68bcab08ceaf41
+    - name: VFXImpact_Frame_137
+      frameIndex: 137
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: d72ad02e09df6d7428bf9ec3b8e5e402
+    - name: VFXImpact_Frame_138
+      frameIndex: 138
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 125f5cd35f02d2b4d83c5ed695e8deac
+    - name: VFXImpact_Frame_139
+      frameIndex: 139
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 48a57c5dc230ea94d86af70310eae132
+    - name: VFXImpact_Frame_140
+      frameIndex: 140
+      cellRect:
+        x: 67
+        y: 67
+        width: 64
+        height: 64
+      spriteId: 73a39bf8a79aa3346acaefa59845b971
+    - name: VFXImpact_Frame_141
+      frameIndex: 141
+      cellRect:
+        x: 86
+        y: 70
+        width: 26
+        height: 16
+      spriteId: ddd0e9c26e3bed54085331d894224417
+    - name: VFXImpact_Frame_142
+      frameIndex: 142
+      cellRect:
+        x: 76
+        y: 70
+        width: 46
+        height: 27
+      spriteId: d51bfde23446998448d664a5e09aeb08
+    - name: VFXImpact_Frame_143
+      frameIndex: 143
+      cellRect:
+        x: 74
+        y: 72
+        width: 50
+        height: 27
+      spriteId: bb865325815a8184792b3e86640f0704
+    - name: VFXImpact_Frame_144
+      frameIndex: 144
+      cellRect:
+        x: 73
+        y: 73
+        width: 53
+        height: 27
+      spriteId: 676c6ba01b4f3eb438508c5e7565db11
+    - name: VFXImpact_Frame_145
+      frameIndex: 145
+      cellRect:
+        x: 72
+        y: 76
+        width: 56
+        height: 27
+      spriteId: d39ee00232ea60a4ea63e56cbaab40b0
+    - name: VFXImpact_Frame_146
+      frameIndex: 146
+      cellRect:
+        x: 69
+        y: 75
+        width: 55
+        height: 35
+      spriteId: ae9cdc10692274843ae37b5612cfc3aa
+    - name: VFXImpact_Frame_147
+      frameIndex: 147
+      cellRect:
+        x: 68
+        y: 62
+        width: 56
+        height: 46
+      spriteId: b85765819d6b5f447aa05b63e77542fd
+    - name: VFXImpact_Frame_148
+      frameIndex: 148
+      cellRect:
+        x: 68
+        y: 62
+        width: 56
+        height: 44
+      spriteId: 9c1475eaedf7af543923cd93ef606225
+    - name: VFXImpact_Frame_149
+      frameIndex: 149
+      cellRect:
+        x: 72
+        y: 62
+        width: 52
+        height: 45
+      spriteId: 65ccbb6be2f617b4db39bf1c5e729719
+    - name: VFXImpact_Frame_150
+      frameIndex: 150
+      cellRect:
+        x: 72
+        y: 72
+        width: 52
+        height: 35
+      spriteId: 0ef50e2c9cec43a4e912330a7169c85f
+    - name: VFXImpact_Frame_151
+      frameIndex: 151
+      cellRect:
+        x: 105
+        y: 82
+        width: 15
+        height: 4
+      spriteId: b21022b13db0d8b4987a80fae088e404
+    - name: VFXImpact_Frame_152
+      frameIndex: 152
+      cellRect:
+        x: 78
+        y: 118
+        width: 42
+        height: 3
+      spriteId: 9f97fd9bd5e06694e9eb5a57eb87dfe1
+    - name: VFXImpact_Frame_153
+      frameIndex: 153
+      cellRect:
+        x: 84
+        y: 86
+        width: 30
+        height: 34
+      spriteId: 782cf72a31a96ea408df7e8bb6cf0c80
+    - name: VFXImpact_Frame_154
+      frameIndex: 154
+      cellRect:
+        x: 82
+        y: 81
+        width: 34
+        height: 15
+      spriteId: 738b042ac89b1584ea8eb240092a6b2d
+    - name: VFXImpact_Frame_155
+      frameIndex: 155
+      cellRect:
+        x: 82
+        y: 79
+        width: 34
+        height: 2
+      spriteId: fb48a9cc1d01b7544a19cdf950de3436
+    - name: VFXImpact_Frame_156
+      frameIndex: 156
+      cellRect:
+        x: 76
+        y: 68
+        width: 48
+        height: 77
+      spriteId: bbfece1dba6d0504794ccb88dbe8ab4b
+    - name: VFXImpact_Frame_157
+      frameIndex: 157
+      cellRect:
+        x: 69
+        y: 68
+        width: 60
+        height: 37
+      spriteId: 9cf9cbbda7760ad4d8f5631254cf8fe2
+    - name: VFXImpact_Frame_158
+      frameIndex: 158
+      cellRect:
+        x: 65
+        y: 68
+        width: 77
+        height: 27
+      spriteId: b0cc9e99bb21c354ea4417d1ee635058
+    - name: VFXImpact_Frame_159
+      frameIndex: 159
+      cellRect:
+        x: 64
+        y: 68
+        width: 79
+        height: 26
+      spriteId: 23e9ee55dd4230140bbc3c10f91725fe
+    - name: VFXImpact_Frame_160
+      frameIndex: 160
+      cellRect:
+        x: 63
+        y: 68
+        width: 81
+        height: 25
+      spriteId: d7d4b3ec1be36d2439607b1e8525b640
+    - name: VFXImpact_Frame_161
+      frameIndex: 161
+      cellRect:
+        x: 69
+        y: 71
+        width: 70
+        height: 17
+      spriteId: fcab5cfdadcce424ca6415c3198b0019
+    - name: VFXImpact_Frame_162
+      frameIndex: 162
+      cellRect:
+        x: 74
+        y: 68
+        width: 50
+        height: 16
+      spriteId: 9c2655825e2bbf24d8dd90a29390aeab
+    - name: VFXImpact_Frame_163
+      frameIndex: 163
+      cellRect:
+        x: 70
+        y: 68
+        width: 58
+        height: 17
+      spriteId: dbfac58117597af44a3925f406e667dd
+    - name: VFXImpact_Frame_164
+      frameIndex: 164
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 17
+      spriteId: dd7c406dfc9eff44bb48aa6c91e85507
+    - name: VFXImpact_Frame_165
+      frameIndex: 165
+      cellRect:
+        x: 66
+        y: 68
+        width: 66
+        height: 19
+      spriteId: 349d7657e27b50c498e79584b0397767
+    - name: VFXImpact_Frame_166
+      frameIndex: 166
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 18
+      spriteId: b77cca0087bd3d94aa868788d5ff4e56
+    - name: VFXImpact_Frame_167
+      frameIndex: 167
+      cellRect:
+        x: 67
+        y: 68
+        width: 64
+        height: 14
+      spriteId: 9103ddfe184d78944bfed36ce22d224f
+    - name: VFXImpact_Frame_168
+      frameIndex: 168
+      cellRect:
+        x: 93
+        y: 78
+        width: 7
+        height: 61
+      spriteId: 23936a75065a3e642848fbabcffed368
+    - name: VFXImpact_Frame_169
+      frameIndex: 169
+      cellRect:
+        x: 89
+        y: 73
+        width: 13
+        height: 25
+      spriteId: 1456deef856332148bcfea56b2c5503e
+    - name: VFXImpact_Frame_170
+      frameIndex: 170
+      cellRect:
+        x: 72
+        y: 68
+        width: 49
+        height: 37
+      spriteId: 6ac40435360f858449eb42b276aae3bf
+    - name: VFXImpact_Frame_171
+      frameIndex: 171
+      cellRect:
+        x: 70
+        y: 68
+        width: 53
+        height: 37
+      spriteId: ec4f447b36ca22a4595fa86f9897de37
+    - name: VFXImpact_Frame_172
+      frameIndex: 172
+      cellRect:
+        x: 69
+        y: 68
+        width: 55
+        height: 39
+      spriteId: c4eefa1ee9d6bc747a27918f2f6c509a
+    - name: VFXImpact_Frame_173
+      frameIndex: 173
+      cellRect:
+        x: 84
+        y: 88
+        width: 25
+        height: 2
+      spriteId: dd229fc9ee3d5734383550187fd5bad8
+    - name: VFXImpact_Frame_174
+      frameIndex: 174
+      cellRect:
+        x: 76
+        y: 72
+        width: 46
+        height: 55
+      spriteId: 3e7f5ed93af2575439889c9b605c7e44
+    - name: VFXImpact_Frame_175
+      frameIndex: 175
+      cellRect:
+        x: 80
+        y: 76
+        width: 38
+        height: 50
+      spriteId: dae89ac9066edcd4bb2c93e2804a67a6
+    - name: VFXImpact_Frame_176
+      frameIndex: 176
+      cellRect:
+        x: 78
+        y: 80
+        width: 42
+        height: 41
+      spriteId: 00b82c0a1db0cbe43b34868f74e5dc2d
+    - name: VFXImpact_Frame_177
+      frameIndex: 177
+      cellRect:
+        x: 79
+        y: 90
+        width: 40
+        height: 10
+      spriteId: 52589c48c5f49d242b91945dbfcbcf63
+    - name: VFXImpact_Frame_178
+      frameIndex: 178
+      cellRect:
+        x: 78
+        y: 87
+        width: 42
+        height: 15
+      spriteId: c7dfd700b6f649c4dab270dfc4131042
+    - name: VFXImpact_Frame_179
+      frameIndex: 179
+      cellRect:
+        x: 78
+        y: 78
+        width: 42
+        height: 42
+      spriteId: 107052dfc028bbe4b9f6795537b0d522
+    - name: VFXImpact_Frame_180
+      frameIndex: 180
+      cellRect:
+        x: 79
+        y: 79
+        width: 40
+        height: 40
+      spriteId: 681f069f1846903439ae21d04416896b
+    - name: VFXImpact_Frame_181
+      frameIndex: 181
+      cellRect:
+        x: 80
+        y: 80
+        width: 38
+        height: 38
+      spriteId: 37ff0060e51b5c64fb81ad8b3ddb2144
+    - name: VFXImpact_Frame_183
+      frameIndex: 183
+      cellRect:
+        x: 63
+        y: 60
+        width: 67
+        height: 20
+      spriteId: 591c01bd7dd4ce640a1882f5d2b1b702
+    - name: VFXImpact_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 68
+        y: 68
+        width: 62
+        height: 62
+      spriteId: 8a6595de2dd361b4d82e02137676377e
+    - name: VFXImpact_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 69
+        y: 69
+        width: 59
+        height: 60
+      spriteId: ff7caf7d7f9671d429d20aa21a9458a2
+    - name: VFXImpact_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: 3f79b4109ebbf814f9744c9c9e2b3cdc
+    - name: VFXImpact_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: c68f41a701a2cd247a05430d01084605
+    - name: VFXImpact_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: fecd75ec16c2dfc4aa546b07f9f4e05b
+    - name: VFXImpact_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 69
+        y: 69
+        width: 60
+        height: 60
+      spriteId: bfe950bc7aed25246aec61c53a5a5aef
+    - name: VFXImpact_Frame_130
+      frameIndex: 130
+      cellRect:
+        x: 75
+        y: 89
+        width: 43
+        height: 28
+      spriteId: 88de015738bf4c54faf1f94a058750be
+    - name: VFXImpact_Frame_131
+      frameIndex: 131
+      cellRect:
+        x: 69
+        y: 85
+        width: 55
+        height: 35
+      spriteId: dc8f58b4e3ae3a344a67e26f72cc1e1a
+    - name: VFXImpact_Frame_132
+      frameIndex: 132
+      cellRect:
+        x: 68
+        y: 85
+        width: 56
+        height: 35
+      spriteId: fb20624b6af46f046a5ad1e0cdd4bcf4
+    - name: VFXImpact_Frame_133
+      frameIndex: 133
+      cellRect:
+        x: 66
+        y: 82
+        width: 63
+        height: 41
+      spriteId: 0a000731d41a8b0489a7b038b5e43cee
+    - name: VFXImpact_Frame_134
+      frameIndex: 134
+      cellRect:
+        x: 65
+        y: 91
+        width: 66
+        height: 32
+      spriteId: 2d7c34be82db92348a02a114c7d23772
+    - name: VFXImpact_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 68
+        y: 68
+        width: 62
+        height: 62
+      spriteId: 7fd2b65c3c6950e4fa1ffbf1d6cf2be0
+    - name: VFXImpact_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 69
+        y: 69
+        width: 59
+        height: 60
+      spriteId: 0777c639f7b3fe240a677867699bc101
+    - name: VFXImpact_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 77
+        y: 76
+        width: 45
+        height: 44
+      spriteId: f9ad555f23ef6034ca75b594852344b4
+    - name: VFXImpact_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 77
+        y: 76
+        width: 45
+        height: 44
+      spriteId: 7030ecd7dc46dbd46a33a3464a69a6cd
+    - name: VFXImpact_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 77
+        y: 76
+        width: 45
+        height: 44
+      spriteId: 4a7800ab60a3c8b4689d0cb8e7664f34
+    - name: VFXImpact_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 77
+        y: 76
+        width: 45
+        height: 44
+      spriteId: 9e4c98ab3851fd848885b986dfb647eb
+    - name: VFXImpact_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 78
+        y: 76
+        width: 44
+        height: 32
+      spriteId: 960bc73177f4aed40947c068b9ad2168
+    - name: VFXImpact_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 91
+        y: 76
+        width: 31
+        height: 32
+      spriteId: 2e0ab4f1516b4fe4da9437b54f7e76a5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

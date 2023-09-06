@@ -1,7 +1,920 @@
 fileFormatVersion: 2
 guid: 05239173de9688949b6a27091a87655f
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: PickupOrbs_Frame_0
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 275
+      width: 34
+      height: 51
+    spriteID: c4f15ecf401671b4dad23470b421b3cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 275}
+  - name: PickupOrbs_Frame_1
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 334
+      width: 34
+      height: 51
+    spriteID: 8f32a78a3c5e30e46bda3bd98375b8c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 334}
+  - name: PickupOrbs_Frame_2
+    originalName: 
+    pivot: {x: 0.5813954, y: -1.326923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 43
+      height: 52
+    spriteID: 095fc6a32a58e0f4aae1d6cbec560a32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: PickupOrbs_Frame_3
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 120
+      width: 33
+      height: 44
+    spriteID: 0f3a74975f0d8624d81ccc0a0aadeb79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 120}
+  - name: PickupOrbs_Frame_4
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 172
+      width: 33
+      height: 44
+    spriteID: b6610feda518d514baff06d73e272db7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 172}
+  - name: PickupOrbs_Frame_5
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 224
+      width: 33
+      height: 44
+    spriteID: acfdd5ea4c4fd9b44bd5b74326979b37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 224}
+  - name: PickupOrbs_Frame_6
+    originalName: 
+    pivot: {x: 0.54761904, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 171
+      width: 42
+      height: 44
+    spriteID: 39908361fa9173b4bb678373ebbdbeb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 171}
+  - name: PickupOrbs_Frame_7
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.5333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 454
+      width: 43
+      height: 45
+    spriteID: b6300b73fe4b5b4459a41d0a82209148
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 454}
+  - name: PickupOrbs_Frame_8
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 346
+      width: 43
+      height: 46
+    spriteID: b5f16560a8b7d06418297f8537b82c71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 346}
+  - name: PickupOrbs_Frame_9
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.4680852}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 43
+      height: 47
+    spriteID: ede028f6036ae8540840b21e15f2c115
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: PickupOrbs_Frame_10
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.4375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 43
+      height: 48
+    spriteID: 579627cd41c49064c8fea12f862c94b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: PickupOrbs_Frame_11
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.4081632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 4
+      width: 44
+      height: 49
+    spriteID: 44d553065b39a464a875019e9c4a2378
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 4}
+  - name: PickupOrbs_Frame_12
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.38}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 4
+      width: 34
+      height: 50
+    spriteID: 2c502fd5e82b2bc43869028d7f00d6d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 4}
+  - name: PickupOrbs_Frame_13
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 393
+      width: 34
+      height: 51
+    spriteID: db5fee9b270af3c4f9a56a197a0f5c2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 393}
+  - name: PickupOrbs_Frame_14
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 452
+      width: 34
+      height: 51
+    spriteID: c881a1fe6c47efd4fbfffe8546ded679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 452}
+  - name: PickupOrbs_Frame_15
+    originalName: 
+    pivot: {x: 0.5813954, y: -1.326923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 64
+      width: 43
+      height: 52
+    spriteID: 93b968fd611761c4c9ed4e227db732b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 64}
+  - name: PickupOrbs_Frame_16
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 276
+      width: 33
+      height: 44
+    spriteID: c76938c383c53ee449cde8d5057d3149
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 276}
+  - name: PickupOrbs_Frame_17
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 328
+      width: 33
+      height: 44
+    spriteID: cacc5a052da6ce248bacd2ab5df3dc8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 328}
+  - name: PickupOrbs_Frame_18
+    originalName: 
+    pivot: {x: 0.4242425, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 380
+      width: 33
+      height: 44
+    spriteID: d1c230bbf4b387e489c6afc187e0b432
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 380}
+  - name: PickupOrbs_Frame_19
+    originalName: 
+    pivot: {x: 0.54761904, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 223
+      width: 42
+      height: 44
+    spriteID: 43749c152e3e74745bb02941842c7078
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 223}
+  - name: PickupOrbs_Frame_20
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.5333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 118
+      width: 43
+      height: 45
+    spriteID: a69d5d0bb42738f4fa03a77f3cefbab1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 118}
+  - name: PickupOrbs_Frame_21
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 400
+      width: 43
+      height: 46
+    spriteID: 24df578b2c5f7884bae9067a9e7a90c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 400}
+  - name: PickupOrbs_Frame_22
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.4680852}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 291
+      width: 43
+      height: 47
+    spriteID: f2fc3478534dbfc4bb07d64fdd75396b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 291}
+  - name: PickupOrbs_Frame_23
+    originalName: 
+    pivot: {x: 0.5581395, y: -1.4375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 180
+      width: 43
+      height: 48
+    spriteID: 293c228cfbb2ea74496e7cc6b04f1872
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 180}
+  - name: PickupOrbs_Frame_24
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.4081632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 61
+      width: 44
+      height: 49
+    spriteID: a31e4172a8384ff41ad00ba355b888a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 61}
+  - name: PickupOrbs_Frame_25
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.38}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 62
+      width: 34
+      height: 50
+    spriteID: bbe1e0fbe338b8e4aa0a116ad1f317de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 62}
+  - name: PickupOrbs_Frame_26
+    originalName: 
+    pivot: {x: 0.5652175, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 432
+      width: 23
+      height: 44
+    spriteID: e14ddf5dee5e7cd4db306d5e15e857b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 432}
+  - name: PickupOrbs_Frame_27
+    originalName: 
+    pivot: {x: 0.5652175, y: -1.5681818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 4
+      width: 23
+      height: 44
+    spriteID: 1a182d3bf26eaff46b42868a1e03de37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -790999892
+    name: PickupOrbs
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: PickupOrbs_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 51
+      spriteId: c4f15ecf401671b4dad23470b421b3cc
+    - name: PickupOrbs_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 51
+      spriteId: 8f32a78a3c5e30e46bda3bd98375b8c9
+    - name: PickupOrbs_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 74
+        y: 69
+        width: 43
+        height: 52
+      spriteId: 095fc6a32a58e0f4aae1d6cbec560a32
+    - name: PickupOrbs_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: 0f3a74975f0d8624d81ccc0a0aadeb79
+    - name: PickupOrbs_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: b6610feda518d514baff06d73e272db7
+    - name: PickupOrbs_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: acfdd5ea4c4fd9b44bd5b74326979b37
+    - name: PickupOrbs_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 76
+        y: 69
+        width: 42
+        height: 44
+      spriteId: 39908361fa9173b4bb678373ebbdbeb4
+    - name: PickupOrbs_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 45
+      spriteId: b6300b73fe4b5b4459a41d0a82209148
+    - name: PickupOrbs_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 46
+      spriteId: b5f16560a8b7d06418297f8537b82c71
+    - name: PickupOrbs_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 47
+      spriteId: ede028f6036ae8540840b21e15f2c115
+    - name: PickupOrbs_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 48
+      spriteId: 579627cd41c49064c8fea12f862c94b0
+    - name: PickupOrbs_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 75
+        y: 69
+        width: 44
+        height: 49
+      spriteId: 44d553065b39a464a875019e9c4a2378
+    - name: PickupOrbs_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 50
+      spriteId: 2c502fd5e82b2bc43869028d7f00d6d1
+    - name: PickupOrbs_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 51
+      spriteId: db5fee9b270af3c4f9a56a197a0f5c2d
+    - name: PickupOrbs_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 51
+      spriteId: c881a1fe6c47efd4fbfffe8546ded679
+    - name: PickupOrbs_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 74
+        y: 69
+        width: 43
+        height: 52
+      spriteId: 93b968fd611761c4c9ed4e227db732b0
+    - name: PickupOrbs_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: c76938c383c53ee449cde8d5057d3149
+    - name: PickupOrbs_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: cacc5a052da6ce248bacd2ab5df3dc8e
+    - name: PickupOrbs_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 85
+        y: 69
+        width: 33
+        height: 44
+      spriteId: d1c230bbf4b387e489c6afc187e0b432
+    - name: PickupOrbs_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 76
+        y: 69
+        width: 42
+        height: 44
+      spriteId: 43749c152e3e74745bb02941842c7078
+    - name: PickupOrbs_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 45
+      spriteId: a69d5d0bb42738f4fa03a77f3cefbab1
+    - name: PickupOrbs_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 46
+      spriteId: 24df578b2c5f7884bae9067a9e7a90c3
+    - name: PickupOrbs_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 47
+      spriteId: f2fc3478534dbfc4bb07d64fdd75396b
+    - name: PickupOrbs_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 75
+        y: 69
+        width: 43
+        height: 48
+      spriteId: 293c228cfbb2ea74496e7cc6b04f1872
+    - name: PickupOrbs_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 75
+        y: 69
+        width: 44
+        height: 49
+      spriteId: a31e4172a8384ff41ad00ba355b888a1
+    - name: PickupOrbs_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 75
+        y: 69
+        width: 34
+        height: 50
+      spriteId: bbe1e0fbe338b8e4aa0a116ad1f317de
+    - name: PickupOrbs_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 86
+        y: 69
+        width: 23
+        height: 44
+      spriteId: e14ddf5dee5e7cd4db306d5e15e857b4
+    - name: PickupOrbs_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 86
+        y: 69
+        width: 23
+        height: 44
+      spriteId: 1a182d3bf26eaff46b42868a1e03de37
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

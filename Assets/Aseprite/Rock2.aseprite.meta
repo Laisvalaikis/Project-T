@@ -1,7 +1,388 @@
 fileFormatVersion: 2
 guid: b90654aa754516747bfcae430f1a3e47
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Rock2_Frame_0
+    originalName: 
+    pivot: {x: 0.50793654, y: -1.1355932}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 63
+      height: 59
+    spriteID: 296f1948679df9648aa7b967ee76a314
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: Rock2_Frame_1
+    originalName: 
+    pivot: {x: 0.50793654, y: -1.1355932}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 167
+      width: 63
+      height: 59
+    spriteID: ae8959c16c422c243bce416157351d57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 167}
+  - name: Rock2_Frame_2
+    originalName: 
+    pivot: {x: 0.50793654, y: -1.1355932}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 63
+      width: 63
+      height: 59
+    spriteID: d67ad16c6a04ebc44b27d069af468997
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 63}
+  - name: Rock2_Frame_3
+    originalName: 
+    pivot: {x: 0.50793654, y: -0.7613636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 63
+      height: 88
+    spriteID: 56b1e6c3c0d32494fa262ef5432e6e95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Rock2_Frame_4
+    originalName: 
+    pivot: {x: 0.4675325, y: -1.3725489}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 4
+      width: 77
+      height: 51
+    spriteID: 83814ee3d33fc4f47abfccfcac64f53a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 4}
+  - name: Rock2_Frame_5
+    originalName: 
+    pivot: {x: 0.44155842, y: -2.6206896}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 130
+      width: 77
+      height: 29
+    spriteID: 675b1f2d484f15f4d86dd98c1e7b535d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 130}
+  - name: Rock2_Frame_6
+    originalName: 
+    pivot: {x: 0.44303796, y: -2.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 4
+      width: 79
+      height: 28
+    spriteID: fb22664259af1bc40a90e35e21bc1c17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 4}
+  - name: Rock2_Frame_7
+    originalName: 
+    pivot: {x: 0.44444445, y: -3.1200001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 40
+      width: 81
+      height: 25
+    spriteID: eabcb6369c09ae542b2fab1d2831d41f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 40}
+  - name: Rock2_Frame_8
+    originalName: 
+    pivot: {x: 0.42857143, y: -4.7647057}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 167
+      width: 70
+      height: 17
+    spriteID: 36b947912243f094d9885278dcc023e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 167}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1883074383
+    name: Rock2
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Rock2_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 67
+        y: 67
+        width: 63
+        height: 59
+      spriteId: 296f1948679df9648aa7b967ee76a314
+    - name: Rock2_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 67
+        y: 67
+        width: 63
+        height: 59
+      spriteId: ae8959c16c422c243bce416157351d57
+    - name: Rock2_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 67
+        y: 67
+        width: 63
+        height: 59
+      spriteId: d67ad16c6a04ebc44b27d069af468997
+    - name: Rock2_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 67
+        y: 67
+        width: 63
+        height: 88
+      spriteId: 56b1e6c3c0d32494fa262ef5432e6e95
+    - name: Rock2_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 63
+        y: 70
+        width: 77
+        height: 51
+      spriteId: 83814ee3d33fc4f47abfccfcac64f53a
+    - name: Rock2_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 65
+        y: 76
+        width: 77
+        height: 29
+      spriteId: 675b1f2d484f15f4d86dd98c1e7b535d
+    - name: Rock2_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 64
+        y: 76
+        width: 79
+        height: 28
+      spriteId: fb22664259af1bc40a90e35e21bc1c17
+    - name: Rock2_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 63
+        y: 78
+        width: 81
+        height: 25
+      spriteId: eabcb6369c09ae542b2fab1d2831d41f
+    - name: Rock2_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 69
+        y: 81
+        width: 70
+        height: 17
+      spriteId: 36b947912243f094d9885278dcc023e8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

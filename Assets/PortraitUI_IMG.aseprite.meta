@@ -1,7 +1,1340 @@
 fileFormatVersion: 2
 guid: 5b9f6579661bbc244a9bedb77264ec2a
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: PortraitUI_IMG_Frame_3
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 24
+      height: 24
+    spriteID: 64c281831b4a849419e679b626269b31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: PortraitUI_IMG_Frame_4
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 116
+      width: 24
+      height: 24
+    spriteID: 37bb2659a1ea8eb4293aa9d29f53866a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 116}
+  - name: PortraitUI_IMG_Frame_5
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 24
+      height: 24
+    spriteID: db38ab3cd85698641ad6fa200a942094
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  - name: PortraitUI_IMG_Frame_7
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 180
+      width: 24
+      height: 24
+    spriteID: 17b7afc93d0c28546ad01cf78d0f9aa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 180}
+  - name: PortraitUI_IMG_Frame_8
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 212
+      width: 24
+      height: 24
+    spriteID: eb92045b028c5c34f89678fa0ccd967a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 212}
+  - name: PortraitUI_IMG_Frame_9
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 24
+      height: 24
+    spriteID: 76d3653c3bef3414fa2330a34beb60b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: PortraitUI_IMG_Frame_10
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 36
+      width: 24
+      height: 24
+    spriteID: 2c39f409a0a89874b8b998d11d1eeba8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 36}
+  - name: PortraitUI_IMG_Frame_11
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 68
+      width: 24
+      height: 24
+    spriteID: 43c85e9f8613b494ab4112abd5ac79ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 68}
+  - name: PortraitUI_IMG_Frame_12
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 100
+      width: 24
+      height: 24
+    spriteID: d227f61f3edd61d41b77a5224875a173
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 100}
+  - name: PortraitUI_IMG_Frame_13
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 132
+      width: 24
+      height: 24
+    spriteID: 56285767ce089e34a9816f8e11ea529b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 132}
+  - name: PortraitUI_IMG_Frame_14
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 164
+      width: 24
+      height: 24
+    spriteID: 4b0b695beb73ebf469f21ccd9f873d0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 164}
+  - name: PortraitUI_IMG_Frame_15
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 196
+      width: 24
+      height: 24
+    spriteID: 5c63ef3524b84ed4e993592d92d781ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 196}
+  - name: PortraitUI_IMG_Frame_16
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 228
+      width: 24
+      height: 24
+    spriteID: 2d90d5921170e98448344aff6c9a8616
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 228}
+  - name: PortraitUI_IMG_Frame_17
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 24
+      height: 24
+    spriteID: f691c2afcbb357140b1548487dc6df4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: PortraitUI_IMG_Frame_18
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 36
+      width: 24
+      height: 24
+    spriteID: 67bf586b1befcf240b371710e08018ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 36}
+  - name: PortraitUI_IMG_Frame_19
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 68
+      width: 24
+      height: 24
+    spriteID: c68c1c49eca1be74a9b0cc13c8cea35d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 68}
+  - name: PortraitUI_IMG_Frame_20
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 100
+      width: 24
+      height: 24
+    spriteID: e6980824630711d40bc8e4bcb6995ddd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 100}
+  - name: PortraitUI_IMG_Frame_21
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 132
+      width: 24
+      height: 24
+    spriteID: 9401aa77abe15f94aaa3b73e9472a3e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 132}
+  - name: PortraitUI_IMG_Frame_22
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 164
+      width: 24
+      height: 24
+    spriteID: b72117df76055c045b4e2c6d3336d915
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 164}
+  - name: PortraitUI_IMG_Frame_23
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 196
+      width: 24
+      height: 24
+    spriteID: 5397dcae900c2224a9a6b0351acc82c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 196}
+  - name: PortraitUI_IMG_Frame_24
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 228
+      width: 24
+      height: 24
+    spriteID: a6f5f07505019fa41886275abfa9202b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 228}
+  - name: PortraitUI_IMG_Frame_25
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 4
+      width: 24
+      height: 24
+    spriteID: fae9c5330bd62cb4ea197228036cd399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 4}
+  - name: PortraitUI_IMG_Frame_26
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 36
+      width: 24
+      height: 24
+    spriteID: 3ce3918d7f20e41469f6fe3f2d7ad18e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 36}
+  - name: PortraitUI_IMG_Frame_27
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 68
+      width: 24
+      height: 24
+    spriteID: 687294cd250fc6b4b8b7387a872cdd35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 68}
+  - name: PortraitUI_IMG_Frame_28
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 100
+      width: 24
+      height: 24
+    spriteID: 5277c8d20251c8a499c8565dc93cb2e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 100}
+  - name: PortraitUI_IMG_Frame_29
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 132
+      width: 24
+      height: 24
+    spriteID: 2c0fe30724cd0cf43ad1ce0611f7b9e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 132}
+  - name: PortraitUI_IMG_Frame_30
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 164
+      width: 24
+      height: 24
+    spriteID: 1d96b72f60229f24189d4c391c3f2e95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 164}
+  - name: PortraitUI_IMG_Frame_31
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 196
+      width: 24
+      height: 24
+    spriteID: c45515ea6b4e3774b80deeba4b67bffc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 196}
+  - name: PortraitUI_IMG_Frame_32
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 228
+      width: 24
+      height: 24
+    spriteID: 053e5429d86a8f047bc10723340eda1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 228}
+  - name: PortraitUI_IMG_Frame_33
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 4
+      width: 24
+      height: 24
+    spriteID: c75c22c0552c1434fad889139ea3d76d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 4}
+  - name: PortraitUI_IMG_Frame_34
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 36
+      width: 24
+      height: 24
+    spriteID: 4081b9d8b4b8d764a8b3a6a840efc0a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 36}
+  - name: PortraitUI_IMG_Frame_35
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 68
+      width: 24
+      height: 24
+    spriteID: beb76a3f6c2055f4387c7126687bffab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 68}
+  - name: PortraitUI_IMG_Frame_36
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 100
+      width: 24
+      height: 24
+    spriteID: 93b914d36e7887246baf1de3a6193f73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 100}
+  - name: PortraitUI_IMG_Frame_37
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 132
+      width: 24
+      height: 24
+    spriteID: daa09dd7dc1dad54db93ea1f3701f297
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 132}
+  - name: PortraitUI_IMG_Frame_38
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 164
+      width: 24
+      height: 24
+    spriteID: 5c1a199dd4830694aa41dfed467f8474
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 164}
+  - name: PortraitUI_IMG_Frame_39
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 196
+      width: 24
+      height: 24
+    spriteID: 7f78380f23e99d043bc77e1371c8d5e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 196}
+  - name: PortraitUI_IMG_Frame_40
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 228
+      width: 24
+      height: 24
+    spriteID: 83a3fc80bf025ae489766c3c84526443
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 228}
+  - name: PortraitUI_IMG_Frame_41
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 4
+      width: 24
+      height: 24
+    spriteID: 69bb7cc6be0c8994e80fe2540cca1e98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 4}
+  - name: PortraitUI_IMG_Frame_42
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 36
+      width: 24
+      height: 24
+    spriteID: 39d01e12e8e34614da8be1d3b789e2da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 36}
+  - name: PortraitUI_IMG_Frame_43
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 68
+      width: 24
+      height: 24
+    spriteID: 5a5c665d7ccb1ec42bafbbcd6250337f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 68}
+  - name: PortraitUI_IMG_Frame_44
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 100
+      width: 24
+      height: 24
+    spriteID: e054fc45d549fd24e895b593ec672fc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 100}
+  - name: PortraitUI_IMG_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 46
+      width: 30
+      height: 30
+    spriteID: facc53938c2fcde4e8dc42bdc038878c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 46}
+  - name: PortraitUI_IMG_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 34
+    spriteID: 0f7bfc7cfdb6cc44d806c2a7264164d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -2139275477
+    name: PortraitUI_IMG
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: PortraitUI_IMG_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 64c281831b4a849419e679b626269b31
+    - name: PortraitUI_IMG_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 37bb2659a1ea8eb4293aa9d29f53866a
+    - name: PortraitUI_IMG_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: db38ab3cd85698641ad6fa200a942094
+    - name: PortraitUI_IMG_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 17b7afc93d0c28546ad01cf78d0f9aa5
+    - name: PortraitUI_IMG_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: eb92045b028c5c34f89678fa0ccd967a
+    - name: PortraitUI_IMG_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 76d3653c3bef3414fa2330a34beb60b0
+    - name: PortraitUI_IMG_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 2c39f409a0a89874b8b998d11d1eeba8
+    - name: PortraitUI_IMG_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 43c85e9f8613b494ab4112abd5ac79ef
+    - name: PortraitUI_IMG_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: d227f61f3edd61d41b77a5224875a173
+    - name: PortraitUI_IMG_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 56285767ce089e34a9816f8e11ea529b
+    - name: PortraitUI_IMG_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 4b0b695beb73ebf469f21ccd9f873d0a
+    - name: PortraitUI_IMG_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 5c63ef3524b84ed4e993592d92d781ac
+    - name: PortraitUI_IMG_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 2d90d5921170e98448344aff6c9a8616
+    - name: PortraitUI_IMG_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: f691c2afcbb357140b1548487dc6df4c
+    - name: PortraitUI_IMG_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 67bf586b1befcf240b371710e08018ea
+    - name: PortraitUI_IMG_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: c68c1c49eca1be74a9b0cc13c8cea35d
+    - name: PortraitUI_IMG_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: e6980824630711d40bc8e4bcb6995ddd
+    - name: PortraitUI_IMG_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 9401aa77abe15f94aaa3b73e9472a3e7
+    - name: PortraitUI_IMG_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: b72117df76055c045b4e2c6d3336d915
+    - name: PortraitUI_IMG_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 5397dcae900c2224a9a6b0351acc82c1
+    - name: PortraitUI_IMG_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: a6f5f07505019fa41886275abfa9202b
+    - name: PortraitUI_IMG_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: fae9c5330bd62cb4ea197228036cd399
+    - name: PortraitUI_IMG_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 3ce3918d7f20e41469f6fe3f2d7ad18e
+    - name: PortraitUI_IMG_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 687294cd250fc6b4b8b7387a872cdd35
+    - name: PortraitUI_IMG_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 5277c8d20251c8a499c8565dc93cb2e1
+    - name: PortraitUI_IMG_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 2c0fe30724cd0cf43ad1ce0611f7b9e8
+    - name: PortraitUI_IMG_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 1d96b72f60229f24189d4c391c3f2e95
+    - name: PortraitUI_IMG_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: c45515ea6b4e3774b80deeba4b67bffc
+    - name: PortraitUI_IMG_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 053e5429d86a8f047bc10723340eda1b
+    - name: PortraitUI_IMG_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: c75c22c0552c1434fad889139ea3d76d
+    - name: PortraitUI_IMG_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 4081b9d8b4b8d764a8b3a6a840efc0a9
+    - name: PortraitUI_IMG_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: beb76a3f6c2055f4387c7126687bffab
+    - name: PortraitUI_IMG_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 93b914d36e7887246baf1de3a6193f73
+    - name: PortraitUI_IMG_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: daa09dd7dc1dad54db93ea1f3701f297
+    - name: PortraitUI_IMG_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 5c1a199dd4830694aa41dfed467f8474
+    - name: PortraitUI_IMG_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 7f78380f23e99d043bc77e1371c8d5e6
+    - name: PortraitUI_IMG_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 83a3fc80bf025ae489766c3c84526443
+    - name: PortraitUI_IMG_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 69bb7cc6be0c8994e80fe2540cca1e98
+    - name: PortraitUI_IMG_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 39d01e12e8e34614da8be1d3b789e2da
+    - name: PortraitUI_IMG_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: 5a5c665d7ccb1ec42bafbbcd6250337f
+    - name: PortraitUI_IMG_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 5
+        y: 5
+        width: 24
+        height: 24
+      spriteId: e054fc45d549fd24e895b593ec672fc6
+    - name: PortraitUI_IMG_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 2
+        y: 2
+        width: 30
+        height: 30
+      spriteId: facc53938c2fcde4e8dc42bdc038878c
+    - name: PortraitUI_IMG_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      spriteId: 0f7bfc7cfdb6cc44d806c2a7264164d5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 34, y: 34}

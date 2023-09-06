@@ -1,7 +1,528 @@
 fileFormatVersion: 2
 guid: 63693072c79936e45813585aacb98441
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: MapTileArrows_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 57
+      y: 4
+      width: 24
+      height: 66
+    spriteID: 2ffa41ea54c5e1346a73318860fc728b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 57, y: 4}
+  - name: MapTileArrows_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 4
+      width: 66
+      height: 24
+    spriteID: ba32f54c92d3c62429be3598079ce05c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 4}
+  - name: MapTileArrows_Frame_2
+    originalName: 
+    pivot: {x: 0.26666668, y: -0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 45
+      height: 45
+    spriteID: 3a7aa4cc7cf14d04b87b9240d001006a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: MapTileArrows_Frame_3
+    originalName: 
+    pivot: {x: 0.73333335, y: -0.46666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 57
+      width: 45
+      height: 45
+    spriteID: 6245c0217e23b334fbc7ca855d069948
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 57}
+  - name: MapTileArrows_Frame_4
+    originalName: 
+    pivot: {x: 0.73333335, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 110
+      width: 45
+      height: 45
+    spriteID: 052f71c9bee36304d87989c3fbcf630a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 110}
+  - name: MapTileArrows_Frame_5
+    originalName: 
+    pivot: {x: 0.26666668, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 163
+      width: 45
+      height: 45
+    spriteID: 5e8556656b0e70f44bef238cf511c177
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 163}
+  - name: MapTileArrows_Frame_6
+    originalName: 
+    pivot: {x: 0.029411735, y: -0.53125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 216
+      width: 34
+      height: 32
+    spriteID: ac59b75d1de33e44eac201e587ac8b1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 216}
+  - name: MapTileArrows_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.9411765}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 36
+      width: 32
+      height: 34
+    spriteID: 22ca034a6338a3c4096b54a216e4710a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 36}
+  - name: MapTileArrows_Frame_8
+    originalName: 
+    pivot: {x: 0.9705882, y: -0.53125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 36
+      width: 34
+      height: 32
+    spriteID: e07cad8dfddc3c84099d765cce5439ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 36}
+  - name: MapTileArrows_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 78
+      width: 32
+      height: 34
+    spriteID: e3dc9848602307b47a025c4920b34621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 78}
+  - name: MapTileArrows_Frame_10
+    originalName: 
+    pivot: {x: 0.029411735, y: -0.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 4
+      width: 34
+      height: 24
+    spriteID: 5cbd7796c1adbd84db556467ad4f3e37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 4}
+  - name: MapTileArrows_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.9411765}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 120
+      width: 24
+      height: 34
+    spriteID: b742c326e9a0e3a47bb0f21972b01b18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 120}
+  - name: MapTileArrows_Frame_12
+    originalName: 
+    pivot: {x: 0.9705882, y: -0.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 4
+      width: 34
+      height: 24
+    spriteID: 1d0230ffb4f715c4398fb4ac0f4e8998
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 205, y: 4}
+  - name: MapTileArrows_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 162
+      width: 24
+      height: 34
+    spriteID: 62fdffcc6a91a15409153e9ad646f47a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 162}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1559547286
+    name: MapTileArrows
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MapTileArrows_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 21
+        y: 0
+        width: 24
+        height: 66
+      spriteId: 2ffa41ea54c5e1346a73318860fc728b
+    - name: MapTileArrows_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 21
+        width: 66
+        height: 24
+      spriteId: ba32f54c92d3c62429be3598079ce05c
+    - name: MapTileArrows_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 21
+        y: 21
+        width: 45
+        height: 45
+      spriteId: 3a7aa4cc7cf14d04b87b9240d001006a
+    - name: MapTileArrows_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 21
+        width: 45
+        height: 45
+      spriteId: 6245c0217e23b334fbc7ca855d069948
+    - name: MapTileArrows_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 45
+        height: 45
+      spriteId: 052f71c9bee36304d87989c3fbcf630a
+    - name: MapTileArrows_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 21
+        y: 0
+        width: 45
+        height: 45
+      spriteId: 5e8556656b0e70f44bef238cf511c177
+    - name: MapTileArrows_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 32
+        y: 17
+        width: 34
+        height: 32
+      spriteId: ac59b75d1de33e44eac201e587ac8b1b
+    - name: MapTileArrows_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 17
+        y: 32
+        width: 32
+        height: 34
+      spriteId: 22ca034a6338a3c4096b54a216e4710a
+    - name: MapTileArrows_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 17
+        width: 34
+        height: 32
+      spriteId: e07cad8dfddc3c84099d765cce5439ba
+    - name: MapTileArrows_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 17
+        y: 0
+        width: 32
+        height: 34
+      spriteId: e3dc9848602307b47a025c4920b34621
+    - name: MapTileArrows_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 32
+        y: 21
+        width: 34
+        height: 24
+      spriteId: 5cbd7796c1adbd84db556467ad4f3e37
+    - name: MapTileArrows_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 21
+        y: 32
+        width: 24
+        height: 34
+      spriteId: b742c326e9a0e3a47bb0f21972b01b18
+    - name: MapTileArrows_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 21
+        width: 34
+        height: 24
+      spriteId: 1d0230ffb4f715c4398fb4ac0f4e8998
+    - name: MapTileArrows_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 21
+        y: 0
+        width: 24
+        height: 34
+      spriteId: 62fdffcc6a91a15409153e9ad646f47a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 66, y: 66}

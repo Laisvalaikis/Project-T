@@ -1,7 +1,416 @@
 fileFormatVersion: 2
 guid: d68f1be3f8271744cb9cb2934fa7b6ba
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: RoadLantern_Frame_0
+    originalName: 
+    pivot: {x: 0.17777778, y: 0.33035716}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 225
+      height: 224
+    spriteID: 0262f81167eb2c84fa5f95ea6b6d7802
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: RoadLantern_Frame_1
+    originalName: 
+    pivot: {x: 0.17777778, y: 0.33035716}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 225
+      height: 224
+    spriteID: aa99a7467298d1540b91f39b45280bd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: RoadLantern_Frame_2
+    originalName: 
+    pivot: {x: 0.17777778, y: 0.33183855}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 468
+      width: 225
+      height: 223
+    spriteID: 4868d09c810dafd4caefce28a33454c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 468}
+  - name: RoadLantern_Frame_3
+    originalName: 
+    pivot: {x: 0.17777778, y: 0.33183855}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 699
+      width: 225
+      height: 223
+    spriteID: b74aa188c9995414d8dad1d225a7a37c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 699}
+  - name: RoadLantern_Frame_4
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 4
+      width: 65
+      height: 147
+    spriteID: 9ddae72ec08d8ea478ce088c46a7dc1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 4}
+  - name: RoadLantern_Frame_5
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 159
+      width: 65
+      height: 145
+    spriteID: 0cf354c9b900b904396e40733e2aa721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 159}
+  - name: RoadLantern_Frame_6
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 312
+      width: 65
+      height: 145
+    spriteID: 31ddaf75a89703541a42dc3e98fdc128
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 312}
+  - name: RoadLantern_Frame_7
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 465
+      width: 65
+      height: 145
+    spriteID: bd0d4dd716b437b4ebe0acac17539556
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 465}
+  - name: RoadLantern_Frame_8
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 618
+      width: 65
+      height: 145
+    spriteID: 3af8e4c0184f35d49acc065bd84f40eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 618}
+  - name: RoadLantern_Frame_9
+    originalName: 
+    pivot: {x: 0.47692308, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 771
+      width: 65
+      height: 145
+    spriteID: 770427e75a1bc2542aa7b825eca8a7cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 771}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1673859236
+    name: RoadLantern
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: RoadLantern_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -74
+        width: 225
+        height: 224
+      spriteId: 0262f81167eb2c84fa5f95ea6b6d7802
+    - name: RoadLantern_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: -74
+        width: 225
+        height: 224
+      spriteId: aa99a7467298d1540b91f39b45280bd6
+    - name: RoadLantern_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: -74
+        width: 225
+        height: 223
+      spriteId: 4868d09c810dafd4caefce28a33454c3
+    - name: RoadLantern_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: -74
+        width: 225
+        height: 223
+      spriteId: b74aa188c9995414d8dad1d225a7a37c
+    - name: RoadLantern_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 3
+        width: 65
+        height: 147
+      spriteId: 9ddae72ec08d8ea478ce088c46a7dc1b
+    - name: RoadLantern_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 9
+        y: 5
+        width: 65
+        height: 145
+      spriteId: 0cf354c9b900b904396e40733e2aa721
+    - name: RoadLantern_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 5
+        width: 65
+        height: 145
+      spriteId: 31ddaf75a89703541a42dc3e98fdc128
+    - name: RoadLantern_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 5
+        width: 65
+        height: 145
+      spriteId: bd0d4dd716b437b4ebe0acac17539556
+    - name: RoadLantern_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 5
+        width: 65
+        height: 145
+      spriteId: 3af8e4c0184f35d49acc065bd84f40eb
+    - name: RoadLantern_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 5
+        width: 65
+        height: 145
+      spriteId: 770427e75a1bc2542aa7b825eca8a7cb
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 160}

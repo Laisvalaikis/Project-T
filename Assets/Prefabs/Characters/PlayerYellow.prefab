@@ -17,11 +17,12 @@ GameObject:
   - component: {fileID: -3664636716790736272}
   - component: {fileID: -7543720231634943283}
   - component: {fileID: 8883273593836880585}
-  - component: {fileID: 5876549768767491210}
   - component: {fileID: 4906136364363553769}
   - component: {fileID: 3342702615985534782}
+  - component: {fileID: 3488732529439299257}
   - component: {fileID: 8390366338267609122}
   - component: {fileID: 2575527379426767547}
+  - component: {fileID: 8709584742818842742}
   m_Layer: 8
   m_Name: PlayerYellow
   m_TagString: Player
@@ -36,6 +37,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6128914949322520022}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -48,7 +50,6 @@ Transform:
   - {fileID: 6601410331334028126}
   - {fileID: 9137193973309841943}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6128914949322519978
 BoxCollider2D:
@@ -60,6 +61,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -93,6 +113,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -181,6 +207,8 @@ MonoBehaviour:
   MistShield: 0
   Stasis: 0
   wasThisCharacterSpawned: 0
+  enabledAbilitiesEnemy: []
+  gameInformation: {fileID: 0}
   Respawn: 0
   XPToGain: 0
   isThisObject: 0
@@ -200,6 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8984d01747079634faf4f276956a4087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: 
   AttackRange: 1
   AbilityCooldown: 1
@@ -246,7 +276,7 @@ MonoBehaviour:
     AbilityIcon: {fileID: -5985996694945948397, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: 0
-  - action: {fileID: 5876549768767491210}
+  - action: {fileID: 3488732529439299257}
     actionName: SwordPush
     AbilityIcon: {fileID: -5980061746933909041, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
@@ -274,6 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcabb48ab699cf4d8cc71e3d460429b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: Attack
   AttackRange: 1
   AbilityCooldown: 1
@@ -299,6 +331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9b4798706f4d947b9ffc88291f1a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: Block
   AttackRange: 1
   AbilityCooldown: 2
@@ -311,32 +345,6 @@ MonoBehaviour:
   AbilityPoints: 0
   isDisabled: 0
   spawnedCharacter: {fileID: 0}
---- !u!114 &5876549768767491210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6128914949322520022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b734362bcdeb566419cd9c05c0de22b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionStateName: SwordPush
-  AttackRange: 3
-  AbilityCooldown: 3
-  minAttackDamage: 0
-  maxAttackDamage: 0
-  isAbilitySlow: 1
-  friendlyFire: 0
-  AttackAbility: 0
-  AvailableAttacks: 1
-  AbilityPoints: 0
-  isDisabled: 0
-  spawnedCharacter: {fileID: 0}
-  pushDamage: 3
-  centerDamage: 5
 --- !u!114 &4906136364363553769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1576768411f3f584da9bb2046548f8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: HealingSight
   AttackRange: 1
   AbilityCooldown: 3
@@ -375,6 +385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504032cc9188b284287f44dbff2dd67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: DisarmingSlam
   AttackRange: 2
   AbilityCooldown: 3
@@ -387,6 +399,34 @@ MonoBehaviour:
   AbilityPoints: 0
   isDisabled: 0
   spawnedCharacter: {fileID: 0}
+--- !u!114 &3488732529439299257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128914949322520022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01737df6a253a942a0b47de2bae0380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
+  actionStateName: SwordPush
+  AttackRange: 2
+  AbilityCooldown: 1
+  minAttackDamage: 3
+  maxAttackDamage: 3
+  isAbilitySlow: 1
+  friendlyFire: 0
+  AttackAbility: 0
+  AvailableAttacks: 1
+  AbilityPoints: 0
+  isDisabled: 0
+  spawnedCharacter: {fileID: 0}
+  pushDamage: 15
+  centerDamage: 30
 --- !u!114 &8390366338267609122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +483,25 @@ MonoBehaviour:
     m_Bits: 8192
   DestinationObject: {fileID: 0}
   _data: {fileID: 0}
+--- !u!114 &8709584742818842742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128914949322520022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482af0bd8b12f2b45aefe47b7966ea5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectSelection: 0
+  songSelection: 0
+  sounds: {fileID: 11400000, guid: 88fe40a83f757db43bb478adfe58dc2d, type: 2}
+  soundNames:
+  - Slash 0
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
 --- !u!1 &6128914949816081561
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,19 +525,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6128914949816081561}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6128914949322519981}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1572862415448420723
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6128914949322519981}
     m_Modifications:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
@@ -579,6 +639,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fdd704e297a46e429bd5056e2628f3a, type: 3}
 --- !u!4 &6601410331334028126 stripped
 Transform:
@@ -591,6 +654,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6128914949322519981}
     m_Modifications:
     - target: {fileID: 4589584972691425633, guid: ed24e842bb536204eb6846cc53311643,
@@ -659,6 +723,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}
 --- !u!4 &2608668900025640243 stripped
 Transform:
@@ -671,6 +738,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6128914949322519981}
     m_Modifications:
     - target: {fileID: 4174927836768962920, guid: d132d3123088044cfa33ababf149f912,
@@ -734,6 +802,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d132d3123088044cfa33ababf149f912, type: 3}
 --- !u!4 &9137193973309841943 stripped
 Transform:
@@ -746,6 +817,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6128914949322519981}
     m_Modifications:
     - target: {fileID: 4935710951266589854, guid: d1b328a5480dcef4a9d2730562405b6a,
@@ -809,6 +881,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1b328a5480dcef4a9d2730562405b6a, type: 3}
 --- !u!4 &4759145757397690476 stripped
 Transform:
@@ -821,6 +896,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6128914949322519981}
     m_Modifications:
     - target: {fileID: 5971539865780397426, guid: 20279452140d84937b89f3f386a888c0,
@@ -884,6 +960,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20279452140d84937b89f3f386a888c0, type: 3}
 --- !u!4 &4991873443301276837 stripped
 Transform:

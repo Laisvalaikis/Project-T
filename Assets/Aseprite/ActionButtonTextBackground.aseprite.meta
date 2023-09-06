@@ -1,7 +1,528 @@
 fileFormatVersion: 2
 guid: e42fa108690ac0f46a168b05d63a7acd
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: ActionButtonTextBackground_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 6
+      height: 6
+    spriteID: 091f839ff24748b449aa26c8a5275b34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: ActionButtonTextBackground_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 18
+      width: 6
+      height: 6
+    spriteID: 5eb14cff1fabdcf41b33253613430149
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 18}
+  - name: ActionButtonTextBackground_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 32
+      width: 6
+      height: 6
+    spriteID: f094593fe063c1f4695fb7a56a3c3761
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 32}
+  - name: ActionButtonTextBackground_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 46
+      width: 6
+      height: 6
+    spriteID: 437e7db28878f6f42af00536fd69e322
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 46}
+  - name: ActionButtonTextBackground_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 4
+      width: 6
+      height: 6
+    spriteID: 414e774ea6129a147997d62934d7ba31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 18, y: 4}
+  - name: ActionButtonTextBackground_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 18
+      width: 6
+      height: 6
+    spriteID: 22d558480cc1ee6489fa19670299daa2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 18, y: 18}
+  - name: ActionButtonTextBackground_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 32
+      width: 6
+      height: 6
+    spriteID: 417688645a8576c4eb77fca76608fbe5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 18, y: 32}
+  - name: ActionButtonTextBackground_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 46
+      width: 6
+      height: 6
+    spriteID: 71e185904dd22f94a837a13e6a6e6915
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 18, y: 46}
+  - name: ActionButtonTextBackground_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 4
+      width: 6
+      height: 6
+    spriteID: 81c27cfe42240b645b1c1df9be1b6667
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 4}
+  - name: ActionButtonTextBackground_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 18
+      width: 6
+      height: 6
+    spriteID: 899afbecad19dac4ba306b42d87537bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 18}
+  - name: ActionButtonTextBackground_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 6
+      height: 6
+    spriteID: 805041f9fb5994843b6edeb34eb3654c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 32}
+  - name: ActionButtonTextBackground_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 46
+      width: 6
+      height: 6
+    spriteID: 71dd0a4ca4877f94f9337c713c369781
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 46}
+  - name: ActionButtonTextBackground_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 6
+      height: 6
+    spriteID: 84597b324d5ee914da6b7ada1423010c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: ActionButtonTextBackground_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -1.8333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 18
+      width: 6
+      height: 6
+    spriteID: 78dd2d4218e98ec43a2b7ef1c1e8d353
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 18}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1053913631
+    name: ActionButtonTextBackground
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ActionButtonTextBackground_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 091f839ff24748b449aa26c8a5275b34
+    - name: ActionButtonTextBackground_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 5eb14cff1fabdcf41b33253613430149
+    - name: ActionButtonTextBackground_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: f094593fe063c1f4695fb7a56a3c3761
+    - name: ActionButtonTextBackground_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 437e7db28878f6f42af00536fd69e322
+    - name: ActionButtonTextBackground_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 414e774ea6129a147997d62934d7ba31
+    - name: ActionButtonTextBackground_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 22d558480cc1ee6489fa19670299daa2
+    - name: ActionButtonTextBackground_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 417688645a8576c4eb77fca76608fbe5
+    - name: ActionButtonTextBackground_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 71e185904dd22f94a837a13e6a6e6915
+    - name: ActionButtonTextBackground_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 81c27cfe42240b645b1c1df9be1b6667
+    - name: ActionButtonTextBackground_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 899afbecad19dac4ba306b42d87537bf
+    - name: ActionButtonTextBackground_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 805041f9fb5994843b6edeb34eb3654c
+    - name: ActionButtonTextBackground_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 71dd0a4ca4877f94f9337c713c369781
+    - name: ActionButtonTextBackground_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 84597b324d5ee914da6b7ada1423010c
+    - name: ActionButtonTextBackground_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 11
+        y: 11
+        width: 6
+        height: 6
+      spriteId: 78dd2d4218e98ec43a2b7ef1c1e8d353
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 28, y: 28}

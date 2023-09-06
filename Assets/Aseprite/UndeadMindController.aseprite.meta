@@ -1,7 +1,1284 @@
 fileFormatVersion: 2
 guid: 28a6bc48e785dc1488d46185ccc559cd
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: UndeadMindController_Frame_0
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 41
+      height: 65
+    spriteID: d639bc38a8e26664b8f5c9404018af90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: UndeadMindController_Frame_1
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 77
+      width: 41
+      height: 65
+    spriteID: 9a24c7083a4fe4d4da83e8062729253a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 77}
+  - name: UndeadMindController_Frame_2
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 223
+      width: 41
+      height: 64
+    spriteID: 8a71c4107e9fa084b8957d9976a17748
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 223}
+  - name: UndeadMindController_Frame_3
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 295
+      width: 41
+      height: 64
+    spriteID: 08fa5b9ff684fe74195d095cb137491f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 295}
+  - name: UndeadMindController_Frame_4
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 367
+      width: 41
+      height: 64
+    spriteID: 259822a6b81085b48922e5eabe2c2503
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 367}
+  - name: UndeadMindController_Frame_5
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 150
+      width: 41
+      height: 65
+    spriteID: c18953ac23f429d4b8224155ac3a464d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 150}
+  - name: UndeadMindController_Frame_6
+    originalName: 
+    pivot: {x: 0.4444445, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 147
+      width: 45
+      height: 62
+    spriteID: d0a11a9074ed05e4cb8bc2ed39bf272f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 147}
+  - name: UndeadMindController_Frame_7
+    originalName: 
+    pivot: {x: 0.43478268, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 46
+      height: 62
+    spriteID: 27ed983aafca3c54aa30d5277dd35677
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 77}
+  - name: UndeadMindController_Frame_8
+    originalName: 
+    pivot: {x: 0.4444445, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 217
+      width: 45
+      height: 62
+    spriteID: 4b0200e07c6dbd54b81eabdf94a16883
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 217}
+  - name: UndeadMindController_Frame_9
+    originalName: 
+    pivot: {x: 0.4444445, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 287
+      width: 45
+      height: 62
+    spriteID: af9e967316d76e543ba25030074263a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 287}
+  - name: UndeadMindController_Frame_10
+    originalName: 
+    pivot: {x: 0.4444445, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 357
+      width: 45
+      height: 62
+    spriteID: 0d9c22d466c02d44f93c522749b6f302
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 357}
+  - name: UndeadMindController_Frame_11
+    originalName: 
+    pivot: {x: 0.4545455, y: -1.0967742}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 427
+      width: 44
+      height: 62
+    spriteID: b6b65310561760a41b18754c2a2c1428
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 427}
+  - name: UndeadMindController_Frame_12
+    originalName: 
+    pivot: {x: 0.4838709, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 439
+      width: 31
+      height: 64
+    spriteID: f4f4a5796f63b5c48845feffb48f9113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 439}
+  - name: UndeadMindController_Frame_13
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 223
+      width: 41
+      height: 65
+    spriteID: 1ca659fdb0325da4897122ed80078832
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 223}
+  - name: UndeadMindController_Frame_14
+    originalName: 
+    pivot: {x: 0.4999999, y: -1.030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 63
+      width: 30
+      height: 66
+    spriteID: fdb5d2acc75b56749b2d6708a0fd4f9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 63}
+  - name: UndeadMindController_Frame_15
+    originalName: 
+    pivot: {x: 0.5000001, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 257
+      y: 76
+      width: 28
+      height: 65
+    spriteID: aeed8655c4677e340b12070505095c39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 257, y: 76}
+  - name: UndeadMindController_Frame_16
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 137
+      width: 29
+      height: 65
+    spriteID: 488ab461fd4b9e349b0d27907d2bff0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 137}
+  - name: UndeadMindController_Frame_17
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 210
+      width: 29
+      height: 65
+    spriteID: 8c3cd2863bd30b442bfe71a5e6f8281a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 210}
+  - name: UndeadMindController_Frame_18
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 150
+      width: 29
+      height: 64
+    spriteID: d262263725beb004dabb9bf4c7f554ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 150}
+  - name: UndeadMindController_Frame_19
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 222
+      width: 29
+      height: 64
+    spriteID: b0fa3960142294d408f5c16057af31d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 222}
+  - name: UndeadMindController_Frame_20
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 294
+      width: 29
+      height: 64
+    spriteID: ae02ebe4466784444891a2543bfe5ae4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 294}
+  - name: UndeadMindController_Frame_21
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 283
+      width: 29
+      height: 65
+    spriteID: ab410fe74a2860945af5b4c6c100be67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 283}
+  - name: UndeadMindController_Frame_22
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 356
+      width: 29
+      height: 65
+    spriteID: 2699ff1676a341145883d943329d9c23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 356}
+  - name: UndeadMindController_Frame_23
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 429
+      width: 29
+      height: 65
+    spriteID: d9d3de74ad1d9064f8be5867935a59e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 429}
+  - name: UndeadMindController_Frame_24
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 366
+      width: 29
+      height: 64
+    spriteID: 3be08844b19ed41418e3ad0e8671fc05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 366}
+  - name: UndeadMindController_Frame_25
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 438
+      width: 29
+      height: 64
+    spriteID: ff158b46f6165934cb1f77d42e4de531
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 438}
+  - name: UndeadMindController_Frame_26
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 257
+      y: 4
+      width: 29
+      height: 64
+    spriteID: 231e0639fa5c74d4ea4edb10aa700a7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 257, y: 4}
+  - name: UndeadMindController_Frame_27
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 4
+      width: 29
+      height: 65
+    spriteID: 1ed1b28eb42c64f4aa03839c830715d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 4}
+  - name: UndeadMindController_Frame_28
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 296
+      width: 41
+      height: 65
+    spriteID: 1fabb3063de997a4a9a44ecbf62031bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 296}
+  - name: UndeadMindController_Frame_29
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 369
+      width: 41
+      height: 65
+    spriteID: 29b5dad23490db740899ee3fde5b6a77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 369}
+  - name: UndeadMindController_Frame_30
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 442
+      width: 41
+      height: 65
+    spriteID: ccd86f4afef7d00468da85060a921592
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 442}
+  - name: UndeadMindController_Frame_31
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 4
+      width: 41
+      height: 65
+    spriteID: 1514db4757776294ba96f28f5d4cb693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 4}
+  - name: UndeadMindController_Frame_39
+    originalName: 
+    pivot: {x: 0.5172413, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 77
+      width: 29
+      height: 65
+    spriteID: bebea8c042620864c8559f9b4a1526fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 77}
+  - name: UndeadMindController_Frame_40
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 77
+      width: 41
+      height: 65
+    spriteID: 667b6f4fb39b3594097e4d1ec6a02655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 77}
+  - name: UndeadMindController_Frame_32
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 150
+      width: 41
+      height: 65
+    spriteID: a555ca8245bc11d4f867cd29b013a986
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 150}
+  - name: UndeadMindController_Frame_33
+    originalName: 
+    pivot: {x: 0.52941173, y: -1.0461538}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 51
+      height: 65
+    spriteID: 6ed5d980b2cfd6d408af5cb7c129420f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: UndeadMindController_Frame_34
+    originalName: 
+    pivot: {x: 0.52941173, y: -1.3333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 4
+      width: 51
+      height: 51
+    spriteID: 21e23b7ca14415948b42365e48caa524
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 4}
+  - name: UndeadMindController_Frame_35
+    originalName: 
+    pivot: {x: 0.38235298, y: -1.9512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 53
+      width: 34
+      height: 41
+    spriteID: cb66d4909cc129b478dd890f596507d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 294, y: 53}
+  - name: UndeadMindController_Frame_36
+    originalName: 
+    pivot: {x: 0.39999995, y: -2.0975611}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 4
+      width: 40
+      height: 41
+    spriteID: 8846e169d7917364e9fcc71f4c5a949c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 294, y: 4}
+  - name: UndeadMindController_Frame_37
+    originalName: 
+    pivot: {x: 0.41025636, y: -2.7941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 102
+      width: 39
+      height: 34
+    spriteID: a648cfbf85e7b8b49a409c87a0661f5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 294, y: 102}
+  - name: UndeadMindController_Frame_38
+    originalName: 
+    pivot: {x: 0.42857146, y: -2.852941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 4
+      width: 42
+      height: 34
+    spriteID: b9d60f7c79a53424687345c51e6a2b8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 342, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1832851021
+    name: UndeadMindController
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: UndeadMindController_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: d639bc38a8e26664b8f5c9404018af90
+    - name: UndeadMindController_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 9a24c7083a4fe4d4da83e8062729253a
+    - name: UndeadMindController_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 64
+      spriteId: 8a71c4107e9fa084b8957d9976a17748
+    - name: UndeadMindController_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 64
+      spriteId: 08fa5b9ff684fe74195d095cb137491f
+    - name: UndeadMindController_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 64
+      spriteId: 259822a6b81085b48922e5eabe2c2503
+    - name: UndeadMindController_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: c18953ac23f429d4b8224155ac3a464d
+    - name: UndeadMindController_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 79
+        y: 68
+        width: 45
+        height: 62
+      spriteId: d0a11a9074ed05e4cb8bc2ed39bf272f
+    - name: UndeadMindController_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 79
+        y: 68
+        width: 46
+        height: 62
+      spriteId: 27ed983aafca3c54aa30d5277dd35677
+    - name: UndeadMindController_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 79
+        y: 68
+        width: 45
+        height: 62
+      spriteId: 4b0200e07c6dbd54b81eabdf94a16883
+    - name: UndeadMindController_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 79
+        y: 68
+        width: 45
+        height: 62
+      spriteId: af9e967316d76e543ba25030074263a1
+    - name: UndeadMindController_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 79
+        y: 68
+        width: 45
+        height: 62
+      spriteId: 0d9c22d466c02d44f93c522749b6f302
+    - name: UndeadMindController_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 79
+        y: 68
+        width: 44
+        height: 62
+      spriteId: b6b65310561760a41b18754c2a2c1428
+    - name: UndeadMindController_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 84
+        y: 68
+        width: 31
+        height: 64
+      spriteId: f4f4a5796f63b5c48845feffb48f9113
+    - name: UndeadMindController_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 1ca659fdb0325da4897122ed80078832
+    - name: UndeadMindController_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 84
+        y: 68
+        width: 30
+        height: 66
+      spriteId: fdb5d2acc75b56749b2d6708a0fd4f9e
+    - name: UndeadMindController_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 85
+        y: 68
+        width: 28
+        height: 65
+      spriteId: aeed8655c4677e340b12070505095c39
+    - name: UndeadMindController_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: 488ab461fd4b9e349b0d27907d2bff0d
+    - name: UndeadMindController_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: 8c3cd2863bd30b442bfe71a5e6f8281a
+    - name: UndeadMindController_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: d262263725beb004dabb9bf4c7f554ab
+    - name: UndeadMindController_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: b0fa3960142294d408f5c16057af31d6
+    - name: UndeadMindController_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: ae02ebe4466784444891a2543bfe5ae4
+    - name: UndeadMindController_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: ab410fe74a2860945af5b4c6c100be67
+    - name: UndeadMindController_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: 2699ff1676a341145883d943329d9c23
+    - name: UndeadMindController_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: d9d3de74ad1d9064f8be5867935a59e2
+    - name: UndeadMindController_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: 3be08844b19ed41418e3ad0e8671fc05
+    - name: UndeadMindController_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: ff158b46f6165934cb1f77d42e4de531
+    - name: UndeadMindController_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 64
+      spriteId: 231e0639fa5c74d4ea4edb10aa700a7d
+    - name: UndeadMindController_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: 1ed1b28eb42c64f4aa03839c830715d7
+    - name: UndeadMindController_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 1fabb3063de997a4a9a44ecbf62031bb
+    - name: UndeadMindController_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 29b5dad23490db740899ee3fde5b6a77
+    - name: UndeadMindController_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: ccd86f4afef7d00468da85060a921592
+    - name: UndeadMindController_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 1514db4757776294ba96f28f5d4cb693
+    - name: UndeadMindController_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 84
+        y: 68
+        width: 29
+        height: 65
+      spriteId: bebea8c042620864c8559f9b4a1526fd
+    - name: UndeadMindController_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: 667b6f4fb39b3594097e4d1ec6a02655
+    - name: UndeadMindController_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 78
+        y: 68
+        width: 41
+        height: 65
+      spriteId: a555ca8245bc11d4f867cd29b013a986
+    - name: UndeadMindController_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 65
+      spriteId: 6ed5d980b2cfd6d408af5cb7c129420f
+    - name: UndeadMindController_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 51
+      spriteId: 21e23b7ca14415948b42365e48caa524
+    - name: UndeadMindController_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 86
+        y: 80
+        width: 34
+        height: 41
+      spriteId: cb66d4909cc129b478dd890f596507d5
+    - name: UndeadMindController_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 83
+        y: 86
+        width: 40
+        height: 41
+      spriteId: 8846e169d7917364e9fcc71f4c5a949c
+    - name: UndeadMindController_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 83
+        y: 95
+        width: 39
+        height: 34
+      spriteId: a648cfbf85e7b8b49a409c87a0661f5d
+    - name: UndeadMindController_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 81
+        y: 97
+        width: 42
+        height: 34
+      spriteId: b9d60f7c79a53424687345c51e6a2b8b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

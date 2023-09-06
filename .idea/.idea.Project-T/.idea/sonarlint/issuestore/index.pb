@@ -207,8 +207,6 @@ L
 Assets/Scripts/FadeScreen.cs,4\a\4a706e9324820c922e07240fe8245ada7af63693
 O
 Assets/Scripts/TestingScript.cs,9\a\9ad57a964c1de6d9b80b9cbe126c35b061ade1e3
-P
- Assets/Scripts/CharacterModel.cs,0\3\03407186c4014b14541452f28b5d34d2d91f747e
 F
 Assets/Scripts/Town.cs,8\0\80896d05cce5ab2224d7878e40ecfd6809b3bb06
 J

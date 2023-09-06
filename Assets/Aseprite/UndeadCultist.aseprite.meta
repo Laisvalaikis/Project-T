@@ -1,7 +1,864 @@
 fileFormatVersion: 2
 guid: 28efa018c6d453e44b7b443562d198f8
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: UndeadCultist_Frame_0
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 140
+      width: 26
+      height: 69
+    spriteID: e5b3e9dec9d12c545a792fbb9fff9acb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 140}
+  - name: UndeadCultist_Frame_1
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 217
+      width: 26
+      height: 69
+    spriteID: 0e1c2d4b6c5ee27458217707c6cfa5cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 217}
+  - name: UndeadCultist_Frame_2
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 158
+      width: 26
+      height: 68
+    spriteID: 81e77509b101f2943ad5c15e700c6b58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 158}
+  - name: UndeadCultist_Frame_3
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 234
+      width: 26
+      height: 68
+    spriteID: aca43ce420f516447ba807ea6203193a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 234}
+  - name: UndeadCultist_Frame_4
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 310
+      width: 26
+      height: 68
+    spriteID: 72f9e7e5cfb308c4a9eece1bfea288b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 310}
+  - name: UndeadCultist_Frame_5
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 294
+      width: 26
+      height: 69
+    spriteID: 258eabe45f281b64e85c049da6c38891
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 294}
+  - name: UndeadCultist_Frame_6
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 339
+      width: 40
+      height: 69
+    spriteID: 6eba7ad9a3217194791bb436b42ba708
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 339}
+  - name: UndeadCultist_Frame_7
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 40
+      height: 69
+    spriteID: 53e1773b19c9fc94183b96150e2a32cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: UndeadCultist_Frame_8
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 40
+      height: 69
+    spriteID: 2f7791cccae4841429405aaac9c2e805
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: UndeadCultist_Frame_9
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 81
+      width: 40
+      height: 69
+    spriteID: 9ab1182145dca7f44b130d500985c869
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 81}
+  - name: UndeadCultist_Frame_10
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 158
+      width: 40
+      height: 69
+    spriteID: 7c1ea7fd66dc3d0428a2b9d1620cca56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 158}
+  - name: UndeadCultist_Frame_11
+    originalName: 
+    pivot: {x: 0.45161298, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 312
+      width: 31
+      height: 69
+    spriteID: ad74bd884c282c44f97ff1b7745de987
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 312}
+  - name: UndeadCultist_Frame_12
+    originalName: 
+    pivot: {x: 0.46666673, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 63
+      width: 30
+      height: 69
+    spriteID: b96386887590f4f449487bcb377ff17f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 63}
+  - name: UndeadCultist_Frame_13
+    originalName: 
+    pivot: {x: 0.46666673, y: -0.58119655}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 81
+      width: 30
+      height: 117
+    spriteID: 148aea4a0feed1543957f1bf69612193
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 81}
+  - name: UndeadCultist_Frame_14
+    originalName: 
+    pivot: {x: 0.5000001, y: -0.54399997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 206
+      width: 28
+      height: 125
+    spriteID: 4ab9863e59b36bc40848ee073c2447be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 206}
+  - name: UndeadCultist_Frame_15
+    originalName: 
+    pivot: {x: 0.5185186, y: -0.88311684}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 389
+      width: 27
+      height: 77
+    spriteID: 2aea0ff1056286743b5a368363a116d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 389}
+  - name: UndeadCultist_Frame_16
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 371
+      width: 26
+      height: 69
+    spriteID: 724b35edb4dc2f04fa4684bc666a3f98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 371}
+  - name: UndeadCultist_Frame_17
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 4
+      width: 26
+      height: 69
+    spriteID: b67af4d1dc04b3c469fab800248f4899
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 4}
+  - name: UndeadCultist_Frame_18
+    originalName: 
+    pivot: {x: 0.5384616, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 81
+      width: 26
+      height: 69
+    spriteID: ea0c9901f83e2f646902151d0ffdd81b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 81}
+  - name: UndeadCultist_Frame_19
+    originalName: 
+    pivot: {x: 0.5999999, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 235
+      width: 35
+      height: 69
+    spriteID: 014db8ea5b1403d41ac2ab4319d9ef6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 235}
+  - name: UndeadCultist_Frame_20
+    originalName: 
+    pivot: {x: 0.52941173, y: -0.98550725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 51
+      height: 69
+    spriteID: 89b92de40ce8009458decff86c482004
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: UndeadCultist_Frame_21
+    originalName: 
+    pivot: {x: 0.52941173, y: -1.3333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 4
+      width: 51
+      height: 51
+    spriteID: c0be4f26826239a44b58ce7fda911c8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 4}
+  - name: UndeadCultist_Frame_22
+    originalName: 
+    pivot: {x: 0.38235298, y: -1.9512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 46
+      width: 34
+      height: 41
+    spriteID: fc80294d6c7ea504e9d9e2dc6d810a27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 46}
+  - name: UndeadCultist_Frame_23
+    originalName: 
+    pivot: {x: 0.39999995, y: -2.0975611}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 448
+      width: 40
+      height: 41
+    spriteID: 9552220b3ea8c9e4f91bf376c0ad3ef2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 448}
+  - name: UndeadCultist_Frame_24
+    originalName: 
+    pivot: {x: 0.41025636, y: -2.7941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 474
+      width: 39
+      height: 34
+    spriteID: 99d7dc78a41a3084b806c1b9373bd5c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 474}
+  - name: UndeadCultist_Frame_25
+    originalName: 
+    pivot: {x: 0.42857146, y: -2.852941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 4
+      width: 42
+      height: 34
+    spriteID: ec38df57cf6f34d44bf8f1c5ce448e53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -197260429
+    name: UndeadCultist
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: UndeadCultist_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: e5b3e9dec9d12c545a792fbb9fff9acb
+    - name: UndeadCultist_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: 0e1c2d4b6c5ee27458217707c6cfa5cb
+    - name: UndeadCultist_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 68
+      spriteId: 81e77509b101f2943ad5c15e700c6b58
+    - name: UndeadCultist_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 68
+      spriteId: aca43ce420f516447ba807ea6203193a
+    - name: UndeadCultist_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 68
+      spriteId: 72f9e7e5cfb308c4a9eece1bfea288b2
+    - name: UndeadCultist_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: 258eabe45f281b64e85c049da6c38891
+    - name: UndeadCultist_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 79
+        y: 68
+        width: 40
+        height: 69
+      spriteId: 6eba7ad9a3217194791bb436b42ba708
+    - name: UndeadCultist_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 79
+        y: 68
+        width: 40
+        height: 69
+      spriteId: 53e1773b19c9fc94183b96150e2a32cb
+    - name: UndeadCultist_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 79
+        y: 68
+        width: 40
+        height: 69
+      spriteId: 2f7791cccae4841429405aaac9c2e805
+    - name: UndeadCultist_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 79
+        y: 68
+        width: 40
+        height: 69
+      spriteId: 9ab1182145dca7f44b130d500985c869
+    - name: UndeadCultist_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 79
+        y: 68
+        width: 40
+        height: 69
+      spriteId: 7c1ea7fd66dc3d0428a2b9d1620cca56
+    - name: UndeadCultist_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 85
+        y: 68
+        width: 31
+        height: 69
+      spriteId: ad74bd884c282c44f97ff1b7745de987
+    - name: UndeadCultist_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 85
+        y: 68
+        width: 30
+        height: 69
+      spriteId: b96386887590f4f449487bcb377ff17f
+    - name: UndeadCultist_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 85
+        y: 68
+        width: 30
+        height: 117
+      spriteId: 148aea4a0feed1543957f1bf69612193
+    - name: UndeadCultist_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 85
+        y: 68
+        width: 28
+        height: 125
+      spriteId: 4ab9863e59b36bc40848ee073c2447be
+    - name: UndeadCultist_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 85
+        y: 68
+        width: 27
+        height: 77
+      spriteId: 2aea0ff1056286743b5a368363a116d5
+    - name: UndeadCultist_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: 724b35edb4dc2f04fa4684bc666a3f98
+    - name: UndeadCultist_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: b67af4d1dc04b3c469fab800248f4899
+    - name: UndeadCultist_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 85
+        y: 68
+        width: 26
+        height: 69
+      spriteId: ea0c9901f83e2f646902151d0ffdd81b
+    - name: UndeadCultist_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 78
+        y: 68
+        width: 35
+        height: 69
+      spriteId: 014db8ea5b1403d41ac2ab4319d9ef6c
+    - name: UndeadCultist_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 69
+      spriteId: 89b92de40ce8009458decff86c482004
+    - name: UndeadCultist_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 51
+      spriteId: c0be4f26826239a44b58ce7fda911c8b
+    - name: UndeadCultist_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 86
+        y: 80
+        width: 34
+        height: 41
+      spriteId: fc80294d6c7ea504e9d9e2dc6d810a27
+    - name: UndeadCultist_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 83
+        y: 86
+        width: 40
+        height: 41
+      spriteId: 9552220b3ea8c9e4f91bf376c0ad3ef2
+    - name: UndeadCultist_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 83
+        y: 95
+        width: 39
+        height: 34
+      spriteId: 99d7dc78a41a3084b806c1b9373bd5c8
+    - name: UndeadCultist_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 81
+        y: 97
+        width: 42
+        height: 34
+      spriteId: ec38df57cf6f34d44bf8f1c5ce448e53
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

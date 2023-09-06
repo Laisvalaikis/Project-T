@@ -1,7 +1,864 @@
 fileFormatVersion: 2
 guid: 4d5cc629a4426a048bddab0d37836c1f
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: DebuffIcons_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 10
+      height: 10
+    spriteID: 885b198e1c68cce4297df126478eb0fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  - name: DebuffIcons_Frame_4
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 4
+      width: 9
+      height: 12
+    spriteID: c27f7f2286e97c745b80232817f95861
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 4}
+  - name: DebuffIcons_Frame_5
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 111
+      width: 6
+      height: 9
+    spriteID: 903fdc66cb59f4d46a276ce778525769
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 111}
+  - name: DebuffIcons_Frame_6
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 61
+      width: 8
+      height: 9
+    spriteID: d8e159d2030e8ee498e16e226f35fd52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 61}
+  - name: DebuffIcons_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 4
+      width: 10
+      height: 10
+    spriteID: 097c536ee2dc86246b2858dbdac68525
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 4}
+  - name: DebuffIcons_Frame_8
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 24
+      width: 9
+      height: 12
+    spriteID: d8b4a3f93ae2dcf4681341ecbec64c2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 24}
+  - name: DebuffIcons_Frame_9
+    originalName: 
+    pivot: {x: 0.4285714, y: -0.5714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 52
+      width: 7
+      height: 7
+    spriteID: 6ed39799be62b8e49b6caf5b032e198a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 52}
+  - name: DebuffIcons_Frame_10
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 76
+      width: 9
+      height: 9
+    spriteID: a91d30c00284e89498f408f6f6325e88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 76}
+  - name: DebuffIcons_Frame_11
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 93
+      width: 9
+      height: 9
+    spriteID: 4b8dc4a9e64536446b77fda2a5206390
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 93}
+  - name: DebuffIcons_Frame_12
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 110
+      width: 9
+      height: 9
+    spriteID: d7665116a44712b41bce1ec5bf7d0223
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 110}
+  - name: DebuffIcons_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 4
+      width: 10
+      height: 8
+    spriteID: 74e89c2cc08143248a908d1b8ce0bef4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 4}
+  - name: DebuffIcons_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.5714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 20
+      width: 10
+      height: 7
+    spriteID: 0fb88ec0624e4b640acf24e15e5b851f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 20}
+  - name: DebuffIcons_Frame_15
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.07692309}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 92
+      width: 13
+      height: 13
+    spriteID: bd778cce10934af42aac7fdda1a2befb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 92}
+  - name: DebuffIcons_Frame_16
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.22222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 44
+      width: 9
+      height: 9
+    spriteID: e23132faf0884c548ad0e640f7f074db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 44}
+  - name: DebuffIcons_Frame_17
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 95
+      width: 8
+      height: 8
+    spriteID: e5a2c4f5872964a4c85c80e0306de6da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 95}
+  - name: DebuffIcons_Frame_18
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 82
+      width: 2
+      height: 10
+    spriteID: e2a243b8e0f2aeb4489fa517559dbff7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 82}
+  - name: DebuffIcons_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 22
+      width: 10
+      height: 10
+    spriteID: 863bc63e2e9a025499ffd1acce058214
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 22}
+  - name: DebuffIcons_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 40
+      width: 10
+      height: 10
+    spriteID: 0213be55fb4a70c4191ed3bc972a525d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 40}
+  - name: DebuffIcons_Frame_21
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 35
+      width: 6
+      height: 9
+    spriteID: b19003a352113c84db77e3b412113c6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 35}
+  - name: DebuffIcons_Frame_22
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 78
+      width: 8
+      height: 9
+    spriteID: b7c4cf1ceab0f644492e94b2e5df5cbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 78}
+  - name: DebuffIcons_Frame_23
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 58
+      width: 9
+      height: 10
+    spriteID: c6852bfe4d9990f489251a206695bfca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 58}
+  - name: DebuffIcons_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 14
+      height: 14
+    spriteID: f376e0c376f0feb47a976417a4d2325d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: DebuffIcons_Frame_25
+    originalName: 
+    pivot: {x: 0.19999999, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 67
+      width: 5
+      height: 7
+    spriteID: 2a92fd21c380c5f448d3d20643578338
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 67}
+  - name: DebuffIcons_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 26
+      width: 14
+      height: 14
+    spriteID: bd4cfbb30992a914393d6698cddc9d3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 26}
+  - name: DebuffIcons_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 48
+      width: 14
+      height: 14
+    spriteID: 9a27d72da3f2c864c91956f4aaaa4932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 48}
+  - name: DebuffIcons_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 70
+      width: 14
+      height: 14
+    spriteID: 9534a1df672b21a48a9fece9073b318d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 70}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1412046030
+    name: DebuffIcons
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: DebuffIcons_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 2
+        y: 2
+        width: 10
+        height: 10
+      spriteId: 885b198e1c68cce4297df126478eb0fa
+    - name: DebuffIcons_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 1
+        width: 9
+        height: 12
+      spriteId: c27f7f2286e97c745b80232817f95861
+    - name: DebuffIcons_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 4
+        y: 3
+        width: 6
+        height: 9
+      spriteId: 903fdc66cb59f4d46a276ce778525769
+    - name: DebuffIcons_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 3
+        width: 8
+        height: 9
+      spriteId: d8e159d2030e8ee498e16e226f35fd52
+    - name: DebuffIcons_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 2
+        y: 2
+        width: 10
+        height: 10
+      spriteId: 097c536ee2dc86246b2858dbdac68525
+    - name: DebuffIcons_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 3
+        y: 1
+        width: 9
+        height: 12
+      spriteId: d8b4a3f93ae2dcf4681341ecbec64c2b
+    - name: DebuffIcons_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 4
+        y: 4
+        width: 7
+        height: 7
+      spriteId: 6ed39799be62b8e49b6caf5b032e198a
+    - name: DebuffIcons_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 3
+        y: 3
+        width: 9
+        height: 9
+      spriteId: a91d30c00284e89498f408f6f6325e88
+    - name: DebuffIcons_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 3
+        y: 3
+        width: 9
+        height: 9
+      spriteId: 4b8dc4a9e64536446b77fda2a5206390
+    - name: DebuffIcons_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 3
+        y: 3
+        width: 9
+        height: 9
+      spriteId: d7665116a44712b41bce1ec5bf7d0223
+    - name: DebuffIcons_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 2
+        y: 2
+        width: 10
+        height: 8
+      spriteId: 74e89c2cc08143248a908d1b8ce0bef4
+    - name: DebuffIcons_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 2
+        y: 4
+        width: 10
+        height: 7
+      spriteId: 0fb88ec0624e4b640acf24e15e5b851f
+    - name: DebuffIcons_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1
+        y: 1
+        width: 13
+        height: 13
+      spriteId: bd778cce10934af42aac7fdda1a2befb
+    - name: DebuffIcons_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 3
+        y: 2
+        width: 9
+        height: 9
+      spriteId: e23132faf0884c548ad0e640f7f074db
+    - name: DebuffIcons_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 3
+        y: 3
+        width: 8
+        height: 8
+      spriteId: e5a2c4f5872964a4c85c80e0306de6da
+    - name: DebuffIcons_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 6
+        y: 2
+        width: 2
+        height: 10
+      spriteId: e2a243b8e0f2aeb4489fa517559dbff7
+    - name: DebuffIcons_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 2
+        y: 2
+        width: 10
+        height: 10
+      spriteId: 863bc63e2e9a025499ffd1acce058214
+    - name: DebuffIcons_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 2
+        y: 2
+        width: 10
+        height: 10
+      spriteId: 0213be55fb4a70c4191ed3bc972a525d
+    - name: DebuffIcons_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 4
+        y: 3
+        width: 6
+        height: 9
+      spriteId: b19003a352113c84db77e3b412113c6f
+    - name: DebuffIcons_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 3
+        y: 3
+        width: 8
+        height: 9
+      spriteId: b7c4cf1ceab0f644492e94b2e5df5cbd
+    - name: DebuffIcons_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 3
+        y: 2
+        width: 9
+        height: 10
+      spriteId: c6852bfe4d9990f489251a206695bfca
+    - name: DebuffIcons_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 0
+        width: 14
+        height: 14
+      spriteId: f376e0c376f0feb47a976417a4d2325d
+    - name: DebuffIcons_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 6
+        y: 3
+        width: 5
+        height: 7
+      spriteId: 2a92fd21c380c5f448d3d20643578338
+    - name: DebuffIcons_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 14
+        height: 14
+      spriteId: bd4cfbb30992a914393d6698cddc9d3c
+    - name: DebuffIcons_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 14
+        height: 14
+      spriteId: 9a27d72da3f2c864c91956f4aaaa4932
+    - name: DebuffIcons_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 14
+        height: 14
+      spriteId: 9534a1df672b21a48a9fece9073b318d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 14, y: 14}

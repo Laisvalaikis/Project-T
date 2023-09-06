@@ -1,7 +1,976 @@
 fileFormatVersion: 2
 guid: c9a3e4044d4a92e45ab72b65573d504d
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: ForestDruid_Frame_0
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 87
+      width: 37
+      height: 75
+    spriteID: 4c7e6f20aee59f24bafd69667076bd62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 87}
+  - name: ForestDruid_Frame_1
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 87
+      width: 37
+      height: 75
+    spriteID: e437a22bbffaf2e4593b8244cb8bfbc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 87}
+  - name: ForestDruid_Frame_2
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.91891885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 170
+      width: 37
+      height: 74
+    spriteID: 5fb1e99704459664982150a4711c03e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 170}
+  - name: ForestDruid_Frame_3
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.91891885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 170
+      width: 37
+      height: 74
+    spriteID: 9f4ceef40d83d704ba8df12f5620101d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 170}
+  - name: ForestDruid_Frame_4
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.91891885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 170
+      width: 37
+      height: 74
+    spriteID: e5cbb2ad39cbaa8448853b6390edaf10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 170}
+  - name: ForestDruid_Frame_5
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 87
+      width: 37
+      height: 75
+    spriteID: df5e61fa41cfd4c469ddc24913f5e955
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 87}
+  - name: ForestDruid_Frame_6
+    originalName: 
+    pivot: {x: 0.41666672, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 48
+      height: 75
+    spriteID: a410a1519fe9edb4d812afed2e4b4993
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: ForestDruid_Frame_7
+    originalName: 
+    pivot: {x: 0.41666672, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 4
+      width: 48
+      height: 75
+    spriteID: 900866d0aa8e15b4abc7a144b048a330
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 4}
+  - name: ForestDruid_Frame_8
+    originalName: 
+    pivot: {x: 0.41666672, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 4
+      width: 48
+      height: 75
+    spriteID: e5108d2e8c3c1f74790fdb27498b92fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 4}
+  - name: ForestDruid_Frame_9
+    originalName: 
+    pivot: {x: 0.41666672, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 4
+      width: 48
+      height: 75
+    spriteID: a2bc7ef523d84844cada95a5e7a8fb51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 4}
+  - name: ForestDruid_Frame_10
+    originalName: 
+    pivot: {x: 0.42553198, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 287
+      y: 4
+      width: 47
+      height: 75
+    spriteID: 2d605b19cd6a5d940867b4c537d75aa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 287, y: 4}
+  - name: ForestDruid_Frame_11
+    originalName: 
+    pivot: {x: 0.43478268, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 4
+      width: 46
+      height: 75
+    spriteID: f89acd1305ae83540ae232494de5dc53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 342, y: 4}
+  - name: ForestDruid_Frame_12
+    originalName: 
+    pivot: {x: 0.4444445, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 4
+      width: 45
+      height: 75
+    spriteID: 5fba4316328f88a4bb4b1a41a24dd2a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 4}
+  - name: ForestDruid_Frame_13
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 87
+      width: 37
+      height: 75
+    spriteID: 5a78cfabe57031643a6b97d5aaec4814
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 87}
+  - name: ForestDruid_Frame_14
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 87
+      width: 37
+      height: 75
+    spriteID: 86f4d852025ee614981b246ebbc19d72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 87}
+  - name: ForestDruid_Frame_15
+    originalName: 
+    pivot: {x: 0.5405406, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 170
+      width: 37
+      height: 75
+    spriteID: f0b8dafc46d72aa4fa716bf913daddba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 170}
+  - name: ForestDruid_Frame_16
+    originalName: 
+    pivot: {x: 0.55263156, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 87
+      width: 38
+      height: 75
+    spriteID: 8db39dd5b04e2ba44bb8a591df473d2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 87}
+  - name: ForestDruid_Frame_17
+    originalName: 
+    pivot: {x: 0.52941173, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 51
+      height: 75
+    spriteID: de868b67e615b8948b41549aebbf138f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: ForestDruid_Frame_23
+    originalName: 
+    pivot: {x: 0.41463414, y: -0.9714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 87
+      width: 41
+      height: 70
+    spriteID: 164ade3a97c67f3499a60c986ff29845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 87}
+  - name: ForestDruid_Frame_24
+    originalName: 
+    pivot: {x: 0.41463414, y: -0.9714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 87
+      width: 41
+      height: 70
+    spriteID: 5314345d6a41712429a82c444ae93a94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 87}
+  - name: ForestDruid_Frame_25
+    originalName: 
+    pivot: {x: 0.53125, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 472
+      y: 87
+      width: 32
+      height: 64
+    spriteID: 70d8f0cfcb9401640a71fd41bb05c5c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 472, y: 87}
+  - name: ForestDruid_Frame_26
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.9066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 87
+      width: 42
+      height: 75
+    spriteID: 72b63048bcdab354cbfcee622e159446
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 87}
+  - name: ForestDruid_Frame_27
+    originalName: 
+    pivot: {x: 0.53125, y: -1.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 243
+      y: 170
+      width: 32
+      height: 64
+    spriteID: 0f3a523897d0a9a4e87353fc97ae4993
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 243, y: 170}
+  - name: ForestDruid_Frame_28
+    originalName: 
+    pivot: {x: 0.41463414, y: -0.9714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 87
+      width: 41
+      height: 70
+    spriteID: b4131b729a76b8145b5525a120f1269d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 87}
+  - name: ForestDruid_Frame_29
+    originalName: 
+    pivot: {x: 0.48936173, y: -0.9577464}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 4
+      width: 47
+      height: 71
+    spriteID: 6553443a0ef7f344da301635f6d82aa1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 4}
+  - name: ForestDruid_Frame_18
+    originalName: 
+    pivot: {x: 0.52941173, y: -1.3333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 170
+      width: 51
+      height: 51
+    spriteID: ecf4a333c26736f4bbc8186772f36d60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 170}
+  - name: ForestDruid_Frame_19
+    originalName: 
+    pivot: {x: 0.38235298, y: -1.9512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 381
+      y: 170
+      width: 34
+      height: 41
+    spriteID: 8cd43ce330d4b0143b000794d9e8f1a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 381, y: 170}
+  - name: ForestDruid_Frame_20
+    originalName: 
+    pivot: {x: 0.39999995, y: -2.0975611}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 283
+      y: 170
+      width: 40
+      height: 41
+    spriteID: 6d1a8994bf5446d4f819c943c0327e34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 283, y: 170}
+  - name: ForestDruid_Frame_21
+    originalName: 
+    pivot: {x: 0.41025636, y: -2.7941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 212
+      width: 39
+      height: 34
+    spriteID: d1b4677e19fca0640b0f1d3245c24576
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 212}
+  - name: ForestDruid_Frame_22
+    originalName: 
+    pivot: {x: 0.42857146, y: -2.852941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 170
+      width: 42
+      height: 34
+    spriteID: a740766d06871c045a8e1a47184d13e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 170}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 862278283
+    name: ForestDruid
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ForestDruid_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: 4c7e6f20aee59f24bafd69667076bd62
+    - name: ForestDruid_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: e437a22bbffaf2e4593b8244cb8bfbc4
+    - name: ForestDruid_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 74
+      spriteId: 5fb1e99704459664982150a4711c03e0
+    - name: ForestDruid_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 74
+      spriteId: 9f4ceef40d83d704ba8df12f5620101d
+    - name: ForestDruid_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 74
+      spriteId: e5cbb2ad39cbaa8448853b6390edaf10
+    - name: ForestDruid_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: df5e61fa41cfd4c469ddc24913f5e955
+    - name: ForestDruid_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 79
+        y: 68
+        width: 48
+        height: 75
+      spriteId: a410a1519fe9edb4d812afed2e4b4993
+    - name: ForestDruid_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 79
+        y: 68
+        width: 48
+        height: 75
+      spriteId: 900866d0aa8e15b4abc7a144b048a330
+    - name: ForestDruid_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 79
+        y: 68
+        width: 48
+        height: 75
+      spriteId: e5108d2e8c3c1f74790fdb27498b92fe
+    - name: ForestDruid_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 79
+        y: 68
+        width: 48
+        height: 75
+      spriteId: a2bc7ef523d84844cada95a5e7a8fb51
+    - name: ForestDruid_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 79
+        y: 68
+        width: 47
+        height: 75
+      spriteId: 2d605b19cd6a5d940867b4c537d75aa9
+    - name: ForestDruid_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 79
+        y: 68
+        width: 46
+        height: 75
+      spriteId: f89acd1305ae83540ae232494de5dc53
+    - name: ForestDruid_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 79
+        y: 68
+        width: 45
+        height: 75
+      spriteId: 5fba4316328f88a4bb4b1a41a24dd2a9
+    - name: ForestDruid_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: 5a78cfabe57031643a6b97d5aaec4814
+    - name: ForestDruid_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: 86f4d852025ee614981b246ebbc19d72
+    - name: ForestDruid_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 79
+        y: 68
+        width: 37
+        height: 75
+      spriteId: f0b8dafc46d72aa4fa716bf913daddba
+    - name: ForestDruid_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 78
+        y: 68
+        width: 38
+        height: 75
+      spriteId: 8db39dd5b04e2ba44bb8a591df473d2a
+    - name: ForestDruid_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 75
+      spriteId: de868b67e615b8948b41549aebbf138f
+    - name: ForestDruid_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 82
+        y: 68
+        width: 41
+        height: 70
+      spriteId: 164ade3a97c67f3499a60c986ff29845
+    - name: ForestDruid_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 82
+        y: 68
+        width: 41
+        height: 70
+      spriteId: 5314345d6a41712429a82c444ae93a94
+    - name: ForestDruid_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 82
+        y: 68
+        width: 32
+        height: 64
+      spriteId: 70d8f0cfcb9401640a71fd41bb05c5c6
+    - name: ForestDruid_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 78
+        y: 68
+        width: 42
+        height: 75
+      spriteId: 72b63048bcdab354cbfcee622e159446
+    - name: ForestDruid_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 82
+        y: 68
+        width: 32
+        height: 64
+      spriteId: 0f3a523897d0a9a4e87353fc97ae4993
+    - name: ForestDruid_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 82
+        y: 68
+        width: 41
+        height: 70
+      spriteId: b4131b729a76b8145b5525a120f1269d
+    - name: ForestDruid_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 76
+        y: 68
+        width: 47
+        height: 71
+      spriteId: 6553443a0ef7f344da301635f6d82aa1
+    - name: ForestDruid_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 72
+        y: 68
+        width: 51
+        height: 51
+      spriteId: ecf4a333c26736f4bbc8186772f36d60
+    - name: ForestDruid_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 86
+        y: 80
+        width: 34
+        height: 41
+      spriteId: 8cd43ce330d4b0143b000794d9e8f1a9
+    - name: ForestDruid_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 83
+        y: 86
+        width: 40
+        height: 41
+      spriteId: 6d1a8994bf5446d4f819c943c0327e34
+    - name: ForestDruid_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 83
+        y: 95
+        width: 39
+        height: 34
+      spriteId: d1b4677e19fca0640b0f1d3245c24576
+    - name: ForestDruid_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 81
+        y: 97
+        width: 42
+        height: 34
+      spriteId: a740766d06871c045a8e1a47184d13e7
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

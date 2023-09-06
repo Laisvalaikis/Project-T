@@ -1,7 +1,500 @@
 fileFormatVersion: 2
 guid: 4f1f9587ca59e064db49fa58cf31581a
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: MapBackground_Frame_1
+    originalName: 
+    pivot: {x: 0.5007576, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1320
+      height: 1330
+    spriteID: e08f83517618a9147a5cf9434d07e74a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: MapBackground_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1342
+      width: 1320
+      height: 1330
+    spriteID: 6c3a6c36d6b94d84d8800d7e57eb2a74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1342}
+  - name: MapBackground_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2680
+      width: 1320
+      height: 1330
+    spriteID: 874e474eabfa3b44c95d5daad8f7decd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2680}
+  - name: MapBackground_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4018
+      width: 1320
+      height: 1330
+    spriteID: 05604056b7f230f40a032329cf58a8e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4018}
+  - name: MapBackground_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5356
+      width: 1320
+      height: 1330
+    spriteID: baf4edec61a25bf4caa554b4f1b2a0ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5356}
+  - name: MapBackground_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6694
+      width: 1320
+      height: 1330
+    spriteID: 098fc8e0bc7d1dd4ead4b147f070d885
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 6694}
+  - name: MapBackground_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 4
+      width: 1320
+      height: 1330
+    spriteID: 0f9e8523d05e43841bcc49bd6421b3f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 4}
+  - name: MapBackground_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 1342
+      width: 1320
+      height: 1330
+    spriteID: f7ab4b0db1d3bf848ab77ce229f6a1da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 1342}
+  - name: MapBackground_Frame_9
+    originalName: 
+    pivot: {x: 0.5007576, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 2680
+      width: 1320
+      height: 1330
+    spriteID: 847e5f0818bcf4843a6a51ac9402c682
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 2680}
+  - name: MapBackground_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 4018
+      width: 1320
+      height: 1330
+    spriteID: 3c07b3209b420c24893930e1dffbc451
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 4018}
+  - name: MapBackground_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 5356
+      width: 1320
+      height: 1330
+    spriteID: 4ebca871885a1084f9030f74bce1bbe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 5356}
+  - name: MapBackground_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.0075187976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1332
+      y: 6694
+      width: 1320
+      height: 1330
+    spriteID: d2df3d52b70ddf740938d1dbb84c03a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1332, y: 6694}
+  - name: MapBackground_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2660
+      y: 4
+      width: 1320
+      height: 1320
+    spriteID: a4f9fbd0a4a71ce4c89770858ec77be4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2660, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -355563104
+    name: MapBackground
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MapBackground_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: -1
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: e08f83517618a9147a5cf9434d07e74a
+    - name: MapBackground_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 6c3a6c36d6b94d84d8800d7e57eb2a74
+    - name: MapBackground_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 874e474eabfa3b44c95d5daad8f7decd
+    - name: MapBackground_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 05604056b7f230f40a032329cf58a8e0
+    - name: MapBackground_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: baf4edec61a25bf4caa554b4f1b2a0ac
+    - name: MapBackground_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 098fc8e0bc7d1dd4ead4b147f070d885
+    - name: MapBackground_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 0f9e8523d05e43841bcc49bd6421b3f4
+    - name: MapBackground_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: f7ab4b0db1d3bf848ab77ce229f6a1da
+    - name: MapBackground_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: -1
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 847e5f0818bcf4843a6a51ac9402c682
+    - name: MapBackground_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 3c07b3209b420c24893930e1dffbc451
+    - name: MapBackground_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: 4ebca871885a1084f9030f74bce1bbe8
+    - name: MapBackground_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: -10
+        width: 1320
+        height: 1330
+      spriteId: d2df3d52b70ddf740938d1dbb84c03a7
+    - name: MapBackground_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1320
+        height: 1320
+      spriteId: a4f9fbd0a4a71ce4c89770858ec77be4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1320, y: 1320}

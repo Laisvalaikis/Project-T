@@ -1,7 +1,1060 @@
 fileFormatVersion: 2
 guid: 05224aebc2d050644a2809a33cecdff5
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: EnemyWM_Frame_0
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 413
+      width: 45
+      height: 61
+    spriteID: faf1eb4e6684a0542b0c0171e2f7c150
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 413}
+  - name: EnemyWM_Frame_1
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 339
+      width: 45
+      height: 60
+    spriteID: f968787c18a149140a28f6d26831a745
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 339}
+  - name: EnemyWM_Frame_2
+    originalName: 
+    pivot: {x: 0.38636363, y: -0.016666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 64
+      width: 44
+      height: 60
+    spriteID: 2770bd49e013f5142b9f19f9ed78b023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 64}
+  - name: EnemyWM_Frame_3
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 407
+      width: 45
+      height: 60
+    spriteID: 9cd13e8361bec4e48906cf72e9b615db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 407}
+  - name: EnemyWM_Frame_4
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 132
+      width: 45
+      height: 61
+    spriteID: 0485b077f62af474cb35caa46b75daf4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 132}
+  - name: EnemyWM_Frame_5
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 201
+      width: 45
+      height: 61
+    spriteID: bb07f9d3731f1904b9d283991e8e83a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 201}
+  - name: EnemyWM_Frame_6
+    originalName: 
+    pivot: {x: 0.38636363, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 64
+      width: 44
+      height: 61
+    spriteID: aeb9b802a46fddf49a0d8f9add34a6c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 64}
+  - name: EnemyWM_Frame_7
+    originalName: 
+    pivot: {x: 0.41463414, y: -0.015384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 340
+      width: 41
+      height: 65
+    spriteID: 2f0468a9e35d6944497032b5e12f4d33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 340}
+  - name: EnemyWM_Frame_8
+    originalName: 
+    pivot: {x: 0.41463414, y: -0.015384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 413
+      width: 41
+      height: 65
+    spriteID: 00ce4920b09b60b4d963dcc6eac656db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 413}
+  - name: EnemyWM_Frame_9
+    originalName: 
+    pivot: {x: 0.34, y: -0.015384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 64
+      width: 50
+      height: 65
+    spriteID: f206be19c55cd704bbad98633bb2095d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 64}
+  - name: EnemyWM_Frame_10
+    originalName: 
+    pivot: {x: 0.34, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 137
+      width: 50
+      height: 62
+    spriteID: d6303411590334742941a813dbb9402e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 137}
+  - name: EnemyWM_Frame_11
+    originalName: 
+    pivot: {x: 0.36956522, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 343
+      width: 46
+      height: 62
+    spriteID: 4067233e97e8cc142b9d6e8adf1bc076
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 343}
+  - name: EnemyWM_Frame_12
+    originalName: 
+    pivot: {x: 0.38636363, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 133
+      width: 44
+      height: 61
+    spriteID: b1f31b4295def2a4182c54cd604de09f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 133}
+  - name: EnemyWM_Frame_13
+    originalName: 
+    pivot: {x: 0.38636363, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 202
+      width: 44
+      height: 61
+    spriteID: 7a3ae7e237f9cd44aa3711716e3f770c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 202}
+  - name: EnemyWM_Frame_14
+    originalName: 
+    pivot: {x: 0.38636363, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 271
+      width: 44
+      height: 61
+    spriteID: a91e0f5ba3a08174da4fb93d706e80c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 271}
+  - name: EnemyWM_Frame_26
+    originalName: 
+    pivot: {x: 0.37777779, y: -0.016393444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 270
+      width: 45
+      height: 61
+    spriteID: 9872c2a89c4395947b12d83e481870bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 270}
+  - name: EnemyWM_Frame_27
+    originalName: 
+    pivot: {x: 0.67741936, y: -0.015625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 202
+      width: 31
+      height: 64
+    spriteID: 491b404329580f24c8d3c416e716e32a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 202}
+  - name: EnemyWM_Frame_28
+    originalName: 
+    pivot: {x: 0.67741936, y: -0.015625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 274
+      width: 31
+      height: 64
+    spriteID: 0eab62302f317194985b79c68af08bfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 274}
+  - name: EnemyWM_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: -0.01923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 66
+      height: 52
+    spriteID: b30339e15283bfb45bc21260149312c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: EnemyWM_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.01923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 66
+      height: 52
+    spriteID: 1c94b023d8d517746a08e429520aae85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: EnemyWM_Frame_31
+    originalName: 
+    pivot: {x: 0.70212764, y: -0.020408163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 211
+      y: 4
+      width: 47
+      height: 49
+    spriteID: 9721a8acfc0041246b34496b716117cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 211, y: 4}
+  - name: EnemyWM_Frame_32
+    originalName: 
+    pivot: {x: 0.64285713, y: -0.016666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 64
+      width: 28
+      height: 60
+    spriteID: f64fded8427a7174393debbfac89d82d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 64}
+  - name: EnemyWM_Frame_15
+    originalName: 
+    pivot: {x: 0.4375, y: -0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 275
+      width: 48
+      height: 60
+    spriteID: c3abb893789dc9c43ae06d7132781959
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 275}
+  - name: EnemyWM_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 64
+      width: 54
+      height: 60
+    spriteID: 5ef48c6f218e5ee438e11505dba3c48f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 64}
+  - name: EnemyWM_Frame_24
+    originalName: 
+    pivot: {x: 0.34, y: -0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 207
+      width: 50
+      height: 60
+    spriteID: be2e58d6d19c2044d96436f91052c3d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 207}
+  - name: EnemyWM_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 346
+      width: 30
+      height: 60
+    spriteID: 693654ea3f75e6841ad43b807eb001a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 346}
+  - name: EnemyWM_Frame_25
+    originalName: 
+    pivot: {x: 0.7567568, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 132
+      width: 37
+      height: 62
+    spriteID: dc8a380c23a6a9647bc046d25d5b1d15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 132}
+  - name: EnemyWM_Frame_22
+    originalName: 
+    pivot: {x: 0.58620685, y: -0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 414
+      width: 29
+      height: 60
+    spriteID: 57e0c6559f14a184e8adfb6b5495e947
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 414}
+  - name: EnemyWM_Frame_17
+    originalName: 
+    pivot: {x: 0.5294118, y: -0.039215688}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 4
+      width: 51
+      height: 51
+    spriteID: 889556d465a2eca41baa53a1243a7569
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 4}
+  - name: EnemyWM_Frame_18
+    originalName: 
+    pivot: {x: 0.38235292, y: -0.34146342}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 4
+      width: 34
+      height: 41
+    spriteID: e7c690315dd8a0048a526cc55705139b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 4}
+  - name: EnemyWM_Frame_19
+    originalName: 
+    pivot: {x: 0.4, y: -0.4878049}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 266
+      y: 4
+      width: 40
+      height: 41
+    spriteID: 39d12df3dc8187b4cbd72707126deddd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 266, y: 4}
+  - name: EnemyWM_Frame_20
+    originalName: 
+    pivot: {x: 0.41025642, y: -0.85294116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 406
+      y: 4
+      width: 39
+      height: 34
+    spriteID: d5bb5fe72b2b91c438cb900882017b0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 406, y: 4}
+  - name: EnemyWM_Frame_21
+    originalName: 
+    pivot: {x: 0.42857137, y: -0.9117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 314
+      y: 4
+      width: 42
+      height: 34
+    spriteID: 7722cee8ef3cc884d82612d40e88ac01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 314, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 57905102
+    name: EnemyWM
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: EnemyWM_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 61
+      spriteId: faf1eb4e6684a0542b0c0171e2f7c150
+    - name: EnemyWM_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 60
+      spriteId: f968787c18a149140a28f6d26831a745
+    - name: EnemyWM_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 16
+        y: 1
+        width: 44
+        height: 60
+      spriteId: 2770bd49e013f5142b9f19f9ed78b023
+    - name: EnemyWM_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 60
+      spriteId: 9cd13e8361bec4e48906cf72e9b615db
+    - name: EnemyWM_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 61
+      spriteId: 0485b077f62af474cb35caa46b75daf4
+    - name: EnemyWM_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 61
+      spriteId: bb07f9d3731f1904b9d283991e8e83a1
+    - name: EnemyWM_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 16
+        y: 1
+        width: 44
+        height: 61
+      spriteId: aeb9b802a46fddf49a0d8f9add34a6c7
+    - name: EnemyWM_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 1
+        width: 41
+        height: 65
+      spriteId: 2f0468a9e35d6944497032b5e12f4d33
+    - name: EnemyWM_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 16
+        y: 1
+        width: 41
+        height: 65
+      spriteId: 00ce4920b09b60b4d963dcc6eac656db
+    - name: EnemyWM_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 16
+        y: 1
+        width: 50
+        height: 65
+      spriteId: f206be19c55cd704bbad98633bb2095d
+    - name: EnemyWM_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 0
+        width: 50
+        height: 62
+      spriteId: d6303411590334742941a813dbb9402e
+    - name: EnemyWM_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 16
+        y: 0
+        width: 46
+        height: 62
+      spriteId: 4067233e97e8cc142b9d6e8adf1bc076
+    - name: EnemyWM_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 16
+        y: 1
+        width: 44
+        height: 61
+      spriteId: b1f31b4295def2a4182c54cd604de09f
+    - name: EnemyWM_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 16
+        y: 1
+        width: 44
+        height: 61
+      spriteId: 7a3ae7e237f9cd44aa3711716e3f770c
+    - name: EnemyWM_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 16
+        y: 1
+        width: 44
+        height: 61
+      spriteId: a91e0f5ba3a08174da4fb93d706e80c6
+    - name: EnemyWM_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 16
+        y: 1
+        width: 45
+        height: 61
+      spriteId: 9872c2a89c4395947b12d83e481870bf
+    - name: EnemyWM_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 12
+        y: 1
+        width: 31
+        height: 64
+      spriteId: 491b404329580f24c8d3c416e716e32a
+    - name: EnemyWM_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 12
+        y: 1
+        width: 31
+        height: 64
+      spriteId: 0eab62302f317194985b79c68af08bfd
+    - name: EnemyWM_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 0
+        y: 1
+        width: 66
+        height: 52
+      spriteId: b30339e15283bfb45bc21260149312c8
+    - name: EnemyWM_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: 1
+        width: 66
+        height: 52
+      spriteId: 1c94b023d8d517746a08e429520aae85
+    - name: EnemyWM_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: 1
+        width: 47
+        height: 49
+      spriteId: 9721a8acfc0041246b34496b716117cf
+    - name: EnemyWM_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 15
+        y: 1
+        width: 28
+        height: 60
+      spriteId: f64fded8427a7174393debbfac89d82d
+    - name: EnemyWM_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 12
+        y: 2
+        width: 48
+        height: 60
+      spriteId: c3abb893789dc9c43ae06d7132781959
+    - name: EnemyWM_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 6
+        y: 2
+        width: 54
+        height: 60
+      spriteId: 5ef48c6f218e5ee438e11505dba3c48f
+    - name: EnemyWM_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 16
+        y: 2
+        width: 50
+        height: 60
+      spriteId: be2e58d6d19c2044d96436f91052c3d5
+    - name: EnemyWM_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 18
+        y: 2
+        width: 30
+        height: 60
+      spriteId: 693654ea3f75e6841ad43b807eb001a3
+    - name: EnemyWM_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 5
+        y: 2
+        width: 37
+        height: 62
+      spriteId: dc8a380c23a6a9647bc046d25d5b1d15
+    - name: EnemyWM_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 16
+        y: 2
+        width: 29
+        height: 60
+      spriteId: 57e0c6559f14a184e8adfb6b5495e947
+    - name: EnemyWM_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 6
+        y: 2
+        width: 51
+        height: 51
+      spriteId: 889556d465a2eca41baa53a1243a7569
+    - name: EnemyWM_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 20
+        y: 14
+        width: 34
+        height: 41
+      spriteId: e7c690315dd8a0048a526cc55705139b
+    - name: EnemyWM_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 17
+        y: 20
+        width: 40
+        height: 41
+      spriteId: 39d12df3dc8187b4cbd72707126deddd
+    - name: EnemyWM_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 17
+        y: 29
+        width: 39
+        height: 34
+      spriteId: d5bb5fe72b2b91c438cb900882017b0f
+    - name: EnemyWM_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 15
+        y: 31
+        width: 42
+        height: 34
+      spriteId: 7722cee8ef3cc884d82612d40e88ac01
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 66, y: 66}

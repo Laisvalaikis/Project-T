@@ -1,7 +1,976 @@
 fileFormatVersion: 2
 guid: b0fb649433e148f46a48630f7ef4f601
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: UndeadBoss_Frame_0
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 96
+      width: 83
+      height: 83
+    spriteID: c0577d184de2d694896bf6b7bf2c7bfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 96}
+  - name: UndeadBoss_Frame_1
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 187
+      width: 83
+      height: 83
+    spriteID: a17eb01e29c290643b5080c3c3c4dcdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 187}
+  - name: UndeadBoss_Frame_2
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8292683}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 642
+      width: 83
+      height: 82
+    spriteID: 407b925fa572778408102cf164bf5862
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 642}
+  - name: UndeadBoss_Frame_3
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8292683}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 732
+      width: 83
+      height: 82
+    spriteID: 0636a6aba48472c40b66df4fb0cc0d7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 732}
+  - name: UndeadBoss_Frame_4
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8292683}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 822
+      width: 83
+      height: 82
+    spriteID: 125aab646e2dccd4a9602f6900e525ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 822}
+  - name: UndeadBoss_Frame_5
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 278
+      width: 83
+      height: 83
+    spriteID: e9076574f30a0e44f9e5113ef33b8b57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 278}
+  - name: UndeadBoss_Frame_6
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8095238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 4
+      width: 83
+      height: 84
+    spriteID: 9ea0349518af1fe4a8426adfa16809e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 4}
+  - name: UndeadBoss_Frame_7
+    originalName: 
+    pivot: {x: 0.5208334, y: -0.7640449}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 96
+      height: 89
+    spriteID: fd9c63f148893de46b4b3e9b8116c452
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: UndeadBoss_Frame_8
+    originalName: 
+    pivot: {x: 0.52127665, y: -0.77272725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 101
+      width: 94
+      height: 88
+    spriteID: b0a228fcc184839439e0f44b19ef6785
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 101}
+  - name: UndeadBoss_Frame_9
+    originalName: 
+    pivot: {x: 0.52127665, y: -0.77272725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 197
+      width: 94
+      height: 88
+    spriteID: e9e1fd64b5c4d7b419e74715e892a95f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 197}
+  - name: UndeadBoss_Frame_10
+    originalName: 
+    pivot: {x: 0.52127665, y: -0.77272725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 293
+      width: 94
+      height: 88
+    spriteID: 54d8ec4026aff0c44b17203c4f0085e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 293}
+  - name: UndeadBoss_Frame_11
+    originalName: 
+    pivot: {x: 0.52127665, y: -0.77272725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 389
+      width: 94
+      height: 88
+    spriteID: 389c0117c92d1e74e9feeb78c80169b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 389}
+  - name: UndeadBoss_Frame_12
+    originalName: 
+    pivot: {x: 0.52272725, y: -0.7816091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 485
+      width: 88
+      height: 87
+    spriteID: 8b3cb657032ea7a49bd3b843bf504b42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 485}
+  - name: UndeadBoss_Frame_13
+    originalName: 
+    pivot: {x: 0.52272725, y: -0.8095238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 860
+      width: 88
+      height: 84
+    spriteID: ae48db37bea1cef47a021c2ffa88dc59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 860}
+  - name: UndeadBoss_Frame_14
+    originalName: 
+    pivot: {x: 0.52272725, y: -0.79999995}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 674
+      width: 88
+      height: 85
+    spriteID: bc343f88b0322a64ab74b01123d1e333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 674}
+  - name: UndeadBoss_Frame_15
+    originalName: 
+    pivot: {x: 0.52272725, y: -0.79999995}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 767
+      width: 88
+      height: 85
+    spriteID: 37e410ed630237449bd5993e92537572
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 767}
+  - name: UndeadBoss_Frame_16
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 369
+      width: 83
+      height: 83
+    spriteID: 6fc6d2b30b768734d92ef7d6b9388fa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 369}
+  - name: UndeadBoss_Frame_24
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.84999996}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 912
+      width: 83
+      height: 80
+    spriteID: a9cdda4461a123c409ca6d2acaf682cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 912}
+  - name: UndeadBoss_Frame_25
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.84999996}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 87
+      width: 83
+      height: 80
+    spriteID: 1753b6643c23dbc43adc90b29d70984a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 87}
+  - name: UndeadBoss_Frame_26
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.86075944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 263
+      width: 83
+      height: 79
+    spriteID: 3b414309cc8ff8a49a232350aaa892dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 263}
+  - name: UndeadBoss_Frame_27
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.86075944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 350
+      width: 83
+      height: 79
+    spriteID: 26fe5a044cf2bf446a120e4935d3ebac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 350}
+  - name: UndeadBoss_Frame_28
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.86075944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 437
+      width: 83
+      height: 79
+    spriteID: 11145738a6476224a8c046fab5b6841f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 437}
+  - name: UndeadBoss_Frame_29
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.84999996}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 175
+      width: 83
+      height: 80
+    spriteID: 97f1c97d0e40ff3479a291bc79ec1a26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 175}
+  - name: UndeadBoss_Frame_17
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 460
+      width: 83
+      height: 83
+    spriteID: ba09e2b84edcc024dab979da9ca199c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 460}
+  - name: UndeadBoss_Frame_18
+    originalName: 
+    pivot: {x: 0.5180723, y: -0.8192771}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 551
+      width: 83
+      height: 83
+    spriteID: 185d0b67072f0a54fb289648e74e63f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 551}
+  - name: UndeadBoss_Frame_19
+    originalName: 
+    pivot: {x: 0.5568182, y: -0.79069763}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 580
+      width: 88
+      height: 86
+    spriteID: 4fa2c55047a6c294fa8b90668504de85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 580}
+  - name: UndeadBoss_Frame_20
+    originalName: 
+    pivot: {x: 0.5543478, y: -1.0666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 4
+      width: 92
+      height: 75
+    spriteID: c7041e8f3bcd80d4ea4f9e9bfc2b31fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 4}
+  - name: UndeadBoss_Frame_21
+    originalName: 
+    pivot: {x: 0.39999995, y: -2.0975611}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 952
+      width: 40
+      height: 41
+    spriteID: 9b4d77f48bd7c38449c715138b621fb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 952}
+  - name: UndeadBoss_Frame_22
+    originalName: 
+    pivot: {x: 0.41025636, y: -2.7941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 524
+      width: 39
+      height: 34
+    spriteID: 3d8d905e84ac75b48a46e122c616560a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 524}
+  - name: UndeadBoss_Frame_23
+    originalName: 
+    pivot: {x: 0.42857146, y: -2.852941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 952
+      width: 42
+      height: 34
+    spriteID: 82da6000dd5dd0a428bd715cf29c2db3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 952}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1277937738
+    name: UndeadBoss
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: UndeadBoss_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: c0577d184de2d694896bf6b7bf2c7bfb
+    - name: UndeadBoss_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: a17eb01e29c290643b5080c3c3c4dcdb
+    - name: UndeadBoss_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 82
+      spriteId: 407b925fa572778408102cf164bf5862
+    - name: UndeadBoss_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 82
+      spriteId: 0636a6aba48472c40b66df4fb0cc0d7b
+    - name: UndeadBoss_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 82
+      spriteId: 125aab646e2dccd4a9602f6900e525ae
+    - name: UndeadBoss_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: e9076574f30a0e44f9e5113ef33b8b57
+    - name: UndeadBoss_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 84
+      spriteId: 9ea0349518af1fe4a8426adfa16809e2
+    - name: UndeadBoss_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 49
+        y: 68
+        width: 96
+        height: 89
+      spriteId: fd9c63f148893de46b4b3e9b8116c452
+    - name: UndeadBoss_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 50
+        y: 68
+        width: 94
+        height: 88
+      spriteId: b0a228fcc184839439e0f44b19ef6785
+    - name: UndeadBoss_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 50
+        y: 68
+        width: 94
+        height: 88
+      spriteId: e9e1fd64b5c4d7b419e74715e892a95f
+    - name: UndeadBoss_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 50
+        y: 68
+        width: 94
+        height: 88
+      spriteId: 54d8ec4026aff0c44b17203c4f0085e6
+    - name: UndeadBoss_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 50
+        y: 68
+        width: 94
+        height: 88
+      spriteId: 389c0117c92d1e74e9feeb78c80169b2
+    - name: UndeadBoss_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 53
+        y: 68
+        width: 88
+        height: 87
+      spriteId: 8b3cb657032ea7a49bd3b843bf504b42
+    - name: UndeadBoss_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 53
+        y: 68
+        width: 88
+        height: 84
+      spriteId: ae48db37bea1cef47a021c2ffa88dc59
+    - name: UndeadBoss_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 53
+        y: 68
+        width: 88
+        height: 85
+      spriteId: bc343f88b0322a64ab74b01123d1e333
+    - name: UndeadBoss_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 53
+        y: 68
+        width: 88
+        height: 85
+      spriteId: 37e410ed630237449bd5993e92537572
+    - name: UndeadBoss_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: 6fc6d2b30b768734d92ef7d6b9388fa8
+    - name: UndeadBoss_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 80
+      spriteId: a9cdda4461a123c409ca6d2acaf682cf
+    - name: UndeadBoss_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 80
+      spriteId: 1753b6643c23dbc43adc90b29d70984a
+    - name: UndeadBoss_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 79
+      spriteId: 3b414309cc8ff8a49a232350aaa892dc
+    - name: UndeadBoss_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 79
+      spriteId: 26fe5a044cf2bf446a120e4935d3ebac
+    - name: UndeadBoss_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 79
+      spriteId: 11145738a6476224a8c046fab5b6841f
+    - name: UndeadBoss_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 80
+      spriteId: 97f1c97d0e40ff3479a291bc79ec1a26
+    - name: UndeadBoss_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: ba09e2b84edcc024dab979da9ca199c9
+    - name: UndeadBoss_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 56
+        y: 68
+        width: 83
+        height: 83
+      spriteId: 185d0b67072f0a54fb289648e74e63f5
+    - name: UndeadBoss_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 50
+        y: 68
+        width: 88
+        height: 86
+      spriteId: 4fa2c55047a6c294fa8b90668504de85
+    - name: UndeadBoss_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 48
+        y: 80
+        width: 92
+        height: 75
+      spriteId: c7041e8f3bcd80d4ea4f9e9bfc2b31fa
+    - name: UndeadBoss_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 83
+        y: 86
+        width: 40
+        height: 41
+      spriteId: 9b4d77f48bd7c38449c715138b621fb4
+    - name: UndeadBoss_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 83
+        y: 95
+        width: 39
+        height: 34
+      spriteId: 3d8d905e84ac75b48a46e122c616560a
+    - name: UndeadBoss_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 81
+        y: 97
+        width: 42
+        height: 34
+      spriteId: 82da6000dd5dd0a428bd715cf29c2db3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

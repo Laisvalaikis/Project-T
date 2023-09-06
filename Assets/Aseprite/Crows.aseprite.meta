@@ -1,7 +1,1508 @@
 fileFormatVersion: 2
 guid: cf2ba8a396bd2b748916ac9e663c58cc
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Crows_Frame_0
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 122
+      width: 16
+      height: 13
+    spriteID: 3c2302293c528074ab0a5423d8a7820b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 122}
+  - name: Crows_Frame_39
+    originalName: 
+    pivot: {x: -0.49999952, y: -3.8095238}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 303
+      width: 12
+      height: 21
+    spriteID: c6aff7581c5b268429a2a8ee2d74406a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 303}
+  - name: Crows_Frame_40
+    originalName: 
+    pivot: {x: -0.25000024, y: -3.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 354
+      width: 16
+      height: 21
+    spriteID: a282742e091f6af40958aa20de5cbcc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 354}
+  - name: Crows_Frame_41
+    originalName: 
+    pivot: {x: 0.035714325, y: -5.4666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 303
+      width: 28
+      height: 15
+    spriteID: 8d9e15e5d6630ac44bd06a2ecc6c578d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 303}
+  - name: Crows_Frame_50
+    originalName: 
+    pivot: {x: 0.6052632, y: -0.030534351}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 152
+      height: 131
+    spriteID: 96db2d62d17e584468356d0f44abe8e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Crows_Frame_1
+    originalName: 
+    pivot: {x: -0.11111122, y: -8.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 143
+      width: 18
+      height: 10
+    spriteID: 97cdd53a73a266a4382561db54c4baa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 143}
+  - name: Crows_Frame_2
+    originalName: 
+    pivot: {x: -0.11111122, y: -9.111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 161
+      width: 18
+      height: 9
+    spriteID: abfa6b688fe976a4ead9e151e4535d7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 161}
+  - name: Crows_Frame_3
+    originalName: 
+    pivot: {x: -0.11111122, y: -9.111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 178
+      width: 18
+      height: 9
+    spriteID: a8df938d2840543408ddfcccad395da0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 178}
+  - name: Crows_Frame_4
+    originalName: 
+    pivot: {x: 0, y: -4.3157897}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 268
+      width: 20
+      height: 19
+    spriteID: 698303ff13b741c4da0a836bc2fe7f5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 268}
+  - name: Crows_Frame_5
+    originalName: 
+    pivot: {x: -0.11111122, y: -4.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 326
+      width: 18
+      height: 20
+    spriteID: 40fb8bb6b31afb144a980c08ac7f4975
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 326}
+  - name: Crows_Frame_6
+    originalName: 
+    pivot: {x: -0.25000024, y: -4.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 383
+      width: 16
+      height: 20
+    spriteID: 949ece06c959bb2458f4a98dccf8d52e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 383}
+  - name: Crows_Frame_7
+    originalName: 
+    pivot: {x: -0.25000024, y: -4.5555553}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 411
+      width: 16
+      height: 18
+    spriteID: b5a032e71b606344a8310bfd3f9075d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 411}
+  - name: Crows_Frame_8
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 374
+      width: 16
+      height: 12
+    spriteID: d6977fdc2c5457b43a67458f9319e2cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 374}
+  - name: Crows_Frame_9
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 394
+      width: 16
+      height: 12
+    spriteID: 7e13be5bb35cb1c448f75ae6b71726a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 394}
+  - name: Crows_Frame_10
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 414
+      width: 16
+      height: 12
+    spriteID: 58188b947ccde2548b5742e8faf5bccc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 414}
+  - name: Crows_Frame_11
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 122
+      width: 16
+      height: 13
+    spriteID: 928d3a546614c9e4c97f6260df44db9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 122}
+  - name: Crows_Frame_12
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 143
+      width: 16
+      height: 13
+    spriteID: 5a6fe91821f3bee44b6c7e3576a3b105
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 143}
+  - name: Crows_Frame_13
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 164
+      width: 16
+      height: 13
+    spriteID: 0c481bf74955b8c4fb2961a93a705751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 164}
+  - name: Crows_Frame_14
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 434
+      width: 16
+      height: 12
+    spriteID: de39d5b7803b5324389601aaee45ce2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 434}
+  - name: Crows_Frame_15
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 454
+      width: 16
+      height: 12
+    spriteID: a4716162e0efa344f905097d0340839f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 454}
+  - name: Crows_Frame_16
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 474
+      width: 16
+      height: 12
+    spriteID: eb6e9a22f7d5b3146b6274f79db24864
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 474}
+  - name: Crows_Frame_17
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.8333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 494
+      width: 16
+      height: 12
+    spriteID: bdd14b86ae0408b4493f99e7b976bfe7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 494}
+  - name: Crows_Frame_18
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 185
+      width: 16
+      height: 13
+    spriteID: ebe161a90f44f254e9a33f4c14382174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 185}
+  - name: Crows_Frame_19
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 206
+      width: 16
+      height: 13
+    spriteID: 3b42f125522cde447ab86ad7cfb62bc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 206}
+  - name: Crows_Frame_20
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 227
+      width: 16
+      height: 13
+    spriteID: f85fb795fb16ca543b63cb4372ad6a3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 227}
+  - name: Crows_Frame_21
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 248
+      width: 16
+      height: 13
+    spriteID: 91bcba7adf56f954ab00d5b68e15b270
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 248}
+  - name: Crows_Frame_22
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 269
+      width: 16
+      height: 13
+    spriteID: da7356f72a4280141b4b6ded060ec35f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 269}
+  - name: Crows_Frame_23
+    originalName: 
+    pivot: {x: -0.26666692, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 436
+      width: 15
+      height: 13
+    spriteID: 316cf23f1fb582e42b601e0a4dc78e03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 436}
+  - name: Crows_Frame_24
+    originalName: 
+    pivot: {x: -0.26666692, y: -5.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 326
+      width: 15
+      height: 14
+    spriteID: a6885d4c2d3cca24fae3f99118964bd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 326}
+  - name: Crows_Frame_25
+    originalName: 
+    pivot: {x: -0.26666692, y: -5.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 348
+      width: 15
+      height: 14
+    spriteID: 1ebc931b1f209044e9034ffe4e79930f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 348}
+  - name: Crows_Frame_26
+    originalName: 
+    pivot: {x: -0.11764717, y: -5.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 437
+      width: 17
+      height: 16
+    spriteID: 32729b3b26309e445a421f01d9b09317
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 437}
+  - name: Crows_Frame_27
+    originalName: 
+    pivot: {x: -0.11764717, y: -5.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 461
+      width: 17
+      height: 16
+    spriteID: 027aa8c44eb4b6c4e9f2159c347657b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 461}
+  - name: Crows_Frame_28
+    originalName: 
+    pivot: {x: -0.11764717, y: -5.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 485
+      width: 17
+      height: 16
+    spriteID: 38112e9aecc81e643ae2802d88888a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 485}
+  - name: Crows_Frame_29
+    originalName: 
+    pivot: {x: -0.18749982, y: -5.4666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 303
+      width: 16
+      height: 15
+    spriteID: abf527dd65ef28943ba35ebcd5619333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 303}
+  - name: Crows_Frame_30
+    originalName: 
+    pivot: {x: -0.26666692, y: -5.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 370
+      width: 15
+      height: 14
+    spriteID: 685d4d701f0f2004d8fa3d5457a8237e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 370}
+  - name: Crows_Frame_31
+    originalName: 
+    pivot: {x: -0.26666692, y: -5.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 392
+      width: 15
+      height: 14
+    spriteID: 78de0c9caf74f874a9dbca34898bda15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 392}
+  - name: Crows_Frame_32
+    originalName: 
+    pivot: {x: -0.26666692, y: -5.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 414
+      width: 15
+      height: 14
+    spriteID: f0db848f8d5a6624e9fd6428eb97a3c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 414}
+  - name: Crows_Frame_33
+    originalName: 
+    pivot: {x: -0.26666692, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 457
+      width: 15
+      height: 13
+    spriteID: 536cce7c1b2cede47a200fa22b1758f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 457}
+  - name: Crows_Frame_34
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 290
+      width: 16
+      height: 13
+    spriteID: ca2cbeb6ca0d96e4eb163302b50ca882
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 290}
+  - name: Crows_Frame_35
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 311
+      width: 16
+      height: 13
+    spriteID: ef4617ca7ea164e4a9d91b819ff43aee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 311}
+  - name: Crows_Frame_36
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 332
+      width: 16
+      height: 13
+    spriteID: 2687433f6eb2cd147b6bc8d18c1a1d79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 332}
+  - name: Crows_Frame_37
+    originalName: 
+    pivot: {x: -0.25000024, y: -6.3076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 353
+      width: 16
+      height: 13
+    spriteID: 325688b3940172649bc73998bf01b483
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 353}
+  - name: Crows_Frame_38
+    originalName: 
+    pivot: {x: -0.42857105, y: -5.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 326
+      width: 14
+      height: 16
+    spriteID: 4dfc423b427c71142a65a4a698c09729
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 326}
+  - name: Crows_Frame_42
+    originalName: 
+    pivot: {x: 0.13888887, y: -2.1842105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 90
+      width: 36
+      height: 38
+    spriteID: 3cc8d2bbf50247046a16989c32459c6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 90}
+  - name: Crows_Frame_43
+    originalName: 
+    pivot: {x: 0.22413795, y: -1.4821429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 239
+      width: 58
+      height: 56
+    spriteID: 210f8f44e60d8ce449ae6f3af37f11bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 239}
+  - name: Crows_Frame_44
+    originalName: 
+    pivot: {x: 0.21428573, y: -1.051282}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 4
+      width: 84
+      height: 78
+    spriteID: 996aa13e5b10a07439bcde910a846111
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 4}
+  - name: Crows_Frame_45
+    originalName: 
+    pivot: {x: 0.23655914, y: -0.9431818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 93
+      height: 88
+    spriteID: 1e915db7f1d4b004aa634911d04c154f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: Crows_Frame_46
+    originalName: 
+    pivot: {x: -2.4814816, y: -7.0416665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 90
+      width: 27
+      height: 24
+    spriteID: d4ce2ec7d87260a4c80cc73659558d41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 90}
+  - name: Crows_Frame_47
+    originalName: 
+    pivot: {x: -3.95, y: -8.380953}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 239
+      width: 20
+      height: 21
+    spriteID: 967cf02dce29b904dae89f49b6b13434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 239}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -607721838
+    name: Crows
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Crows_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 3c2302293c528074ab0a5423d8a7820b
+    - name: Crows_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 105
+        y: 80
+        width: 12
+        height: 21
+      spriteId: c6aff7581c5b268429a2a8ee2d74406a
+    - name: Crows_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 103
+        y: 81
+        width: 16
+        height: 21
+      spriteId: a282742e091f6af40958aa20de5cbcc2
+    - name: Crows_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 98
+        y: 82
+        width: 28
+        height: 15
+      spriteId: 8d9e15e5d6630ac44bd06a2ecc6c578d
+    - name: Crows_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 7
+        y: 4
+        width: 152
+        height: 131
+      spriteId: 96db2d62d17e584468356d0f44abe8e1
+    - name: Crows_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 101
+        y: 82
+        width: 18
+        height: 10
+      spriteId: 97cdd53a73a266a4382561db54c4baa7
+    - name: Crows_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 101
+        y: 82
+        width: 18
+        height: 9
+      spriteId: abfa6b688fe976a4ead9e151e4535d7e
+    - name: Crows_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 101
+        y: 82
+        width: 18
+        height: 9
+      spriteId: a8df938d2840543408ddfcccad395da0
+    - name: Crows_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 99
+        y: 82
+        width: 20
+        height: 19
+      spriteId: 698303ff13b741c4da0a836bc2fe7f5e
+    - name: Crows_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 101
+        y: 82
+        width: 18
+        height: 20
+      spriteId: 40fb8bb6b31afb144a980c08ac7f4975
+    - name: Crows_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 20
+      spriteId: 949ece06c959bb2458f4a98dccf8d52e
+    - name: Crows_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 18
+      spriteId: b5a032e71b606344a8310bfd3f9075d1
+    - name: Crows_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: d6977fdc2c5457b43a67458f9319e2cd
+    - name: Crows_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: 7e13be5bb35cb1c448f75ae6b71726a1
+    - name: Crows_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: 58188b947ccde2548b5742e8faf5bccc
+    - name: Crows_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 928d3a546614c9e4c97f6260df44db9d
+    - name: Crows_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 5a6fe91821f3bee44b6c7e3576a3b105
+    - name: Crows_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 0c481bf74955b8c4fb2961a93a705751
+    - name: Crows_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: de39d5b7803b5324389601aaee45ce2e
+    - name: Crows_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: a4716162e0efa344f905097d0340839f
+    - name: Crows_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: eb6e9a22f7d5b3146b6274f79db24864
+    - name: Crows_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 12
+      spriteId: bdd14b86ae0408b4493f99e7b976bfe7
+    - name: Crows_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: ebe161a90f44f254e9a33f4c14382174
+    - name: Crows_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 3b42f125522cde447ab86ad7cfb62bc0
+    - name: Crows_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: f85fb795fb16ca543b63cb4372ad6a3f
+    - name: Crows_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 91bcba7adf56f954ab00d5b68e15b270
+    - name: Crows_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: da7356f72a4280141b4b6ded060ec35f
+    - name: Crows_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 13
+      spriteId: 316cf23f1fb582e42b601e0a4dc78e03
+    - name: Crows_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 14
+      spriteId: a6885d4c2d3cca24fae3f99118964bd3
+    - name: Crows_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 14
+      spriteId: 1ebc931b1f209044e9034ffe4e79930f
+    - name: Crows_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 101
+        y: 82
+        width: 17
+        height: 16
+      spriteId: 32729b3b26309e445a421f01d9b09317
+    - name: Crows_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 101
+        y: 82
+        width: 17
+        height: 16
+      spriteId: 027aa8c44eb4b6c4e9f2159c347657b2
+    - name: Crows_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 101
+        y: 82
+        width: 17
+        height: 16
+      spriteId: 38112e9aecc81e643ae2802d88888a60
+    - name: Crows_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 102
+        y: 82
+        width: 16
+        height: 15
+      spriteId: abf527dd65ef28943ba35ebcd5619333
+    - name: Crows_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 14
+      spriteId: 685d4d701f0f2004d8fa3d5457a8237e
+    - name: Crows_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 14
+      spriteId: 78de0c9caf74f874a9dbca34898bda15
+    - name: Crows_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 14
+      spriteId: f0db848f8d5a6624e9fd6428eb97a3c0
+    - name: Crows_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 103
+        y: 82
+        width: 15
+        height: 13
+      spriteId: 536cce7c1b2cede47a200fa22b1758f2
+    - name: Crows_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: ca2cbeb6ca0d96e4eb163302b50ca882
+    - name: Crows_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: ef4617ca7ea164e4a9d91b819ff43aee
+    - name: Crows_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 2687433f6eb2cd147b6bc8d18c1a1d79
+    - name: Crows_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 103
+        y: 82
+        width: 16
+        height: 13
+      spriteId: 325688b3940172649bc73998bf01b483
+    - name: Crows_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 105
+        y: 82
+        width: 14
+        height: 16
+      spriteId: 4dfc423b427c71142a65a4a698c09729
+    - name: Crows_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 94
+        y: 83
+        width: 36
+        height: 38
+      spriteId: 3cc8d2bbf50247046a16989c32459c6c
+    - name: Crows_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 86
+        y: 83
+        width: 58
+        height: 56
+      spriteId: 210f8f44e60d8ce449ae6f3af37f11bd
+    - name: Crows_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 81
+        y: 82
+        width: 84
+        height: 78
+      spriteId: 996aa13e5b10a07439bcde910a846111
+    - name: Crows_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 77
+        y: 83
+        width: 93
+        height: 88
+      spriteId: 1e915db7f1d4b004aa634911d04c154f
+    - name: Crows_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 166
+        y: 169
+        width: 27
+        height: 24
+      spriteId: d4ce2ec7d87260a4c80cc73659558d41
+    - name: Crows_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 178
+        y: 176
+        width: 20
+        height: 21
+      spriteId: 967cf02dce29b904dae89f49b6b13434
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

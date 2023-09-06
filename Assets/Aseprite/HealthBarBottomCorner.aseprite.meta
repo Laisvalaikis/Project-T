@@ -1,7 +1,1116 @@
 fileFormatVersion: 2
 guid: 5db48133210230b45a4a5122c84320df
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: HealthBarBottomCorner_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 12
+    spriteID: bcfab3342bfb4bb42a60df08e93d01d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: HealthBarBottomCorner_Frame_1
+    originalName: 
+    pivot: {x: 17, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 108
+      width: 1
+      height: 6
+    spriteID: ec6d7a3cb2f514d4ebc8bd4e7290764f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 108}
+  - name: HealthBarBottomCorner_Frame_2
+    originalName: 
+    pivot: {x: 8.5, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 108
+      width: 2
+      height: 6
+    spriteID: 52338b80c70e24f4a999fe77579d2ef4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 108}
+  - name: HealthBarBottomCorner_Frame_3
+    originalName: 
+    pivot: {x: 5.6666665, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 17
+      y: 108
+      width: 3
+      height: 6
+    spriteID: 7b1490f0c3a789c48955cd8f2380287b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 17, y: 108}
+  - name: HealthBarBottomCorner_Frame_4
+    originalName: 
+    pivot: {x: 4.25, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 66
+      width: 4
+      height: 6
+    spriteID: d6587a168836a4c4d9e31fd8a441743d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 66}
+  - name: HealthBarBottomCorner_Frame_5
+    originalName: 
+    pivot: {x: 3.4, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 5
+      height: 6
+    spriteID: 249d94d32607e574dbcd65a0721e1199
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: HealthBarBottomCorner_Frame_6
+    originalName: 
+    pivot: {x: 2.8333333, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 94
+      width: 6
+      height: 6
+    spriteID: 9ba4593bc0542984687b787f6e441107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 94}
+  - name: HealthBarBottomCorner_Frame_7
+    originalName: 
+    pivot: {x: 2.4285715, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 94
+      width: 7
+      height: 6
+    spriteID: 3bf8a808ec81f9c449a1bd8c92ce5f80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 94}
+  - name: HealthBarBottomCorner_Frame_8
+    originalName: 
+    pivot: {x: 2.125, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 94
+      width: 8
+      height: 6
+    spriteID: a69ad21e6fb6b4d438e52ec743890afd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 94}
+  - name: HealthBarBottomCorner_Frame_9
+    originalName: 
+    pivot: {x: 1.8888891, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 94
+      width: 9
+      height: 6
+    spriteID: 07981e27257f5b44da980fe645bc15dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 94}
+  - name: HealthBarBottomCorner_Frame_10
+    originalName: 
+    pivot: {x: 1.7, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 94
+      width: 10
+      height: 6
+    spriteID: 9a81a1cf032118c4092d18413825721f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 94}
+  - name: HealthBarBottomCorner_Frame_11
+    originalName: 
+    pivot: {x: 1.5454546, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 94
+      width: 11
+      height: 6
+    spriteID: 36e60b8fd3cd6a34796bc1cc6291fded
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 94}
+  - name: HealthBarBottomCorner_Frame_12
+    originalName: 
+    pivot: {x: 1.4166666, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 38
+      width: 12
+      height: 6
+    spriteID: 8e02dcc1a6f696241a55657c5c9ac242
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 38}
+  - name: HealthBarBottomCorner_Frame_13
+    originalName: 
+    pivot: {x: 1.3076924, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 94
+      width: 13
+      height: 6
+    spriteID: a8e84cad0104985478082c1a4732f655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 94}
+  - name: HealthBarBottomCorner_Frame_14
+    originalName: 
+    pivot: {x: 1.2142857, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 80
+      width: 14
+      height: 6
+    spriteID: 920e2b264c4e28048af8bae4beacb621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 80}
+  - name: HealthBarBottomCorner_Frame_15
+    originalName: 
+    pivot: {x: 1.1333334, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 80
+      width: 15
+      height: 6
+    spriteID: cdb993ab51aa6094f97d50d2e6e36f19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 80}
+  - name: HealthBarBottomCorner_Frame_16
+    originalName: 
+    pivot: {x: 1.0625, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 80
+      width: 16
+      height: 6
+    spriteID: b4a5f00adf2ea3b448f9382aac713d3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 80}
+  - name: HealthBarBottomCorner_Frame_17
+    originalName: 
+    pivot: {x: 1.0000001, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 80
+      width: 17
+      height: 6
+    spriteID: a118bd0cc86f9584d89c3d673bd0a5f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 80}
+  - name: HealthBarBottomCorner_Frame_18
+    originalName: 
+    pivot: {x: 0.94444454, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 80
+      width: 18
+      height: 6
+    spriteID: 0faa13db55e5c174a93f8ab394511966
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 80}
+  - name: HealthBarBottomCorner_Frame_19
+    originalName: 
+    pivot: {x: 0.8947369, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 66
+      width: 19
+      height: 6
+    spriteID: 88e49f46dcd67564e84179a3398d5d95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 66}
+  - name: HealthBarBottomCorner_Frame_20
+    originalName: 
+    pivot: {x: 0.85, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 66
+      width: 20
+      height: 6
+    spriteID: 7ab2bf93bed82a7439abb219b0613bd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 66}
+  - name: HealthBarBottomCorner_Frame_21
+    originalName: 
+    pivot: {x: 0.8095238, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 52
+      width: 21
+      height: 6
+    spriteID: 8ff11184aa853ac48ba72fb7175d2911
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 52}
+  - name: HealthBarBottomCorner_Frame_22
+    originalName: 
+    pivot: {x: 0.7727273, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 66
+      width: 22
+      height: 6
+    spriteID: c698df9144168a1458a006e541d079c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 66}
+  - name: HealthBarBottomCorner_Frame_23
+    originalName: 
+    pivot: {x: 0.73913044, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 66
+      width: 23
+      height: 6
+    spriteID: 8347b601ed40b1a4cb78e5187bf6445d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 66}
+  - name: HealthBarBottomCorner_Frame_24
+    originalName: 
+    pivot: {x: 0.7083333, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 52
+      width: 24
+      height: 6
+    spriteID: c32e1106aeb407d40be7ff2025c957ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 52}
+  - name: HealthBarBottomCorner_Frame_25
+    originalName: 
+    pivot: {x: 0.68, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 52
+      width: 25
+      height: 6
+    spriteID: d9048c3214864a847a15b0b2ae755528
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 52}
+  - name: HealthBarBottomCorner_Frame_26
+    originalName: 
+    pivot: {x: 0.6538462, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 26
+      height: 6
+    spriteID: 04cf238e08e1a1e4482d06f83013f1ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 52}
+  - name: HealthBarBottomCorner_Frame_27
+    originalName: 
+    pivot: {x: 0.6296296, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 38
+      width: 27
+      height: 6
+    spriteID: 2ccbd5db493fc54468479a052a60e52d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 38}
+  - name: HealthBarBottomCorner_Frame_28
+    originalName: 
+    pivot: {x: 0.60714287, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 38
+      width: 28
+      height: 6
+    spriteID: f5a0c8e4a3eadd847b17c5114b9dab4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 38}
+  - name: HealthBarBottomCorner_Frame_29
+    originalName: 
+    pivot: {x: 0.5862069, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 38
+      width: 29
+      height: 6
+    spriteID: 32a4254152a0a5e4c89ce542fd88d8a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 38}
+  - name: HealthBarBottomCorner_Frame_30
+    originalName: 
+    pivot: {x: 0.5666667, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 4
+      width: 30
+      height: 6
+    spriteID: b6d90082705230d458d8097af0015ef3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 4}
+  - name: HealthBarBottomCorner_Frame_31
+    originalName: 
+    pivot: {x: 0.5483871, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 24
+      width: 31
+      height: 6
+    spriteID: 109d71ad10fc32941b5dd5a51cace50a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 24}
+  - name: HealthBarBottomCorner_Frame_32
+    originalName: 
+    pivot: {x: 0.53125, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 45
+      y: 24
+      width: 32
+      height: 6
+    spriteID: 353da8687d390f74b8868e18b033fe80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 45, y: 24}
+  - name: HealthBarBottomCorner_Frame_33
+    originalName: 
+    pivot: {x: 0.51515156, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 24
+      width: 33
+      height: 6
+    spriteID: 2508da61dee61be4cba3ad8c01416237
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 24}
+  - name: HealthBarBottomCorner_Frame_34
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 34
+      height: 6
+    spriteID: f26a49f664b64974aa5b572b22c0f355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1206255
+    name: HealthBarBottomCorner
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: HealthBarBottomCorner_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 12
+      spriteId: bcfab3342bfb4bb42a60df08e93d01d6
+    - name: HealthBarBottomCorner_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 3
+        y: 3
+        width: 1
+        height: 6
+      spriteId: ec6d7a3cb2f514d4ebc8bd4e7290764f
+    - name: HealthBarBottomCorner_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 3
+        y: 3
+        width: 2
+        height: 6
+      spriteId: 52338b80c70e24f4a999fe77579d2ef4
+    - name: HealthBarBottomCorner_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 3
+        y: 3
+        width: 3
+        height: 6
+      spriteId: 7b1490f0c3a789c48955cd8f2380287b
+    - name: HealthBarBottomCorner_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 3
+        width: 4
+        height: 6
+      spriteId: d6587a168836a4c4d9e31fd8a441743d
+    - name: HealthBarBottomCorner_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 3
+        y: 3
+        width: 5
+        height: 6
+      spriteId: 249d94d32607e574dbcd65a0721e1199
+    - name: HealthBarBottomCorner_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 3
+        width: 6
+        height: 6
+      spriteId: 9ba4593bc0542984687b787f6e441107
+    - name: HealthBarBottomCorner_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 3
+        y: 3
+        width: 7
+        height: 6
+      spriteId: 3bf8a808ec81f9c449a1bd8c92ce5f80
+    - name: HealthBarBottomCorner_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 3
+        y: 3
+        width: 8
+        height: 6
+      spriteId: a69ad21e6fb6b4d438e52ec743890afd
+    - name: HealthBarBottomCorner_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 3
+        y: 3
+        width: 9
+        height: 6
+      spriteId: 07981e27257f5b44da980fe645bc15dc
+    - name: HealthBarBottomCorner_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 3
+        y: 3
+        width: 10
+        height: 6
+      spriteId: 9a81a1cf032118c4092d18413825721f
+    - name: HealthBarBottomCorner_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 3
+        y: 3
+        width: 11
+        height: 6
+      spriteId: 36e60b8fd3cd6a34796bc1cc6291fded
+    - name: HealthBarBottomCorner_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 3
+        y: 3
+        width: 12
+        height: 6
+      spriteId: 8e02dcc1a6f696241a55657c5c9ac242
+    - name: HealthBarBottomCorner_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 3
+        y: 3
+        width: 13
+        height: 6
+      spriteId: a8e84cad0104985478082c1a4732f655
+    - name: HealthBarBottomCorner_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 3
+        y: 3
+        width: 14
+        height: 6
+      spriteId: 920e2b264c4e28048af8bae4beacb621
+    - name: HealthBarBottomCorner_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 3
+        y: 3
+        width: 15
+        height: 6
+      spriteId: cdb993ab51aa6094f97d50d2e6e36f19
+    - name: HealthBarBottomCorner_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 3
+        y: 3
+        width: 16
+        height: 6
+      spriteId: b4a5f00adf2ea3b448f9382aac713d3d
+    - name: HealthBarBottomCorner_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 3
+        y: 3
+        width: 17
+        height: 6
+      spriteId: a118bd0cc86f9584d89c3d673bd0a5f9
+    - name: HealthBarBottomCorner_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 3
+        width: 18
+        height: 6
+      spriteId: 0faa13db55e5c174a93f8ab394511966
+    - name: HealthBarBottomCorner_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 3
+        y: 3
+        width: 19
+        height: 6
+      spriteId: 88e49f46dcd67564e84179a3398d5d95
+    - name: HealthBarBottomCorner_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 3
+        y: 3
+        width: 20
+        height: 6
+      spriteId: 7ab2bf93bed82a7439abb219b0613bd2
+    - name: HealthBarBottomCorner_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 3
+        y: 3
+        width: 21
+        height: 6
+      spriteId: 8ff11184aa853ac48ba72fb7175d2911
+    - name: HealthBarBottomCorner_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 3
+        y: 3
+        width: 22
+        height: 6
+      spriteId: c698df9144168a1458a006e541d079c2
+    - name: HealthBarBottomCorner_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 3
+        y: 3
+        width: 23
+        height: 6
+      spriteId: 8347b601ed40b1a4cb78e5187bf6445d
+    - name: HealthBarBottomCorner_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 3
+        y: 3
+        width: 24
+        height: 6
+      spriteId: c32e1106aeb407d40be7ff2025c957ff
+    - name: HealthBarBottomCorner_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 3
+        y: 3
+        width: 25
+        height: 6
+      spriteId: d9048c3214864a847a15b0b2ae755528
+    - name: HealthBarBottomCorner_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 3
+        y: 3
+        width: 26
+        height: 6
+      spriteId: 04cf238e08e1a1e4482d06f83013f1ce
+    - name: HealthBarBottomCorner_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 3
+        y: 3
+        width: 27
+        height: 6
+      spriteId: 2ccbd5db493fc54468479a052a60e52d
+    - name: HealthBarBottomCorner_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 3
+        y: 3
+        width: 28
+        height: 6
+      spriteId: f5a0c8e4a3eadd847b17c5114b9dab4b
+    - name: HealthBarBottomCorner_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 3
+        y: 3
+        width: 29
+        height: 6
+      spriteId: 32a4254152a0a5e4c89ce542fd88d8a4
+    - name: HealthBarBottomCorner_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 3
+        y: 3
+        width: 30
+        height: 6
+      spriteId: b6d90082705230d458d8097af0015ef3
+    - name: HealthBarBottomCorner_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 3
+        y: 3
+        width: 31
+        height: 6
+      spriteId: 109d71ad10fc32941b5dd5a51cace50a
+    - name: HealthBarBottomCorner_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 3
+        y: 3
+        width: 32
+        height: 6
+      spriteId: 353da8687d390f74b8868e18b033fe80
+    - name: HealthBarBottomCorner_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 3
+        y: 3
+        width: 33
+        height: 6
+      spriteId: 2508da61dee61be4cba3ad8c01416237
+    - name: HealthBarBottomCorner_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 3
+        y: 3
+        width: 34
+        height: 6
+      spriteId: f26a49f664b64974aa5b572b22c0f355
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 40, y: 12}

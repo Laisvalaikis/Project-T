@@ -1,7 +1,668 @@
 fileFormatVersion: 2
 guid: 113bf60d4ecfdee49bd025e4375f2981
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Greenery_Frame_5
+    originalName: 
+    pivot: {x: 0.6285714, y: -0.3888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 33
+      width: 35
+      height: 18
+    spriteID: 820b49b9cdce4954493d00883a4784d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 33}
+  - name: Greenery_Frame_11
+    originalName: 
+    pivot: {x: 0.3809524, y: -0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 44
+      width: 21
+      height: 32
+    spriteID: e5092e4a8bae2544fabd52e6563e41d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 44}
+  - name: Greenery_Frame_12
+    originalName: 
+    pivot: {x: 0.3809524, y: -0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 84
+      width: 21
+      height: 32
+    spriteID: ea7c42c842937bd40a7d04dde71dad9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 84}
+  - name: Greenery_Frame_13
+    originalName: 
+    pivot: {x: 0.36363637, y: -0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 211
+      width: 22
+      height: 32
+    spriteID: d10dc975f8888c444b823ce073ca0ad3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 211}
+  - name: Greenery_Frame_14
+    originalName: 
+    pivot: {x: 0.36363637, y: -0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 22
+      height: 32
+    spriteID: ed84bad0abf70a344831d20560918917
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: Greenery_Frame_0
+    originalName: 
+    pivot: {x: 0.625, y: -0.2702703}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 166
+      width: 24
+      height: 37
+    spriteID: 1da8bfde261a4e2449d18c38919a5778
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 166}
+  - name: Greenery_Frame_1
+    originalName: 
+    pivot: {x: 0.6363636, y: -1.117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 90
+      width: 22
+      height: 17
+    spriteID: 035e469befad77e4387201a2c82d0b52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 90}
+  - name: Greenery_Frame_2
+    originalName: 
+    pivot: {x: 0.6190476, y: -1.2142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 136
+      width: 21
+      height: 14
+    spriteID: 0855d3b4ca0fd144b9e0c61462ede4ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 136}
+  - name: Greenery_Frame_3
+    originalName: 
+    pivot: {x: 0.6060606, y: -0.5714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 4
+      width: 33
+      height: 21
+    spriteID: c3a6be8fb9db94a4a8351a10795c6d5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 4}
+  - name: Greenery_Frame_4
+    originalName: 
+    pivot: {x: 0.6, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 115
+      width: 25
+      height: 13
+    spriteID: a18591ebb843f384892b8073a77166c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 115}
+  - name: Greenery_Frame_6
+    originalName: 
+    pivot: {x: 0.8, y: -1.3571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 90
+      width: 10
+      height: 14
+    spriteID: 9b67a68251cbd44479932b3ca1b0acc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 90}
+  - name: Greenery_Frame_7
+    originalName: 
+    pivot: {x: 0.6999999, y: -1.5833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 59
+      width: 10
+      height: 12
+    spriteID: e0d66edbfa9d2f244b43da914a47233d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 59}
+  - name: Greenery_Frame_8
+    originalName: 
+    pivot: {x: 0.54999995, y: -0.73913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 177
+      width: 20
+      height: 23
+    spriteID: 3077ef655e032df4db25583afc995c3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 177}
+  - name: Greenery_Frame_9
+    originalName: 
+    pivot: {x: 0.54999995, y: -0.73913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 208
+      width: 20
+      height: 23
+    spriteID: 346b070c06f81d244a3c596253297af8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 208}
+  - name: Greenery_Frame_10
+    originalName: 
+    pivot: {x: 0.54999995, y: -0.73913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 59
+      width: 20
+      height: 23
+    spriteID: e9c10ff3de659cf48aea6cf59f156a0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 59}
+  - name: Greenery_Frame_15
+    originalName: 
+    pivot: {x: 0.72727275, y: -0.37777779}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 124
+      width: 11
+      height: 45
+    spriteID: c6ec936f72d1e6741b290e93da50a2aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 124}
+  - name: Greenery_Frame_16
+    originalName: 
+    pivot: {x: 0.625, y: -0.3809524}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 116
+      width: 32
+      height: 42
+    spriteID: e04feffb722b3cb48b0464754d174771
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 116}
+  - name: Greenery_Frame_17
+    originalName: 
+    pivot: {x: 0.54999995, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 48
+    spriteID: 2f0f1fdd0c3d947488cc41cef82ff922
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Greenery_Frame_18
+    originalName: 
+    pivot: {x: 0.54999995, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 60
+      width: 40
+      height: 48
+    spriteID: 3e3d3939d8d15b24298e278c61083043
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 60}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1247408435
+    name: Greenery
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Greenery_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 11
+        y: 7
+        width: 35
+        height: 18
+      spriteId: 820b49b9cdce4954493d00883a4784d7
+    - name: Greenery_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 25
+        y: 18
+        width: 21
+        height: 32
+      spriteId: e5092e4a8bae2544fabd52e6563e41d3
+    - name: Greenery_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 25
+        y: 18
+        width: 21
+        height: 32
+      spriteId: ea7c42c842937bd40a7d04dde71dad9d
+    - name: Greenery_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 25
+        y: 18
+        width: 22
+        height: 32
+      spriteId: d10dc975f8888c444b823ce073ca0ad3
+    - name: Greenery_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 25
+        y: 18
+        width: 22
+        height: 32
+      spriteId: ed84bad0abf70a344831d20560918917
+    - name: Greenery_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 18
+        y: 10
+        width: 24
+        height: 37
+      spriteId: 1da8bfde261a4e2449d18c38919a5778
+    - name: Greenery_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 19
+        y: 19
+        width: 22
+        height: 17
+      spriteId: 035e469befad77e4387201a2c82d0b52
+    - name: Greenery_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 20
+        y: 17
+        width: 21
+        height: 14
+      spriteId: 0855d3b4ca0fd144b9e0c61462ede4ca
+    - name: Greenery_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 12
+        width: 33
+        height: 21
+      spriteId: c3a6be8fb9db94a4a8351a10795c6d5d
+    - name: Greenery_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 18
+        y: 13
+        width: 25
+        height: 13
+      spriteId: a18591ebb843f384892b8073a77166c4
+    - name: Greenery_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 25
+        y: 19
+        width: 10
+        height: 14
+      spriteId: 9b67a68251cbd44479932b3ca1b0acc1
+    - name: Greenery_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 26
+        y: 19
+        width: 10
+        height: 12
+      spriteId: e0d66edbfa9d2f244b43da914a47233d
+    - name: Greenery_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 22
+        y: 17
+        width: 20
+        height: 23
+      spriteId: 3077ef655e032df4db25583afc995c3a
+    - name: Greenery_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 22
+        y: 17
+        width: 20
+        height: 23
+      spriteId: 346b070c06f81d244a3c596253297af8
+    - name: Greenery_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 22
+        y: 17
+        width: 20
+        height: 23
+      spriteId: e9c10ff3de659cf48aea6cf59f156a0a
+    - name: Greenery_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 25
+        y: 17
+        width: 11
+        height: 45
+      spriteId: c6ec936f72d1e6741b290e93da50a2aa
+    - name: Greenery_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 13
+        y: 16
+        width: 32
+        height: 42
+      spriteId: e04feffb722b3cb48b0464754d174771
+    - name: Greenery_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 11
+        y: 9
+        width: 40
+        height: 48
+      spriteId: 2f0f1fdd0c3d947488cc41cef82ff922
+    - name: Greenery_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 11
+        y: 9
+        width: 40
+        height: 48
+      spriteId: 3e3d3939d8d15b24298e278c61083043
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 66, y: 66}

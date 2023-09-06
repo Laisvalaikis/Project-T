@@ -1,7 +1,528 @@
 fileFormatVersion: 2
 guid: 4981f1f897e3f19449a4cec1c394322d
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: TownButtons_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 40
+    spriteID: 467a1a0200504574f9532f8ac8a139a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: TownButtons_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 40
+      height: 40
+    spriteID: ab2f7aac7793b244c9c3b714875066c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 52}
+  - name: TownButtons_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 40
+      height: 40
+    spriteID: 8b7faa2068b62bb4187b699b7d450c7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: TownButtons_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.4347826}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 153
+      width: 18
+      height: 23
+    spriteID: 692410febe95efd43ab2d6f7dab7ad36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 153}
+  - name: TownButtons_Frame_3
+    originalName: 
+    pivot: {x: 0.5263158, y: -0.28}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 50
+      width: 19
+      height: 25
+    spriteID: 80019023ea5be604bac1e10aab76edcc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 50}
+  - name: TownButtons_Frame_4
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.48000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 4
+      width: 23
+      height: 25
+    spriteID: 8a6b431441d53bc42a1fef694563cf0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 4}
+  - name: TownButtons_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.48000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 96
+      width: 28
+      height: 25
+    spriteID: 3516fb4e1c25b8941be11a2efdcaaba8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 96}
+  - name: TownButtons_Frame_6
+    originalName: 
+    pivot: {x: 0.5294118, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 184
+      width: 17
+      height: 22
+    spriteID: 0647deffff12350428c2fc54e8596fc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 184}
+  - name: TownButtons_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 214
+      width: 12
+      height: 20
+    spriteID: ee0c180fb0545ab46a868b0dd9055f71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 214}
+  - name: TownButtons_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.026315792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 38
+      height: 38
+    spriteID: 282aa4e43881f7246bc419a935daf1f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  - name: TownButtons_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.026315792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 194
+      width: 38
+      height: 38
+    spriteID: ecf45b76b9096214da70f2d6e336c54b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 194}
+  - name: TownButtons_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.026315792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 38
+      height: 38
+    spriteID: 7836f6ef325c8e147af8b7b6bc9e4682
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: TownButtons_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.026315792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 50
+      width: 38
+      height: 38
+    spriteID: e6c5d4435b4bd06479e9245a6b1fcc54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 50}
+  - name: TownButtons_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 129
+      width: 28
+      height: 16
+    spriteID: 925e6df9850cab2478b497ce61845489
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 129}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 69469095
+    name: TownButtons
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TownButtons_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      spriteId: 467a1a0200504574f9532f8ac8a139a6
+    - name: TownButtons_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      spriteId: ab2f7aac7793b244c9c3b714875066c4
+    - name: TownButtons_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      spriteId: 8b7faa2068b62bb4187b699b7d450c7f
+    - name: TownButtons_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 11
+        y: 10
+        width: 18
+        height: 23
+      spriteId: 692410febe95efd43ab2d6f7dab7ad36
+    - name: TownButtons_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 10
+        y: 7
+        width: 19
+        height: 25
+      spriteId: 80019023ea5be604bac1e10aab76edcc
+    - name: TownButtons_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 8
+        y: 12
+        width: 23
+        height: 25
+      spriteId: 8a6b431441d53bc42a1fef694563cf0d
+    - name: TownButtons_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 6
+        y: 12
+        width: 28
+        height: 25
+      spriteId: 3516fb4e1c25b8941be11a2efdcaaba8
+    - name: TownButtons_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 11
+        y: 11
+        width: 17
+        height: 22
+      spriteId: 0647deffff12350428c2fc54e8596fc1
+    - name: TownButtons_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 14
+        y: 10
+        width: 12
+        height: 20
+      spriteId: ee0c180fb0545ab46a868b0dd9055f71
+    - name: TownButtons_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 1
+        y: 1
+        width: 38
+        height: 38
+      spriteId: 282aa4e43881f7246bc419a935daf1f6
+    - name: TownButtons_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 1
+        y: 1
+        width: 38
+        height: 38
+      spriteId: ecf45b76b9096214da70f2d6e336c54b
+    - name: TownButtons_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 1
+        y: 1
+        width: 38
+        height: 38
+      spriteId: 7836f6ef325c8e147af8b7b6bc9e4682
+    - name: TownButtons_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 1
+        width: 38
+        height: 38
+      spriteId: e6c5d4435b4bd06479e9245a6b1fcc54
+    - name: TownButtons_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 6
+        y: 12
+        width: 28
+        height: 16
+      spriteId: 925e6df9850cab2478b497ce61845489
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 40, y: 40}

@@ -1,7 +1,920 @@
 fileFormatVersion: 2
 guid: 9d9e697dffbb3d54098cbc61f821bf70
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: AimArrows_Frame_0
+    originalName: 
+    pivot: {x: 1.88, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 276
+      width: 25
+      height: 49
+    spriteID: 7eb38cd60947db14f8d7dd37a50236cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 276}
+  - name: AimArrows_Frame_1
+    originalName: 
+    pivot: {x: 1.6923076, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 26
+      height: 49
+    spriteID: 7af9bd8cf7888b64cb6fc284bc896f4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: AimArrows_Frame_2
+    originalName: 
+    pivot: {x: 1.6956521, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 456
+      width: 23
+      height: 49
+    spriteID: bbdf9cbb0a7bd0f4eba5d14daa198e5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 456}
+  - name: AimArrows_Frame_3
+    originalName: 
+    pivot: {x: 1.7391305, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 4
+      width: 23
+      height: 49
+    spriteID: 10097bb51e5585c42ba0c1861d688896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 4}
+  - name: AimArrows_Frame_4
+    originalName: 
+    pivot: {x: 1.7307692, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 61
+      width: 26
+      height: 49
+    spriteID: 8465d8a011a726e46ae636a7ee92e204
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 61}
+  - name: AimArrows_Frame_5
+    originalName: 
+    pivot: {x: 1.7692307, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 118
+      width: 26
+      height: 49
+    spriteID: f9dd659448fbc5f40a352eb10c979e3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 118}
+  - name: AimArrows_Frame_6
+    originalName: 
+    pivot: {x: 1.8076923, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 175
+      width: 26
+      height: 49
+    spriteID: 36cdd6afacf633b4ba2918824a4366a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 175}
+  - name: AimArrows_Frame_7
+    originalName: 
+    pivot: {x: 0.51020414, y: -5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 333
+      width: 49
+      height: 25
+    spriteID: a830a707fddedcf46a2e5791677f3985
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 333}
+  - name: AimArrows_Frame_8
+    originalName: 
+    pivot: {x: 0.51020414, y: -4.6538463}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 4
+      width: 49
+      height: 26
+    spriteID: 7b8b1bf5069b2d44790be407bf569ec2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 4}
+  - name: AimArrows_Frame_9
+    originalName: 
+    pivot: {x: 0.51020414, y: -5.173913}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 4
+      width: 49
+      height: 23
+    spriteID: f41f7ea735773fb41af8e4ad12db452d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 4}
+  - name: AimArrows_Frame_10
+    originalName: 
+    pivot: {x: 0.51020414, y: -5.2173915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 35
+      width: 49
+      height: 23
+    spriteID: b20e822d7c297154ea39ad789914aa6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 35}
+  - name: AimArrows_Frame_11
+    originalName: 
+    pivot: {x: 0.51020414, y: -4.692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 38
+      width: 49
+      height: 26
+    spriteID: 960f48c6f0bedde4fbe2206f20efd587
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 38}
+  - name: AimArrows_Frame_12
+    originalName: 
+    pivot: {x: 0.51020414, y: -4.730769}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 72
+      width: 49
+      height: 26
+    spriteID: f5d4891641d12f7489d51ef53dd189cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 72}
+  - name: AimArrows_Frame_13
+    originalName: 
+    pivot: {x: 0.51020414, y: -4.7692304}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 106
+      width: 49
+      height: 26
+    spriteID: 09e0329204f467143bf37e950951e19f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 106}
+  - name: AimArrows_Frame_14
+    originalName: 
+    pivot: {x: -0.87999994, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 366
+      width: 25
+      height: 49
+    spriteID: 7ca5fd88f7e336c40931de921c9c0947
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 366}
+  - name: AimArrows_Frame_15
+    originalName: 
+    pivot: {x: -0.6923075, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 232
+      width: 26
+      height: 49
+    spriteID: 65f1c4ae180acd24ba920d97a46e38fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 232}
+  - name: AimArrows_Frame_16
+    originalName: 
+    pivot: {x: -0.69565237, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 66
+      width: 23
+      height: 49
+    spriteID: be533f8d8ef64004599755b8b8303494
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 66}
+  - name: AimArrows_Frame_17
+    originalName: 
+    pivot: {x: -0.73913044, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 123
+      width: 23
+      height: 49
+    spriteID: ece3b080ef1ce67449c3d8dcac932a7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 123}
+  - name: AimArrows_Frame_18
+    originalName: 
+    pivot: {x: -0.7307693, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 289
+      width: 26
+      height: 49
+    spriteID: 788a3d920b9287041956b3877cc317e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 289}
+  - name: AimArrows_Frame_19
+    originalName: 
+    pivot: {x: -0.76923066, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 346
+      width: 26
+      height: 49
+    spriteID: 9f4709bc24957b44f8d627816242a07a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 346}
+  - name: AimArrows_Frame_20
+    originalName: 
+    pivot: {x: -0.80769247, y: -1.5510204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 403
+      width: 26
+      height: 49
+    spriteID: 98b6ba0e1a70d1c4b9dd9e2b2b234ff6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 403}
+  - name: AimArrows_Frame_21
+    originalName: 
+    pivot: {x: 0.51020414, y: -1.6800001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 423
+      width: 49
+      height: 25
+    spriteID: bea65251f9ecd9842b7f96d34e265b44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 423}
+  - name: AimArrows_Frame_22
+    originalName: 
+    pivot: {x: 0.51020414, y: -1.7307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 140
+      width: 49
+      height: 26
+    spriteID: fb03adcd063f13046a75ef1a83d02613
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 140}
+  - name: AimArrows_Frame_23
+    originalName: 
+    pivot: {x: 0.51020414, y: -2.173913}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 180
+      width: 49
+      height: 23
+    spriteID: eeb5a23b926f0b441b2c29c95ae5e181
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 180}
+  - name: AimArrows_Frame_24
+    originalName: 
+    pivot: {x: 0.51020414, y: -2.1304348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 211
+      width: 49
+      height: 23
+    spriteID: a02bb75e3b8f74340894a6604c1e0310
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 211}
+  - name: AimArrows_Frame_25
+    originalName: 
+    pivot: {x: 0.51020414, y: -1.6923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 174
+      width: 49
+      height: 26
+    spriteID: 119032684d82df740b6cd422f2a50311
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 174}
+  - name: AimArrows_Frame_26
+    originalName: 
+    pivot: {x: 0.51020414, y: -1.6538461}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 208
+      width: 49
+      height: 26
+    spriteID: 1273165e5677ba94a9508308f2ce03c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 208}
+  - name: AimArrows_Frame_27
+    originalName: 
+    pivot: {x: 0.51020414, y: -1.6153847}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 242
+      width: 49
+      height: 26
+    spriteID: d44930e5548a2e145bf651239443368d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 242}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -513121469
+    name: AimArrows
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: AimArrows_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 52
+        y: 76
+        width: 25
+        height: 49
+      spriteId: 7eb38cd60947db14f8d7dd37a50236cc
+    - name: AimArrows_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 55
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 7af9bd8cf7888b64cb6fc284bc896f4d
+    - name: AimArrows_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 60
+        y: 76
+        width: 23
+        height: 49
+      spriteId: bbdf9cbb0a7bd0f4eba5d14daa198e5b
+    - name: AimArrows_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 59
+        y: 76
+        width: 23
+        height: 49
+      spriteId: 10097bb51e5585c42ba0c1861d688896
+    - name: AimArrows_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 54
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 8465d8a011a726e46ae636a7ee92e204
+    - name: AimArrows_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 53
+        y: 76
+        width: 26
+        height: 49
+      spriteId: f9dd659448fbc5f40a352eb10c979e3a
+    - name: AimArrows_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 52
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 36cdd6afacf633b4ba2918824a4366a3
+    - name: AimArrows_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 74
+        y: 125
+        width: 49
+        height: 25
+      spriteId: a830a707fddedcf46a2e5791677f3985
+    - name: AimArrows_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 74
+        y: 121
+        width: 49
+        height: 26
+      spriteId: 7b8b1bf5069b2d44790be407bf569ec2
+    - name: AimArrows_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 74
+        y: 119
+        width: 49
+        height: 23
+      spriteId: f41f7ea735773fb41af8e4ad12db452d
+    - name: AimArrows_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 74
+        y: 120
+        width: 49
+        height: 23
+      spriteId: b20e822d7c297154ea39ad789914aa6a
+    - name: AimArrows_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 74
+        y: 122
+        width: 49
+        height: 26
+      spriteId: 960f48c6f0bedde4fbe2206f20efd587
+    - name: AimArrows_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 74
+        y: 123
+        width: 49
+        height: 26
+      spriteId: f5d4891641d12f7489d51ef53dd189cb
+    - name: AimArrows_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 74
+        y: 124
+        width: 49
+        height: 26
+      spriteId: 09e0329204f467143bf37e950951e19f
+    - name: AimArrows_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 121
+        y: 76
+        width: 25
+        height: 49
+      spriteId: 7ca5fd88f7e336c40931de921c9c0947
+    - name: AimArrows_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 117
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 65f1c4ae180acd24ba920d97a46e38fb
+    - name: AimArrows_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 115
+        y: 76
+        width: 23
+        height: 49
+      spriteId: be533f8d8ef64004599755b8b8303494
+    - name: AimArrows_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 116
+        y: 76
+        width: 23
+        height: 49
+      spriteId: ece3b080ef1ce67449c3d8dcac932a7d
+    - name: AimArrows_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 118
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 788a3d920b9287041956b3877cc317e2
+    - name: AimArrows_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 119
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 9f4709bc24957b44f8d627816242a07a
+    - name: AimArrows_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 120
+        y: 76
+        width: 26
+        height: 49
+      spriteId: 98b6ba0e1a70d1c4b9dd9e2b2b234ff6
+    - name: AimArrows_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 74
+        y: 42
+        width: 49
+        height: 25
+      spriteId: bea65251f9ecd9842b7f96d34e265b44
+    - name: AimArrows_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 74
+        y: 45
+        width: 49
+        height: 26
+      spriteId: fb03adcd063f13046a75ef1a83d02613
+    - name: AimArrows_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 74
+        y: 50
+        width: 49
+        height: 23
+      spriteId: eeb5a23b926f0b441b2c29c95ae5e181
+    - name: AimArrows_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 74
+        y: 49
+        width: 49
+        height: 23
+      spriteId: a02bb75e3b8f74340894a6604c1e0310
+    - name: AimArrows_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 74
+        y: 44
+        width: 49
+        height: 26
+      spriteId: 119032684d82df740b6cd422f2a50311
+    - name: AimArrows_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 74
+        y: 43
+        width: 49
+        height: 26
+      spriteId: 1273165e5677ba94a9508308f2ce03c1
+    - name: AimArrows_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 74
+        y: 42
+        width: 49
+        height: 26
+      spriteId: d44930e5548a2e145bf651239443368d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 198, y: 198}

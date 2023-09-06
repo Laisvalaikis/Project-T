@@ -1,7 +1,948 @@
 fileFormatVersion: 2
 guid: 374cd02d3357025478dc4911532609b8
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: MapTiles_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 66
+      height: 66
+    spriteID: 3be9f3ecc10e58d47afc0b13f09295c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: MapTiles_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 66
+      height: 66
+    spriteID: 15b2c791a98358848811e820cdbcb14d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: MapTiles_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 66
+      height: 66
+    spriteID: 1d9cba16c0193bb488d38ee1be1fef53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: MapTiles_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 226
+      width: 66
+      height: 66
+    spriteID: 6b94efe0718d20b4e9853f4dd7cc0842
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 226}
+  - name: MapTiles_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 300
+      width: 66
+      height: 66
+    spriteID: 8b755c3f70312a848868c9f8ef2a8201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 300}
+  - name: MapTiles_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 374
+      width: 66
+      height: 66
+    spriteID: b7af6a0856b65d54da5638dd06adb6f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 374}
+  - name: MapTiles_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 66
+      height: 66
+    spriteID: a9af4906f38f42b498bc65ad6640234b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: MapTiles_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 78
+      width: 66
+      height: 66
+    spriteID: fe77ca5f3e9204c48bfdd40bdfdfd40c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 78}
+  - name: MapTiles_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 152
+      width: 66
+      height: 66
+    spriteID: de85d3ba0d29b9744bd99c513b1b91ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 152}
+  - name: MapTiles_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 226
+      width: 66
+      height: 66
+    spriteID: 8b363cab6ad6f4d4197bbf573ed7928f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 226}
+  - name: MapTiles_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 300
+      width: 66
+      height: 66
+    spriteID: b4c832ce470c4e846b8d41428899a0b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 300}
+  - name: MapTiles_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 374
+      width: 66
+      height: 66
+    spriteID: c792c313b3dbb854f99725356c402694
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 374}
+  - name: MapTiles_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 4
+      width: 66
+      height: 66
+    spriteID: c2fecd092a4eb0f4d8b2efd393026bc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 4}
+  - name: MapTiles_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 78
+      width: 66
+      height: 66
+    spriteID: 2424e6ab15346694c94e4d314fd61bd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 78}
+  - name: MapTiles_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 152
+      width: 66
+      height: 66
+    spriteID: 4b8ac99f2f61e4c4ea3daffda7ee7596
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 152}
+  - name: MapTiles_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 226
+      width: 66
+      height: 66
+    spriteID: 3e918b2fb5b08084bb58ff16391361dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 226}
+  - name: MapTiles_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 300
+      width: 66
+      height: 66
+    spriteID: 99601cdfa057c5b4b8bde4aabfb22ae9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 300}
+  - name: MapTiles_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 374
+      width: 66
+      height: 66
+    spriteID: e9007496e710f4f4e9641e0ab4a095c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 374}
+  - name: MapTiles_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 4
+      width: 66
+      height: 66
+    spriteID: a38c530d357aa0240938ce43c09b006d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 4}
+  - name: MapTiles_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 78
+      width: 66
+      height: 66
+    spriteID: 4f1c419fa14a54a44b11fd945958aeca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 78}
+  - name: MapTiles_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 152
+      width: 66
+      height: 66
+    spriteID: cd0aa0dc61ddbe749b4c149340b532c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 152}
+  - name: MapTiles_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 226
+      width: 66
+      height: 66
+    spriteID: 2ed0f90807b50f9478702808ee555756
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 226}
+  - name: MapTiles_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 300
+      width: 66
+      height: 66
+    spriteID: 24c14fb850ac5f34a98ebda4be180a62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 300}
+  - name: MapTiles_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 374
+      width: 66
+      height: 66
+    spriteID: f39041a9c3c5e3c4b8dfc238f9acb5d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 374}
+  - name: MapTiles_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 4
+      width: 66
+      height: 66
+    spriteID: 13effa18ef4c5f9469667c7c1fdd1173
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 4}
+  - name: MapTiles_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 78
+      width: 66
+      height: 66
+    spriteID: 6efe3309cc5dc86408017a67bf610b43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 78}
+  - name: MapTiles_Frame_16
+    originalName: 
+    pivot: {x: 1.375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 152
+      width: 24
+      height: 66
+    spriteID: 6adb97c4b8d58ba4a8fbcd5c61e7f4ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 152}
+  - name: MapTiles_Frame_17
+    originalName: 
+    pivot: {x: -0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 226
+      width: 24
+      height: 66
+    spriteID: 2aef017daf0131c4390b9160b21fd068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 226}
+  - name: MapTiles_Frame_21
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 448
+      width: 46
+      height: 10
+    spriteID: ee79db0b9232e984d862f83dfd5a9962
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 448}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -396401197
+    name: MapTiles
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: MapTiles_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 3be9f3ecc10e58d47afc0b13f09295c9
+    - name: MapTiles_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 15b2c791a98358848811e820cdbcb14d
+    - name: MapTiles_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 1d9cba16c0193bb488d38ee1be1fef53
+    - name: MapTiles_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 6b94efe0718d20b4e9853f4dd7cc0842
+    - name: MapTiles_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 8b755c3f70312a848868c9f8ef2a8201
+    - name: MapTiles_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: b7af6a0856b65d54da5638dd06adb6f4
+    - name: MapTiles_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: a9af4906f38f42b498bc65ad6640234b
+    - name: MapTiles_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: fe77ca5f3e9204c48bfdd40bdfdfd40c
+    - name: MapTiles_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: de85d3ba0d29b9744bd99c513b1b91ab
+    - name: MapTiles_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 8b363cab6ad6f4d4197bbf573ed7928f
+    - name: MapTiles_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: b4c832ce470c4e846b8d41428899a0b4
+    - name: MapTiles_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: c792c313b3dbb854f99725356c402694
+    - name: MapTiles_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: c2fecd092a4eb0f4d8b2efd393026bc8
+    - name: MapTiles_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 2424e6ab15346694c94e4d314fd61bd8
+    - name: MapTiles_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 4b8ac99f2f61e4c4ea3daffda7ee7596
+    - name: MapTiles_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 3e918b2fb5b08084bb58ff16391361dc
+    - name: MapTiles_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 99601cdfa057c5b4b8bde4aabfb22ae9
+    - name: MapTiles_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: e9007496e710f4f4e9641e0ab4a095c8
+    - name: MapTiles_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: a38c530d357aa0240938ce43c09b006d
+    - name: MapTiles_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 4f1c419fa14a54a44b11fd945958aeca
+    - name: MapTiles_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: cd0aa0dc61ddbe749b4c149340b532c4
+    - name: MapTiles_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 2ed0f90807b50f9478702808ee555756
+    - name: MapTiles_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 24c14fb850ac5f34a98ebda4be180a62
+    - name: MapTiles_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: f39041a9c3c5e3c4b8dfc238f9acb5d0
+    - name: MapTiles_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 13effa18ef4c5f9469667c7c1fdd1173
+    - name: MapTiles_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 0
+        y: 0
+        width: 66
+        height: 66
+      spriteId: 6efe3309cc5dc86408017a67bf610b43
+    - name: MapTiles_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 24
+        height: 66
+      spriteId: 6adb97c4b8d58ba4a8fbcd5c61e7f4ad
+    - name: MapTiles_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 42
+        y: 0
+        width: 24
+        height: 66
+      spriteId: 2aef017daf0131c4390b9160b21fd068
+    - name: MapTiles_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 9
+        y: 0
+        width: 46
+        height: 10
+      spriteId: ee79db0b9232e984d862f83dfd5a9962
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 66, y: 66}

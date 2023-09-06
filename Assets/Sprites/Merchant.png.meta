@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -123,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -135,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -147,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1360,66 +1369,65 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Merchant 45: 0
-      Merchant 6: -691576502844889637
-      Merchant 39: -5998092939524338798
-      Merchant 51: 0
-      Merchant 54: 0
-      Merchant 49: 0
-      Merchant 18: -2195968340647094325
-      Merchant 41: -2723926481830214354
-      Merchant 50: 0
-      Merchant 33: -2773433673255682476
-      Merchant 37: -490253131641497586
-      Merchant 8: -6840738946742410799
-      Merchant 32: 8102948732676055258
-      Merchant 28: 3875896865579783681
-      Merchant 26: 4637570950568923440
-      Merchant 1: 3964272379434355673
-      Merchant 44: 0
-      Merchant 46: 0
-      Merchant 25: 7665660503635589542
-      Merchant 43: 2198412364266698164
-      Merchant 48: 0
-      Merchant 40: 1913912415112936386
-      Merchant 9: 9090277103027862354
-      Merchant 3: 811330915845108512
-      Merchant 27: -5921487519296040623
-      Merchant 14: -3901449957039804032
-      Merchant 36: -4337418241839563073
-      Merchant 30: 5207613178106917921
-      Merchant 21: -6453673509709730952
-      Merchant 47: 0
-      Merchant 23: -3697807544631364524
-      Merchant 17: 3055675538288214939
-      Merchant 15: 5928139239460590038
-      Merchant 10: -5701434825612661678
-      Merchant 7: -1483789173910658402
-      Merchant 34: 8692329937877459727
-      Merchant 2: -9016186147992574635
-      Merchant 35: 4638844254463435635
-      Merchant 12: 4532157447352895842
       Merchant 0: -1655024490551829731
+      Merchant 1: 3964272379434355673
+      Merchant 10: -5701434825612661678
       Merchant 11: -6491217232827675743
-      Merchant 29: -4959436585419363032
-      Merchant 56: 0
-      Merchant 4: -5231566113606299405
-      Merchant 53: 0
-      Merchant 24: 4703976888360616159
-      Merchant 22: 8323653543312683740
+      Merchant 12: 4532157447352895842
       Merchant 13: -4229647649224814876
-      Merchant 31: 8283384718017787996
+      Merchant 14: -3901449957039804032
+      Merchant 15: 5928139239460590038
       Merchant 16: 312044511036058561
-      Merchant 5: 1770106355912690863
+      Merchant 17: 3055675538288214939
+      Merchant 18: -2195968340647094325
       Merchant 19: -7427753153726274594
-      Merchant 55: 0
+      Merchant 2: -9016186147992574635
       Merchant 20: -8379179783819330521
+      Merchant 21: -6453673509709730952
+      Merchant 22: 8323653543312683740
+      Merchant 23: -3697807544631364524
+      Merchant 24: 4703976888360616159
+      Merchant 25: 7665660503635589542
+      Merchant 26: 4637570950568923440
+      Merchant 27: -5921487519296040623
+      Merchant 28: 3875896865579783681
+      Merchant 29: -4959436585419363032
+      Merchant 3: 811330915845108512
+      Merchant 30: 5207613178106917921
+      Merchant 31: 8283384718017787996
+      Merchant 32: 8102948732676055258
+      Merchant 33: -2773433673255682476
+      Merchant 34: 8692329937877459727
+      Merchant 35: 4638844254463435635
+      Merchant 36: -4337418241839563073
+      Merchant 37: -490253131641497586
       Merchant 38: 518822568836904606
+      Merchant 39: -5998092939524338798
+      Merchant 4: -5231566113606299405
+      Merchant 40: 1913912415112936386
+      Merchant 41: -2723926481830214354
       Merchant 42: 2634246313581001927
+      Merchant 43: 2198412364266698164
+      Merchant 44: 0
+      Merchant 45: 0
+      Merchant 46: 0
+      Merchant 47: 0
+      Merchant 48: 0
+      Merchant 49: 0
+      Merchant 5: 1770106355912690863
+      Merchant 50: 0
+      Merchant 51: 0
       Merchant 52: 0
-  spritePackingTag: 
+      Merchant 53: 0
+      Merchant 54: 0
+      Merchant 55: 0
+      Merchant 56: 0
+      Merchant 6: -691576502844889637
+      Merchant 7: -1483789173910658402
+      Merchant 8: -6840738946742410799
+      Merchant 9: 9090277103027862354
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

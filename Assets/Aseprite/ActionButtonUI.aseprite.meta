@@ -1,7 +1,1676 @@
 fileFormatVersion: 2
 guid: af401881253fd56459fda907886a5369
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: ActionButtonUI_Frame_0
+    originalName: 
+    pivot: {x: 0.41666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 24
+      height: 28
+    spriteID: 3ce8c7ce97bb68d41bb1427e0032ed87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: ActionButtonUI_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 40
+      width: 20
+      height: 20
+    spriteID: 0715b934c52a51a4ba20b75e9cba6475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 40}
+  - name: ActionButtonUI_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 20
+      height: 20
+    spriteID: bffc89e23aff5964cbcab285f4029d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: ActionButtonUI_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 96
+      width: 20
+      height: 20
+    spriteID: e57ede213bc308643ac185d89d2750d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 96}
+  - name: ActionButtonUI_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 193
+      width: 10
+      height: 10
+    spriteID: 86eda9d8d9257f8408a53f25dc5c2bfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 193}
+  - name: ActionButtonUI_Frame_5
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 173
+      width: 9
+      height: 12
+    spriteID: d3f31cbf77e44e347aecb2b6beb63139
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 173}
+  - name: ActionButtonUI_Frame_6
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.8181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 23
+      width: 11
+      height: 11
+    spriteID: bf4355f15ce952b4ca60966dc3bd8b0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 23}
+  - name: ActionButtonUI_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 211
+      width: 10
+      height: 10
+    spriteID: 4f310b66753f07b4987cdf753a8ec372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 211}
+  - name: ActionButtonUI_Frame_8
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 23
+      width: 8
+      height: 12
+    spriteID: 40ce97890d5ace241b154355849087d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 23}
+  - name: ActionButtonUI_Frame_9
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 195
+      width: 12
+      height: 12
+    spriteID: bda2a21b45fc66744b2ee292cf2d8ca9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 195}
+  - name: ActionButtonUI_Frame_10
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 80
+      width: 12
+      height: 10
+    spriteID: 120b55c833ab05841a53d90e03ff4122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 80}
+  - name: ActionButtonUI_Frame_11
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 98
+      width: 12
+      height: 10
+    spriteID: 35e79fa686aedda4598f11934fd57439
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 98}
+  - name: ActionButtonUI_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 229
+      width: 10
+      height: 10
+    spriteID: 0aa5ebdc4a05cde48826ca3152570fe4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 229}
+  - name: ActionButtonUI_Frame_13
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.8181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 4
+      width: 12
+      height: 11
+    spriteID: 23542c531fb3b1b4ab55fcf2f81a3bdf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 4}
+  - name: ActionButtonUI_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 10
+      height: 10
+    spriteID: 7dce4306b5aa5704fb57ba35dab38f92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 4}
+  - name: ActionButtonUI_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 22
+      width: 10
+      height: 10
+    spriteID: 74a0fb2a9c097214cb5be29b8af5b341
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 22}
+  - name: ActionButtonUI_Frame_16
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.72727275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 238
+      width: 9
+      height: 11
+    spriteID: 1e112b2f0d65d83499e4c067f88d3d1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 238}
+  - name: ActionButtonUI_Frame_17
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 94
+      width: 8
+      height: 10
+    spriteID: 5440c0c611c7e884fabcc3aaf16a72c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 94}
+  - name: ActionButtonUI_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 40
+      width: 10
+      height: 10
+    spriteID: 69d9306d071a8d4418a01ad541f844b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 40}
+  - name: ActionButtonUI_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 58
+      width: 10
+      height: 10
+    spriteID: d762a08565486cd4c890d80f1d53fa15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 58}
+  - name: ActionButtonUI_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 76
+      width: 10
+      height: 10
+    spriteID: cb338b46239632a40bd69003016a17df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 76}
+  - name: ActionButtonUI_Frame_21
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 184
+      width: 5
+      height: 12
+    spriteID: edda9c7826d84614d8212b257731d32f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 184}
+  - name: ActionButtonUI_Frame_22
+    originalName: 
+    pivot: {x: 0.45454547, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 20
+      width: 11
+      height: 7
+    spriteID: 71070a5bc506ffa47bfacda3d5fd116d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 20}
+  - name: ActionButtonUI_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 94
+      width: 10
+      height: 10
+    spriteID: b6960c1de4f3ada43a66b35680e0304d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 94}
+  - name: ActionButtonUI_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 112
+      width: 10
+      height: 10
+    spriteID: 21df25669aa1fed42a6ab0ffdb93e041
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 112}
+  - name: ActionButtonUI_Frame_25
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.8181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 4
+      width: 9
+      height: 11
+    spriteID: e5a60013d3b23544e977a8a5c574fddb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 4}
+  - name: ActionButtonUI_Frame_26
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.72727275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 42
+      width: 11
+      height: 11
+    spriteID: fd8ab2633b2e925419b04bbca6fe6a89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 42}
+  - name: ActionButtonUI_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 130
+      width: 10
+      height: 10
+    spriteID: cf755686926bc8943963f51e1f259c82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 130}
+  - name: ActionButtonUI_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 148
+      width: 10
+      height: 10
+    spriteID: 5a406c8a488596a48b2b8bc6868b3dee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 148}
+  - name: ActionButtonUI_Frame_29
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 112
+      width: 8
+      height: 10
+    spriteID: 96b712cccaf91b24d83021ced5d543da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 112}
+  - name: ActionButtonUI_Frame_30
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 130
+      width: 8
+      height: 10
+    spriteID: cbc321e8da1dc1748b8a8d575f05cb06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 130}
+  - name: ActionButtonUI_Frame_31
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 215
+      width: 12
+      height: 12
+    spriteID: 8a898de01f820a049bcc2c2e3f4c32c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 215}
+  - name: ActionButtonUI_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 116
+      width: 10
+      height: 12
+    spriteID: b8e01f84b4ca9114bad8d85cb62905db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 116}
+  - name: ActionButtonUI_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 166
+      width: 10
+      height: 10
+    spriteID: 3a8d47c5fe61f2f4a835a388f07fa4f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 166}
+  - name: ActionButtonUI_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 4
+      width: 10
+      height: 9
+    spriteID: 6bf83b8957c2d184ab09596ed16263c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 4}
+  - name: ActionButtonUI_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 184
+      width: 10
+      height: 10
+    spriteID: 65abc63d6d3dd6b40ba6f1d5bc6d9719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 184}
+  - name: ActionButtonUI_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: -0.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 18
+      height: 18
+    spriteID: d5db485d5443d524cb0ad0a1204de96b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: ActionButtonUI_Frame_37
+    originalName: 
+    pivot: {x: 0.5454545, y: -0.8181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 61
+      width: 11
+      height: 11
+    spriteID: cab7718ae5289db4db481ee88eafdfbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 61}
+  - name: ActionButtonUI_Frame_38
+    originalName: 
+    pivot: {x: 0.45454547, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 4
+      width: 11
+      height: 8
+    spriteID: 05d6b81723b00d94ea6752f960567087
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 4}
+  - name: ActionButtonUI_Frame_39
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.6153847}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 174
+      width: 13
+      height: 13
+    spriteID: d58ca7d78bfd4c0458ac04681ac954ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 174}
+  - name: ActionButtonUI_Frame_40
+    originalName: 
+    pivot: {x: 0.42857146, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 166
+      width: 7
+      height: 10
+    spriteID: 0691d8b62aafda24d9a267d35a40a76e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 166}
+  - name: ActionButtonUI_Frame_41
+    originalName: 
+    pivot: {x: 0.57142854, y: -1.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 204
+      width: 7
+      height: 8
+    spriteID: 9212df2eb58b6d947ac15069fdd28e36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 204}
+  - name: ActionButtonUI_Frame_42
+    originalName: 
+    pivot: {x: 0.5555556, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 43
+      width: 9
+      height: 9
+    spriteID: 8cc49da59c04c7648a3ec30e98ca027c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 43}
+  - name: ActionButtonUI_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 202
+      width: 10
+      height: 10
+    spriteID: 3cbddd546b49d8d41942189f2f042a4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 202}
+  - name: ActionButtonUI_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 38
+      width: 10
+      height: 8
+    spriteID: c9d216435362b4b41b243017331ad8e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 38}
+  - name: ActionButtonUI_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 21
+      width: 10
+      height: 9
+    spriteID: 7b26353ceed87ae4d8eff7278e358559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 21}
+  - name: ActionButtonUI_Frame_46
+    originalName: 
+    pivot: {x: 0.44444442, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 60
+      width: 9
+      height: 9
+    spriteID: 712b961dee4588d448acb7afb8aa74af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 60}
+  - name: ActionButtonUI_Frame_47
+    originalName: 
+    pivot: {x: 0.44444442, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 77
+      width: 9
+      height: 9
+    spriteID: d0dc1629e694a0a4db6ee5577967f33c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 77}
+  - name: ActionButtonUI_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: -0.3125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 150
+      width: 14
+      height: 16
+    spriteID: afe63f16e4797cd4498617c0060846e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 150}
+  - name: ActionButtonUI_Frame_49
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 235
+      width: 12
+      height: 12
+    spriteID: a335aeb387fcbd949828ba14af4f3989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 235}
+  - name: ActionButtonUI_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: -0.8181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 154
+      width: 10
+      height: 11
+    spriteID: ca9062a57e6c7264b9482907ee47006e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 154}
+  - name: ActionButtonUI_Frame_51
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 136
+      width: 12
+      height: 10
+    spriteID: bc8ad8182e8f6324fa64059bcb18f700
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 136}
+  - name: ActionButtonUI_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 220
+      width: 10
+      height: 10
+    spriteID: f3bf270f9db79544aa961b738c16bc80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 220}
+  - name: ActionButtonUI_Frame_53
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 148
+      width: 8
+      height: 10
+    spriteID: e2cc764dccb40274c916c899988f2bc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 148}
+  - name: ActionButtonUI_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: -1.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 54
+      width: 10
+      height: 8
+    spriteID: c3516816c6d18ae49b7a252b16ca7a81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 54}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1532365698
+    name: ActionButtonUI
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: ActionButtonUI_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 24
+        height: 28
+      spriteId: 3ce8c7ce97bb68d41bb1427e0032ed87
+    - name: ActionButtonUI_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 4
+        y: 4
+        width: 20
+        height: 20
+      spriteId: 0715b934c52a51a4ba20b75e9cba6475
+    - name: ActionButtonUI_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 4
+        y: 4
+        width: 20
+        height: 20
+      spriteId: bffc89e23aff5964cbcab285f4029d55
+    - name: ActionButtonUI_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 4
+        y: 4
+        width: 20
+        height: 20
+      spriteId: e57ede213bc308643ac185d89d2750d1
+    - name: ActionButtonUI_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 86eda9d8d9257f8408a53f25dc5c2bfb
+    - name: ActionButtonUI_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 10
+        y: 8
+        width: 9
+        height: 12
+      spriteId: d3f31cbf77e44e347aecb2b6beb63139
+    - name: ActionButtonUI_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 9
+        width: 11
+        height: 11
+      spriteId: bf4355f15ce952b4ca60966dc3bd8b0a
+    - name: ActionButtonUI_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 4f310b66753f07b4987cdf753a8ec372
+    - name: ActionButtonUI_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 10
+        y: 8
+        width: 8
+        height: 12
+      spriteId: 40ce97890d5ace241b154355849087d9
+    - name: ActionButtonUI_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 8
+        width: 12
+        height: 12
+      spriteId: bda2a21b45fc66744b2ee292cf2d8ca9
+    - name: ActionButtonUI_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 9
+        width: 12
+        height: 10
+      spriteId: 120b55c833ab05841a53d90e03ff4122
+    - name: ActionButtonUI_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 8
+        y: 9
+        width: 12
+        height: 10
+      spriteId: 35e79fa686aedda4598f11934fd57439
+    - name: ActionButtonUI_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 0aa5ebdc4a05cde48826ca3152570fe4
+    - name: ActionButtonUI_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 8
+        y: 9
+        width: 12
+        height: 11
+      spriteId: 23542c531fb3b1b4ab55fcf2f81a3bdf
+    - name: ActionButtonUI_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 7dce4306b5aa5704fb57ba35dab38f92
+    - name: ActionButtonUI_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 74a0fb2a9c097214cb5be29b8af5b341
+    - name: ActionButtonUI_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 10
+        y: 8
+        width: 9
+        height: 11
+      spriteId: 1e112b2f0d65d83499e4c067f88d3d1d
+    - name: ActionButtonUI_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 10
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 5440c0c611c7e884fabcc3aaf16a72c0
+    - name: ActionButtonUI_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 69d9306d071a8d4418a01ad541f844b7
+    - name: ActionButtonUI_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: d762a08565486cd4c890d80f1d53fa15
+    - name: ActionButtonUI_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: cb338b46239632a40bd69003016a17df
+    - name: ActionButtonUI_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 12
+        y: 8
+        width: 5
+        height: 12
+      spriteId: edda9c7826d84614d8212b257731d32f
+    - name: ActionButtonUI_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 9
+        y: 10
+        width: 11
+        height: 7
+      spriteId: 71070a5bc506ffa47bfacda3d5fd116d
+    - name: ActionButtonUI_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: b6960c1de4f3ada43a66b35680e0304d
+    - name: ActionButtonUI_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 21df25669aa1fed42a6ab0ffdb93e041
+    - name: ActionButtonUI_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 10
+        y: 9
+        width: 9
+        height: 11
+      spriteId: e5a60013d3b23544e977a8a5c574fddb
+    - name: ActionButtonUI_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 9
+        y: 8
+        width: 11
+        height: 11
+      spriteId: fd8ab2633b2e925419b04bbca6fe6a89
+    - name: ActionButtonUI_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: cf755686926bc8943963f51e1f259c82
+    - name: ActionButtonUI_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 5a406c8a488596a48b2b8bc6868b3dee
+    - name: ActionButtonUI_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 10
+        y: 9
+        width: 8
+        height: 10
+      spriteId: 96b712cccaf91b24d83021ced5d543da
+    - name: ActionButtonUI_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 10
+        y: 9
+        width: 8
+        height: 10
+      spriteId: cbc321e8da1dc1748b8a8d575f05cb06
+    - name: ActionButtonUI_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 8
+        y: 8
+        width: 12
+        height: 12
+      spriteId: 8a898de01f820a049bcc2c2e3f4c32c6
+    - name: ActionButtonUI_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 9
+        y: 8
+        width: 10
+        height: 12
+      spriteId: b8e01f84b4ca9114bad8d85cb62905db
+    - name: ActionButtonUI_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 3a8d47c5fe61f2f4a835a388f07fa4f3
+    - name: ActionButtonUI_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 9
+      spriteId: 6bf83b8957c2d184ab09596ed16263c3
+    - name: ActionButtonUI_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 65abc63d6d3dd6b40ba6f1d5bc6d9719
+    - name: ActionButtonUI_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 5
+        y: 5
+        width: 18
+        height: 18
+      spriteId: d5db485d5443d524cb0ad0a1204de96b
+    - name: ActionButtonUI_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 8
+        y: 9
+        width: 11
+        height: 11
+      spriteId: cab7718ae5289db4db481ee88eafdfbd
+    - name: ActionButtonUI_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 9
+        y: 11
+        width: 11
+        height: 8
+      spriteId: 05d6b81723b00d94ea6752f960567087
+    - name: ActionButtonUI_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 7
+        y: 8
+        width: 13
+        height: 13
+      spriteId: d58ca7d78bfd4c0458ac04681ac954ec
+    - name: ActionButtonUI_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 11
+        y: 9
+        width: 7
+        height: 10
+      spriteId: 0691d8b62aafda24d9a267d35a40a76e
+    - name: ActionButtonUI_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 10
+        y: 10
+        width: 7
+        height: 8
+      spriteId: 9212df2eb58b6d947ac15069fdd28e36
+    - name: ActionButtonUI_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 9
+        y: 10
+        width: 9
+        height: 9
+      spriteId: 8cc49da59c04c7648a3ec30e98ca027c
+    - name: ActionButtonUI_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: 3cbddd546b49d8d41942189f2f042a4b
+    - name: ActionButtonUI_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 9
+        y: 11
+        width: 10
+        height: 8
+      spriteId: c9d216435362b4b41b243017331ad8e3
+    - name: ActionButtonUI_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 9
+        y: 10
+        width: 10
+        height: 9
+      spriteId: 7b26353ceed87ae4d8eff7278e358559
+    - name: ActionButtonUI_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 10
+        y: 10
+        width: 9
+        height: 9
+      spriteId: 712b961dee4588d448acb7afb8aa74af
+    - name: ActionButtonUI_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 10
+        y: 9
+        width: 9
+        height: 9
+      spriteId: d0dc1629e694a0a4db6ee5577967f33c
+    - name: ActionButtonUI_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 7
+        y: 5
+        width: 14
+        height: 16
+      spriteId: afe63f16e4797cd4498617c0060846e5
+    - name: ActionButtonUI_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 8
+        y: 8
+        width: 12
+        height: 12
+      spriteId: a335aeb387fcbd949828ba14af4f3989
+    - name: ActionButtonUI_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 11
+      spriteId: ca9062a57e6c7264b9482907ee47006e
+    - name: ActionButtonUI_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 8
+        y: 9
+        width: 12
+        height: 10
+      spriteId: bc8ad8182e8f6324fa64059bcb18f700
+    - name: ActionButtonUI_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 9
+        y: 9
+        width: 10
+        height: 10
+      spriteId: f3bf270f9db79544aa961b738c16bc80
+    - name: ActionButtonUI_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 10
+        y: 9
+        width: 8
+        height: 10
+      spriteId: e2cc764dccb40274c916c899988f2bc7
+    - name: ActionButtonUI_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 9
+        y: 10
+        width: 10
+        height: 8
+      spriteId: c3516816c6d18ae49b7a252b16ca7a81
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 28, y: 28}

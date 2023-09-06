@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -703,37 +721,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AimArrows 14: 0
-      AimArrows 16: 0
-      AimArrows 18: 0
-      AimArrows 11: -4494153265449138022
-      AimArrows 6: -8721365996149300159
-      AimArrows 15: 0
-      AimArrows 8: -8856619009276751183
-      AimArrows 13: 0
-      AimArrows 23: 0
       AimArrows 0: 5970530887363079820
+      AimArrows 1: -3572633780833730476
       AimArrows 10: -3953357294718925357
-      AimArrows 4: -3162763752016908094
-      AimArrows 2: 2895837846209358411
+      AimArrows 11: -4494153265449138022
       AimArrows 12: 0
-      AimArrows 5: -8656096667415799103
+      AimArrows 13: 0
+      AimArrows 14: 0
+      AimArrows 15: 0
+      AimArrows 16: 0
+      AimArrows 17: 0
+      AimArrows 18: 0
+      AimArrows 19: 0
+      AimArrows 2: 2895837846209358411
+      AimArrows 20: 0
+      AimArrows 21: 0
+      AimArrows 22: 0
+      AimArrows 23: 0
       AimArrows 24: 0
       AimArrows 25: 0
-      AimArrows 20: 0
       AimArrows 26: 0
-      AimArrows 1: -3572633780833730476
-      AimArrows 19: 0
-      AimArrows 21: 0
-      AimArrows 7: 7724387810858062238
-      AimArrows 17: 0
-      AimArrows 9: -8082521717160561856
-      AimArrows 3: -2545692959397215251
       AimArrows 27: 0
-      AimArrows 22: 0
-  spritePackingTag: 
+      AimArrows 3: -2545692959397215251
+      AimArrows 4: -3162763752016908094
+      AimArrows 5: -8656096667415799103
+      AimArrows 6: -8721365996149300159
+      AimArrows 7: 7724387810858062238
+      AimArrows 8: -8856619009276751183
+      AimArrows 9: -8082521717160561856
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
