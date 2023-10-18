@@ -323,8 +323,6 @@ V
 &Assets/Scripts/Abilities/SpearPulse.cs,1\0\103364de62d2f2cbc2d4e3b33a2f030c6f95535c
 U
 %Assets/Scripts/Abilities/SummonOrb.cs,5\d\5d6ce8322233d293a81a79d0b559cc2a980d7314
-U
-%Assets/Scripts/Abilities/SwordPush.cs,c\e\ce4156930d7c4bb70602ff99ba82f8ec0b8f2ca2
 W
 'Assets/Scripts/Abilities/ThrowBehind.cs,7\c\7c191ba3e6a0105e0b3cf7f20842e13766913c6a
 R
@@ -333,8 +331,6 @@ V
 &Assets/Scripts/Abilities/WallEntrap.cs,f\a\fa816b584edf8223cd941cbe6adf22cab7157f34
 U
 %Assets/Scripts/Abilities/WallSmash.cs,c\d\cd8eec4e0ac9bfa806e4e4fb215aa822fec730fa
-X
-(Assets/Scripts/Abilities/BlockAbility.cs,f\4\f4c1ed3ada444741d8be82d608446d16cec53cd0
 Y
 )Assets/Scripts/Abilities/FreezeAbility.cs,f\1\f1b0e3f0b1f1ce3cd97452e4b0b56f8e586eac96
 V
