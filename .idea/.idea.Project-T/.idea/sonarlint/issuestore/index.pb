@@ -311,8 +311,6 @@ W
 'Assets/Scripts/Abilities/SilenceBeam.cs,8\a\8a440481b3b11cb0d47200c6c06e1fa24ff6d294
 P
  Assets/Scripts/PlayerMovement.cs,e\b\eba51ef1184cf215dc4e3fe4986f8f943ae5f808
-X
-(Assets/Scripts/Abilities/RainOfArrows.cs,8\b\8b5cfd75285fe98bff740b9bf65618fe59af5624
 Y
 )Assets/Scripts/Abilities/BindingRitual.cs,5\d\5db0a1374e71ff46ad4bfe876110f8fcca9cc14b
 R
