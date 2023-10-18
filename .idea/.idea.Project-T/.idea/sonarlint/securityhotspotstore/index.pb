@@ -113,8 +113,6 @@ L
 Assets/Scripts/PVPManager.cs,6\7\6711341f14ce456577e7161f6415ec61e1996b0a
 q
 AAssets/AnimationImporter/Editor/ImportedData/ImportedAnimation.cs,b\d\bd64a253aaa451f794dd576cced738501832d5a8
-S
-#Assets/Scripts/PlayerInformation.cs,9\6\96f30689e7014c69fddee2ac38f2634122f28df0
 t
 DAssets/AnimationImporter/Editor/Utilities/ScriptableObjectUtility.cs,3\2\32eff5a48bece551c8c99d77f1dc303d21c24e36
 Q
@@ -135,12 +133,8 @@ N
 Assets/Scripts/CooldownText.cs,3\8\38b9c905f0380e04d2f66a637453334021a5e585
 F
 Assets/Scripts/Flag.cs,3\8\384bba09fc3da7e691aaf9b75289ec57833e0570
-O
-Assets/Scripts/DebuffManager.cs,c\4\c45358fa121a64ee9d0197029aea8e885b868332
 K
 Assets/Scripts/AIManager.cs,f\a\fafb5819a9721068a5eea04e05f8cb3cd36625e7
-U
-%Assets/Scripts/EnvironmentalHazard.cs,5\5\55a8343389b59c56d306ef53f90de04cad40a5d6
 N
 Assets/Scripts/ColorManager.cs,7\6\7630f684f1162839e92bb67518550728bb82e6d6
 O
@@ -157,8 +151,6 @@ E
 Assets/Scripts/Map.cs,7\9\79ccef0516701e2a56da4a7f398b702421caa424
 T
 $Assets/Scripts/DropdownController.cs,c\0\c0f630b93e7832a15fc85ccbe937e232d3efc08c
-K
-Assets/Scripts/HelpTable.cs,f\4\f461887d6fc1aa9d64b1133b405af8625b5965f6
 M
 Assets/Scripts/AIBehaviour.cs,b\c\bce94176bb5a070d24308cafa62ea671c8d38bc6
 O
@@ -191,8 +183,6 @@ L
 Assets/Scripts/WhiteField.cs,c\8\c8e958f6744d3794713a370f6a267a954fbf79e5
 Q
 !Assets/Scripts/AddToTeamButton.cs,7\c\7c34db40651fadd612d4403cf07e3fd98a0b5853
-P
- Assets/Scripts/PlayerMovement.cs,e\b\eba51ef1184cf215dc4e3fe4986f8f943ae5f808
 R
 "Assets/Scripts/CameraController.cs,1\9\19ab53079cee46b93c9edb6fcda45169a200d88f
 L
@@ -201,8 +191,6 @@ O
 Assets/Scripts/UpgradeButton.cs,5\4\54600c6b0730e67d3d95c10efa25adf36ab74146
 O
 Assets/Scripts/RecruitButton.cs,a\4\a4a6c88c3b9c5a5381e1dfa1a4da3f9b05f9703c
-M
-Assets/Scripts/Recruitment.cs,6\8\68823cba480fbb4e5259faa46d961aa2df308108
 L
 Assets/Scripts/FadeScreen.cs,4\a\4a706e9324820c922e07240fe8245ada7af63693
 O
@@ -223,8 +211,6 @@ R
 "Assets/Scripts/Classes/TownData.cs,2\e\2e49d5e073c2c0697f3e780a20ecea546ffb6758
 S
 #Assets/Scripts/Classes/Encounter.cs,c\2\c24aaa18d270fda8c70d25eaae3ebf262832386d
-R
-"Assets/Scripts/Classes/Blessing.cs,5\b\5b3b80b8b52573c45275e4b84e815ac02d4b6b0c
 T
 $Assets/Scripts/Classes/UndoAction.cs,1\a\1ac6019708eb02d9cfd371cf4f01eada193b6751
 S
@@ -253,8 +239,6 @@ F
 Assets/Text/NamesW.txt,4\6\4671f4b852006f3cd4b34517d19a5bf4c48f7b07
 F
 Assets/Text/NamesM.txt,7\9\79f8ceac66da4ddcee6ceb47c938166d0071ac1a
-I
-Assets/Text/Blessings.txt,f\b\fbc46dfa50b05dfa7569c502563b39a677af64d9
 h
 8Assets/Fonts/TextMesh Pro/Fonts/LiberationSans - OFL.txt,9\9\99ea423af030940a1e30174889a3bdb098efadb1
 j
@@ -279,8 +263,6 @@ j
 :Assets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF.shader,a\c\ac9a096551f3174a941f28d0dd1945c6ec9b6fbf
 y
 IAssets/Fonts/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader,2\5\25e44d2c087988bec521d3373d269e07d2415b33
-S
-#Assets/Scripts/XPProgressManager.cs,e\c\ec806fdccfa11da46f3e0125b26c51e7d827ff80
 Q
 !Assets/Scripts/GameInformation.cs,c\b\cb529fc42bbc33613e7a91e60d923a5628dcc27d
 M
@@ -309,3 +291,91 @@ J
 Assets/Reset.cs,9\c\9c698697772066c42e7c192cbff0b653a89f7c50
 U
 %Assets/_Eligijus/Scripts/UI/GameUi.cs,6\b\6bcc4e1e9d6190b5610707c154cd7889fd887a9b
+O
+Assets/Scripts/HighlightTile.cs,1\4\14cd317f453988ee6233d494d3577c857a1d64f7
+W
+'Assets/Scripts/Abilities/ShadowBlink.cs,2\6\2626246b9fe32fa0d49fae829b0113651cd090ca
+[
++Assets/Scripts/Abilities/SelfActionBoost.cs,b\e\be906642c3a86dd7d7a0148db8cc2dbb13801b34
+]
+-Assets/Scripts/Abilities/SelfMovementBoost.cs,c\5\c54188d32c0231c66e19d9c51c399566df9a3399
+X
+(Assets/Scripts/Abilities/ReadyAimFire.cs,7\2\7227c18114ddf64f1523925350aa7422b5ebc850
+d
+4Assets/_Eligijus/Scripts/SoundManager/AssignSound.cs,9\9\990fa6726843232efac02fafdf0e1bcf880f163b
+D
+Assets/AudioIndex.cs,1\9\19365c46c9251534f4d56653cd55130bb877bc97
+P
+ Assets/Scripts/CharacterModel.cs,0\3\03407186c4014b14541452f28b5d34d2d91f747e
+W
+'Assets/Scripts/Abilities/SilenceBeam.cs,8\a\8a440481b3b11cb0d47200c6c06e1fa24ff6d294
+P
+ Assets/Scripts/PlayerMovement.cs,e\b\eba51ef1184cf215dc4e3fe4986f8f943ae5f808
+X
+(Assets/Scripts/Abilities/RainOfArrows.cs,8\b\8b5cfd75285fe98bff740b9bf65618fe59af5624
+U
+%Assets/Scripts/Abilities/SideSlash.cs,e\5\e52c35f14f406deae5e6040466288f0a606def5c
+R
+"Assets/Scripts/Abilities/Scream.cs,6\4\64aeea9e9db0d254a7bf6e96ac40abf1707e0303
+Y
+)Assets/Scripts/Abilities/BindingRitual.cs,5\d\5db0a1374e71ff46ad4bfe876110f8fcca9cc14b
+V
+&Assets/Scripts/Abilities/SpearPulse.cs,1\0\103364de62d2f2cbc2d4e3b33a2f030c6f95535c
+U
+%Assets/Scripts/Abilities/SummonOrb.cs,5\d\5d6ce8322233d293a81a79d0b559cc2a980d7314
+U
+%Assets/Scripts/Abilities/SwordPush.cs,c\e\ce4156930d7c4bb70602ff99ba82f8ec0b8f2ca2
+W
+'Assets/Scripts/Abilities/ThrowBehind.cs,7\c\7c191ba3e6a0105e0b3cf7f20842e13766913c6a
+R
+"Assets/Scripts/Abilities/Volley.cs,6\d\6ddb451d29f3ac69cffeeb8aea3288cd376a365d
+V
+&Assets/Scripts/Abilities/WallEntrap.cs,f\a\fa816b584edf8223cd941cbe6adf22cab7157f34
+U
+%Assets/Scripts/Abilities/WallSmash.cs,c\d\cd8eec4e0ac9bfa806e4e4fb215aa822fec730fa
+X
+(Assets/Scripts/Abilities/BlockAbility.cs,f\4\f4c1ed3ada444741d8be82d608446d16cec53cd0
+Y
+)Assets/Scripts/Abilities/FreezeAbility.cs,f\1\f1b0e3f0b1f1ce3cd97452e4b0b56f8e586eac96
+V
+&Assets/Scripts/Abilities/FrontSlash.cs,7\3\73ceaed663cae40e8c321584d84f5b56fc7e7c92
+X
+(Assets/Scripts/Abilities/ChillingGust.cs,0\6\06597a0f9ae15c70d58fafc30ea026defecc1451
+U
+%Assets/Scripts/Abilities/ChainHook.cs,1\1\114cd4c7f0eea59d99850253337411a8e923e85c
+U
+%Assets/Scripts/Abilities/CometFall.cs,2\0\20c976949e042d6fcf176a316a59660294cb4eeb
+T
+$Assets/Scripts/Abilities/WeakSpot.cs,e\c\ec9d2a6f430a43d059634f3e417db9b83043bf59
+Z
+*Assets/Scripts/Abilities/FromTheShadows.cs,8\b\8b53167ed96a575c1e746d1620306dc61ec1000f
+T
+$Assets/Scripts/Abilities/IceQuake.cs,6\a\6acb0e4e5c480bc65b2b8b0ce21456f927a0e6a2
+Z
+*Assets/Scripts/Abilities/IsolatedStrike.cs,d\6\d64c750815a74a4564163e6cd00470a423fedcbe
+W
+'Assets/Scripts/Abilities/LeapAndSlam.cs,f\5\f54f6e0470294d74c155c18d9a8b57fff66c03d1
+T
+$Assets/Scripts/Abilities/LongShot.cs,0\b\0bf77effbff05a4e8360e5d4ecfe875d422b363c
+V
+&Assets/Scripts/Abilities/ThrowSpear.cs,5\b\5b9075c3c6fe8132cdd39abde621b455af43d45f
+U
+%Assets/Scripts/Abilities/PowerShot.cs,5\1\5155fa6d9a68add0b0cd4efcaff26198e78cd9e1
+V
+&Assets/Scripts/Abilities/SummonBear.cs,9\a\9a66e458b12ee6ba845fb451e75a672513e12c08
+M
+Assets/Scripts/Recruitment.cs,6\8\68823cba480fbb4e5259faa46d961aa2df308108
+W
+'Assets/Scripts/Abilities/PinkBarrier.cs,f\b\fbf79540d088159b22b104b59fd1e90fc2c31e20
+V
+&Assets/Scripts/Abilities/MistShield.cs,d\f\dfae12494f5e5d88a8f2cd5fb6c23ef678040272
+W
+'Assets/Scripts/Abilities/MindControl.cs,a\5\a5eac5e240c1409b3cd7f550c63e0bc3147dd096
+S
+#Assets/Scripts/Abilities/OilSlow.cs,9\6\961887ab4e590179e5de8abda1895cd35c565c39
+U
+%Assets/Scripts/Abilities/WindBoost.cs,9\6\96abb9fa262cdc8ac087baeb44404e7085d9946d
+U
+%Assets/Scripts/EnvironmentalHazard.cs,5\5\55a8343389b59c56d306ef53f90de04cad40a5d6
+S
+#Assets/Scripts/Abilities/Inferno.cs,4\1\4135837d94553966caa9bd09c24f626c5ff94bac
