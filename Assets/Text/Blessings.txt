@@ -10,7 +10,7 @@ Head start;1;-;-;-;Gain 2 movement points at the start of the mission           
 Swiftness;2;-;-;-;Gain bonus movement point at the start of each even turn                              -yra
 Enlighten;1;Enchantress;Purify;-;Purify heals the target as well                                        -yra
 Distant remedy;1;Enchantress;Purify;-;Increase the range of Purify by 1                                 - RangeIncrease
-Painful spot;1;Enchantress;WeakSpot;-;Attaks against the target with Weak spot deal 2 damage            -
+Painful spot;1;Enchantress;WeakSpot;-;Attaks against the target with Weak spot deal 2 damage            - PainfulSpot - naujas
 Silent plague;1;Enchantress;SilenceBeam;-;Silence beam applies poison                                   - VenomousTouch
 Distant defence;1;Enchantress;PinkBarrier;-;Increase the range of Barrier by 1                          - RangeIncrease
 Stay there;1;Portalist;SwitchPlaces;-;Switching places also roots the enemy                             - Root
@@ -18,18 +18,17 @@ Fetch;2;Portalist;ThrowSpear;-;Dealing damage to enemies with Throw spear grants
 Far reach;1;Shaman;HealSingle;-;Increase range of healing potion by 1                                   - DistanceIncrease
 Explosive dart;1;Shaman;PoisonDart;-;Poison dart affects adjacent enemies as well                       - ExplosivePoison
 Plaguebearer;1;Shaman;CrowAttack;-;Crow attack poisons enemies after dealing damage                     - VenomousTouch
-Revive;2;-;-;Dead;Revives a character who died during the mission                                       -
+Revive;2;-;-;Dead;Revives a character who died during the mission                                       - Revive
 Antitoxic;1;-;-;-;Immune to poison                                                                      - Antitoxic
-Agility;2;-;-;-;Attacking does not remove movement points                                               -
-Spectral;1;-;-;-;Can move through enemies                                                               -
+Agility;2;-;-;-;Attacking does not remove movement points                                               - Agility - naujas
 Vampiric touch;1;-;-;-;Lifesteal on attack                                                              -yra
 No escape;1;Crusader;ChainHook;-;Increase the range of Chain hook by 1                                  - RangeIncrease
 Grappling hook;2;Crusader;ChainHook;-;You can target walls with Chain hook and pull yourself to them    - GrapplingHook
 Stunning;1;Crusader;StunAttack;-;Shield attack stuns                                                    - Stun
 Toxic metals;1;Crusader;StunAttack;-;Shield attack applies poison                                       - VenomousTouch
 Battle rage;1;Crusader;GroundSlam;-;Heal after the second slam of Ground slam                           -yra
-Martial artist;1;Crusader;FlameKick;-;Kicking an enemy into another enemy deals damage to both of them  -
-Combo kick;1;Crusader;FlameKick;-;Deal bonus damage if you kick an enemy into another one               -
+Martial artist;1;Crusader;FlameKick;-;Kicking an enemy into another enemy deals damage to both of them  - MartialArtist - naujas
+Combo kick;1;Crusader;FlameKick;-;Deal bonus damage if you kick an enemy into another one               - ComboKick - naujas
 Ice skates;1;Sorceress;IceFreeze;-;Gain 1 MP after casting Ring of frost                                - GainMP
 Friendly frost;1;Sorceress;IceFreeze;-;Ring of frost does not affect allies                             - AffectAllies
 Frostbite;1;Sorceress;IceFreeze;-;Ring of frost deals 2 more damage                                     - SharpBlade
@@ -44,9 +43,9 @@ Release toxins;1;Huntress;PowerShot;-;Power shot deals bonus damage if the targe
 Astonishing;1;Guardian;MarkEnemy;-;Attack against the marked target now stuns                           - MarkedStun
 Eagle eye;1;Guardian;MarkEnemy;-;Increase the range of Mark by 1                                        - RangeIncrease
 Fresh air;1;Guardian;WindBoost;-;Increase the healing of wind boost                                     - IncreaseHealing
-Breezy defence;1;Guardian;CreateWhiteField;-;After casting White field, gain a barrier                  -
+Breezy defence;1;Guardian;CreateWhiteField;-;After casting White field, gain a barrier                  - AddBarrier - naujas
 Harsh winds;1;Guardian;ChillingGust;-;Dual winds deal more damage                                       - SharpBlade
-Healing winds;1;Guardian;ChillingGust;-;Dual winds heal allies                                          -
+Healing winds;1;Guardian;ChillingGust;-;Dual winds heal allies                                          - yra
 Swift strike;1;Assassin;ShadowBlink;-;Gain 1 MP after casting Shadow blink                              - GainMP
 Hostile;2;Assassin;Enrage;-;Reduce the cooldown of Enrage by 1                                          - ReduceCooldown
 Pat on the back;1;Assassin;ShadowBlink;-;Casting Shadow blink on an ally reduces its cooldown by 1      - ReduceCooldown
