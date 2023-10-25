@@ -15,8 +15,8 @@ public class PlayerInformation : MonoBehaviour
     public int accuracy = 100;
     public int dodgeChance = 20;
     public string CharactersTeam = "Default";
-    [HideInInspector] public GameObject characterPortrait; //portraitBoxFrame
-    [HideInInspector] public GameObject TeamManager;
+    public GameObject characterPortrait; //portraitBoxFrame
+    public GameObject TeamManager;
     [HideInInspector] public GameObject FlagInHand = null;
     public string currentState = "Movement";
     public string AnimationState = "Movement";
@@ -52,7 +52,7 @@ public class PlayerInformation : MonoBehaviour
     [HideInInspector] public GameObject VisionGameObject;
     [HideInInspector] public bool CantAttackCondition = false;
     [HideInInspector] public bool Disarmed = false;
-    [HideInInspector] public GameObject cornerPortraitBoxInGame; //CornerUI
+    public GameObject cornerPortraitBoxInGame; //CornerUI
     [HideInInspector] public bool Caged = false;
     [HideInInspector] public bool Protected = false;
     [HideInInspector] public bool MistShield = false; //UndeadKnightSpell

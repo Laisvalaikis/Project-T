@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PvPCharacterSelect : MonoBehaviour
 {
-    [HideInInspector] public GameObject characterOnBoard;
-    [HideInInspector] public GameObject characterPortraitFrame;
+    public GameObject characterOnBoard;
+    public GameObject characterPortraitFrame;
     private bool isButtonAvailable = true;
     void Start()
     {
