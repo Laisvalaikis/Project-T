@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 7333550771407075058}
   - component: {fileID: 9175601018018708159}
   - component: {fileID: 7984656254249180940}
+  - component: {fileID: 3446343007973223065}
   m_Layer: 8
   m_Name: PlayerWhite
   m_TagString: Player
@@ -38,6 +39,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458800734740256195}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -50,7 +52,6 @@ Transform:
   - {fileID: 5784122244255982638}
   - {fileID: 2710247110566392903}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1458800734740256191
 BoxCollider2D:
@@ -62,6 +63,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -95,6 +115,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -183,6 +209,8 @@ MonoBehaviour:
   MistShield: 0
   Stasis: 0
   wasThisCharacterSpawned: 0
+  enabledAbilitiesEnemy: []
+  gameInformation: {fileID: 0}
   Respawn: 0
   XPToGain: 0
   isThisObject: 0
@@ -202,6 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8984d01747079634faf4f276956a4087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: 
   AttackRange: 1
   AbilityCooldown: 1
@@ -243,29 +273,29 @@ MonoBehaviour:
     AbilityIcon: {fileID: -7484152466862747830, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
     AbilityIndex: -1
+  - action: {fileID: 3629920406044890746}
+    actionName: CreateEye
+    AbilityIcon: {fileID: 0}
+    AbilityIndex: 0
   - action: {fileID: 5360863779217574242}
     actionName: MarkEnemy
     AbilityIcon: {fileID: 2653253005981326686, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
-    AbilityIndex: 0
+    AbilityIndex: 1
   - action: {fileID: 7333550771407075058}
     actionName: CreateWhiteField
     AbilityIcon: {fileID: -7986213798027018427, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
-    AbilityIndex: 1
+    AbilityIndex: 2
   - action: {fileID: 9175601018018708159}
     actionName: WindBoost
     AbilityIcon: {fileID: -4147313178977208927, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
-    AbilityIndex: 2
+    AbilityIndex: 3
   - action: {fileID: 7984656254249180940}
     actionName: ChillingGust
     AbilityIcon: {fileID: 5139444604892243456, guid: 38f03c585e84a1640a863ffc47a7d49b,
       type: 3}
-    AbilityIndex: 3
-  - action: {fileID: 3629920406044890746}
-    actionName: CreateEye
-    AbilityIcon: {fileID: 0}
     AbilityIndex: -1
   - action: {fileID: 2802317595532728840}
     actionName: CreateFog
@@ -284,6 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcabb48ab699cf4d8cc71e3d460429b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: Attack
   AttackRange: 1
   AbilityCooldown: 1
@@ -328,6 +360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a50ff7f62fc3a44a93c6abaa892724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: CreateEye
   AttackRange: 3
   AbilityCooldown: 2
@@ -354,6 +388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b97d53c3f0f7ae4a8c47786b952a8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: CreateFog
   AttackRange: 2
   AbilityCooldown: 2
@@ -414,6 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121c06ab5b3014f34bc2eaec67ebce92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: MarkEnemy
   AttackRange: 2
   AbilityCooldown: 2
@@ -438,6 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56992f303dbbb4898b82b0065d91b476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: CreateWhiteField
   AttackRange: 2
   AbilityCooldown: 2
@@ -464,6 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d5da7adb236a14d8e9c81a86e27da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: WindBoost
   AttackRange: 1
   AbilityCooldown: 3
@@ -488,6 +530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ceb83752d31b04188ccefccb270e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
   actionStateName: ChillingGust
   AttackRange: 3
   AbilityCooldown: 2
@@ -501,6 +545,24 @@ MonoBehaviour:
   isDisabled: 0
   spawnedCharacter: {fileID: 0}
   bonusBlessingDamage: 2
+--- !u!114 &3446343007973223065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458800734740256195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 482af0bd8b12f2b45aefe47b7966ea5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectSelection: 0
+  songSelection: 0
+  sounds: {fileID: 0}
+  soundNames: []
+  selectedEffectIndex: 0
+  selectedSongIndex: 0
 --- !u!1 &1458800735388499084
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,19 +586,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458800735388499084}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1458800734740256184}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &702712614694602570
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1458800734740256184}
     m_Modifications:
     - target: {fileID: 4589584972691425633, guid: ed24e842bb536204eb6846cc53311643,
@@ -605,6 +668,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed24e842bb536204eb6846cc53311643, type: 3}
 --- !u!4 &3923183180822122027 stripped
 Transform:
@@ -617,6 +683,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1458800734740256184}
     m_Modifications:
     - target: {fileID: 4935710951266589854, guid: d1b328a5480dcef4a9d2730562405b6a,
@@ -680,6 +747,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1b328a5480dcef4a9d2730562405b6a, type: 3}
 --- !u!4 &7753708382407760634 stripped
 Transform:
@@ -692,6 +762,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1458800734740256184}
     m_Modifications:
     - target: {fileID: 4068864912323608015, guid: 7fdd704e297a46e429bd5056e2628f3a,
@@ -777,6 +848,9 @@ PrefabInstance:
       value: CharacterModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fdd704e297a46e429bd5056e2628f3a, type: 3}
 --- !u!4 &5784122244255982638 stripped
 Transform:
@@ -789,6 +863,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1458800734740256184}
     m_Modifications:
     - target: {fileID: 4174927836768962920, guid: d132d3123088044cfa33ababf149f912,
@@ -852,6 +927,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d132d3123088044cfa33ababf149f912, type: 3}
 --- !u!4 &2710247110566392903 stripped
 Transform:
@@ -864,6 +942,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1458800734740256184}
     m_Modifications:
     - target: {fileID: 5971539865780397426, guid: 20279452140d84937b89f3f386a888c0,
@@ -927,6 +1006,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20279452140d84937b89f3f386a888c0, type: 3}
 --- !u!4 &530169215690701384 stripped
 Transform:

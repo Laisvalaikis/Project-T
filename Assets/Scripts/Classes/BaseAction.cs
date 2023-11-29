@@ -300,7 +300,7 @@ using Random = UnityEngine.Random;
         public virtual void ResolveAbility(GameObject clickedTile)
         {
            
-            _assignSound.PlaySound(selectedEffectIndex, selectedSongIndex);
+            //_assignSound.PlaySound(selectedEffectIndex, selectedSongIndex);
             Debug.LogWarning("PlaySound");
             
         }
